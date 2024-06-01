@@ -1,9 +1,9 @@
 	db JYNX ; 124
 
-	db  65,  50,  35,  95, 115,  95
+	db  85,  60,  45,  95, 115,  100
 	;   hp  atk  def  spd  sat  sdf
 
-	db ICE, PSYCHIC_TYPE ; type
+	db ICE, FAIRY ; type
 	db 45 ; catch rate
 	db 137 ; base exp
 	db ICE_BERRY, ICE_BERRY ; items

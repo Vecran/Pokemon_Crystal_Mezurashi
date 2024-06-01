@@ -1,9 +1,9 @@
 	db GLIGAR ; 207
 
-	db  70,  85, 105,  90,  35,  65
+	db  70,  85, 105,  90,  45,  65
 	;   hp  atk  def  spd  sat  sdf
 
-	db GROUND, FLYING ; type
+	db GROUND, POISON ; type
 	db 60 ; catch rate
 	db 108 ; base exp
 	db NO_ITEM, NO_ITEM ; items

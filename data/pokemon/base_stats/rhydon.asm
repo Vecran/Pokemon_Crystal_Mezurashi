@@ -1,9 +1,9 @@
 	db RHYDON ; 112
 
-	db 105, 130, 120,  40,  45,  45
+	db 105, 130, 120,  40,  65,  65
 	;   hp  atk  def  spd  sat  sdf
 
-	db GROUND, ROCK ; type
+	db GROUND, DRAGON ; type
 	db 60 ; catch rate
 	db 204 ; base exp
 	db NO_ITEM, NO_ITEM ; items

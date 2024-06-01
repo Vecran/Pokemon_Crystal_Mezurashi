@@ -1,9 +1,9 @@
 	db CORSOLA ; 222
 
-	db  85,  55,  95,  35,  65,  95
+	db  95,  55,  95,  35,  85,  95
 	;   hp  atk  def  spd  sat  sdf
 
-	db WATER, ROCK ; type
+	db FAIRY, ROCK ; type
 	db 60 ; catch rate
 	db 113 ; base exp
 	db NO_ITEM, NO_ITEM ; items

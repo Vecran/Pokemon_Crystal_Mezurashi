@@ -1,9 +1,9 @@
 	db SLOWBRO ; 080
 
-	db  95,  75, 110,  30, 100,  80
+	db  105,  110, 110,  30, 75,  80
 	;   hp  atk  def  spd  sat  sdf
 
-	db WATER, PSYCHIC_TYPE ; type
+	db PSYCHIC_TYPE, ROCK ; type
 	db 75 ; catch rate
 	db 164 ; base exp
 	db NO_ITEM, KINGS_ROCK ; items

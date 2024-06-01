@@ -1,9 +1,9 @@
 	db MAROWAK ; 105
 
-	db  65,  80, 110,  45,  50,  80
+	db  75,  90, 110,  65,  60,  80
 	;   hp  atk  def  spd  sat  sdf
 
-	db GROUND, GROUND ; type
+	db GROUND, GHOST ; type
 	db 75 ; catch rate
 	db 124 ; base exp
 	db NO_ITEM, THICK_CLUB ; items

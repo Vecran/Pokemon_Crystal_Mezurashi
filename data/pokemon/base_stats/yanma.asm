@@ -1,12 +1,12 @@
 	db YANMA ; 193
 
-	db  75, 105,  65,  95,  65,  45
+	db  75, 105,  65,  105,  75,  65
 	;   hp  atk  def  spd  sat  sdf
 
-	db BUG, FLYING ; type
+	db BUG, DRAGON ; type
 	db 75 ; catch rate
 	db 147 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db DRAGON_SCALE, DRAGON_SCALE; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 5 ; step cycles to hatch

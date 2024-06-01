@@ -1,9 +1,9 @@
 	db SANDSLASH ; 028
 
-	db  75, 100, 110,  65,  45,  55
+	db  75, 100, 110,  80,  45,  75
 	;   hp  atk  def  spd  sat  sdf
 
-	db GROUND, GROUND ; type
+	db STEEL, GROUND ; type
 	db 90 ; catch rate
 	db 163 ; base exp
 	db NO_ITEM, NO_ITEM ; items

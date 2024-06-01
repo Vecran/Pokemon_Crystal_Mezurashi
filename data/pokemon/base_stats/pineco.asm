@@ -1,9 +1,9 @@
 	db PINECO ; 204
 
-	db  50,  65,  90,  15,  35,  35
+	db  50,  65,  90,  15,  35,  55
 	;   hp  atk  def  spd  sat  sdf
 
-	db BUG, BUG ; type
+	db BUG, GRASS ; type
 	db 190 ; catch rate
 	db 60 ; base exp
 	db NO_ITEM, NO_ITEM ; items

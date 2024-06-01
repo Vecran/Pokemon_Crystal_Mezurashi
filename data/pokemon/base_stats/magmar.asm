@@ -1,9 +1,9 @@
 	db MAGMAR ; 126
 
-	db  75,  85,  57,  93, 100,  85
+	db  75,  85,  60,  95, 100,  85
 	;   hp  atk  def  spd  sat  sdf
 
-	db FIRE, FIRE ; type
+	db FIRE, DARK ; type
 	db 45 ; catch rate
 	db 167 ; base exp
 	db BURNT_BERRY, BURNT_BERRY ; items

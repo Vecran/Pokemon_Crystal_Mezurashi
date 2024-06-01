@@ -1,9 +1,9 @@
 	db AIPOM ; 190
 
-	db  70, 90,  65, 90,  40,  65
+	db  80, 90,  75, 90,  50,  65
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, NORMAL ; type
+	db DARK, DARK ; type
 	db 45 ; catch rate
 	db 94 ; base exp
 	db NO_ITEM, NO_ITEM ; items

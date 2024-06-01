@@ -1,9 +1,9 @@
 	db LICKITUNG ; 108
 
-	db  95,  70,  85,  30,  60,  85
+	db  105,  80,  85,  30,  70,  95
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, NORMAL ; type
+	db NORMAL, POISON ; type
 	db 45 ; catch rate
 	db 127 ; base exp
 	db NO_ITEM, NO_ITEM ; items
