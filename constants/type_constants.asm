@@ -6,7 +6,6 @@
 ; - TypeBoostItems (see data/types/type_boost_items.asm)
 	const_def
 
-PHYSICAL EQU const_value
 	const NORMAL
 	const FIGHTING
 	const FLYING
@@ -23,7 +22,6 @@ UNUSED_TYPES EQU const_value
 	const CURSE_TYPE
 UNUSED_TYPES_END EQU const_value
 
-SPECIAL EQU const_value
 	const FIRE
 	const WATER
 	const GRASS
@@ -34,6 +32,10 @@ SPECIAL EQU const_value
 	const GHOST
 	const FAIRY
 TYPES_END EQU const_value
+DEF TYPE_MASK EQU %00111111
+DEF PHYSICAL  EQU %01000000
+DEF SPECIAL   EQU %10000000
+DEF STATUS    EQU %11000000
 
 NUM_TYPES EQU TYPES_END + UNUSED_TYPES - UNUSED_TYPES_END - 1 ; discount BIRD
 
