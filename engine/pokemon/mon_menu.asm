@@ -910,10 +910,13 @@ MoveScreenLoop:
 	hlcoord 1, 11
 	ld bc, 8
 	call ByteFill
+	hlcoord 1, 11
+	lb bc, 5, 7
+	call ClearBox
 	hlcoord 1, 12
 	lb bc, 5, SCREEN_WIDTH - 2
 	call ClearBox
-	hlcoord 1, 12
+	hlcoord 2, 13
 	ld de, String_MoveWhere
 	call PlaceString
 	jp .joy_loop
@@ -946,6 +949,8 @@ MoveScreenLoop:
 	ld a, [wCurPartyMon]
 	cp b
 	jp z, .joy_loop
+	ld de, SFX_SWITCH_POCKETS
+	call PlaySFX
 	jp MoveScreenLoop
 
 .d_left
@@ -960,6 +965,8 @@ MoveScreenLoop:
 	ld a, [wCurPartyMon]
 	cp b
 	jp z, .joy_loop
+	ld de, SFX_SWITCH_POCKETS
+	call PlaySFX
 	jp MoveScreenLoop
 
 .cycle_right
@@ -1085,7 +1092,7 @@ MoveScreen2DMenuData:
 	db D_UP | D_DOWN | D_LEFT | D_RIGHT | A_BUTTON | B_BUTTON ; accepted buttons
 
 String_MoveWhere:
-	db "Where?@"
+	db "Select a move<NEXT>to swap places.@"
 
 SetUpMoveScreenBG:
 	call ClearBGPalettes
@@ -1104,8 +1111,8 @@ SetUpMoveScreenBG:
 	ld [wTempIconSpecies], a
 	ld e, MONICON_MOVES
 	farcall LoadMenuMonIcon
-	hlcoord 0, 1
-	ld b, 9
+	hlcoord 0, -1
+	ld b, 1
 	ld c, 18
 	call Textbox
 	hlcoord 0, 11
@@ -1187,13 +1194,13 @@ PlaceMoveData:
 	hlcoord 0, 11
 	ld de, String_MoveType_Bottom
 	call PlaceString
-	hlcoord 12, 12
+	hlcoord 1, 11
 	ld de, String_MoveAtk
 	call PlaceString
-	hlcoord 12, 13
+	hlcoord 1, 12
 	ld de, String_MoveAcc
 	call PlaceString
-	hlcoord 4, 13
+	hlcoord 1, 13
 	ld de, String_Move_Eff
 	call PlaceString
 
@@ -1210,14 +1217,14 @@ PlaceMoveData:
 	ld [wBuffer1], a
 	ld de, wBuffer1
 	lb bc, 1, 3
-	hlcoord 8, 13
+	hlcoord 5, 13
 	call PrintNum
 	jr .skip_null_chance
 
 .if_null_chance
 	ld de, String_MoveNoPower
 	ld bc, 3
-	hlcoord 8, 13
+	hlcoord 5, 13
 	call PlaceString
 
 .skip_null_chance
@@ -1233,21 +1240,21 @@ PlaceMoveData:
 	ld [wBuffer1], a
 	ld de, wBuffer1
 	lb bc, 1, 3
-	hlcoord 16, 13
+	hlcoord 5, 12
 	call PrintNum
 
 ; Print move category
 	ld a, [wCurSpecies]
 	ld b, a
 	farcall GetMoveCategoryName
-	hlcoord 1, 11
+	hlcoord 10, 12
 	ld de, wStringBuffer1
 	call PlaceString
 
 ; Print move power
 	ld a, [wCurSpecies]
 	ld b, a
-	hlcoord 1, 12
+	hlcoord 10, 13
 	ld [hl], "/"
 	inc hl
 	predef PrintMoveType
@@ -1258,7 +1265,7 @@ PlaceMoveData:
 	call AddNTimes
 	ld a, BANK(Moves)
 	call GetFarByte
-	hlcoord 16, 12
+	hlcoord 5, 11
 	cp 2
 	jr c, .no_power
 	ld [wTextDecimalByte], a
@@ -1273,7 +1280,7 @@ PlaceMoveData:
 
 ; Print move description
 .description
-	hlcoord 1, 14
+	hlcoord 1, 15
 	predef PrintMoveDescription
 	ld a, $1
 	ldh [hBGMapMode], a
@@ -1330,9 +1337,9 @@ ConvertPercentages:
 
 ; UI elements
 String_MoveType_Top:
-	db "┌────────┐@"
+	db "┌───────┐@"
 String_MoveType_Bottom:
-	db "│        └@"
+	db "│       └@"
 String_MoveAtk:
 	db "ATK/@"
 String_MoveAcc:
