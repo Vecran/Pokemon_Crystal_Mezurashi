@@ -1,11 +1,15 @@
 INCLUDE "engine/gfx/sgb_layouts.asm"
-
+; original shiny values
 SHINY_ATK_BIT EQU 5
 SHINY_DEF_VAL EQU 10
 SHINY_SPD_VAL EQU 10
 SHINY_SPC_VAL EQU 10
 
-CheckShininess:
+;for atk>=13 and def,spd,spc>=14 gives shiny
+SHINY_ATK_THRESHOLD EQU 13
+SHINY_STAT_THRESHOLD EQU 14
+
+Unused_CheckShininess: ;original shiny rules
 ; Check if a mon is shiny by DVs at bc.
 ; Return carry if shiny.
 
@@ -43,29 +47,33 @@ CheckShininess:
 	and a
 	ret
 
-Unused_CheckShininess:
-; Return carry if the DVs at hl are all 10 or higher.
+CheckShininess:
+; Return carry if the DVs at bc are
+; atk=>13, def,spd,spc=>14 = shiny
 
+    ld l, c
+	ld h, b
+	
 ; Attack
 	ld a, [hl]
-	cp 10 << 4
+	cp SHINY_ATK_THRESHOLD << 4
 	jr c, .not_shiny
 
 ; Defense
 	ld a, [hli]
 	and $f
-	cp 10
+	cp SHINY_STAT_THRESHOLD
 	jr c, .not_shiny
 
 ; Speed
 	ld a, [hl]
-	cp 10 << 4
+	cp SHINY_STAT_THRESHOLD << 4
 	jr c, .not_shiny
 
 ; Special
 	ld a, [hl]
 	and $f
-	cp 10
+	cp SHINY_STAT_THRESHOLD
 	jr c, .not_shiny
 
 ; shiny
