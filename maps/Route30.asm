@@ -384,7 +384,7 @@ Route30YoungsterText_EveryoneIsBattling:
 	cont "You should too!"
 	done
 
-Route30TestRattataUPText:
+Route30TestRattataUpText:
 	text "RATTATA: Squeak!"
 	done
 
