@@ -63,5 +63,4 @@ SpriteMons:
 	db SENTRET
 	db MEW
 	db KANGASKHAN
-	db RATTATA_UP
 	assert_table_length NUM_POKEMON_SPRITES
