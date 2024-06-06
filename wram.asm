@@ -2242,6 +2242,7 @@ wItemsPocketCursor::    db
 wKeyItemsPocketCursor:: db
 wBallsPocketCursor::    db
 wTMHMPocketCursor::     db
+wBerryPocketCursor::    db
 
 wPCItemsScrollPosition::        db
 	ds 1
@@ -2249,6 +2250,7 @@ wItemsPocketScrollPosition::    db
 wKeyItemsPocketScrollPosition:: db
 wBallsPocketScrollPosition::    db
 wTMHMPocketScrollPosition::     db
+wBerryPocketScrollPosition::    db
 
 wSwitchMon::
 wSwitchItem::
@@ -2751,6 +2753,7 @@ NEXTU
 wDudeNumItems:: db
 wDudeItems:: ds 2 * 4 + 1
 
+wDudeNumBerries::
 wDudeNumKeyItems:: db
 wDudeKeyItems:: ds 18 + 1
 
@@ -2908,7 +2911,6 @@ endr
 
 wCmdQueue:: ds CMDQUEUE_CAPACITY * CMDQUEUE_ENTRY_SIZE
 
-	ds 40
 
 wMapObjects::
 wPlayerObject:: map_object wPlayer ; player is map object 0
@@ -3094,6 +3096,8 @@ wNumBalls:: db
 wBalls:: ds MAX_BALLS * 2 + 1
 	ds 23
 	; ds 49
+wNumBerries:: db
+wBerries:: ds MAX_BERRIES * 2 + 1
 
 ; fight counts
 wJackFightCount::    db
