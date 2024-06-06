@@ -1,7 +1,38 @@
 LoadOverworldMonIcon:
 	ld a, e
+	ld b, d
 	call ReadMonMenuIcon
 	ld [wCurIcon], a
+	cp ICON_UNOWN
+	jr nz, .not_unown
+
+	; Is it a Breedmon?
+	ld a, b
+	and a
+	jr z, .not_breedmon
+	
+	ld hl, wBreedMon1DVs
+	; Check which Breedmon we're using
+	dec a
+	jr z, .get_unown_letter
+	ld hl, wBreedMon2DVs
+.get_unown_letter
+	predef GetUnownLetter
+	ld a, [wUnownLetter]
+	ld l, a
+	ld h, 0
+	add hl, hl
+	ld de, UnownIconPointers
+	add hl, de
+	ld a, [hli]
+	ld e, a
+	ld d, [hl]
+	lb bc, BANK("Unown Icons"), 8
+	ret
+
+.not_breedmon
+	ld a, [wCurIcon]
+.not_unown
 	ld l, a
 	ld h, 0
 	add hl, hl
@@ -319,8 +350,14 @@ InitPartyMenuIcon:
 	ld d, 0
 	add hl, de
 	ld a, [hl]
+	push hl
 	call ReadMonMenuIcon
 	ld [wCurIcon], a
+	pop hl
+	ld a, MON_DVS
+	call GetPartyParamLocation
+	ld e, l
+	ld d, h
 	call GetMemIconGFX
 	ldh a, [hObjectStructIndex]
 ; y coord
@@ -377,7 +414,9 @@ NamingScreen_InitAnimatedMonIcon:
 	ld hl, wTempMonDVs
 	call SetMenuMonIconColor
 	ld a, [wTempIconSpecies]
+	push hl
 	call ReadMonMenuIcon
+	pop de
 	ld [wCurIcon], a
 	xor a
 	call GetIconGFX
@@ -394,7 +433,9 @@ MoveList_InitAnimatedMonIcon:
 	call GetPartyParamLocation
 	call SetMenuMonIconColor
 	ld a, [wTempIconSpecies]
+	push hl
 	call ReadMonMenuIcon
+	pop de
 	ld [wCurIcon], a
 	xor a
 	call GetIconGFX
@@ -462,6 +503,7 @@ Trade_LoadMonIconGFX:
 	ld [wCurIcon], a
 	ld a, $62
 	ld [wCurIconTile], a
+	ld de, wTempMonDVs
 	call GetMemIconGFX
 	ret
 
@@ -472,10 +514,14 @@ GetSpeciesIcon:
 	call GetPartyParamLocation
 	call SetMenuMonIconColor
 	ld a, [wTempIconSpecies]
+	push hl
 	call ReadMonMenuIcon
+	pop hl
 	ld [wCurIcon], a
 	pop de
 	ld a, e
+	ld e, l
+	ld d, h
 	call GetIconGFX
 	ret
 
@@ -546,14 +592,35 @@ rept 4
 	add hl, hl
 endr
 
+	push de
 	ld de, vTiles0
 	add hl, de
+	pop de
 	push hl
 
 ; The icons are contiguous, in order and of the same
 ; size, so the pointer table is somewhat redundant.
 	ld a, [wCurIcon]
 	push hl
+	cp ICON_UNOWN
+	jr nz, .not_unown
+	ld l, e
+	ld h, d
+	predef GetUnownLetter
+	ld a, [wUnownLetter]
+	ld l, a
+	ld h, 0
+	add hl, hl
+	ld de, UnownIconPointers
+	add hl, de
+	ld a, [hli]
+	ld e, a
+	ld d, [hl]
+	lb bc, BANK("Unown Icons"), 8
+	pop hl
+	jr .continue
+
+.not_unown
 	ld l, a
 	ld h, 0
 	add hl, hl
@@ -565,6 +632,7 @@ endr
 	pop hl
 
 	call GetIconBank
+.continue
 	call GetGFXUnlessMobile
 
 	pop hl
@@ -688,5 +756,7 @@ INCLUDE "data/pokemon/menu_icons.asm"
 INCLUDE "data/pokemon/menu_icon_pals.asm"
 
 INCLUDE "data/icon_pointers.asm"
+
+INCLUDE "data/unown_icon_pointers.asm"
 
 INCLUDE "gfx/icons.asm"
