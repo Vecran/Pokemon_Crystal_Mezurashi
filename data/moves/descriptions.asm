@@ -5,7 +5,7 @@ MoveDescriptions::
 	dw KarateChopDescription
 	dw DoubleslapDescription
 	dw CometPunchDescription
-	dw MegaPunchDescription
+	dw DrainPunchDescription
 	dw PayDayDescription
 	dw FirePunchDescription
 	dw IcePunchDescription
@@ -283,9 +283,9 @@ CometPunchDescription:
 	db   "Repeatedly punches"
 	line "2-5 times.@"
 
-MegaPunchDescription:
-	db   "A powerful punch"
-	line "thrown very hard.@"
+DrainPunchDescription:
+	db   "Steals 1/2 of the"
+	line "damage inflicted.@"
 
 PayDayDescription:
 	db   "Throws coins. Gets"

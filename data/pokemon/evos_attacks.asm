@@ -1615,7 +1615,7 @@ HitmonchanEvosAttacks:
 	db 26, THUNDERPUNCH
 	db 26, ICE_PUNCH
 	db 26, FIRE_PUNCH
-	db 38, MEGA_PUNCH
+	db 38, DRAIN_PUNCH
 	db 42, DYNAMICPUNCH
 	db 44, DETECT
 	db 50, COUNTER
@@ -1732,7 +1732,7 @@ KangaskhanEvosAttacks:
 	db 7, LEER
 	db 13, BITE
 	db 19, TAIL_WHIP
-	db 25, MEGA_PUNCH
+	db 25, DRAIN_PUNCH
 	db 31, RAGE
 	db 37, ENDURE
 	db 40, BODY_SLAM
@@ -2264,7 +2264,7 @@ MewEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CUTE_POUND
 	db 10, TRANSFORM
-	db 20, MEGA_PUNCH
+	db 20, DRAIN_PUNCH
 	db 30, METRONOME
 	db 40, PSYCHIC_M
 	db 50, ANCIENTPOWER
@@ -2331,7 +2331,8 @@ CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, LEER
+	db 1, DRAIN_PUNCH
+	db 1, CUTE_POUND
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK
