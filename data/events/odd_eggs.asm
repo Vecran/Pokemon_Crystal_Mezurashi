@@ -90,7 +90,7 @@ OddEggs:
 
 	db CLEFFA
 	db NO_ITEM
-	db POUND, CHARM, DIZZY_PUNCH, 0
+	db CUTE_POUND, CHARM, DIZZY_PUNCH, 0
 	dw 04096 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -116,7 +116,7 @@ OddEggs:
 
 	db CLEFFA
 	db NO_ITEM
-	db POUND, CHARM, DIZZY_PUNCH, 0
+	db CUTE_POUND, CHARM, DIZZY_PUNCH, 0
 	dw 00768 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -194,7 +194,7 @@ OddEggs:
 
 	db SMOOCHUM
 	db NO_ITEM
-	db POWDER_SNOW, POUND, LICK, DIZZY_PUNCH
+	db POWDER_SNOW, CUTE_POUND, LICK, DIZZY_PUNCH
 	dw 03584 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -220,7 +220,7 @@ OddEggs:
 
 	db SMOOCHUM
 	db NO_ITEM
-	db POWDER_SNOW, POUND, LICK, DIZZY_PUNCH
+	db POWDER_SNOW, CUTE_POUND, LICK, DIZZY_PUNCH
 	dw 00512 ; OT ID
 	dt 125 ; Exp
 	; Stat exp

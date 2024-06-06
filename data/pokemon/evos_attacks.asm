@@ -500,7 +500,7 @@ NidokingEvosAttacks:
 ClefairyEvosAttacks:
 	db EVOLVE_ITEM, MOON_STONE, CLEFABLE
 	db 0 ; no more evolutions
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 1, GROWL
 	db 6, ENCORE
 	db 8, SING
@@ -515,7 +515,7 @@ ClefairyEvosAttacks:
 
 ClefableEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 1, GROWL
 	db 6, ENCORE
 	db 8, SING
@@ -564,7 +564,7 @@ JigglypuffEvosAttacks:
 	db EVOLVE_ITEM, MOON_STONE, WIGGLYTUFF
 	db 0 ; no more evolutions
 	db 1, SING
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 6, DEFENSE_CURL
 	db 9, CHARM
 	db 14, DISABLE
@@ -579,7 +579,7 @@ JigglypuffEvosAttacks:
 WigglytuffEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SING
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 6, DEFENSE_CURL
 	db 9, CHARM
 	db 14, DISABLE
@@ -1314,7 +1314,7 @@ GrimerEvosAttacks:
 	db EVOLVE_LEVEL, 35, MUK
 	db 0 ; no more evolutions
 	db 1, POISON_GAS
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 5, HARDEN
 	db 10, DISABLE
 	db 16, SLUDGE
@@ -1328,7 +1328,7 @@ MukEvosAttacks:
 	db 0 ; no more evolutions
 	; moves are not sorted by level
 	db 1, POISON_GAS
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 1, HARDEN
 	db 33, HARDEN
 	db 37, DISABLE
@@ -1432,7 +1432,7 @@ OnixEvosAttacks:
 DrowzeeEvosAttacks:
 	db EVOLVE_LEVEL, 26, HYPNO
 	db 0 ; no more evolutions
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 1, HYPNOSIS
 	db 10, DISABLE
 	db 18, CONFUSION
@@ -1446,7 +1446,7 @@ DrowzeeEvosAttacks:
 
 HypnoEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 1, HYPNOSIS
 	db 1, DISABLE
 	db 1, CONFUSION
@@ -1699,7 +1699,7 @@ RhydonEvosAttacks:
 ChanseyEvosAttacks:
 	db EVOLVE_HAPPINESS, TR_ANYTIME, BLISSEY
 	db 0 ; no more evolutions
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 5, GROWL
 	db 9, TAIL_WHIP
 	db 13, SOFTBOILED
@@ -1867,7 +1867,7 @@ ScytherEvosAttacks:
 
 JynxEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 1, LOVELY_KISS
 	db 1, POWDER_SNOW
 	db 1, CONFUSION
@@ -2262,7 +2262,7 @@ MewtwoEvosAttacks:
 
 MewEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 10, TRANSFORM
 	db 20, MEGA_PUNCH
 	db 30, METRONOME
@@ -2606,7 +2606,7 @@ PichuEvosAttacks:
 CleffaEvosAttacks:
 	db EVOLVE_HAPPINESS, TR_ANYTIME, CLEFAIRY
 	db 0 ; no more evolutions
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 1, CHARM
 	db 6, ENCORE
 	db 8, SING
@@ -2619,7 +2619,7 @@ IgglybuffEvosAttacks:
 	db 1, SING
 	db 1, CHARM
 	db 6, DEFENSE_CURL
-	db 9, POUND
+	db 9, CUTE_POUND
 	db 14, SWEET_KISS
 	db 0 ; no more level-up moves
 
@@ -2866,7 +2866,7 @@ SunkernEvosAttacks:
 SunfloraEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ABSORB
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 4, GROWTH
 	db 15, RAZOR_LEAF
 	db 19, SUNNY_DAY
@@ -3506,7 +3506,7 @@ SmoochumEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POWDER_SNOW
 	db 1, LICK
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 7, SWEET_KISS
 	db 17, ICY_WIND
 	db 21, CONFUSION
@@ -3565,7 +3565,7 @@ MiltankEvosAttacks:
 
 BlisseyEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, POUND
+	db 1, CUTE_POUND
 	db 4, GROWL
 	db 7, TAIL_WHIP
 	db 10, SOFTBOILED

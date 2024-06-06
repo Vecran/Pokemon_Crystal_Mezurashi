@@ -56,7 +56,7 @@ MoveGrammar:
 	db 0 ; end set
 
 ; 3: originally "[mon]の¯[move]　こうげき!" ("[mon]'s¯[move] attack!")
-	db POUND
+	db CUTE_POUND
 	db SCRATCH
 	db VICEGRIP
 	db WING_ATTACK
