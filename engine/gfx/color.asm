@@ -6,8 +6,8 @@ SHINY_SPD_VAL EQU 10
 SHINY_SPC_VAL EQU 10
 
 ;for atk>=13 and def,spd,spc>=14 gives shiny
-SHINY_ATK_THRESHOLD EQU 13
-SHINY_STAT_THRESHOLD EQU 14
+SHINY_SPD_THRESHOLD EQU 14
+SHINY_STAT_THRESHOLD EQU 13
 
 Unused_CheckShininess: ;original shiny rules
 ; Check if a mon is shiny by DVs at bc.
@@ -49,14 +49,14 @@ Unused_CheckShininess: ;original shiny rules
 
 CheckShininess:
 ; Return carry if the DVs at bc are
-; atk=>13, def,spd,spc=>14 = shiny
+; spd=>14, atk,def,spc=>13 = shiny
 
     ld l, c
 	ld h, b
 	
 ; Attack
 	ld a, [hl]
-	cp SHINY_ATK_THRESHOLD << 4
+	cp SHINY_STAT_THRESHOLD << 4
 	jr c, .not_shiny
 
 ; Defense
@@ -67,7 +67,7 @@ CheckShininess:
 
 ; Speed
 	ld a, [hl]
-	cp SHINY_STAT_THRESHOLD << 4
+	cp SHINY_SPD_THRESHOLD << 4
 	jr c, .not_shiny
 
 ; Special
