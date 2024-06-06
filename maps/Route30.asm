@@ -10,7 +10,7 @@
 	const ROUTE30_FRUIT_TREE2
 	const ROUTE30_COOLTRAINER_F
 	const ROUTE30_POKE_BALL
-	const ROUTE30_TEST_RATTATA_UP
+	const ROUTE30_TEST
 
 Route30_MapScripts:
 	def_scene_scripts
@@ -242,11 +242,11 @@ Route30YoungsterScript:
 	closetext
 	end
 
-Route30TestRattataUp:
+Route30Test:
 	faceplayer
 	opentext
-	writetext Route30TestRattataUpText
-	cry RATTATA
+	writetext Route30TestText
+	cry BUTTERFREE
 	waitbutton
 	closetext
 	end
@@ -384,8 +384,8 @@ Route30YoungsterText_EveryoneIsBattling:
 	cont "You should too!"
 	done
 
-Route30TestRattataUpText:
-	text "RATTATA: Squeak!"
+Route30TestText:
+	text "Test"
 	done
 
 Route30CooltrainerFText:
@@ -466,4 +466,4 @@ Route30_MapEvents:
 	object_event 11,  5, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route30FruitTree2, -1
 	object_event  2, 13, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route30CooltrainerFScript, -1
 	object_event  8, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route30Antidote, EVENT_ROUTE_30_ANTIDOTE
-	object_event 12, 4,  SPRITE_RATTATA_UP,	SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_SCRIPT, 0, Route30TestRattataUp, -1
+	object_event 12, 4,  SPRITE_BUTTERFREE,	SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route30Test, -1
