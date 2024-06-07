@@ -6,7 +6,6 @@ MetronomeExcepts:
 	db STRUGGLE
 	db SKETCH
 	db MIMIC
-	db COUNTER
 	db MIRROR_COAT
 	db PROTECT
 	db DETECT

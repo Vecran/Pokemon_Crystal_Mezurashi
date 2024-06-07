@@ -55,11 +55,11 @@
 	const SING         ; 2f
 	const SUPERSONIC   ; 30
 	const BUG_BUZZ       ; 31
-	const DISABLE      ; 32
+	const SNARL          ; 32
 	const ACID         ; 33
 	const EMBER        ; 34
 	const FLAMETHROWER ; 35
-	const MIST         ; 36
+	const MAGNET_BOMB     ; 36
 	const WATER_GUN    ; 37
 	const HYDRO_PUMP   ; 38
 	const SURF         ; 39
@@ -73,8 +73,8 @@
 	const DRILL_PECK   ; 41
 	const SUBMISSION   ; 42
 	const LOW_KICK     ; 43
-	const COUNTER      ; 44
-	const SEISMIC_TOSS ; 45
+	const MUD_BOMB       ; 44
+	const SHADOW_CLAW    ; 45
 	const STRENGTH     ; 46
 	const ABSORB       ; 47
 	const MEGA_DRAIN   ; 48

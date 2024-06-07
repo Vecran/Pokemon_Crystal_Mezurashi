@@ -5,8 +5,6 @@ EncoreMoves:
 	db BULK_UP
 	db LEER
 	db TICKLE
-	db DISABLE
-	db MIST
 	db LEECH_SEED
 	db GROWTH
 	db POISONPOWDER

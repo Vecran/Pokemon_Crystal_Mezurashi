@@ -4,6 +4,7 @@ CriticalHitMoves:
 	db RAZOR_WIND
 	db BLAZE_KICK
 	db X_SCISSOR
+	db SHADOW_CLAW
 	db RAZOR_LEAF
 	db CRABHAMMER
 	db SLASH

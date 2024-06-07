@@ -7,9 +7,6 @@ StallMoves:
 	db TICKLE
 	db LEER
 	db GROWL
-	db DISABLE
-	db MIST
-	db COUNTER
 	db LEECH_SEED
 	db GROWTH
 	db STRING_SHOT

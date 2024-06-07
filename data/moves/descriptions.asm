@@ -50,11 +50,11 @@ MoveDescriptions::
 	dw SingDescription
 	dw SupersonicDescription
 	dw BugBuzzDescription
-	dw DisableDescription
+	dw SnarlDescription
 	dw AcidDescription
 	dw EmberDescription
 	dw FlamethrowerDescription
-	dw MistDescription
+	dw MagnetBombDescription
 	dw WaterGunDescription
 	dw HydroPumpDescription
 	dw SurfDescription
@@ -68,8 +68,8 @@ MoveDescriptions::
 	dw DrillPeckDescription
 	dw SubmissionDescription
 	dw LowKickDescription
-	dw CounterDescription
-	dw SeismicTossDescription
+	dw MudBombDescription
+	dw ShadowClawDescription
 	dw StrengthDescription
 	dw AbsorbDescription
 	dw MegaDrainDescription
@@ -463,13 +463,13 @@ BugBuzzDescription:
 	db   "A soundwave that"
 	line "may lower SP.DEF@"
 
-DisableDescription:
-	db   "Disables the foe's"
-	line "most recent move.@"
+SnarlDescription:
+	db   "Yell and rant to"
+	line "drop foe's SP.ATK.@"
 
 AcidDescription:
 	db   "An attack that may"
-	line "lower DEFENSE.@"
+	line "lower SP.DEFENSE.@"
 
 EmberDescription:
 	db   "An attack that may"
@@ -479,9 +479,9 @@ FlamethrowerDescription:
 	db   "An attack that may"
 	line "inflict a burn.@"
 
-MistDescription:
-	db   "Prevents stat"
-	line "reduction.@"
+MagnetBombDescription:
+	db   "An attack that"
+	line "never misses.@"
 
 WaterGunDescription:
 	db   "Squirts water to"
@@ -535,13 +535,13 @@ LowKickDescription:
 	db   "An attack that may"
 	line "cause flinching.@"
 
-CounterDescription:
-	db   "Returns a physical"
-	line "blow double.@"
+MudBombDescription:
+	db   "An attack that may"
+	line "reduce accuracy.@"
 
-SeismicTossDescription:
-	db   "The user's level"
-	line "equals damage HP.@"
+ShadowClawDescription:
+	db   "Has a high criti-"
+	line "cal hit ratio.@"
 
 StrengthDescription:
 	db   "A powerful physi-"

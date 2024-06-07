@@ -560,7 +560,6 @@ JigglypuffEvosAttacks:
 	db 1, CUTE_POUND
 	db 6, DEFENSE_CURL
 	db 9, CHARM
-	db 14, DISABLE
 	db 16, DOUBLESLAP
 	db 19, ROLLOUT
 	db 24, LOVELY_KISS
@@ -575,7 +574,6 @@ WigglytuffEvosAttacks:
 	db 1, CUTE_POUND
 	db 6, DEFENSE_CURL
 	db 9, CHARM
-	db 14, DISABLE
 	db 16, DOUBLESLAP
 	db 19, ROLLOUT
 	db 24, LOVELY_KISS
@@ -695,7 +693,6 @@ VenonatEvosAttacks:
 	db EVOLVE_LEVEL, 31, VENOMOTH
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, DISABLE
 	db 1, FORESIGHT
 	db 9, SUPERSONIC
 	db 13, LEECH_LIFE
@@ -710,7 +707,6 @@ VenonatEvosAttacks:
 VenomothEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, DISABLE
 	db 1, FORESIGHT
 	db 1, SUPERSONIC
 	db 9, SUPERSONIC
@@ -787,7 +783,6 @@ PsyduckEvosAttacks:
 	db 1, SCRATCH
 	db 5, LEER
 	db 8, WATER_GUN
-	db 10, DISABLE
 	db 15, CONFUSION
 	db 17, BUBBLEBEAM
 	db 23, SCREECH
@@ -800,11 +795,9 @@ GolduckEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
-	db 1, DISABLE
 	db 1, CONFUSION
 	db 5, LEER
 	db 8, WATER_GUN
-	db 10, DISABLE
 	db 15, CONFUSION
 	db 17, BUBBLEBEAM
 	db 23, SCREECH
@@ -823,7 +816,6 @@ MankeyEvosAttacks:
 	db 15, KARATE_CHOP
 	db 21, FURY_SWIPES
 	db 27, FOCUS_ENERGY
-	db 33, SEISMIC_TOSS
 	db 39, CROSS_CHOP
 	db 45, SCREECH
 	db 51, THRASH
@@ -840,7 +832,6 @@ PrimeapeEvosAttacks:
 	db 21, FURY_SWIPES
 	db 27, FOCUS_ENERGY
 	db 28, RAGE
-	db 33, SEISMIC_TOSS
 	db 39, CROSS_CHOP
 	db 45, SCREECH
 	db 51, THRASH
@@ -872,7 +863,6 @@ PoliwagEvosAttacks:
 	db EVOLVE_LEVEL, 25, POLIWHIRL
 	db 0 ; no more evolutions
 	db 1, BUBBLE
-	db 5, MIST
 	db 7, HYPNOSIS
 	db 10, WATER_GUN
 	db 14, DOUBLESLAP
@@ -928,7 +918,6 @@ KadabraEvosAttacks:
 	db 1, KINESIS
 	db 1, CONFUSION
 	db 16, CONFUSION
-	db 18, DISABLE
 	db 21, PSYBEAM
 	db 26, RECOVER
 	db 31, FUTURE_SIGHT
@@ -942,7 +931,6 @@ AlakazamEvosAttacks:
 	db 1, KINESIS
 	db 1, CONFUSION
 	db 16, CONFUSION
-	db 18, DISABLE
 	db 21, PSYBEAM
 	db 26, RECOVER
 	db 31, FUTURE_SIGHT
@@ -957,7 +945,6 @@ MachopEvosAttacks:
 	db 1, LEER
 	db 7, FOCUS_ENERGY
 	db 13, KARATE_CHOP
-	db 19, SEISMIC_TOSS
 	db 25, FORESIGHT
 	db 31, VITAL_THROW
 	db 37, CROSS_CHOP
@@ -973,7 +960,6 @@ MachokeEvosAttacks:
 	db 1, FOCUS_ENERGY
 	db 8, FOCUS_ENERGY
 	db 15, KARATE_CHOP
-	db 19, SEISMIC_TOSS
 	db 25, FORESIGHT
 	db 34, VITAL_THROW
 	db 43, CROSS_CHOP
@@ -988,7 +974,6 @@ MachampEvosAttacks:
 	db 1, FOCUS_ENERGY
 	db 8, FOCUS_ENERGY
 	db 15, KARATE_CHOP
-	db 19, SEISMIC_TOSS
 	db 25, FORESIGHT
 	db 34, VITAL_THROW
 	db 43, CROSS_CHOP
@@ -1167,7 +1152,6 @@ SlowpokeEvosAttacks:
 	db 6, GROWL
 	db 13, WATER_GUN
 	db 18, CONFUSION
-	db 24, DISABLE
 	db 29, PSYBEAM
 	db 34, HEADBUTT
 	db 43, AMNESIA
@@ -1183,7 +1167,6 @@ SlowbroEvosAttacks:
 	db 6, GROWL
 	db 15, WATER_GUN
 	db 20, CONFUSION
-	db 29, DISABLE
 	db 34, HEADBUTT
 	db 37, WITHDRAW
 	db 45, PSYCHIC_M
@@ -1292,7 +1275,6 @@ GrimerEvosAttacks:
 	db 1, POISON_GAS
 	db 1, CUTE_POUND
 	db 5, HARDEN
-	db 10, DISABLE
 	db 16, SLUDGE
 	db 23, MINIMIZE
 	db 31, SCREECH
@@ -1307,7 +1289,6 @@ MukEvosAttacks:
 	db 1, CUTE_POUND
 	db 1, HARDEN
 	db 33, HARDEN
-	db 37, DISABLE
 	db 45, SLUDGE
 	db 23, MINIMIZE
 	db 31, SCREECH
@@ -1409,7 +1390,6 @@ DrowzeeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CUTE_POUND
 	db 1, HYPNOSIS
-	db 10, DISABLE
 	db 18, CONFUSION
 	db 25, HEADBUTT
 	db 31, POISON_GAS
@@ -1423,9 +1403,7 @@ HypnoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CUTE_POUND
 	db 1, HYPNOSIS
-	db 1, DISABLE
 	db 1, CONFUSION
-	db 10, DISABLE
 	db 18, CONFUSION
 	db 25, HEADBUTT
 	db 33, POISON_GAS
@@ -1590,7 +1568,6 @@ HitmonchanEvosAttacks:
 	db 38, DRAIN_PUNCH
 	db 42, DYNAMICPUNCH
 	db 44, DETECT
-	db 50, COUNTER
 	db 0 ; no more level-up moves
 
 LickitungEvosAttacks:
@@ -1601,7 +1578,6 @@ LickitungEvosAttacks:
 	db 13, CURSE
 	db 19, STOMP
 	db 23, ROLLOUT
-	db 28, DISABLE
 	db 32, BODY_SLAM
 	db 40, BELLY_DRUM
 	db 43, SCREECH
@@ -1881,7 +1857,6 @@ PinsirEvosAttacks:
     db 0 ; no more evolutions
     db 1, VICEGRIP
     db 7, FOCUS_ENERGY
-    db 19, SEISMIC_TOSS
     db 25, TWINEEDLE
     db 27, HARDEN
     db 31, GUILLOTINE
@@ -1931,7 +1906,6 @@ LaprasEvosAttacks:
 	db 1, WATER_GUN
 	db 1, GROWL
 	db 1, SING
-	db 8, MIST
 	db 15, BODY_SLAM
 	db 20, ICY_WIND
 	db 22, CONFUSE_RAY
@@ -2121,7 +2095,6 @@ ArticunoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, GUST
 	db 1, POWDER_SNOW
-	db 13, MIST
 	db 25, AGILITY
 	db 37, MIND_READER
 	db 49, ICE_BEAM
@@ -2210,12 +2183,10 @@ DragoniteEvosAttacks:
 MewtwoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CONFUSION
-	db 1, DISABLE
 	db 11, BARRIER
 	db 22, SWIFT
 	db 33, PSYCH_UP
 	db 44, FUTURE_SIGHT
-	db 55, MIST
 	db 66, PSYCHIC_M
 	db 77, AMNESIA
 	db 88, RECOVER
@@ -2292,10 +2263,10 @@ MeganiumEvosAttacks:
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, WILD_CHARGE
-	db 1, TICKLE
-	db 1, ROAR
-	db 1, BUG_BUZZ
+	db 1, SNARL
+	db 1, MAGNET_BOMB
+	db 1, MUD_BOMB
+	db 1, SHADOW_CLAW
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK
@@ -2725,7 +2696,6 @@ SudowoodoEvosAttacks:
 	db 10, FLAIL
 	db 19, LOW_KICK
 	db 28, ROCK_SLIDE
-	db 31, COUNTER
 	db 36, FAINT_ATTACK
 	db 46, THRASH
 	db 0 ; no more level-up moves
@@ -2861,7 +2831,6 @@ WooperEvosAttacks:
 	db 21, AMNESIA
 	db 31, EARTHQUAKE
 	db 41, RAIN_DANCE
-	db 51, MIST
 	db 51, HAZE
 	db 0 ; no more level-up moves
 
@@ -2875,7 +2844,6 @@ QuagsireEvosAttacks:
 	db 23, AMNESIA
 	db 33, EARTHQUAKE
 	db 47, RAIN_DANCE
-	db 59, MIST
 	db 59, HAZE
 	db 0 ; no more level-up moves
 
@@ -2927,7 +2895,6 @@ SlowkingEvosAttacks:
 	db 6, GROWL
 	db 15, WATER_GUN
 	db 20, CONFUSION
-	db 29, DISABLE
 	db 34, HEADBUTT
 	db 43, SWAGGER
 	db 45, PSYCHIC_M
@@ -2957,7 +2924,7 @@ UnownEvosAttacks:
 
 WobbuffetEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, COUNTER
+	db 1, HYPNOSIS
 	db 1, MIRROR_COAT
 	db 1, SAFEGUARD
 	db 1, DESTINY_BOND
@@ -3222,7 +3189,6 @@ SwinubEvosAttacks:
 	db 10, POWDER_SNOW
 	db 19, ENDURE
 	db 21, ICY_WIND
-	db 37, MIST
 	db 46, BLIZZARD
 	db 55, AMNESIA
 	db 0 ; no more level-up moves
@@ -3237,7 +3203,6 @@ PiloswineEvosAttacks:
 	db 21, ICY_WIND
 	db 33, ICY_WIND
 	db 39, EARTHQUAKE
-	db 42, MIST
 	db 50, BLIZZARD
 	db 55, AMNESIA
 	db 0 ; no more level-up moves
@@ -3441,7 +3406,6 @@ HitmontopEvosAttacks:
 	db 20, QUICK_ATTACK
 	db 20, BULK_UP
 	db 25, RAPID_SPIN
-	db 31, COUNTER
 	db 37, AGILITY
 	db 43, DETECT
 	db 45, TRIPLE_KICK
