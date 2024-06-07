@@ -2,6 +2,7 @@
 
 EncoreMoves:
 	db SWORDS_DANCE
+	db BULK_UP
 	db LEER
 	db ROAR
 	db DISABLE

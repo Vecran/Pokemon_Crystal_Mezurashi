@@ -2075,3 +2075,21 @@ DefenseCurl:
 	statupmessage
 	statupfailtext
 	endmove
+
+BulkUp:
+	checkobedience
+	usedmovetext
+	doturn
+	attackup
+	lowersub
+	statupanim
+	raisesub
+	statupmessage
+	statupfailtext
+	defenseup
+	lowersub
+	statupanim
+	raisesub
+	statupmessage
+	statupfailtext
+	endmove

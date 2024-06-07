@@ -25,13 +25,13 @@ MoveDescriptions::
 	dw VineWhipDescription
 	dw StompDescription
 	dw DoubleKickDescription
-	dw MegaKickDescription
+	dw BlazeKickDescription
 	dw JumpKickDescription
-	dw RollingKickDescription
-	dw SandAttackDescription
+	dw BulkUpDescription
+	dw XScissorDescription
 	dw HeadbuttDescription
 	dw HornAttackDescription
-	dw FuryAttackDescription
+	dw IcicleSpearDescription
 	dw HornDrillDescription
 	dw TackleDescription
 	dw BodySlamDescription
@@ -363,21 +363,21 @@ DoubleKickDescription:
 	db   "A double kicking"
 	line "attack.@"
 
-MegaKickDescription:
-	db   "A powerful kicking"
-	line "attack.@"
+BlazeKickDescription:
+	db   "Hi-crit kick that"
+	line "may inflict burn.@"
 
 JumpKickDescription:
 	db   "May miss, damaging"
 	line "the user.@"
 
-RollingKickDescription:
-	db   "A fast, spinning"
-	line "kick.@"
+BulkUpDescription:
+	db   "Raises ATK and DEF"
+	line "by one stage.@"
 
-SandAttackDescription:
-	db   "Reduces accuracy"
-	line "by throwing sand.@"
+XScissorDescription:
+	db   "Uses scythes or"
+	line "claws as scissors.@"
 
 HeadbuttDescription:
 	db   "An attack that may"
@@ -387,8 +387,8 @@ HornAttackDescription:
 	db   "An attack using a"
 	line "horn to jab.@"
 
-FuryAttackDescription:
-	db   "Jabs the target"
+IcicleSpearDescription:
+	db   "Fires hard icicles"
 	line "2-5 times.@"
 
 HornDrillDescription:

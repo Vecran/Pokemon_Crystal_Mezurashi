@@ -30,13 +30,13 @@
 	const VINE_WHIP    ; 16
 	const STOMP        ; 17
 	const DOUBLE_KICK  ; 18
-	const MEGA_KICK    ; 19
+	const BLAZE_KICK    ; 19
 	const JUMP_KICK    ; 1a
-	const ROLLING_KICK ; 1b
-	const SAND_ATTACK  ; 1c
+	const BULK_UP       ; 1b
+	const X_SCISSOR     ; 1c
 	const HEADBUTT     ; 1d
 	const HORN_ATTACK  ; 1e
-	const FURY_ATTACK  ; 1f
+	const ICICLE_SPEAR  ; 1f
 	const HORN_DRILL   ; 20
 	const TACKLE       ; 21
 	const BODY_SLAM    ; 22

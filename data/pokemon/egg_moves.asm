@@ -197,7 +197,6 @@ AbraEggMoves:
 MachopEggMoves:
 	db LIGHT_SCREEN
 	db MEDITATE
-	db ROLLING_KICK
 	db ENCORE
 	db -1 ; end
 
@@ -393,7 +392,6 @@ ScytherEggMoves:
 	db -1 ; end
 
 PinsirEggMoves:
-	db FURY_ATTACK
 	db FLAIL
 	db -1 ; end
 
@@ -776,7 +774,6 @@ SmoochumEggMoves:
 ElekidEggMoves:
 	db KARATE_CHOP
 	db BARRIER
-	db ROLLING_KICK
 	db MEDITATE
 	db CROSS_CHOP
 	db -1 ; end

@@ -26,13 +26,13 @@ BattleAnimations::
 	dw BattleAnim_VineWhip
 	dw BattleAnim_Stomp
 	dw BattleAnim_DoubleKick
-	dw BattleAnim_MegaKick
+	dw BattleAnim_BlazeKick
 	dw BattleAnim_JumpKick
-	dw BattleAnim_RollingKick
-	dw BattleAnim_SandAttack
+	dw BattleAnim_BulkUp
+	dw BattleAnim_XScissor
 	dw BattleAnim_Headbutt
 	dw BattleAnim_HornAttack
-	dw BattleAnim_FuryAttack
+	dw BattleAnim_IcicleSpear
 	dw BattleAnim_HornDrill
 	dw BattleAnim_Tackle
 	dw BattleAnim_BodySlam
@@ -820,21 +820,10 @@ BattleAnim_HiJumpKick:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_RollingKick:
-	anim_1gfx ANIM_GFX_HIT
-	anim_sound 0, 1, SFX_DOUBLE_KICK
-	anim_obj ANIM_OBJ_KICK, 112, 56, $0
-	anim_setobj $1, $3
-	anim_wait 12
-	anim_obj ANIM_OBJ_HIT_YFIX, 136, 48, $0
-	anim_wait 16
-	anim_ret
 
-BattleAnim_MegaKick:
-	anim_1gfx ANIM_GFX_HIT
-	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $40, $2, $0
-	anim_wait 67
-	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $3
+BattleAnim_BlazeKick:
+	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_FIRE
+	anim_call BattleAnimSub_Fire
 .loop
 	anim_sound 0, 1, SFX_MEGA_KICK
 	anim_obj ANIM_OBJ_KICK, 136, 56, $0
@@ -844,6 +833,7 @@ BattleAnim_MegaKick:
 	anim_wait 6
 	anim_loop 3, .loop
 	anim_ret
+
 
 BattleAnim_HyperFang:
 	anim_1gfx ANIM_GFX_HIT
@@ -2047,9 +2037,12 @@ BattleAnim_Dig:
 	anim_wait 32
 	anim_ret
 
-BattleAnim_SandAttack:
-	anim_1gfx ANIM_GFX_SAND
-	anim_call BattleAnimSub_SandOrMud
+BattleAnim_XScissor:
+	anim_1gfx ANIM_GFX_CUT
+	anim_sound 0, 1, SFX_VICEGRIP
+	anim_obj ANIM_OBJ_CUT_LONG_DOWN_LEFT, 152, 40, $0
+	anim_obj ANIM_OBJ_CUT_LONG_DOWN_RIGHT, 116, 40, $0
+	anim_wait 32
 	anim_ret
 
 BattleAnim_StringShot:
@@ -2247,23 +2240,20 @@ BattleAnim_HornAttack:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_FuryAttack:
-	anim_2gfx ANIM_GFX_HORN, ANIM_GFX_HIT
-	anim_obj ANIM_OBJ_HORN, 72, 72, $2
+BattleAnim_IcicleSpear:
+anim_2gfx ANIM_GFX_HORN, ANIM_GFX_HIT
+.loop
+	anim_obj ANIM_OBJ_NEEDLE, 64, 92, $28
+	anim_wait 8
+	anim_obj ANIM_OBJ_NEEDLE, 56, 84, $28
+	anim_sound 0, 1, SFX_HORN_ATTACK
+	anim_obj ANIM_OBJ_HIT_SMALL, 136, 56, $0
 	anim_wait 8
 	anim_sound 0, 1, SFX_HORN_ATTACK
-	anim_obj ANIM_OBJ_HIT, 128, 40, $0
+	anim_obj ANIM_OBJ_HIT_SMALL, 128, 48, $0
 	anim_wait 8
-	anim_obj ANIM_OBJ_HORN, 80, 88, $2
-	anim_wait 8
-	anim_sound 0, 1, SFX_HORN_ATTACK
-	anim_obj ANIM_OBJ_HIT, 136, 56, $0
-	anim_wait 8
-	anim_obj ANIM_OBJ_HORN, 76, 80, $2
-	anim_wait 8
-	anim_sound 0, 1, SFX_HORN_ATTACK
-	anim_obj ANIM_OBJ_HIT, 132, 48, $0
-	anim_wait 8
+	anim_loop 3, .loop
+	anim_wait 16
 	anim_ret
 
 BattleAnim_HornDrill:
@@ -2748,6 +2738,7 @@ BattleAnim_Thrash:
 	anim_wait 16
 	anim_ret
 
+BattleAnim_BulkUp:
 BattleAnim_Growth:
 	anim_bgeffect ANIM_BG_WHITE_HUES, $0, $8, $0
 	anim_1gfx ANIM_GFX_CHARGE

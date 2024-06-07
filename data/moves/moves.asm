@@ -35,16 +35,16 @@ Moves:
 	move FLY,          EFFECT_FLY,                95, FLYING,        PHYSICAL,  95, 15,   0
 	move POWER_WHIP,   EFFECT_NORMAL_HIT,        120, GRASS,         PHYSICAL,  85, 10,   0
 	move DRAGON_RUSH,  EFFECT_STOMP,              85, DRAGON,        PHYSICAL,  95, 15,  20
-	move VINE_WHIP,    EFFECT_NORMAL_HIT,         35, GRASS,         PHYSICAL, 100, 10,   0
+	move VINE_WHIP,    EFFECT_NORMAL_HIT,         45, GRASS,         PHYSICAL, 100, 25,   0
 	move STOMP,        EFFECT_STOMP,              65, NORMAL,        PHYSICAL, 100, 20,  30
 	move DOUBLE_KICK,  EFFECT_DOUBLE_HIT,         30, FIGHTING,      PHYSICAL, 100, 30,   0
-	move MEGA_KICK,    EFFECT_NORMAL_HIT,        120, NORMAL,        PHYSICAL,  75,  5,   0
+	move BLAZE_KICK,   EFFECT_BURN_HIT,           85, FIRE,          PHYSICAL,  90, 10,  10
 	move JUMP_KICK,    EFFECT_JUMP_KICK,          70, FIGHTING,      PHYSICAL,  95, 25,   0
-	move ROLLING_KICK, EFFECT_FLINCH_HIT,         60, FIGHTING,      PHYSICAL,  85, 15,  30
-	move SAND_ATTACK,  EFFECT_ACCURACY_DOWN,       0, GROUND,        STATUS,   100, 15,   0
+	move BULK_UP,      EFFECT_BULK_UP,             0, FIGHTING,      STATUS,   100, 20,   0
+	move X_SCISSOR,    EFFECT_NORMAL_HIT,         80, BUG,           PHYSICAL, 100, 10,   0
 	move HEADBUTT,     EFFECT_FLINCH_HIT,         70, NORMAL,        PHYSICAL, 100, 15,  30
 	move HORN_ATTACK,  EFFECT_NORMAL_HIT,         65, NORMAL,        PHYSICAL, 100, 25,   0
-	move FURY_ATTACK,  EFFECT_MULTI_HIT,          15, NORMAL,        PHYSICAL,  85, 20,   0
+	move ICICLE_SPEAR, EFFECT_MULTI_HIT,          25, ICE,           PHYSICAL, 100, 30,   0
 	move HORN_DRILL,   EFFECT_OHKO,                1, NORMAL,        PHYSICAL,  30,  5,   0
 	move TACKLE,       EFFECT_NORMAL_HIT,         35, NORMAL,        PHYSICAL,  95, 35,   0
 	move BODY_SLAM,    EFFECT_PARALYZE_HIT,       85, NORMAL,        PHYSICAL, 100, 15,  30

@@ -235,7 +235,7 @@ PidgeyEvosAttacks:
 	db EVOLVE_LEVEL, 18, PIDGEOTTO
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 5, SAND_ATTACK
+	db 5, MUD_SLAP
 	db 7, GUST
 	db 13, QUICK_ATTACK
 	db 20, HURRICANE
@@ -248,9 +248,9 @@ PidgeottoEvosAttacks:
 	db EVOLVE_LEVEL, 36, PIDGEOT
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, SAND_ATTACK
+	db 1, MUD_SLAP
 	db 1, GUST
-	db 5, SAND_ATTACK
+	db 5, MUD_SLAP
 	db 9, GUST
 	db 15, QUICK_ATTACK
 	db 20, HURRICANE
@@ -263,10 +263,10 @@ PidgeottoEvosAttacks:
 PidgeotEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, SAND_ATTACK
+	db 1, MUD_SLAP
 	db 1, GUST
 	db 1, QUICK_ATTACK
-	db 5, SAND_ATTACK
+	db 5, MUD_SLAP
 	db 9, GUST
 	db 15, QUICK_ATTACK
 	db 23, HURRICANE
@@ -309,7 +309,6 @@ SpearowEvosAttacks:
 	db 1, PECK
 	db 1, GROWL
 	db 7, LEER
-	db 10, FURY_ATTACK
 	db 15, PURSUIT
 	db 31, MIRROR_MOVE
 	db 37, DRILL_PECK
@@ -321,9 +320,7 @@ FearowEvosAttacks:
 	db 1, PECK
 	db 1, GROWL
 	db 1, LEER
-	db 1, FURY_ATTACK
 	db 7, LEER
-	db 13, FURY_ATTACK
 	db 26, PURSUIT
 	db 31, MIRROR_MOVE
 	db 37, DRILL_PECK
@@ -395,7 +392,7 @@ SandshrewEvosAttacks:
 	db 1, FURY_SWIPES
 	db 6, DEFENSE_CURL
 	db 9, MUD_SLAP
-	db 11, SAND_ATTACK
+	db 11, MUD_SLAP
 	db 15, ROLLOUT
 	db 19, METAL_CLAW
 	db 25, SLASH
@@ -410,7 +407,7 @@ SandslashEvosAttacks:
 	db 1, FURY_SWIPES
 	db 6, DEFENSE_CURL
 	db 9, MUD_SLAP
-	db 11, SAND_ATTACK
+	db 11, MUD_SLAP
 	db 15, ROLLOUT
 	db 19, METAL_CLAW
 	db 22, DIG
@@ -467,7 +464,6 @@ NidoranMEvosAttacks:
 	db 12, DOUBLE_KICK
 	db 17, POISON_STING
 	db 23, FOCUS_ENERGY
-	db 30, FURY_ATTACK
 	db 38, HORN_DRILL
 	db 0 ; no more level-up moves
 
@@ -480,7 +476,6 @@ NidorinoEvosAttacks:
 	db 12, DOUBLE_KICK
 	db 19, POISON_STING
 	db 27, FOCUS_ENERGY
-	db 36, FURY_ATTACK
 	db 46, HORN_DRILL
 	db 0 ; no more level-up moves
 
@@ -737,7 +732,7 @@ DiglettEvosAttacks:
 	db 5, GROWL
 	db 9, MAGNITUDE
 	db 17, DIG
-	db 25, SAND_ATTACK
+	db 25, MUD_SLAP
 	db 33, SLASH
 	db 41, EARTHQUAKE
 	db 49, FISSURE
@@ -752,7 +747,7 @@ DugtrioEvosAttacks:
 	db 5, GROWL
 	db 9, MAGNITUDE
 	db 17, DIG
-	db 25, SAND_ATTACK
+	db 25, MUD_SLAP
 	db 33, SLASH
 	db 41, EARTHQUAKE
 	db 49, FISSURE
@@ -1162,7 +1157,6 @@ RapidashEvosAttacks:
 	db 22, FLAME_WHEEL
 	db 26, FIRE_SPIN
 	db 34, TAKE_DOWN
-	db 40, FURY_ATTACK
 	db 40, FLAMETHROWER
 	db 47, AGILITY
 	db 51, FIRE_BLAST
@@ -1237,9 +1231,8 @@ MagnetonEvosAttacks:
 FarfetchDEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
-	db 7, SAND_ATTACK
+	db 7, MUD_SLAP
 	db 13, LEER
-	db 19, FURY_ATTACK
 	db 25, SWORDS_DANCE
 	db 31, AGILITY
 	db 35, SLASH
@@ -1253,7 +1246,6 @@ DoduoEvosAttacks:
 	db 1, GROWL
 	db 1, PECK
 	db 9, PURSUIT
-	db 13, FURY_ATTACK
 	db 21, TRI_ATTACK
 	db 25, RAGE
 	db 33, DRILL_PECK
@@ -1265,9 +1257,7 @@ DodrioEvosAttacks:
 	db 1, PECK
 	db 1, GROWL
 	db 1, PURSUIT
-	db 1, FURY_ATTACK
 	db 9, PURSUIT
-	db 13, FURY_ATTACK
 	db 21, TRI_ATTACK
 	db 25, RAGE
 	db 38, DRILL_PECK
@@ -1589,14 +1579,14 @@ HitmonleeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, DOUBLE_KICK
 	db 20, MEDITATE
-	db 20, ROLLING_KICK
+	db 20, BULK_UP
 	db 20, JUMP_KICK
 	db 21, FOCUS_ENERGY
 	db 26, HI_JUMP_KICK
 	db 31, MIND_READER
 	db 36, FORESIGHT
 	db 41, ENDURE
-	db 46, MEGA_KICK
+	db 46, BLAZE_KICK
 	db 51, REVERSAL
 	db 0 ; no more level-up moves
 
@@ -1680,7 +1670,6 @@ RhydonEvosAttacks:
 	db 1, HORN_ATTACK
 	db 1, TAIL_WHIP
 	db 1, STOMP
-	db 1, FURY_ATTACK
 	db 13, STOMP
 	db 19, ROCK_THROW
 	db 31, SCARY_FACE
@@ -1770,7 +1759,6 @@ GoldeenEvosAttacks:
 	db 12, HORN_ATTACK
 	db 15, WATERFALL
 	db 20, FLAIL
-	db 24, FURY_ATTACK
 	db 35, MEGAHORN
 	db 43, HORN_DRILL
 	db 48, AGILITY
@@ -1785,7 +1773,6 @@ SeakingEvosAttacks:
 	db 12, HORN_ATTACK
 	db 15, WATERFALL
 	db 20, FLAIL
-	db 24, FURY_ATTACK
 	db 30, DRILL_PECK
 	db 35, MEGAHORN
 	db 43, HORN_DRILL
@@ -1984,7 +1971,7 @@ EeveeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
+	db 8, MUD_SLAP
 	db 16, GROWL
 	db 20, BITE
 	db 23, QUICK_ATTACK
@@ -1996,7 +1983,7 @@ VaporeonEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
+	db 8, MUD_SLAP
 	db 16, WATER_GUN
 	db 23, QUICK_ATTACK
 	db 26, BUBBLEBEAM
@@ -2011,7 +1998,7 @@ JolteonEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
+	db 8, MUD_SLAP
 	db 16, THUNDERSHOCK
 	db 23, QUICK_ATTACK
 	db 26, SPARK
@@ -2026,7 +2013,7 @@ FlareonEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
+	db 8, MUD_SLAP
 	db 16, EMBER
 	db 23, QUICK_ATTACK
 	db 26, FLAME_WHEEL
@@ -2093,7 +2080,7 @@ KabutoEvosAttacks:
 	db 7, ROCK_THROW
 	db 14, WATER_GUN
 	db 19, ABSORB
-	db 28, SAND_ATTACK
+	db 28, MUD_SLAP
 	db 30, ANCIENTPOWER
 	db 35, MEGA_DRAIN
 	db 40, ENDURE
@@ -2110,7 +2097,7 @@ KabutopsEvosAttacks:
 	db 14, WATER_GUN
 	db 19, ABSORB
 	db 25, LEER
-	db 28, SAND_ATTACK
+	db 28, MUD_SLAP
 	db 30, ANCIENTPOWER
 	db 35, MEGA_DRAIN
 	db 37, ENDURE
@@ -2322,10 +2309,10 @@ MeganiumEvosAttacks:
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, RAZOR_WIND
-	db 1, HURRICANE
-	db 1, POWER_WHIP
-	db 1, DRAGON_RUSH
+	db 1, BLAZE_KICK
+	db 1, BULK_UP
+	db 1, X_SCISSOR
+	db 1, ICICLE_SPEAR
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK
@@ -2838,7 +2825,7 @@ AipomEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, TAIL_WHIP
-	db 6, SAND_ATTACK
+	db 6, MUD_SLAP
 	db 12, BATON_PASS
 	db 19, LOW_KICK
 	db 27, SWIFT
@@ -2917,7 +2904,7 @@ EspeonEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
+	db 8, MUD_SLAP
 	db 16, CONFUSION
 	db 23, QUICK_ATTACK
 	db 26, SWIFT
@@ -2931,7 +2918,7 @@ UmbreonEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
+	db 8, MUD_SLAP
 	db 16, PURSUIT
 	db 23, QUICK_ATTACK
 	db 26, CONFUSE_RAY
@@ -3059,7 +3046,6 @@ DunsparceEvosAttacks:
 GligarEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
-	db 6, SAND_ATTACK
 	db 13, HARDEN
 	db 16, MUD_SLAP
 	db 20, QUICK_ATTACK
@@ -3170,7 +3156,6 @@ HeracrossEvosAttacks:
     db 5, PIN_MISSILE
     db 6, HORN_ATTACK
     db 12, ENDURE
-    db 26, FURY_ATTACK
     db 35, TAKE_DOWN
     db 44, REVERSAL
     db 45, MEGAHORN
@@ -3347,13 +3332,12 @@ SkarmoryEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, LEER
 	db 1, PECK
-	db 13, SAND_ATTACK
+	db 13, MUD_SLAP
 	db 17, SPIKES
 	db 19, SWIFT
 	db 25, AGILITY
 	db 28, WING_ATTACK
 	db 31, STEEL_WING
-	db 37, FURY_ATTACK
 	db 41, DRILL_PECK
 	db 0 ; no more level-up moves
 
@@ -3421,7 +3405,7 @@ DonphanEvosAttacks:
 	db 9, DEFENSE_CURL
 	db 17, FLAIL
 	db 25, MAGNITUDE
-	db 28, FURY_ATTACK
+	db 28, HORN_ATTACK
 	db 33, ROLLOUT
 	db 36, RAPID_SPIN
 	db 40, EARTHQUAKE
@@ -3484,7 +3468,7 @@ HitmontopEvosAttacks:
 	db 1, FOCUS_ENERGY
 	db 20, PURSUIT
 	db 20, QUICK_ATTACK
-	db 20, ROLLING_KICK
+	db 20, BULK_UP
 	db 25, RAPID_SPIN
 	db 31, COUNTER
 	db 37, AGILITY
