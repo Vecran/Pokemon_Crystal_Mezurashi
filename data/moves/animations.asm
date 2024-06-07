@@ -654,7 +654,8 @@ BattleAnim_Shake:
 	anim_ret
 
 BattleAnim_CutePound:
-	anim_1gfx ANIM_GFX_HIT
+	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_OBJECTS
+	anim_obj ANIM_OBJ_HEART, 64, 64, $0
 	anim_sound 0, 1, SFX_POUND
 	anim_obj ANIM_OBJ_PALM, 136, 56, $0
 	anim_wait 6
@@ -719,9 +720,6 @@ BattleAnim_CometPunch:
 
 BattleAnim_DrainPunch:
 	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_CHARGE
-	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $40, $2, $0
-	anim_wait 48
-	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $3
 .loop
 	anim_sound 0, 1, SFX_MEGA_PUNCH
 	anim_obj ANIM_OBJ_PUNCH, 136, 56, $0
@@ -731,7 +729,6 @@ BattleAnim_DrainPunch:
 	anim_wait 6
 	anim_loop 3, .loop
 	anim_obj ANIM_OBJ_ABSORB_CENTER, 44, 88, $0
-.loop
 	anim_sound 6, 3, SFX_WATER_GUN
 	anim_obj ANIM_OBJ_ABSORB, 128, 48, $2
 	anim_wait 6
@@ -741,7 +738,6 @@ BattleAnim_DrainPunch:
 	anim_sound 6, 3, SFX_WATER_GUN
 	anim_obj ANIM_OBJ_ABSORB, 136, 32, $4
 	anim_wait 6
-	anim_loop 5, .loop
 	anim_wait 32
 	anim_ret
 
