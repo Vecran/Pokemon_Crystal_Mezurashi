@@ -2087,9 +2087,6 @@ BulkUp:
 	statupmessage
 	statupfailtext
 	defenseup
-	lowersub
-	statupanim
-	raisesub
 	statupmessage
 	statupfailtext
 	endmove

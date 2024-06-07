@@ -823,7 +823,11 @@ BattleAnim_HiJumpKick:
 
 BattleAnim_BlazeKick:
 	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_FIRE
+	anim_obj ANIM_OBJ_KICK, 136, 56, $0
+	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 136, 56, $0
 	anim_call BattleAnimSub_Fire
+	anim_obj ANIM_OBJ_KICK, 136, 56, $0
+	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 136, 56, $0
 .loop
 	anim_sound 0, 1, SFX_MEGA_KICK
 	anim_obj ANIM_OBJ_KICK, 136, 56, $0
