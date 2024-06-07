@@ -23,10 +23,10 @@
 	const CUT          ; 0f
 	const GUST         ; 10
 	const WING_ATTACK  ; 11
-	const WHIRLWIND    ; 12
+	const HURRICANE    ; 12
 	const FLY          ; 13
-	const BIND         ; 14
-	const SLAM         ; 15
+	const POWER_WHIP         ; 14
+	const DRAGON_RUSH       ; 15
 	const VINE_WHIP    ; 16
 	const STOMP        ; 17
 	const DOUBLE_KICK  ; 18

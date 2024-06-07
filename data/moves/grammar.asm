@@ -61,8 +61,8 @@ MoveGrammar:
 	db VICEGRIP
 	db WING_ATTACK
 	db FLY
-	db BIND
-	db SLAM
+	db POWER_WHIP
+	db DRAGON_RUSH
 	db HORN_ATTACK
 	db WRAP
 	db THRASH

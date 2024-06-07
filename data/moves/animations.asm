@@ -21,8 +21,8 @@ BattleAnimations::
 	dw BattleAnim_WingAttack
 	dw BattleAnim_Whirlwind
 	dw BattleAnim_Fly
-	dw BattleAnim_Bind
-	dw BattleAnim_Slam
+	dw BattleAnim_PowerWhip
+	dw BattleAnim_DragonRush
 	dw BattleAnim_VineWhip
 	dw BattleAnim_Stomp
 	dw BattleAnim_DoubleKick
@@ -1303,11 +1303,8 @@ BattleAnim_Thunder:
 	anim_ret
 
 BattleAnim_RazorWind:
-	anim_if_param_equal $1, BattleAnim_FocusEnergy
 	anim_1gfx ANIM_GFX_WHIP
-	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $1, $0
 .loop
-	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $2
 	anim_sound 0, 1, SFX_RAZOR_WIND
 	anim_obj ANIM_OBJ_RAZOR_WIND2, 152, 40, $3
 	anim_wait 4
@@ -1775,20 +1772,18 @@ BattleAnim_Bide:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
-BattleAnim_Bind:
-	anim_1gfx ANIM_GFX_ROPE
+BattleAnim_PowerWhip:
+	anim_2gfx ANIM_GFX_ROPE, ANIM_GFX_HIT
 	anim_sound 0, 1, SFX_BIND
-	anim_obj ANIM_OBJ_BIND1, 132, 64, $0
-	anim_wait 8
-	anim_obj ANIM_OBJ_BIND2, 132, 56, $0
-	anim_wait 8
 	anim_obj ANIM_OBJ_BIND1, 132, 48, $0
 	anim_wait 64
 	anim_sound 0, 1, SFX_BIND
-	anim_incobj 1
-	anim_incobj 2
-	anim_incobj 3
-	anim_wait 96
+	anim_wait 16
+	anim_sound 0, 1, SFX_WING_ATTACK
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $2
+	anim_obj ANIM_OBJ_HIT_YFIX, 124, 40, $0
+	anim_wait 16
+	anim_ret
 	anim_ret
 
 BattleAnim_Wrap:
@@ -2187,10 +2182,7 @@ BattleAnim_Whirlwind:
 	anim_incobj 9
 	anim_sound 16, 2, SFX_WHIRLWIND
 	anim_wait 128
-	anim_if_param_equal $0, .done
-	anim_bgeffect ANIM_BG_REMOVE_MON, $0, BG_EFFECT_TARGET, $0
 	anim_wait 64
-.done
 	anim_ret
 
 BattleAnim_Hypnosis:
@@ -3077,12 +3069,17 @@ BattleAnim_WingAttack:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_Slam:
-	anim_1gfx ANIM_GFX_HIT
+BattleAnim_DragonRush:
+	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_FIRE
+.loop
+	anim_sound 6, 2, SFX_EMBER
+	anim_obj ANIM_OBJ_DRAGON_RAGE, 64, 92, $0
+	anim_wait 3
 	anim_sound 0, 1, SFX_WING_ATTACK
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $2
 	anim_obj ANIM_OBJ_HIT_YFIX, 124, 40, $0
-	anim_wait 16
+	anim_loop 4, .loop
+	anim_wait 64
 	anim_ret
 
 BattleAnim_Disable:

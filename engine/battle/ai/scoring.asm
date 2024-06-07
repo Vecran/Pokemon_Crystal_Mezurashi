@@ -999,7 +999,7 @@ AI_Smart_Ohko:
 	ret
 
 AI_Smart_TrapTarget:
-; Bind, Wrap, Fire Spin, Clamp
+; Wrap, Fire Spin, Clamp
 
 ; 50% chance to discourage this move if the player is already trapped.
 	ld a, [wPlayerWrapCount]
@@ -2295,7 +2295,7 @@ AI_Smart_Pursuit:
 
 AI_Smart_RapidSpin:
 ; 80% chance to greatly encourage this move if the enemy is
-; trapped (Bind effect), seeded, or scattered with spikes.
+; trapped, seeded, or scattered with spikes.
 
 	ld a, [wEnemyWrapCount]
 	and a

@@ -64,7 +64,7 @@ SpearowEggMoves:
 
 EkansEggMoves:
 	db PURSUIT
-	db SLAM
+	db DRAGON_RUSH
 	db SPITE
 	db BEAT_UP
 	db CRUNCH
@@ -111,7 +111,7 @@ ZubatEggMoves:
 	db PURSUIT
 	db FAINT_ATTACK
 	db GUST
-	db WHIRLWIND
+	db HURRICANE
 	db -1 ; end
 
 OddishEggMoves:
@@ -258,7 +258,6 @@ SeelEggMoves:
 	db PERISH_SONG
 	db DISABLE
 	db PECK
-	db SLAM
 	db ENCORE
 	db -1 ; end
 
@@ -297,7 +296,6 @@ KrabbyEggMoves:
 	db HAZE
 	db AMNESIA
 	db FLAIL
-	db SLAM
 	db -1 ; end
 
 ExeggcuteEggMoves:
@@ -412,7 +410,6 @@ EeveeEggMoves:
 OmanyteEggMoves:
 	db BUBBLEBEAM
 	db AURORA_BEAM
-	db SLAM
 	db SUPERSONIC
 	db HAZE
 	db -1 ; end
@@ -426,7 +423,7 @@ KabutoEggMoves:
 	db -1 ; end
 
 AerodactylEggMoves:
-	db WHIRLWIND
+	db HURRICANE
 	db PURSUIT
 	db FORESIGHT
 	db -1 ; end
@@ -482,7 +479,7 @@ HoothootEggMoves:
 	db SUPERSONIC
 	db FAINT_ATTACK
 	db WING_ATTACK
-	db WHIRLWIND
+	db HURRICANE
 	db SKY_ATTACK
 	db -1 ; end
 
@@ -585,13 +582,12 @@ AipomEggMoves:
 	db PURSUIT
 	db AGILITY
 	db SPITE
-	db SLAM
 	db DOUBLESLAP
 	db BEAT_UP
 	db -1 ; end
 
 YanmaEggMoves:
-	db WHIRLWIND
+	db HURRICANE
 	db REVERSAL
 	db LEECH_LIFE
 	db -1 ; end
@@ -603,7 +599,7 @@ WooperEggMoves:
 	db -1 ; end
 
 MurkrowEggMoves:
-	db WHIRLWIND
+	db HURRICANE
 	db DRILL_PECK
 	db QUICK_ATTACK
 	db MIRROR_MOVE
@@ -731,13 +727,13 @@ MantineEggMoves:
 	db TWISTER
 	db HYDRO_PUMP
 	db HAZE
-	db SLAM
+	db DRAGON_RUSH
 	db -1 ; end
 
 SkarmoryEggMoves:
 	db DRILL_PECK
 	db PURSUIT
-	db WHIRLWIND
+	db HURRICANE
 	db SKY_ATTACK
 	db -1 ; end
 

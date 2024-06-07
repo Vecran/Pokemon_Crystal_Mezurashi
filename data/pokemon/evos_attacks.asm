@@ -199,7 +199,7 @@ ButterfreeEvosAttacks:
 	db 14, STUN_SPORE
 	db 15, SLEEP_POWDER
 	db 18, SUPERSONIC
-	db 23, WHIRLWIND
+	db 23, HURRICANE
 	db 28, GUST
 	db 34, PSYBEAM
 	db 40, SAFEGUARD
@@ -238,7 +238,7 @@ PidgeyEvosAttacks:
 	db 5, SAND_ATTACK
 	db 7, GUST
 	db 13, QUICK_ATTACK
-	db 20, WHIRLWIND
+	db 20, HURRICANE
 	db 27, WING_ATTACK
 	db 37, AGILITY
 	db 47, MIRROR_MOVE
@@ -253,7 +253,7 @@ PidgeottoEvosAttacks:
 	db 5, SAND_ATTACK
 	db 9, GUST
 	db 15, QUICK_ATTACK
-	db 20, WHIRLWIND
+	db 20, HURRICANE
 	db 24, WING_ATTACK
 	db 30, MUD_SLAP
 	db 43, AGILITY
@@ -269,7 +269,7 @@ PidgeotEvosAttacks:
 	db 5, SAND_ATTACK
 	db 9, GUST
 	db 15, QUICK_ATTACK
-	db 23, WHIRLWIND
+	db 23, HURRICANE
 	db 25, WING_ATTACK
 	db 30, MUD_SLAP
 	db 36, EXTREMESPEED
@@ -368,7 +368,6 @@ PikachuEvosAttacks:
 	db 8, THUNDER_WAVE
 	db 11, QUICK_ATTACK
 	db 15, DOUBLE_TEAM
-	db 20, SLAM
 	db 26, THUNDERBOLT
 	db 33, AGILITY
 	db 41, THUNDER
@@ -383,7 +382,6 @@ RaichuEvosAttacks:
 	db 8, THUNDER_WAVE
 	db 11, QUICK_ATTACK
 	db 15, DOUBLE_TEAM
-	db 20, SLAM
 	db 26, THUNDERBOLT
 	db 33, AGILITY
 	db 41, THUNDER
@@ -1017,7 +1015,6 @@ BellsproutEvosAttacks:
 	db 21, RAZOR_LEAF
 	db 23, ACID
 	db 30, SWEET_SCENT
-	db 45, SLAM
 	db 0 ; no more level-up moves
 
 WeepinbellEvosAttacks:
@@ -1036,7 +1033,6 @@ WeepinbellEvosAttacks:
 	db 30, SLUDGE
 	db 33, SWEET_SCENT
 	db 41, SLUDGE_BOMB
-	db 54, SLAM
 	db 0 ; no more level-up moves
 
 VictreebelEvosAttacks:
@@ -1055,7 +1051,6 @@ VictreebelEvosAttacks:
 	db 30, SLUDGE
 	db 33, SWEET_SCENT
 	db 41, SLUDGE_BOMB
-	db 54, SLAM
 	db 0 ; no more level-up moves
 
 TentacoolEvosAttacks:
@@ -1419,7 +1414,6 @@ OnixEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, SCREECH
-	db 10, BIND
 	db 12, ROCK_THROW
 	db 18, DIG
 	db 23, HARDEN
@@ -1720,7 +1714,6 @@ TangelaEvosAttacks:
 	db 13, POISONPOWDER
 	db 19, VINE_WHIP
 	db 22, MEGA_DRAIN
-	db 25, BIND
 	db 34, STUN_SPORE
 	db 37, GIGA_DRAIN
 	db 46, GROWTH
@@ -1915,7 +1908,6 @@ PinsirEvosAttacks:
     db 0 ; no more evolutions
     db 1, VICEGRIP
     db 7, FOCUS_ENERGY
-    db 13, BIND
     db 19, SEISMIC_TOSS
     db 25, TWINEEDLE
     db 27, HARDEN
@@ -2204,7 +2196,7 @@ DratiniEvosAttacks:
 	db 8, THUNDER_WAVE
 	db 15, TWISTER
 	db 22, DRAGON_RAGE
-	db 29, SLAM
+	db 29, DRAGON_RUSH
 	db 36, AGILITY
 	db 43, SAFEGUARD
 	db 45, OUTRAGE
@@ -2221,7 +2213,7 @@ DragonairEvosAttacks:
 	db 8, THUNDER_WAVE
 	db 15, TWISTER
 	db 26, DRAGON_RAGE
-	db 29, SLAM
+	db 29, DRAGON_RUSH
 	db 38, AGILITY
 	db 47, SAFEGUARD
 	db 50, OUTRAGE
@@ -2237,7 +2229,7 @@ DragoniteEvosAttacks:
 	db 8, THUNDER_WAVE
 	db 15, TWISTER
 	db 22, DRAGON_RAGE
-	db 29, SLAM
+	db 29, DRAGON_RUSH
 	db 38, AGILITY
 	db 47, SAFEGUARD
 	db 55, WING_ATTACK
@@ -2330,9 +2322,10 @@ MeganiumEvosAttacks:
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, DRAIN_PUNCH
-	db 1, CUTE_POUND
+	db 1, RAZOR_WIND
+	db 1, HURRICANE
+	db 1, POWER_WHIP
+	db 1, DRAGON_RUSH
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK
@@ -2898,7 +2891,6 @@ WooperEvosAttacks:
 	db 1, WATER_GUN
 	db 1, TAIL_WHIP
 	db 5, MUD_SLAP
-	db 11, SLAM
 	db 16, BUBBLEBEAM
 	db 21, AMNESIA
 	db 31, EARTHQUAKE
@@ -2912,7 +2904,6 @@ QuagsireEvosAttacks:
 	db 1, WATER_GUN
 	db 1, TAIL_WHIP
 	db 5, MUD_SLAP
-	db 11, SLAM
 	db 16, BUBBLEBEAM
 	db 20, MAGNITUDE
 	db 23, AMNESIA
@@ -3084,7 +3075,6 @@ SteelixEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, SCREECH
-	db 10, BIND
 	db 14, ROCK_THROW
 	db 23, HARDEN
 	db 27, RAGE
@@ -3674,7 +3664,7 @@ LugiaEvosAttacks:
 	db 44, ANCIENTPOWER
 	db 55, RAIN_DANCE
 	db 66, HYDRO_PUMP
-	db 77, WHIRLWIND
+	db 77, HURRICANE
 	db 88, SWIFT
 	db 99, FUTURE_SIGHT
 	db 0 ; no more level-up moves
@@ -3688,7 +3678,7 @@ HoOhEvosAttacks:
 	db 44, ANCIENTPOWER
 	db 55, SUNNY_DAY
 	db 66, FIRE_BLAST
-	db 77, WHIRLWIND
+	db 77, HURRICANE
 	db 88, SWIFT
 	db 99, FUTURE_SIGHT
 	db 0 ; no more level-up moves

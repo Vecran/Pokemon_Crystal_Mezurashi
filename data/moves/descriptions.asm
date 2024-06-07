@@ -18,10 +18,10 @@ MoveDescriptions::
 	dw CutDescription
 	dw GustDescription
 	dw WingAttackDescription
-	dw WhirlwindDescription
+	dw HurricaneDescription
 	dw FlyDescription
-	dw BindDescription
-	dw SlamDescription
+	dw PowerWhipDescription
+	dw DragonRushDescription
 	dw VineWhipDescription
 	dw StompDescription
 	dw DoubleKickDescription
@@ -308,16 +308,16 @@ ScratchDescription:
 	line "sharp claws.@"
 
 VicegripDescription:
-	db   "Grips with power-"
-	line "ful pincers.@"
+	db   "Grips like a vice."
+	line "It may lower SPD.@"
 
 GuillotineDescription:
-	db   "A one-hit KO,"
-	line "pincer attack.@"
+	db   "An attack that may"
+	line "cause flinching.@"
 
 RazorWindDescription:
-	db   "1st turn: Prepare"
-	line "2nd turn: Attack@"
+	db   "Has a high criti-"
+	line "cal hit ratio.@"
 
 SwordsDanceDescription:
 	db   "A dance that in-"
@@ -335,21 +335,21 @@ WingAttackDescription:
 	db   "Strikes the target"
 	line "with wings.@"
 
-WhirlwindDescription:
-	db   "Blows away the foe"
-	line "& ends battle.@"
+HurricaneDescription:
+	db   "An attack that may"
+	line "cause flinching.@"
 
 FlyDescription:
 	db   "1st turn: Fly"
 	line "2nd turn: Attack@"
 
-BindDescription:
-	db   "Binds the target"
-	line "for 2-5 turns.@"
+PowerWhipDescription:
+	db   "Whips the foe with"
+	line "powerful vines.@"
 
-SlamDescription:
-	db   "Slams the foe with"
-	line "a tail, vine, etc.@"
+DragonRushDescription:
+	db   "Tackles menacingly"
+	line "Might flinch.@"
 
 VineWhipDescription:
 	db   "Whips the foe with"
