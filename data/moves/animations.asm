@@ -19,7 +19,7 @@ BattleAnimations::
 	dw BattleAnim_Cut
 	dw BattleAnim_Gust
 	dw BattleAnim_WingAttack
-	dw BattleAnim_Whirlwind
+	dw BattleAnim_Hurricane
 	dw BattleAnim_Fly
 	dw BattleAnim_PowerWhip
 	dw BattleAnim_DragonRush
@@ -1776,12 +1776,12 @@ BattleAnim_PowerWhip:
 	anim_2gfx ANIM_GFX_ROPE, ANIM_GFX_HIT
 	anim_sound 0, 1, SFX_BIND
 	anim_obj ANIM_OBJ_BIND1, 132, 48, $0
-	anim_wait 64
-	anim_sound 0, 1, SFX_BIND
 	anim_wait 16
+	anim_sound 0, 1, SFX_BIND
+	anim_wait 4
 	anim_sound 0, 1, SFX_WING_ATTACK
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $2
-	anim_obj ANIM_OBJ_HIT_YFIX, 124, 40, $0
+	anim_obj ANIM_OBJ_HIT_YFIX, 148, 40, $0
 	anim_wait 16
 	anim_ret
 	anim_ret
@@ -2164,13 +2164,14 @@ BattleAnim_Submission:
 	anim_call BattleAnim_ShowMon_1
 	anim_ret
 
-BattleAnim_Whirlwind:
+BattleAnim_Hurricane:
 	anim_1gfx ANIM_GFX_WIND
 .loop
 	anim_sound 0, 0, SFX_RAZOR_WIND
 	anim_obj ANIM_OBJ_GUST, 64, 112, $0
 	anim_wait 6
 	anim_loop 9, .loop
+	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $60, $4, $10
 	anim_incobj 1
 	anim_incobj 2
 	anim_incobj 3
@@ -2181,7 +2182,6 @@ BattleAnim_Whirlwind:
 	anim_incobj 8
 	anim_incobj 9
 	anim_sound 16, 2, SFX_WHIRLWIND
-	anim_wait 128
 	anim_wait 64
 	anim_ret
 
@@ -3074,10 +3074,11 @@ BattleAnim_DragonRush:
 .loop
 	anim_sound 6, 2, SFX_EMBER
 	anim_obj ANIM_OBJ_DRAGON_RAGE, 64, 92, $0
-	anim_wait 3
+	anim_wait 6
 	anim_sound 0, 1, SFX_WING_ATTACK
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $2
 	anim_obj ANIM_OBJ_HIT_YFIX, 124, 40, $0
+	anim_wait 4
 	anim_loop 4, .loop
 	anim_wait 64
 	anim_ret
