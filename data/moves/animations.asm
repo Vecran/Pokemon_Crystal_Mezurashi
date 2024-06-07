@@ -2241,7 +2241,7 @@ BattleAnim_HornAttack:
 	anim_ret
 
 BattleAnim_IcicleSpear:
-anim_2gfx ANIM_GFX_HORN, ANIM_GFX_HIT
+	anim_2gfx ANIM_GFX_HORN, ANIM_GFX_HIT
 .loop
 	anim_obj ANIM_OBJ_NEEDLE, 64, 92, $28
 	anim_wait 8
