@@ -919,7 +919,7 @@ BattleTowerMons:
 
 	db YANMA
 	db KINGS_ROCK
-	db TWINEEDLE, TOXIC, HURRICANE, SONICBOOM
+	db TWINEEDLE, TOXIC, HURRICANE, BUG_BUZZ
 	dw 0 ; OT ID
 	dt 8000 ; Exp
 	; Stat exp

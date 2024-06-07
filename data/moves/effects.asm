@@ -2090,3 +2090,20 @@ BulkUp:
 	statupmessage
 	statupfailtext
 	endmove
+
+Tickle:
+	checkobedience
+	usedmovetext
+	doturn
+	checkhit
+	attackdown
+	lowersub
+	statdownanim
+	raisesub
+	statdownmessage
+	statdownfailtext
+	defensedown
+	statdownmessage
+	statdownfailtext
+	endmove
+

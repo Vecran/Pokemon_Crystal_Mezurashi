@@ -36,10 +36,10 @@ MoveDescriptions::
 	dw TackleDescription
 	dw BodySlamDescription
 	dw WrapDescription
-	dw TakeDownDescription
+	dw WildChargeDescription
 	dw ThrashDescription
 	dw DoubleEdgeDescription
-	dw TailWhipDescription
+	dw TickleDescription
 	dw PoisonStingDescription
 	dw TwineedleDescription
 	dw PinMissileDescription
@@ -49,7 +49,7 @@ MoveDescriptions::
 	dw RoarDescription
 	dw SingDescription
 	dw SupersonicDescription
-	dw SonicboomDescription
+	dw BugBuzzDescription
 	dw DisableDescription
 	dw AcidDescription
 	dw EmberDescription
@@ -392,8 +392,8 @@ IcicleSpearDescription:
 	line "2-5 times.@"
 
 HornDrillDescription:
-	db   "A one-hit KO,"
-	line "drill attack.@"
+	db   "An attack that may"
+	line "lower DEFENSE.@"
 
 TackleDescription:
 	db   "A full-body charge"
@@ -407,9 +407,9 @@ WrapDescription:
 	db   "Squeezes the foe"
 	line "for 2-5 turns.@"
 
-TakeDownDescription:
-	db   "A tackle that also"
-	line "hurts the user.@"
+WildChargeDescription:
+	db   "An electric tackle"
+	line "with recoil damage@"
 
 ThrashDescription:
 	db   "Works 2-3 turns"
@@ -419,9 +419,9 @@ DoubleEdgeDescription:
 	db   "A tackle that also"
 	line "hurts the user.@"
 
-TailWhipDescription:
-	db   "Lowers the foe's"
-	line "DEFENSE.@"
+TickleDescription:
+	db   "Makes foe laugh"
+	line "to drop ATK & DEF.@"
 
 PoisonStingDescription:
 	db   "An attack that may"
@@ -448,8 +448,8 @@ GrowlDescription:
 	line "ATTACK.@"
 
 RoarDescription:
-	db   "Scares wild foes"
-	line "to end battle.@"
+	db   "Roars scarily to"
+	line "lower foe's ATK.@"
 
 SingDescription:
 	db   "May cause the foe"
@@ -459,9 +459,9 @@ SupersonicDescription:
 	db   "Sound waves that"
 	line "cause confusion.@"
 
-SonicboomDescription:
-	db   "Always inflicts"
-	line "20HP damage.@"
+BugBuzzDescription:
+	db   "A soundwave that"
+	line "may lower SP.DEF@"
 
 DisableDescription:
 	db   "Disables the foe's"

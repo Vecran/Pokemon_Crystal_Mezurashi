@@ -37,10 +37,10 @@ BattleAnimations::
 	dw BattleAnim_Tackle
 	dw BattleAnim_BodySlam
 	dw BattleAnim_Wrap
-	dw BattleAnim_TakeDown
+	dw BattleAnim_WildCharge
 	dw BattleAnim_Thrash
 	dw BattleAnim_DoubleEdge
-	dw BattleAnim_TailWhip
+	dw BattleAnim_Tickle
 	dw BattleAnim_PoisonSting
 	dw BattleAnim_Twineedle
 	dw BattleAnim_PinMissile
@@ -50,7 +50,7 @@ BattleAnimations::
 	dw BattleAnim_Roar
 	dw BattleAnim_Sing
 	dw BattleAnim_Supersonic
-	dw BattleAnim_Sonicboom
+	dw BattleAnim_BugBuzz
 	dw BattleAnim_Disable
 	dw BattleAnim_Acid
 	dw BattleAnim_Ember
@@ -1343,7 +1343,6 @@ BattleAnim_Sonicboom_JP: ; unreferenced
 	anim_ret
 
 BattleAnim_Gust:
-BattleAnim_Sonicboom:
 	anim_2gfx ANIM_GFX_WIND, ANIM_GFX_HIT
 .loop
 	anim_sound 0, 1, SFX_RAZOR_WIND
@@ -1858,6 +1857,7 @@ BattleAnim_Growl:
 	anim_wait 8
 	anim_ret
 
+BattleAnim_BugBuzz:
 BattleAnim_Roar:
 	anim_1gfx ANIM_GFX_NOISE
 	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
@@ -1867,10 +1867,6 @@ BattleAnim_Roar:
 	anim_wait 16
 	anim_loop 3, .loop
 	anim_wait 16
-	anim_if_param_equal $0, .done
-	anim_bgeffect ANIM_BG_REMOVE_MON, $0, BG_EFFECT_TARGET, $0
-	anim_wait 64
-.done
 	anim_ret
 
 BattleAnim_Supersonic:
@@ -2114,8 +2110,8 @@ BattleAnim_BodySlam:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
-BattleAnim_TakeDown:
-	anim_1gfx ANIM_GFX_HIT
+BattleAnim_WildCharge:
+	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_LIGHTNING
 	anim_call BattleAnim_TargetObj_1Row
 	anim_bgeffect ANIM_BG_TACKLE, $0, BG_EFFECT_USER, $0
 	anim_wait 3
@@ -2126,6 +2122,14 @@ BattleAnim_TakeDown:
 	anim_sound 0, 1, SFX_TACKLE
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $2
 	anim_obj ANIM_OBJ_HIT_YFIX, 144, 48, $0
+	anim_sound 0, 1, SFX_THUNDER
+	anim_obj ANIM_OBJ_THUNDER3, 132, 68, $0
+	anim_wait 3
+	anim_sound 0, 1, SFX_THUNDER
+	anim_obj ANIM_OBJ_THUNDER3, 152, 68, $0
+	anim_wait 3
+	anim_sound 0, 1, SFX_THUNDER
+	anim_obj ANIM_OBJ_THUNDER3, 142, 68, $0
 	anim_wait 3
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
@@ -3089,8 +3093,10 @@ BattleAnim_Disable:
 	anim_wait 96
 	anim_ret
 
-BattleAnim_TailWhip:
-	anim_1gfx ANIM_GFX_HIT
+BattleAnim_Tickle:
+	anim_3gfx ANIM_GFX_HIT, ANIM_GFX_MISC, ANIM_GFX_SPEED
+	anim_sound 0, 0, SFX_METRONOME
+	anim_obj ANIM_OBJ_METRONOME_HAND, 136, 56, $0
 	anim_call BattleAnim_TargetObj_2Row
 	anim_sound 0, 0, SFX_TAIL_WHIP
 	anim_bgeffect ANIM_BG_WOBBLE_MON, $0, BG_EFFECT_USER, $0

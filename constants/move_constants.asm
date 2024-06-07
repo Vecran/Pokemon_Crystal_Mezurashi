@@ -41,10 +41,10 @@
 	const TACKLE       ; 21
 	const BODY_SLAM    ; 22
 	const WRAP         ; 23
-	const TAKE_DOWN    ; 24
+	const WILD_CHARGE    ; 24
 	const THRASH       ; 25
 	const DOUBLE_EDGE  ; 26
-	const TAIL_WHIP    ; 27
+	const TICKLE         ; 27
 	const POISON_STING ; 28
 	const TWINEEDLE    ; 29
 	const PIN_MISSILE  ; 2a
@@ -54,7 +54,7 @@
 	const ROAR         ; 2e
 	const SING         ; 2f
 	const SUPERSONIC   ; 30
-	const SONICBOOM    ; 31
+	const BUG_BUZZ       ; 31
 	const DISABLE      ; 32
 	const ACID         ; 33
 	const EMBER        ; 34

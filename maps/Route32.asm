@@ -891,8 +891,8 @@ Text_RoarOutro:
 	text "WROOOAR!"
 	line "IT'S ROAR!"
 
-	para "EVEN #MON RUN"
-	line "FROM A GOOD ROAR!"
+	para "EVEN #MON FEAR"
+	line "A GOOD ROAR!"
 	done
 
 MeetFriedaText:

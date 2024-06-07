@@ -4,7 +4,7 @@ EncoreMoves:
 	db SWORDS_DANCE
 	db BULK_UP
 	db LEER
-	db ROAR
+	db TICKLE
 	db DISABLE
 	db MIST
 	db LEECH_SEED

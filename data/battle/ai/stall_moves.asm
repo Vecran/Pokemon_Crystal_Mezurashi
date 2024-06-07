@@ -4,7 +4,7 @@
 StallMoves:
 	db SWORDS_DANCE
 	db BULK_UP
-	db TAIL_WHIP
+	db TICKLE
 	db LEER
 	db GROWL
 	db DISABLE

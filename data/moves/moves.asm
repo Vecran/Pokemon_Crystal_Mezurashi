@@ -45,24 +45,24 @@ Moves:
 	move HEADBUTT,     EFFECT_FLINCH_HIT,         70, NORMAL,        PHYSICAL, 100, 15,  30
 	move HORN_ATTACK,  EFFECT_NORMAL_HIT,         65, NORMAL,        PHYSICAL, 100, 25,   0
 	move ICICLE_SPEAR, EFFECT_MULTI_HIT,          25, ICE,           PHYSICAL, 100, 30,   0
-	move HORN_DRILL,   EFFECT_OHKO,                1, NORMAL,        PHYSICAL,  30,  5,   0
-	move TACKLE,       EFFECT_NORMAL_HIT,         35, NORMAL,        PHYSICAL,  95, 35,   0
+	move HORN_DRILL,   EFFECT_DEFENSE_DOWN,      120, STEEL,         PHYSICAL,  85,  5,  10
+	move TACKLE,       EFFECT_NORMAL_HIT,         40, NORMAL,        PHYSICAL, 100, 35,   0
 	move BODY_SLAM,    EFFECT_PARALYZE_HIT,       85, NORMAL,        PHYSICAL, 100, 15,  30
-	move WRAP,         EFFECT_TRAP_TARGET,        15, NORMAL,        PHYSICAL,  85, 20,   0
-	move TAKE_DOWN,    EFFECT_RECOIL_HIT,         90, NORMAL,        PHYSICAL,  85, 20,   0
-	move THRASH,       EFFECT_RAMPAGE,            90, NORMAL,        PHYSICAL, 100, 20,   0
+	move WRAP,         EFFECT_TRAP_TARGET,        25, NORMAL,        PHYSICAL,  95, 25,   0
+	move WILD_CHARGE,  EFFECT_RECOIL_HIT,         90, ELECTRIC,      PHYSICAL, 100, 15,   0
+	move THRASH,       EFFECT_RAMPAGE,            90, DARK,          PHYSICAL, 100, 20,   0
 	move DOUBLE_EDGE,  EFFECT_RECOIL_HIT,        120, NORMAL,        PHYSICAL, 100, 15,   0
-	move TAIL_WHIP,    EFFECT_DEFENSE_DOWN,        0, NORMAL,        STATUS,   100, 30,   0
-	move POISON_STING, EFFECT_POISON_HIT,         15, POISON,        PHYSICAL, 100, 35,  30
-	move TWINEEDLE,    EFFECT_POISON_MULTI_HIT,   25, BUG,           PHYSICAL, 100, 20,  20
-	move PIN_MISSILE,  EFFECT_MULTI_HIT,          14, BUG,           PHYSICAL,  85, 20,   0
+	move TICKLE,       EFFECT_TICKLE,              0, FAIRY,         STATUS,   100, 20,   0
+	move POISON_STING, EFFECT_POISON_HIT,         25, POISON,        PHYSICAL, 100, 35,  30
+	move TWINEEDLE,    EFFECT_POISON_MULTI_HIT,   40, BUG,           PHYSICAL, 100, 20,  20
+	move PIN_MISSILE,  EFFECT_MULTI_HIT,          20, BUG,           PHYSICAL, 100, 20,   0
 	move LEER,         EFFECT_DEFENSE_DOWN,        0, NORMAL,        STATUS,   100, 30,   0
 	move BITE,         EFFECT_FLINCH_HIT,         60, DARK,          PHYSICAL, 100, 25,  30
 	move GROWL,        EFFECT_ATTACK_DOWN,         0, NORMAL,        STATUS,   100, 40,   0
-	move ROAR,         EFFECT_FORCE_SWITCH,        0, NORMAL,        STATUS,   100, 20,   0
-	move SING,         EFFECT_SLEEP,               0, NORMAL,        STATUS,    55, 15,   0
-	move SUPERSONIC,   EFFECT_CONFUSE,             0, NORMAL,        STATUS,    55, 20,   0
-	move SONICBOOM,    EFFECT_STATIC_DAMAGE,      20, NORMAL,        SPECIAL,   90, 20,   0
+	move ROAR,         EFFECT_ATTACK_DOWN_HIT,    65, DRAGON,        SPECIAL,  100, 20,  10
+	move SING,         EFFECT_SLEEP,               0, NORMAL,        STATUS,    75, 15,   0
+	move SUPERSONIC,   EFFECT_CONFUSE,             0, NORMAL,        STATUS,    75, 20,   0
+	move BUG_BUZZ,     EFFECT_SP_DEF_DOWN_HIT,    90, BUG,           SPECIAL,  100, 10,  10
 	move DISABLE,      EFFECT_DISABLE,             0, NORMAL,        STATUS,    55, 20,   0
 	move ACID,         EFFECT_DEFENSE_DOWN_HIT,   40, POISON,        SPECIAL,  100, 30,  10
 	move EMBER,        EFFECT_BURN_HIT,           40, FIRE,          SPECIAL,  100, 25,  10
