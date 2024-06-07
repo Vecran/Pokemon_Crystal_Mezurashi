@@ -1858,6 +1858,16 @@ BattleAnim_Growl:
 	anim_ret
 
 BattleAnim_BugBuzz:
+	anim_1gfx ANIM_GFX_NOISE
+	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+	anim_sound 6, 2, SFX_SCREECH
+.loop
+	anim_call BattleAnimSub_Sound
+	anim_wait 16
+	anim_loop 3, .loop
+	anim_wait 16
+	anim_ret
+	
 BattleAnim_Roar:
 	anim_1gfx ANIM_GFX_NOISE
 	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
@@ -2123,13 +2133,13 @@ BattleAnim_WildCharge:
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $2
 	anim_obj ANIM_OBJ_HIT_YFIX, 144, 48, $0
 	anim_sound 0, 1, SFX_THUNDER
-	anim_obj ANIM_OBJ_THUNDER3, 132, 68, $0
-	anim_wait 3
-	anim_sound 0, 1, SFX_THUNDER
-	anim_obj ANIM_OBJ_THUNDER3, 152, 68, $0
+	anim_obj ANIM_OBJ_THUNDER3, 122, 68, $0
 	anim_wait 3
 	anim_sound 0, 1, SFX_THUNDER
 	anim_obj ANIM_OBJ_THUNDER3, 142, 68, $0
+	anim_wait 3
+	anim_sound 0, 1, SFX_THUNDER
+	anim_obj ANIM_OBJ_THUNDER3, 132, 68, $0
 	anim_wait 3
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
