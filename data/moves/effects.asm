@@ -2166,3 +2166,21 @@ CalmMind:
 	statupmessage
 	statupfailtext
 	endmove
+
+QuiverDance:
+	checkobedience
+	usedmovetext
+	doturn
+	specialattackup
+	lowersub
+	statupanim
+	raisesub
+	statupmessage
+	statupfailtext
+	specialdefenseup
+	statupmessage
+	statupfailtext
+	speedup
+	statupmessage
+	statupfailtext
+	endmove

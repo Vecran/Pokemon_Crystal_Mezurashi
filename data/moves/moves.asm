@@ -132,11 +132,11 @@ Moves:
 	move FOCUS_ENERGY, EFFECT_FOCUS_ENERGY,        0, NORMAL,        STATUS,   100, 30,   0
 	move SILVER_WIND,  EFFECT_ALL_UP_HIT,         60, BUG,           SPECIAL,  100, 10,  10
 	move METRONOME,    EFFECT_METRONOME,           0, NORMAL,        STATUS,   100, 10,   0
-	move MIRROR_MOVE,  EFFECT_MIRROR_MOVE,         0, FLYING,        STATUS,   100, 20,   0
-	move SELFDESTRUCT, EFFECT_SELFDESTRUCT,      200, NORMAL,        PHYSICAL, 100,  5,   0
-	move EGG_BOMB,     EFFECT_NORMAL_HIT,        100, NORMAL,        PHYSICAL,  75, 10,   0
-	move LICK,         EFFECT_PARALYZE_HIT,       20, GHOST,         PHYSICAL, 100, 30,  30
-	move SMOG,         EFFECT_POISON_HIT,         20, POISON,        SPECIAL,   70, 20,  40
+	move QUIVER_DANCE, EFFECT_QUIVER_DANCE,        0, BUG,           STATUS,   100, 20,   0
+	move HEAD_SMASH,   EFFECT_RECOIL_HIT,        120, ROCK,          PHYSICAL, 100,  5,   0
+	move SEED_BOMB,    EFFECT_NORMAL_HIT,         80, GRASS,         PHYSICAL, 100, 15,   0
+	move LICK,         EFFECT_PARALYZE_HIT,       30, GHOST,         PHYSICAL, 100, 30,  30
+	move CROSS_POISON, EFFECT_POISON_HIT,         70, POISON,        PHYSICAL, 100, 20,  10
 	move SLUDGE,       EFFECT_POISON_HIT,         65, POISON,        SPECIAL,  100, 20,  30
 	move BONE_CLUB,    EFFECT_FLINCH_HIT,         65, GROUND,        PHYSICAL,  85, 20,  10
 	move FIRE_BLAST,   EFFECT_BURN_HIT,          120, FIRE,          SPECIAL,   85,  5,  10

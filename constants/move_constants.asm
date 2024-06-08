@@ -124,11 +124,11 @@
 	const FOCUS_ENERGY ; 74
 	const SILVER_WIND        ; 75
 	const METRONOME    ; 76
-	const MIRROR_MOVE  ; 77
-	const SELFDESTRUCT ; 78
-	const EGG_BOMB     ; 79
+	const QUIVER_DANCE   ; 77
+	const HEAD_SMASH     ; 78
+	const SEED_BOMB      ; 79
 	const LICK         ; 7a
-	const SMOG         ; 7b
+	const CROSS_POISON         ; 7b
 	const SLUDGE       ; 7c
 	const BONE_CLUB    ; 7d
 	const FIRE_BLAST   ; 7e

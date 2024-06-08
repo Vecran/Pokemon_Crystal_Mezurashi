@@ -120,11 +120,11 @@ BattleAnimations::
 	dw BattleAnim_FocusEnergy
 	dw BattleAnim_SilverWind
 	dw BattleAnim_Metronome
-	dw BattleAnim_MirrorMove
-	dw BattleAnim_Selfdestruct
-	dw BattleAnim_EggBomb
+	dw BattleAnim_QuiverDance
+	dw BattleAnim_HeadSmash
+	dw BattleAnim_SeedBomb
 	dw BattleAnim_Lick
-	dw BattleAnim_Smog
+	dw BattleAnim_CrossPoison
 	dw BattleAnim_Sludge
 	dw BattleAnim_BoneClub
 	dw BattleAnim_FireBlast
@@ -288,7 +288,6 @@ BattleAnim_0:
 BattleAnim_252:
 BattleAnim_253:
 BattleAnim_254:
-BattleAnim_MirrorMove:
 	anim_ret
 
 BattleAnim_SweetScent2:
@@ -1355,22 +1354,6 @@ BattleAnim_Gust:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_Selfdestruct:
-	anim_1gfx ANIM_GFX_EXPLOSION
-	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $24
-	anim_if_param_equal $1, .loop
-	anim_call BattleAnimSub_Explosion2
-	anim_wait 16
-	anim_ret
-
-.loop
-	anim_call BattleAnimSub_Explosion1
-	anim_wait 5
-	anim_bgeffect ANIM_BG_HIDE_MON, $0, BG_EFFECT_USER, $0
-	anim_loop 2, .loop
-	anim_wait 16
-	anim_ret
-
 BattleAnim_Explosion:
 	anim_1gfx ANIM_GFX_EXPLOSION
 	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $60, $4, $10
@@ -1621,6 +1604,7 @@ BattleAnim_Fly:
 	anim_wait 64
 	anim_ret
 
+BattleAnim_QuiverDance:
 BattleAnim_DoubleTeam:
 	anim_call BattleAnim_TargetObj_2Row
 	anim_sound 0, 0, SFX_PSYBEAM
@@ -1697,13 +1681,18 @@ BattleAnim_MegaDrain:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
-BattleAnim_EggBomb:
-	anim_2gfx ANIM_GFX_EGG, ANIM_GFX_EXPLOSION
-	anim_sound 0, 0, SFX_SWITCH_POKEMON
-	anim_obj ANIM_OBJ_EGG, 44, 104, $1
-	anim_wait 128
-	anim_wait 96
-	anim_incobj 1
+BattleAnim_SeedBomb:
+	anim_2gfx ANIM_GFX_PLANT, ANIM_GFX_EXPLOSION
+	anim_sound 0, 0, SFX_VINE_WHIP
+	anim_obj ANIM_OBJ_LEECH_SEED, 48, 80, $20
+	anim_wait 8
+	anim_sound 16, 2, SFX_VINE_WHIP
+	anim_obj ANIM_OBJ_LEECH_SEED, 48, 80, $30
+	anim_wait 8
+	anim_sound 16, 2, SFX_VINE_WHIP
+	anim_obj ANIM_OBJ_LEECH_SEED, 48, 80, $28
+	anim_wait 8
+	anim_clearobjs
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $3
 	anim_sound 0, 1, SFX_EGG_BOMB
 	anim_obj ANIM_OBJ_EXPLOSION2, 128, 64, $0
@@ -2145,6 +2134,7 @@ BattleAnim_WildCharge:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
+BattleAnim_HeadSmash:
 BattleAnim_DoubleEdge:
 	anim_1gfx ANIM_GFX_HIT
 	anim_call BattleAnim_TargetObj_1Row
@@ -2246,14 +2236,14 @@ BattleAnim_MagnetBomb:
 	anim_wait 24
 	anim_ret
 
-BattleAnim_Smog:
-	anim_1gfx ANIM_GFX_HAZE
-	anim_sound 0, 1, SFX_BUBBLEBEAM
-.loop
-	anim_obj ANIM_OBJ_SMOG, 132, 16, $0
-	anim_wait 8
-	anim_loop 10, .loop
-	anim_wait 96
+BattleAnim_CrossPoison:
+	anim_2gfx ANIM_GFX_CUT, ANIM_GFX_POISON
+	anim_sound 0, 1, SFX_VICEGRIP
+	anim_obj ANIM_OBJ_CUT_LONG_DOWN_LEFT, 152, 40, $0
+	anim_obj ANIM_OBJ_CUT_LONG_DOWN_RIGHT, 116, 40, $0
+	anim_wait 16
+	anim_call BattleAnimSub_Sludge
+	anim_wait 4
 	anim_ret
 
 BattleAnim_PoisonGas:

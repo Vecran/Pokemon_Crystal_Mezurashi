@@ -228,7 +228,7 @@ SlowpokeEggMoves:
 
 FarfetchDEggMoves:
 	db FORESIGHT
-	db MIRROR_MOVE
+	db BULK_UP
 	db GUST
 	db QUICK_ATTACK
 	db FLAIL
@@ -456,7 +456,7 @@ SentretEggMoves:
 	db -1 ; end
 
 HoothootEggMoves:
-	db MIRROR_MOVE
+	db SHADOW_SNEAK
 	db SUPERSONIC
 	db FAINT_ATTACK
 	db WING_ATTACK
@@ -506,7 +506,7 @@ IgglybuffEggMoves:
 
 TogepiEggMoves:
 	db PRESENT
-	db MIRROR_MOVE
+	db CUTE_POUND
 	db PECK
 	db FORESIGHT
 	db FUTURE_SIGHT
@@ -540,7 +540,7 @@ MarillEggMoves:
 	db -1 ; end
 
 SudowoodoEggMoves:
-	db SELFDESTRUCT
+	db HEAD_SMASH
 	db -1 ; end
 
 HoppipEggMoves:
@@ -578,7 +578,7 @@ MurkrowEggMoves:
 	db HURRICANE
 	db DRILL_PECK
 	db QUICK_ATTACK
-	db MIRROR_MOVE
+	db SHADOW_SNEAK
 	db WING_ATTACK
 	db SKY_ATTACK
 	db -1 ; end

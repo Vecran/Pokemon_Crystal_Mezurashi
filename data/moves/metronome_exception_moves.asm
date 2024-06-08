@@ -14,5 +14,4 @@ MetronomeExcepts:
 	db SLEEP_TALK
 	db THIEF
 	db EXPLOSION
-	db SELFDESTRUCT
 	db -1

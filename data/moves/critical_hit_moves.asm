@@ -6,6 +6,7 @@ CriticalHitMoves:
 	db X_SCISSOR
 	db SHADOW_CLAW
 	db RAZOR_LEAF
+	db CROSS_POISON
 	db CRABHAMMER
 	db SLASH
 	db AEROBLAST

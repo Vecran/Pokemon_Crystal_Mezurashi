@@ -241,7 +241,6 @@ PidgeyEvosAttacks:
 	db 20, HURRICANE
 	db 27, WING_ATTACK
 	db 37, AGILITY
-	db 47, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
 PidgeottoEvosAttacks:
@@ -257,7 +256,6 @@ PidgeottoEvosAttacks:
 	db 24, WING_ATTACK
 	db 30, MUD_SLAP
 	db 43, AGILITY
-	db 55, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
 PidgeotEvosAttacks:
@@ -275,7 +273,6 @@ PidgeotEvosAttacks:
 	db 36, EXTREMESPEED
 	db 42, AGILITY
 	db 47, SKY_ATTACK
-	db 61, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
 RattataEvosAttacks:
@@ -310,7 +307,6 @@ SpearowEvosAttacks:
 	db 1, GROWL
 	db 7, LEER
 	db 15, PURSUIT
-	db 31, MIRROR_MOVE
 	db 37, DRILL_PECK
 	db 43, AGILITY
 	db 0 ; no more level-up moves
@@ -322,7 +318,6 @@ FearowEvosAttacks:
 	db 1, LEER
 	db 7, LEER
 	db 26, PURSUIT
-	db 31, MIRROR_MOVE
 	db 37, DRILL_PECK
 	db 43, AGILITY
 	db 0 ; no more level-up moves
@@ -1066,7 +1061,6 @@ GeodudeEvosAttacks:
 	db 6, DEFENSE_CURL
 	db 11, ROCK_THROW
 	db 16, MAGNITUDE
-	db 21, SELFDESTRUCT
 	db 26, IRON_DEFENSE
 	db 31, ROLLOUT
 	db 36, EARTHQUAKE
@@ -1082,7 +1076,6 @@ GravelerEvosAttacks:
 	db 6, DEFENSE_CURL
 	db 11, ROCK_THROW
 	db 16, MAGNITUDE
-	db 21, SELFDESTRUCT
 	db 27, IRON_DEFENSE
 	db 34, ROLLOUT
 	db 41, EARTHQUAKE
@@ -1098,7 +1091,6 @@ GolemEvosAttacks:
 	db 6, DEFENSE_CURL
 	db 11, ROCK_THROW
 	db 16, MAGNITUDE
-	db 21, SELFDESTRUCT
 	db 27, IRON_DEFENSE
 	db 34, ROLLOUT
 	db 40, ROCK_SLIDE
@@ -1327,7 +1319,6 @@ GastlyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
 	db 1, LICK
-	db 6, SMOG
 	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
@@ -1442,7 +1433,6 @@ VoltorbEvosAttacks:
 	db 1, TACKLE
 	db 9, SCREECH
 	db 19, SPARK
-	db 23, SELFDESTRUCT
 	db 29, ROLLOUT
 	db 33, LIGHT_SCREEN
 	db 37, THUNDER
@@ -1454,10 +1444,8 @@ ElectrodeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, SCREECH
-	db 1, SELFDESTRUCT
 	db 9, SCREECH
 	db 19, SPARK
-	db 23, SELFDESTRUCT
 	db 29, ROLLOUT
 	db 34, LIGHT_SCREEN
 	db 40, THUNDER
@@ -1494,7 +1482,7 @@ ExeggutorEvosAttacks:
 	db 25, STUN_SPORE
 	db 25, POISONPOWDER
 	db 28, PSYBEAM
-	db 31, EGG_BOMB
+	db 31, SEED_BOMB
 	db 32, GIGA_DRAIN
 	db 37, SLEEP_POWDER
 	db 42, SOLARBEAM
@@ -1581,8 +1569,6 @@ KoffingEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_GAS
 	db 1, TACKLE
-	db 9, SMOG
-	db 15, SELFDESTRUCT
 	db 19, SLUDGE
 	db 25, SMOKESCREEN
 	db 41, EXPLOSION
@@ -1593,10 +1579,6 @@ WeezingEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_GAS
 	db 1, TACKLE
-	db 1, SMOG
-	db 1, SELFDESTRUCT
-	db 9, SMOG
-	db 17, SELFDESTRUCT
 	db 21, SLUDGE
 	db 25, SMOKESCREEN
 	db 35, SLUDGE_BOMB
@@ -1642,7 +1624,6 @@ ChanseyEvosAttacks:
 	db 17, DOUBLESLAP
 	db 23, MINIMIZE
 	db 29, SING
-	db 35, EGG_BOMB
 	db 41, DEFENSE_CURL
 	db 49, LIGHT_SCREEN
 	db 57, DOUBLE_EDGE
@@ -1831,10 +1812,8 @@ MagmarEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, EMBER
 	db 1, LEER
-	db 1, SMOG
 	db 1, FIRE_PUNCH
 	db 7, LEER
-	db 13, SMOG
 	db 19, FIRE_PUNCH
 	db 25, SMOKESCREEN
 	db 33, SUNNY_DAY
@@ -2252,10 +2231,10 @@ MeganiumEvosAttacks:
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, SHADOW_SNEAK
-	db 1, CALM_MIND
-	db 1, AQUA_JET
-	db 1, SILVER_WIND
+	db 1, QUIVER_DANCE
+	db 1, HEAD_SMASH
+	db 1, SEED_BOMB
+	db 1, CROSS_POISON
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK
@@ -2939,7 +2918,6 @@ PinecoEvosAttacks:
 	db 12, PROTECT
 	db 15, MEGA_DRAIN
 	db 22, RAPID_SPIN
-	db 25, SELFDESTRUCT
 	db 36, EXPLOSION
 	db 43, SPIKES
 	db 50, DOUBLE_EDGE
@@ -2949,7 +2927,6 @@ ForretressEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, PROTECT
-	db 1, SELFDESTRUCT
 	db 22, RAPID_SPIN
 	db 33, SPIKE_CANNON
 	db 39, EXPLOSION
@@ -3136,7 +3113,6 @@ UrsaringEvosAttacks:
 SlugmaEvosAttacks:
 	db EVOLVE_LEVEL, 25, MAGCARGO
 	db 0 ; no more evolutions
-	db 1, SMOG
 	db 8, EMBER
 	db 15, ROCK_THROW
 	db 22, IRON_DEFENSE
@@ -3149,7 +3125,6 @@ SlugmaEvosAttacks:
 
 MagcargoEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SMOG
 	db 1, EMBER
 	db 1, ROCK_THROW
 	db 8, EMBER
@@ -3268,7 +3243,6 @@ SkarmoryEvosAttacks:
     db 1, EMBER
     db 7, ROAR
     db 12, BITE
-    db 17, SMOG
     db 22, FLAME_WHEEL
     db 27, FAINT_ATTACK
     db 35, FLAMETHROWER
@@ -3280,7 +3254,6 @@ HoundoomEvosAttacks:
 	db 1, LEER
 	db 1, EMBER
 	db 7, ROAR
-	db 13, SMOG
 	db 15, BITE
 	db 24, FLAME_WHEEL
 	db 30, FAINT_ATTACK
@@ -3430,7 +3403,6 @@ MagbyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, EMBER
 	db 1, LEER
-	db 7, SMOG
 	db 17, FLAME_WHEEL
 	db 21, SMOKESCREEN
 	db 25, POISON_GAS
@@ -3463,7 +3435,6 @@ BlisseyEvosAttacks:
 	db 13, DOUBLESLAP
 	db 18, MINIMIZE
 	db 23, SING
-	db 28, EGG_BOMB
 	db 33, DEFENSE_CURL
 	db 40, LIGHT_SCREEN
 	db 47, DOUBLE_EDGE

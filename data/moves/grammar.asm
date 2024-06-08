@@ -11,8 +11,6 @@ MoveGrammar:
 	db MINIMIZE
 	db SMOKESCREEN
 	db DEFENSE_CURL
-	db EGG_BOMB
-	db SMOG
 	db BONE_CLUB
 	db FLASH
 	db SPLASH
@@ -37,7 +35,6 @@ MoveGrammar:
 ; 1: originally "[mon]の¯[move]した!" ("[mon]¯did [move]!")
 	db RECOVER
 	db TELEPORT
-	db SELFDESTRUCT
 	db AMNESIA
 	db FLAIL
 	db 0 ; end set

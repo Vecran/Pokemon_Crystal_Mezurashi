@@ -119,11 +119,11 @@ MoveDescriptions::
 	dw FocusEnergyDescription
 	dw SilverWindDescription
 	dw MetronomeDescription
-	dw MirrorMoveDescription
-	dw SelfdestructDescription
-	dw EggBombDescription
+	dw QuiverDanceDescription
+	dw HeadSmashDescription
+	dw SeedBombDescription
 	dw LickDescription
-	dw SmogDescription
+	dw CrossPoisonDescription
 	dw SludgeDescription
 	dw BoneClubDescription
 	dw FireBlastDescription
@@ -739,23 +739,23 @@ MetronomeDescription:
 	db   "Randomly uses any"
 	line "#MON move.@"
 
-MirrorMoveDescription:
-	db   "Counters with the"
-	line "same move.@"
+QuiverDanceDescription:
+	db   "Raises user's SPD,"
+	line "SP.ATK & SP.DEF@"
 
-SelfdestructDescription:
-	db   "Powerful but makes"
-	line "the user faint.@"
+HeadSmashDescription:
+	db   "An attack that al-"
+	line "so hurts the user.@"
 
-EggBombDescription:
-	db   "Eggs are hurled at"
-	line "the foe.@"
+SeedBombDescription:
+	db   "Hard seeds are"
+	line "hurled at the foe.@"
 
 LickDescription:
 	db   "An attack that may"
 	line "cause paralysis.@"
 
-SmogDescription:
+CrossPoisonDescription:
 	db   "An attack that may"
 	line "poison the foe.@"
 
