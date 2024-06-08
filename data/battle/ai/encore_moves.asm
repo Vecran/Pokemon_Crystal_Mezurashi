@@ -13,7 +13,7 @@ EncoreMoves:
 	db AGILITY
 	db TELEPORT
 	db SCREECH
-	db HAZE
+	db CALM_MIND
 	db FOCUS_ENERGY
 	db DREAM_EATER
 	db POISON_GAS

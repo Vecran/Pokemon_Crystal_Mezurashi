@@ -112,12 +112,12 @@ MoveDescriptions::
 	dw ConfuseRayDescription
 	dw DragonDanceDescription
 	dw DefenseCurlDescription
-	dw BarrierDescription
+	dw CalmMindDescription
 	dw LightScreenDescription
-	dw HazeDescription
+	dw AquaJetDescription
 	dw ReflectDescription
 	dw FocusEnergyDescription
-	dw BideDescription
+	dw SilverWindDescription
 	dw MetronomeDescription
 	dw MirrorMoveDescription
 	dw SelfdestructDescription
@@ -711,17 +711,17 @@ DefenseCurlDescription:
 	db   "Heightens the"
 	line "user's DEFENSE.@"
 
-BarrierDescription:
-	db   "Sharply increases"
-	line "user's DEFENSE.@"
+CalmMindDescription:
+	db   "Focuses the mind,"
+	line "ups SP.ATK, SP.DEF@"
 
 LightScreenDescription:
 	db   "Ups SPCL.DEF with"
 	line "a wall of light.@"
 
-HazeDescription:
-	db   "Eliminates all"
-	line "stat changes.@"
+AquaJetDescription:
+	db   "Lets the user get"
+	line "in the first hit.@"
 
 ReflectDescription:
 	db   "Raises DEFENSE"
@@ -731,9 +731,9 @@ FocusEnergyDescription:
 	db   "Raises the criti-"
 	line "cal hit ratio.@"
 
-BideDescription:
-	db   "Waits 2-3 turns &"
-	line "hits back double.@"
+SilverWindDescription:
+	db   "An attack that may"
+	line "raise all stats.@"
 
 MetronomeDescription:
 	db   "Randomly uses any"

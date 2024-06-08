@@ -338,7 +338,6 @@ EkansEvosAttacks:
 	db 25, GLARE
 	db 29, SCREECH
 	db 36, SLUDGE_BOMB
-	db 43, HAZE
 	db 0 ; no more level-up moves
 
 ArbokEvosAttacks:
@@ -353,7 +352,6 @@ ArbokEvosAttacks:
 	db 27, SLUDGE
 	db 30, SCREECH
 	db 36, SLUDGE_BOMB
-	db 43, HAZE
 	db 0 ; no more level-up moves
 
 PikachuEvosAttacks:
@@ -592,7 +590,6 @@ ZubatEvosAttacks:
 	db 19, CONFUSE_RAY
 	db 24, WING_ATTACK
 	db 36, MEAN_LOOK
-	db 46, HAZE
 	db 0 ; no more level-up moves
 
 GolbatEvosAttacks:
@@ -607,7 +604,6 @@ GolbatEvosAttacks:
 	db 22, WING_ATTACK
 	db 27, SLUDGE
 	db 36, MEAN_LOOK
-	db 46, HAZE
 	db 0 ; no more level-up moves
 
 OddishEvosAttacks:
@@ -1042,7 +1038,7 @@ TentacoolEvosAttacks:
 	db 20, BUBBLEBEAM
 	db 25, SLUDGE
 	db 30, WRAP
-	db 36, BARRIER
+	db 36, REFLECT
 	db 43, SCREECH
 	db 49, HYDRO_PUMP
 	db 0 ; no more level-up moves
@@ -1057,7 +1053,7 @@ TentacruelEvosAttacks:
 	db 19, ACID
 	db 25, BUBBLEBEAM
 	db 30, WRAP
-	db 37, BARRIER
+	db 37, REFLECT
 	db 42, SLUDGE_BOMB
 	db 47, SCREECH
 	db 55, HYDRO_PUMP
@@ -1589,7 +1585,6 @@ KoffingEvosAttacks:
 	db 15, SELFDESTRUCT
 	db 19, SLUDGE
 	db 25, SMOKESCREEN
-	db 33, HAZE
 	db 41, EXPLOSION
 	db 45, DESTINY_BOND
 	db 0 ; no more level-up moves
@@ -1604,7 +1599,6 @@ WeezingEvosAttacks:
 	db 17, SELFDESTRUCT
 	db 21, SLUDGE
 	db 25, SMOKESCREEN
-	db 33, HAZE
 	db 35, SLUDGE_BOMB
 	db 35, AMNESIA
 	db 44, EXPLOSION
@@ -1774,7 +1768,7 @@ StarmieEvosAttacks:
 
 MrMimeEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BARRIER
+	db 1, CALM_MIND
 	db 6, CONFUSION
 	db 11, SUBSTITUTE
 	db 21, DOUBLESLAP
@@ -1944,7 +1938,6 @@ VaporeonEvosAttacks:
 	db 30, BITE
 	db 36, AURORA_BEAM
 	db 41, ACID_ARMOR
-	db 42, HAZE
 	db 52, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -2179,7 +2172,7 @@ DragoniteEvosAttacks:
 MewtwoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CONFUSION
-	db 11, BARRIER
+	db 11, CALM_MIND
 	db 22, SWIFT
 	db 33, PSYCH_UP
 	db 44, FUTURE_SIGHT
@@ -2259,10 +2252,10 @@ MeganiumEvosAttacks:
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, GROWTH
-	db 1, HONE_CLAWS
-	db 1, IRON_DEFENSE
-	db 1, DRAGON_DANCE
+	db 1, SHADOW_SNEAK
+	db 1, CALM_MIND
+	db 1, AQUA_JET
+	db 1, SILVER_WIND
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK
@@ -2488,7 +2481,6 @@ CrobatEvosAttacks:
 	db 30, WING_ATTACK
 	db 36, SLUDGE_BOMB
 	db 42, MEAN_LOOK
-	db 55, HAZE
 	db 0 ; no more level-up moves
 
 ChinchouEvosAttacks:
@@ -2827,7 +2819,6 @@ WooperEvosAttacks:
 	db 21, AMNESIA
 	db 31, EARTHQUAKE
 	db 41, RAIN_DANCE
-	db 51, HAZE
 	db 0 ; no more level-up moves
 
 QuagsireEvosAttacks:
@@ -2840,7 +2831,6 @@ QuagsireEvosAttacks:
 	db 23, AMNESIA
 	db 33, EARTHQUAKE
 	db 47, RAIN_DANCE
-	db 59, HAZE
 	db 0 ; no more level-up moves
 
 EspeonEvosAttacks:
@@ -2876,7 +2866,6 @@ MurkrowEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 11, PURSUIT
-	db 16, HAZE
 	db 22, WING_ATTACK
 	db 26, SHADOW_SNEAK
 	db 31, FAINT_ATTACK
@@ -2951,7 +2940,6 @@ PinecoEvosAttacks:
 	db 15, MEGA_DRAIN
 	db 22, RAPID_SPIN
 	db 25, SELFDESTRUCT
-	db 29, BIDE
 	db 36, EXPLOSION
 	db 43, SPIKES
 	db 50, DOUBLE_EDGE
@@ -2963,7 +2951,6 @@ ForretressEvosAttacks:
 	db 1, PROTECT
 	db 1, SELFDESTRUCT
 	db 22, RAPID_SPIN
-	db 29, BIDE
 	db 33, SPIKE_CANNON
 	db 39, EXPLOSION
 	db 44, SPIKES
@@ -3084,7 +3071,6 @@ ShuckleEvosAttacks:
 	db 23, SAFEGUARD
 	db 27, SANDSTORM
 	db 31, ACID_ARMOR
-	db 34, BIDE
 	db 37, REST
 	db 40, PROTECT
 	db 0 ; no more level-up moves
@@ -3462,7 +3448,6 @@ MiltankEvosAttacks:
 	db 8, DEFENSE_CURL
 	db 13, STOMP
 	db 19, MILK_DRINK
-	db 26, BIDE
 	db 34, ROLLOUT
 	db 43, BODY_SLAM
 	db 53, HEAL_BELL

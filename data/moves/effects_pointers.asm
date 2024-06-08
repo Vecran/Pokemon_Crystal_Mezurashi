@@ -161,4 +161,5 @@ MoveEffectsPointers:
 	dw Growth
 	dw HoneClaws
 	dw DragonDance
+	dw CalmMind
 	assert_table_length NUM_MOVE_EFECTS

@@ -117,12 +117,12 @@
 	const CONFUSE_RAY  ; 6d
 	const DRAGON_DANCE     ; 6e
 	const DEFENSE_CURL ; 6f
-	const BARRIER      ; 70
+	const CALM_MIND      ; 70
 	const LIGHT_SCREEN ; 71
-	const HAZE         ; 72
+	const AQUA_JET        ; 72
 	const REFLECT      ; 73
 	const FOCUS_ENERGY ; 74
-	const BIDE         ; 75
+	const SILVER_WIND        ; 75
 	const METRONOME    ; 76
 	const MIRROR_MOVE  ; 77
 	const SELFDESTRUCT ; 78

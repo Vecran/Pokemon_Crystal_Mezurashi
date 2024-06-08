@@ -125,12 +125,12 @@ Moves:
 	move CONFUSE_RAY,  EFFECT_CONFUSE,             0, GHOST,         STATUS,   100, 10,   0
 	move DRAGON_DANCE, EFFECT_DRAGON_DANCE,        0, DRAGON,        STATUS,   100, 20,   0
 	move DEFENSE_CURL, EFFECT_DEFENSE_CURL,        0, NORMAL,        STATUS,   100, 40,   0
-	move BARRIER,      EFFECT_DEFENSE_UP_2,        0, PSYCHIC_TYPE,  STATUS,   100, 30,   0
+	move CALM_MIND,    EFFECT_CALM_MIND,           0, PSYCHIC_TYPE,  STATUS,   100, 20,   0
 	move LIGHT_SCREEN, EFFECT_LIGHT_SCREEN,        0, PSYCHIC_TYPE,  STATUS,   100, 30,   0
-	move HAZE,         EFFECT_RESET_STATS,         0, ICE,           STATUS,   100, 30,   0
+	move AQUA_JET,     EFFECT_PRIORITY_HIT,       40, WATER,         PHYSICAL, 100, 20,   0
 	move REFLECT,      EFFECT_REFLECT,             0, PSYCHIC_TYPE,  STATUS,   100, 20,   0
 	move FOCUS_ENERGY, EFFECT_FOCUS_ENERGY,        0, NORMAL,        STATUS,   100, 30,   0
-	move BIDE,         EFFECT_BIDE,                0, NORMAL,        PHYSICAL, 100, 10,   0
+	move SILVER_WIND,  EFFECT_ALL_UP_HIT,         60, BUG,           SPECIAL,  100, 10,  10
 	move METRONOME,    EFFECT_METRONOME,           0, NORMAL,        STATUS,   100, 10,   0
 	move MIRROR_MOVE,  EFFECT_MIRROR_MOVE,         0, FLYING,        STATUS,   100, 20,   0
 	move SELFDESTRUCT, EFFECT_SELFDESTRUCT,      200, NORMAL,        PHYSICAL, 100,  5,   0

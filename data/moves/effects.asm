@@ -2151,3 +2151,18 @@ DragonDance:
 	statupmessage
 	statupfailtext
 	endmove
+
+CalmMind:
+	checkobedience
+	usedmovetext
+	doturn
+	specialattackup
+	lowersub
+	statupanim
+	raisesub
+	statupmessage
+	statupfailtext
+	specialdefenseup
+	statupmessage
+	statupfailtext
+	endmove

@@ -113,12 +113,12 @@ BattleAnimations::
 	dw BattleAnim_ConfuseRay
 	dw BattleAnim_DragonDance
 	dw BattleAnim_DefenseCurl
-	dw BattleAnim_Barrier
+	dw BattleAnim_CalmMind
 	dw BattleAnim_LightScreen
-	dw BattleAnim_Haze
+	dw BattleAnim_AquaJet
 	dw BattleAnim_Reflect
 	dw BattleAnim_FocusEnergy
-	dw BattleAnim_Bide
+	dw BattleAnim_SilverWind
 	dw BattleAnim_Metronome
 	dw BattleAnim_MirrorMove
 	dw BattleAnim_Selfdestruct
@@ -1736,6 +1736,7 @@ BattleAnim_Softboiled:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
+BattleAnim_CalmMind:
 BattleAnim_FocusEnergy:
 	anim_1gfx ANIM_GFX_SPEED
 	anim_call BattleAnim_TargetObj_1Row
@@ -1763,16 +1764,6 @@ BattleAnim_FocusEnergy:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
-BattleAnim_Bide:
-	anim_if_param_equal $0, BattleAnim_DrainPunch
-	anim_1gfx ANIM_GFX_HIT
-	anim_call BattleAnim_TargetObj_1Row
-	anim_sound 0, 0, SFX_ESCAPE_ROPE
-	anim_bgeffect ANIM_BG_CYCLE_MON_LIGHT_DARK_REPEATING, $0, BG_EFFECT_USER, $20
-	anim_wait 72
-	anim_incbgeffect ANIM_BG_CYCLE_MON_LIGHT_DARK_REPEATING
-	anim_call BattleAnim_ShowMon_0
-	anim_ret
 
 BattleAnim_PowerWhip:
 	anim_2gfx ANIM_GFX_ROPE, ANIM_GFX_HIT
@@ -2217,15 +2208,25 @@ BattleAnim_Hypnosis:
 	anim_wait 56
 	anim_ret
 
-BattleAnim_Haze:
-	anim_1gfx ANIM_GFX_HAZE
-	anim_sound 0, 1, SFX_SURF
-.loop
-	anim_obj ANIM_OBJ_HAZE, 48, 56, $0
-	anim_obj ANIM_OBJ_HAZE, 132, 16, $0
-	anim_wait 12
-	anim_loop 5, .loop
-	anim_wait 96
+BattleAnim_AquaJet:
+    anim_bgeffect ANIM_BG_START_WATER, $0, BG_EFFECT_TARGET, $0
+	anim_1gfx ANIM_GFX_WATER
+	anim_call BattleAnim_UserObj_2Row
+	anim_sound 0, 1, SFX_HYDRO_PUMP
+	anim_obj ANIM_OBJ_HYDRO_PUMP, 108, 72, $0
+	anim_bgeffect ANIM_BG_WATER, $1c, $0, $0
+	anim_wait 8
+	anim_sound 0, 1, SFX_HYDRO_PUMP
+	anim_obj ANIM_OBJ_HYDRO_PUMP, 116, 72, $0
+	anim_bgeffect ANIM_BG_WATER, $8, $0, $0
+	anim_wait 8
+	anim_sound 0, 1, SFX_HYDRO_PUMP
+	anim_obj ANIM_OBJ_HYDRO_PUMP, 124, 72, $0
+	anim_bgeffect ANIM_BG_WATER, $30, $0, $0
+	anim_wait 32
+	anim_call BattleAnim_ShowMon_1
+	anim_bgeffect ANIM_BG_END_WATER, $0, $0, $0
+	anim_wait 16
 	anim_ret
 
 BattleAnim_MagnetBomb:
@@ -2961,19 +2962,6 @@ BattleAnim_BoneClub:
 	anim_sound 0, 1, SFX_BONE_CLUB
 	anim_obj ANIM_OBJ_HIT_YFIX, 136, 56, $0
 	anim_wait 16
-	anim_ret
-
-BattleAnim_Barrier:
-	anim_1gfx ANIM_GFX_REFLECT
-	anim_battlergfx_2row
-	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
-	anim_wait 8
-	anim_sound 0, 0, SFX_SHINE
-	anim_obj ANIM_OBJ_SCREEN, 72, 80, $0
-	anim_wait 32
-	anim_sound 0, 0, SFX_SHINE
-	anim_obj ANIM_OBJ_SCREEN, 72, 80, $0
-	anim_wait 32
 	anim_ret
 
 BattleAnim_Waterfall:
@@ -4181,6 +4169,7 @@ BattleAnim_RapidSpin:
 	anim_wait 1
 	anim_ret
 
+BattleAnim_SilverWind:
 BattleAnim_SweetScent:
 	anim_2gfx ANIM_GFX_FLOWER, ANIM_GFX_MISC
 	anim_sound 0, 0, SFX_SWEET_SCENT

@@ -32,7 +32,7 @@ CharmanderEggMoves:
 
 SquirtleEggMoves:
 	db MIRROR_COAT
-	db HAZE
+	db AQUA_JET
 	db CONFUSION
 	db FORESIGHT
 	db FLAIL
@@ -174,14 +174,14 @@ GrowlitheEggMoves:
 PoliwagEggMoves:
 	db SPLASH
 	db BUBBLEBEAM
-	db HAZE
+	db AQUA_JET
 	db MIND_READER
 	db -1 ; end
 
 AbraEggMoves:
 	db LIGHT_SCREEN
 	db ENCORE
-	db BARRIER
+	db CALM_MIND
 	db -1 ; end
 
 MachopEggMoves:
@@ -202,7 +202,7 @@ TentacoolEggMoves:
 	db AURORA_BEAM
 	db MIRROR_COAT
 	db RAPID_SPIN
-	db HAZE
+	db AQUA_JET
 	db SAFEGUARD
 	db -1 ; end
 
@@ -237,7 +237,7 @@ FarfetchDEggMoves:
 DoduoEggMoves:
 	db QUICK_ATTACK
 	db SUPERSONIC
-	db HAZE
+	db MAGNITUDE
 	db FAINT_ATTACK
 	db FLAIL
 	db -1 ; end
@@ -250,14 +250,14 @@ SeelEggMoves:
 	db -1 ; end
 
 GrimerEggMoves:
-	db HAZE
+	db SMOKESCREEN
 	db MEAN_LOOK
 	db LICK
 	db -1 ; end
 
 ShellderEggMoves:
 	db BUBBLEBEAM
-	db BARRIER
+	db IRON_DEFENSE
 	db RAPID_SPIN
 	db SCREECH
 	db -1 ; end
@@ -265,7 +265,7 @@ ShellderEggMoves:
 GastlyEggMoves:
 	db PSYWAVE
 	db PERISH_SONG
-	db HAZE
+	db SMOKESCREEN
 	db -1 ; end
 
 OnixEggMoves:
@@ -275,12 +275,12 @@ OnixEggMoves:
 
 DrowzeeEggMoves:
 	db LIGHT_SCREEN
-	db BARRIER
+	db CALM_MIND
 	db -1 ; end
 
 KrabbyEggMoves:
 	db DIG
-	db HAZE
+	db AQUA_JET
 	db AMNESIA
 	db FLAIL
 	db -1 ; end
@@ -357,7 +357,7 @@ HorseaEggMoves:
 
 GoldeenEggMoves:
 	db PSYBEAM
-	db HAZE
+	db AQUA_JET
 	db HYDRO_PUMP
 	db -1 ; end
 
@@ -394,7 +394,7 @@ OmanyteEggMoves:
 	db BUBBLEBEAM
 	db AURORA_BEAM
 	db SUPERSONIC
-	db HAZE
+	db AQUA_JET
 	db -1 ; end
 
 KabutoEggMoves:
@@ -417,7 +417,7 @@ SnorlaxEggMoves:
 
 DratiniEggMoves:
 	db LIGHT_SCREEN
-	db HAZE
+	db AQUA_JET
 	db SUPERSONIC
 	db -1 ; end
 
@@ -466,7 +466,7 @@ HoothootEggMoves:
 
 LedybaEggMoves:
 	db PSYBEAM
-	db BIDE
+	db SILVER_WIND
 	db LIGHT_SCREEN
 	db -1 ; end
 
@@ -484,7 +484,6 @@ ChinchouEggMoves:
 
 PichuEggMoves:
 	db REVERSAL
-	db BIDE
 	db PRESENT
 	db ENCORE
 	db DOUBLESLAP
@@ -514,7 +513,7 @@ TogepiEggMoves:
 	db -1 ; end
 
 NatuEggMoves:
-	db HAZE
+	db SHADOW_SNEAK
 	db DRILL_PECK
 	db QUICK_ATTACK
 	db FAINT_ATTACK
@@ -604,7 +603,6 @@ PinecoEggMoves:
 	db -1 ; end
 
 DunsparceEggMoves:
-	db BIDE
 	db ANCIENTPOWER
 	db ROCK_SLIDE
 	db BITE
@@ -631,7 +629,7 @@ SnubbullEggMoves:
 
 QwilfishEggMoves:
 	db FLAIL
-	db HAZE
+	db AQUA_JET
 	db BUBBLEBEAM
 	db SUPERSONIC
 	db -1 ; end
@@ -642,7 +640,6 @@ ShuckleEggMoves:
 
 HeracrossEggMoves:
 	db BULK_UP
-	db BIDE
 	db FLAIL
 	db -1 ; end
 
@@ -683,7 +680,7 @@ RemoraidEggMoves:
 	db AURORA_BEAM
 	db OCTAZOOKA
 	db SUPERSONIC
-	db HAZE
+	db AQUA_JET
 	db SCREECH
 	db -1 ; end
 
@@ -698,7 +695,7 @@ DelibirdEggMoves:
 MantineEggMoves:
 	db TWISTER
 	db HYDRO_PUMP
-	db HAZE
+	db AQUA_JET
 	db DRAGON_RUSH
 	db -1 ; end
 
@@ -746,14 +743,13 @@ SmoochumEggMoves:
 
 ElekidEggMoves:
 	db KARATE_CHOP
-	db BARRIER
+	db LIGHT_SCREEN
 	db BULK_UP
 	db CROSS_CHOP
 	db -1 ; end
 
 MagbyEggMoves:
 	db KARATE_CHOP
-	db BARRIER
 	db SCREECH
 	db CROSS_CHOP
 	db -1 ; end
