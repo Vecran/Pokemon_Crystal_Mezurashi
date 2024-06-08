@@ -128,18 +128,18 @@ MoveDescriptions::
 	dw BoneClubDescription
 	dw FireBlastDescription
 	dw WaterfallDescription
-	dw ClampDescription
+	dw IceFangDescription
 	dw SwiftDescription
 	dw SkullBashDescription
 	dw SpikeCannonDescription
 	dw ConstrictDescription
-	dw AmnesiaDescription
-	dw KinesisDescription
+	dw NastyPlotDescription
+	dw DarkPulseDescription
 	dw SoftboiledDescription
 	dw HiJumpKickDescription
 	dw GlareDescription
 	dw DreamEaterDescription
-	dw PoisonGasDescription
+	dw SludgeWaveDescription
 	dw BarrageDescription
 	dw LeechLifeDescription
 	dw LovelyKissDescription
@@ -772,12 +772,12 @@ FireBlastDescription:
 	line "may cause a burn.@"
 
 WaterfallDescription:
-	db   "An aquatic charge"
-	line "attack.@"
+	db   "An attack that may"
+	line "cause flinching.@"
 
-ClampDescription:
-	db   "Traps the foe for"
-	line "2-5 turns.@"
+IceFangDescription:
+	db   "May flinch or"
+	line "freeze the enemy.@"
 
 SwiftDescription:
 	db   "An attack that"
@@ -792,16 +792,16 @@ SpikeCannonDescription:
 	line "hit 2-5 times.@"
 
 ConstrictDescription:
-	db   "An attack that may"
-	line "lower SPEED.@"
+	db   "An attack that"
+	line "lowers SPEED.@"
 
-AmnesiaDescription:
+NastyPlotDescription:
 	db   "Sharply raises the"
-	line "user's SPCL.DEF.@"
+	line "user's SP.ATK.@"
 
-KinesisDescription:
-	db   "Reduces the foe's"
-	line "accuracy.@"
+DarkPulseDescription:
+	db   "An attack that may"
+	line "cause flinching.@"
 
 SoftboiledDescription:
 	db   "Restores HP by 1/2"
@@ -819,7 +819,7 @@ DreamEaterDescription:
 	db   "Steals HP from a"
 	line "sleeping victim.@"
 
-PoisonGasDescription:
+SludgeWaveDescription:
 	db   "A move that may"
 	line "poison the foe.@"
 

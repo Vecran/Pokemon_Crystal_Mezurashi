@@ -86,7 +86,6 @@ NidoranFEggMoves:
 NidoranMEggMoves:
 	db SUPERSONIC
 	db CONFUSION
-	db AMNESIA
 	db BEAT_UP
 	db -1 ; end
 
@@ -140,7 +139,7 @@ MeowthEggMoves:
 	db SPITE
 	db CHARM
 	db HYPNOSIS
-	db AMNESIA
+	db NASTY_PLOT
 	db -1 ; end
 
 PsyduckEggMoves:
@@ -281,7 +280,6 @@ DrowzeeEggMoves:
 KrabbyEggMoves:
 	db DIG
 	db AQUA_JET
-	db AMNESIA
 	db FLAIL
 	db -1 ; end
 
@@ -337,7 +335,6 @@ TangelaEggMoves:
 	db CONFUSION
 	db MEGA_DRAIN
 	db REFLECT
-	db AMNESIA
 	db -1 ; end
 
 KangaskhanEggMoves:
@@ -492,7 +489,6 @@ PichuEggMoves:
 CleffaEggMoves:
 	db PRESENT
 	db METRONOME
-	db AMNESIA
 	db BELLY_DRUM
 	db SPLASH
 	db MIMIC
@@ -531,7 +527,6 @@ MareepEggMoves:
 MarillEggMoves:
 	db LIGHT_SCREEN
 	db PRESENT
-	db AMNESIA
 	db FUTURE_SIGHT
 	db BELLY_DRUM
 	db PERISH_SONG
@@ -549,7 +544,6 @@ HoppipEggMoves:
 	db ENCORE
 	db DOUBLE_EDGE
 	db REFLECT
-	db AMNESIA
 	db PAY_DAY
 	db -1 ; end
 
@@ -589,7 +583,7 @@ MisdreavusEggMoves:
 	db -1 ; end
 
 GirafarigEggMoves:
-	db AMNESIA
+	db NASTY_PLOT
 	db FORESIGHT
 	db FUTURE_SIGHT
 	db BEAT_UP
@@ -673,7 +667,6 @@ CorsolaEggMoves:
 	db ROCK_SLIDE
 	db SAFEGUARD
 	db SCREECH
-	db AMNESIA
 	db -1 ; end
 
 RemoraidEggMoves:

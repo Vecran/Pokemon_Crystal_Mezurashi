@@ -163,4 +163,5 @@ MoveEffectsPointers:
 	dw DragonDance
 	dw CalmMind
 	dw QuiverDance
+	dw IceFang
 	assert_table_length NUM_MOVE_EFECTS

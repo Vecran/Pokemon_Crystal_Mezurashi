@@ -35,7 +35,6 @@ MoveGrammar:
 ; 1: originally "[mon]の¯[move]した!" ("[mon]¯did [move]!")
 	db RECOVER
 	db TELEPORT
-	db AMNESIA
 	db FLAIL
 	db 0 ; end set
 
@@ -77,9 +76,7 @@ MoveGrammar:
 	db SCREECH
 	db METRONOME
 	db LICK
-	db CLAMP
 	db CONSTRICT
-	db POISON_GAS
 	db BUBBLE
 	db SLASH
 	db SPIDER_WEB

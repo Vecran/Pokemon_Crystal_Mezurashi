@@ -906,7 +906,6 @@ KadabraEvosAttacks:
 	db EVOLVE_LEVEL, 42, ALAKAZAM
 	db 0 ; no more evolutions
 	db 1, TELEPORT
-	db 1, KINESIS
 	db 1, CONFUSION
 	db 16, CONFUSION
 	db 21, PSYBEAM
@@ -919,7 +918,6 @@ KadabraEvosAttacks:
 AlakazamEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TELEPORT
-	db 1, KINESIS
 	db 1, CONFUSION
 	db 16, CONFUSION
 	db 21, PSYBEAM
@@ -1142,7 +1140,7 @@ SlowpokeEvosAttacks:
 	db 18, CONFUSION
 	db 29, PSYBEAM
 	db 34, HEADBUTT
-	db 43, AMNESIA
+	db 43, NASTY_PLOT
 	db 44, PSYCHIC_M
 	db 0 ; no more level-up moves
 
@@ -1158,7 +1156,7 @@ SlowbroEvosAttacks:
 	db 34, HEADBUTT
 	db 37, IRON_DEFENSE
 	db 45, PSYCHIC_M
-	db 46, AMNESIA
+	db 46, NASTY_PLOT
 	db 0 ; no more level-up moves
 
 MagnemiteEvosAttacks:
@@ -1260,7 +1258,6 @@ DewgongEvosAttacks:
 GrimerEvosAttacks:
 	db EVOLVE_LEVEL, 35, MUK
 	db 0 ; no more evolutions
-	db 1, POISON_GAS
 	db 1, CUTE_POUND
 	db 5, IRON_DEFENSE
 	db 16, SLUDGE
@@ -1273,7 +1270,6 @@ GrimerEvosAttacks:
 MukEvosAttacks:
 	db 0 ; no more evolutions
 	; moves are not sorted by level
-	db 1, POISON_GAS
 	db 1, CUTE_POUND
 	db 1, IRON_DEFENSE
 	db 33, IRON_DEFENSE
@@ -1294,7 +1290,7 @@ ShellderEvosAttacks:
 	db 25, PROTECT
 	db 33, LEER
 	db 37, ICE_BEAM
-	db 40, CLAMP
+	db 40, ICE_FANG
 	db 0 ; no more level-up moves
 
 CloysterEvosAttacks:
@@ -1308,7 +1304,7 @@ CloysterEvosAttacks:
 	db 25, PROTECT
 	db 33, LEER
 	db 37, ICE_BEAM
-	db 40, CLAMP
+	db 40, ICE_FANG
 	db 40, SPIKES
 	db 41, SPIKE_CANNON
 	db 55, HYDRO_PUMP
@@ -1379,7 +1375,6 @@ DrowzeeEvosAttacks:
 	db 1, HYPNOSIS
 	db 18, CONFUSION
 	db 25, HEADBUTT
-	db 31, POISON_GAS
 	db 40, PSYCHIC_M
 	db 43, PSYCH_UP
 	db 45, FUTURE_SIGHT
@@ -1392,7 +1387,6 @@ HypnoEvosAttacks:
 	db 1, CONFUSION
 	db 18, CONFUSION
 	db 25, HEADBUTT
-	db 33, POISON_GAS
 	db 42, PSYCHIC_M
 	db 55, PSYCH_UP
 	db 60, FUTURE_SIGHT
@@ -1567,7 +1561,6 @@ LickitungEvosAttacks:
 KoffingEvosAttacks:
 	db EVOLVE_LEVEL, 35, WEEZING
 	db 0 ; no more evolutions
-	db 1, POISON_GAS
 	db 1, TACKLE
 	db 19, SLUDGE
 	db 25, SMOKESCREEN
@@ -1577,12 +1570,11 @@ KoffingEvosAttacks:
 
 WeezingEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, POISON_GAS
 	db 1, TACKLE
 	db 21, SLUDGE
 	db 25, SMOKESCREEN
 	db 35, SLUDGE_BOMB
-	db 35, AMNESIA
+	db 35, NASTY_PLOT
 	db 44, EXPLOSION
 	db 51, DESTINY_BOND
 	db 0 ; no more level-up moves
@@ -2048,7 +2040,7 @@ AerodactylEvosAttacks:
 SnorlaxEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 8, AMNESIA
+	db 8, NASTY_PLOT
 	db 15, DEFENSE_CURL
 	db 22, BELLY_DRUM
 	db 29, HEADBUTT
@@ -2156,7 +2148,7 @@ MewtwoEvosAttacks:
 	db 33, PSYCH_UP
 	db 44, FUTURE_SIGHT
 	db 66, PSYCHIC_M
-	db 77, AMNESIA
+	db 77, NASTY_PLOT
 	db 88, RECOVER
 	db 99, SAFEGUARD
 	db 0 ; no more level-up moves
@@ -2231,10 +2223,10 @@ MeganiumEvosAttacks:
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, QUIVER_DANCE
-	db 1, HEAD_SMASH
-	db 1, SEED_BOMB
-	db 1, CROSS_POISON
+	db 1, ICE_FANG
+	db 1, NASTY_PLOT
+	db 1, DARK_PULSE
+	db 1, SLUDGE_WAVE
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK
@@ -2330,7 +2322,7 @@ SentretEvosAttacks:
 	db 25, PURSUIT
 	db 30, EXTREMESPEED
 	db 35, REST
-	db 40, AMNESIA
+	db 40, NASTY_PLOT
 	db 0 ; no more level-up moves
 
 FurretEvosAttacks:
@@ -2345,7 +2337,7 @@ FurretEvosAttacks:
 	db 25, PURSUIT
 	db 30, EXTREMESPEED
 	db 35, REST
-	db 40, AMNESIA
+	db 40, NASTY_PLOT
 	db 45, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
@@ -2795,7 +2787,7 @@ WooperEvosAttacks:
 	db 1, LEER
 	db 5, MUD_SLAP
 	db 16, BUBBLEBEAM
-	db 21, AMNESIA
+	db 21, NASTY_PLOT
 	db 31, EARTHQUAKE
 	db 41, RAIN_DANCE
 	db 0 ; no more level-up moves
@@ -2807,7 +2799,7 @@ QuagsireEvosAttacks:
 	db 5, MUD_SLAP
 	db 16, BUBBLEBEAM
 	db 20, MAGNITUDE
-	db 23, AMNESIA
+	db 23, NASTY_PLOT
 	db 33, EARTHQUAKE
 	db 47, RAIN_DANCE
 	db 0 ; no more level-up moves
@@ -3117,7 +3109,7 @@ SlugmaEvosAttacks:
 	db 15, ROCK_THROW
 	db 22, IRON_DEFENSE
 	db 25, FLAME_WHEEL
-	db 29, AMNESIA
+	db 29, NASTY_PLOT
 	db 36, FLAMETHROWER
 	db 41, ROCK_SLIDE
 	db 46, BODY_SLAM
@@ -3131,7 +3123,7 @@ MagcargoEvosAttacks:
 	db 15, ROCK_THROW
 	db 22, IRON_DEFENSE
 	db 25, FLAME_WHEEL
-	db 29, AMNESIA
+	db 29, NASTY_PLOT
 	db 36, FLAMETHROWER
 	db 41, ROCK_SLIDE
 	db 46, BODY_SLAM
@@ -3147,7 +3139,7 @@ SwinubEvosAttacks:
 	db 19, ENDURE
 	db 21, ICY_WIND
 	db 46, BLIZZARD
-	db 55, AMNESIA
+	db 55, NASTY_PLOT
 	db 0 ; no more level-up moves
 
 PiloswineEvosAttacks:
@@ -3161,7 +3153,7 @@ PiloswineEvosAttacks:
 	db 33, ICY_WIND
 	db 39, EARTHQUAKE
 	db 50, BLIZZARD
-	db 55, AMNESIA
+	db 55, NASTY_PLOT
 	db 0 ; no more level-up moves
 
 CorsolaEvosAttacks:
@@ -3405,7 +3397,6 @@ MagbyEvosAttacks:
 	db 1, LEER
 	db 17, FLAME_WHEEL
 	db 21, SMOKESCREEN
-	db 25, POISON_GAS
 	db 30, FIRE_PUNCH
 	db 31, SUNNY_DAY
 	db 37, FLAMETHROWER

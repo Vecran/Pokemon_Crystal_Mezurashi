@@ -2184,3 +2184,26 @@ QuiverDance:
 	statupmessage
 	statupfailtext
 	endmove
+
+IceFang:
+	checkobedience
+	usedmovetext
+	doturn
+	critical
+	damagestats
+	damagecalc
+	stab
+	damagevariation
+	checkhit
+	effectchance
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	checkfaint
+	buildopponentrage
+	freezetarget
+	effectchance
+	flinchtarget
+	endmove

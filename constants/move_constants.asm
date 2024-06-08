@@ -133,18 +133,18 @@
 	const BONE_CLUB    ; 7d
 	const FIRE_BLAST   ; 7e
 	const WATERFALL    ; 7f
-	const CLAMP        ; 80
+	const ICE_FANG        ; 80
 	const SWIFT        ; 81
 	const SKULL_BASH   ; 82
 	const SPIKE_CANNON ; 83
 	const CONSTRICT    ; 84
-	const AMNESIA      ; 85
-	const KINESIS      ; 86
+	const NASTY_PLOT      ; 85
+	const DARK_PULSE     ; 86
 	const SOFTBOILED   ; 87
 	const HI_JUMP_KICK ; 88
 	const GLARE        ; 89
 	const DREAM_EATER  ; 8a
-	const POISON_GAS   ; 8b
+	const SLUDGE_WAVE   ; 8b
 	const BARRAGE      ; 8c
 	const LEECH_LIFE   ; 8d
 	const LOVELY_KISS  ; 8e

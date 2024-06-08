@@ -129,18 +129,18 @@ BattleAnimations::
 	dw BattleAnim_BoneClub
 	dw BattleAnim_FireBlast
 	dw BattleAnim_Waterfall
-	dw BattleAnim_Clamp
+	dw BattleAnim_IceFang
 	dw BattleAnim_Swift
 	dw BattleAnim_SkullBash
 	dw BattleAnim_SpikeCannon
 	dw BattleAnim_Constrict
-	dw BattleAnim_Amnesia
-	dw BattleAnim_Kinesis
+	dw BattleAnim_NastyPlot
+	dw BattleAnim_DarkPulse
 	dw BattleAnim_Softboiled
 	dw BattleAnim_HiJumpKick
 	dw BattleAnim_Glare
 	dw BattleAnim_DreamEater
-	dw BattleAnim_PoisonGas
+	dw BattleAnim_SludgeWave
 	dw BattleAnim_Barrage
 	dw BattleAnim_LeechLife
 	dw BattleAnim_LovelyKiss
@@ -1544,17 +1544,18 @@ BattleAnim_ShadowClaw:
 	anim_wait 32
 	anim_ret
 
-BattleAnim_Clamp:
-	anim_2gfx ANIM_GFX_CUT, ANIM_GFX_HIT
-	anim_obj ANIM_OBJ_CLAMP, 136, 56, $a0
-	anim_obj ANIM_OBJ_CLAMP, 136, 56, $20
-	anim_wait 16
+BattleAnim_IceFang:
+	anim_3gfx ANIM_GFX_CUT, ANIM_GFX_HIT, ANIM_GFX_ICE
+	anim_obj ANIM_OBJ_BITE, 136, 56, $98
+	anim_obj ANIM_OBJ_BITE, 136, 56, $18
+	anim_wait 8
 	anim_sound 0, 1, SFX_BITE
 	anim_obj ANIM_OBJ_HIT_YFIX, 144, 48, $18
-	anim_wait 32
+	anim_wait 16
 	anim_sound 0, 1, SFX_BITE
 	anim_obj ANIM_OBJ_HIT_YFIX, 128, 64, $18
-	anim_wait 16
+	anim_call BattleAnimSub_Ice
+	anim_wait 32
 	anim_ret
 
 BattleAnim_Bite:
@@ -1955,14 +1956,19 @@ BattleAnim_LightScreen:
 	anim_wait 64
 	anim_ret
 
-BattleAnim_Amnesia:
-	anim_1gfx ANIM_GFX_STATUS
+BattleAnim_NastyPlot:
+	anim_3gfx ANIM_GFX_STATUS, ANIM_GFX_SMOKE, ANIM_GFX_ANGELS
 	anim_sound 0, 0, SFX_LICK
 	anim_obj ANIM_OBJ_AMNESIA, 64, 80, $2
 	anim_wait 16
 	anim_obj ANIM_OBJ_AMNESIA, 68, 80, $1
 	anim_wait 16
 	anim_obj ANIM_OBJ_AMNESIA, 72, 80, $0
+	anim_wait 64
+	anim_soud 0, 0, SFX_BALL_POOF
+	anim_obj ANIM_OBJ_BALL_POOF, 48, 96, $0
+	anim_wait 16
+	anim_obj ANIM_OBJ_LOVELY_KISS, 64, 80, $0
 	anim_wait 64
 	anim_ret
 
@@ -2246,14 +2252,17 @@ BattleAnim_CrossPoison:
 	anim_wait 4
 	anim_ret
 
-BattleAnim_PoisonGas:
-	anim_1gfx ANIM_GFX_HAZE
-	anim_sound 16, 2, SFX_BUBBLEBEAM
+BattleAnim_SludgeWave:
+	anim_1gfx ANIM_GFX_BUBBLE
+	anim_bgeffect ANIM_BG_SURF, $0, $0, $0
+	anim_bgeffect ANIM_BG_BLACK_HUES, $0, $8, $0
+	anim_obj ANIM_OBJ_SURF, 88, 104, $8
 .loop
-	anim_obj ANIM_OBJ_POISON_GAS, 44, 80, $2
-	anim_wait 8
-	anim_loop 10, .loop
-	anim_wait 128
+	anim_sound 0, 1, SFX_SURF
+	anim_wait 32
+	anim_loop 4, .loop
+	anim_incobj 1
+	anim_wait 56
 	anim_ret
 
 BattleAnim_HornAttack:
@@ -2484,19 +2493,17 @@ BattleAnim_SkullBash:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
-BattleAnim_Kinesis:
-	anim_2gfx ANIM_GFX_MISC, ANIM_GFX_NOISE
-	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
-	anim_obj ANIM_OBJ_KINESIS, 80, 76, $0
+BattleAnim_DarkPulse:
+	anim_1gfx ANIM_GFX_HIT
+	anim_bgp $1b
+	anim_obp1 $1b
 	anim_wait 32
-.loop
-	anim_sound 0, 0, SFX_KINESIS
-	anim_obj ANIM_OBJ_SOUND, 64, 88, $0
-	anim_wait 32
-	anim_loop 3, .loop
-	anim_wait 32
-	anim_sound 0, 0, SFX_KINESIS_2
-	anim_wait 32
+	anim_call BattleAnim_UserObj_2Row
+	anim_bgeffect ANIM_BG_NIGHT_SHADE, $0, BG_EFFECT_TARGET, $8
+	anim_sound 0, 1, SFX_PSYCHIC
+	anim_wait 96
+	anim_incbgeffect ANIM_BG_NIGHT_SHADE
+	anim_call BattleAnim_ShowMon_1
 	anim_ret
 
 BattleAnim_Peck:
