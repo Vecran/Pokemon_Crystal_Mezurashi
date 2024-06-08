@@ -2884,7 +2884,6 @@ BattleAnim_HoneClaws:
 	anim_bgeffect ANIM_BG_FADE_MON_TO_LIGHT_REPEATING, $0, BG_EFFECT_USER, $40
 	anim_obj ANIM_OBJ_SHARPEN, 48, 88, $0
 	anim_1gfx ANIM_GFX_CUT
-	anim_if_param_equal $1, .alternate
 	anim_sound 0, 1, SFX_SCRATCH
 	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 52, 92, $0
 	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 48, 88, $0
