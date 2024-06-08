@@ -1965,7 +1965,7 @@ BattleAnim_NastyPlot:
 	anim_wait 16
 	anim_obj ANIM_OBJ_AMNESIA, 72, 80, $0
 	anim_wait 64
-	anim_soud 0, 0, SFX_BALL_POOF
+	anim_sound 0, 0, SFX_BALL_POOF
 	anim_obj ANIM_OBJ_BALL_POOF, 48, 96, $0
 	anim_wait 16
 	anim_obj ANIM_OBJ_LOVELY_KISS, 64, 80, $0
