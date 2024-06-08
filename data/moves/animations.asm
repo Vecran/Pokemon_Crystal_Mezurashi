@@ -1691,7 +1691,7 @@ BattleAnim_SeedBomb:
 	anim_wait 8
 	anim_sound 16, 2, SFX_VINE_WHIP
 	anim_obj ANIM_OBJ_LEECH_SEED, 48, 80, $28
-	anim_wait 8
+	anim_wait 48
 	anim_clearobjs
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $3
 	anim_sound 0, 1, SFX_EGG_BOMB
