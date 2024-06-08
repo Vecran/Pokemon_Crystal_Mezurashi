@@ -2107,3 +2107,47 @@ Tickle:
 	statdownfailtext
 	endmove
 
+Growth:
+	checkobedience
+	usedmovetext
+	doturn
+	attackup
+	lowersub
+	statupanim
+	raisesub
+	statupmessage
+	statupfailtext
+	specialattackup
+	statupmessage
+	statupfailtext
+	endmove
+
+HoneClaws:
+	checkobedience
+	usedmovetext
+	doturn
+	attackup
+	lowersub
+	statupanim
+	raisesub
+	statupmessage
+	statupfailtext
+	accuracyup
+	statupmessage
+	statupfailtext
+	endmove
+
+DragonDance:
+	checkobedience
+	usedmovetext
+	doturn
+	attackup
+	lowersub
+	statupanim
+	raisesub
+	statupmessage
+	statupfailtext
+	speedup
+	statupmessage
+	statupfailtext
+	endmove

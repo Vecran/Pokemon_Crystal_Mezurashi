@@ -7,10 +7,9 @@ MoveGrammar:
 	db SWORDS_DANCE
 	db GROWTH
 	db STRENGTH
-	db HARDEN
+	db IRON_DEFENSE
 	db MINIMIZE
 	db SMOKESCREEN
-	db WITHDRAW
 	db DEFENSE_CURL
 	db EGG_BOMB
 	db SMOG
@@ -45,7 +44,7 @@ MoveGrammar:
 	db 0 ; end set
 
 ; 2: originally "[mon]の¯[move]¯した!" ("[mon]¯did¯[move]!")
-	db MEDITATE
+	db HONE_CLAWS
 	db AGILITY
 	db MIMIC
 	db DOUBLE_TEAM

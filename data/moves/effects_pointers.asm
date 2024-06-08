@@ -158,4 +158,7 @@ MoveEffectsPointers:
 	dw BeatUp
 	dw Fly
 	dw DefenseCurl
+	dw Growth
+	dw HoneClaws
+	dw DragonDance
 	assert_table_length NUM_MOVE_EFECTS

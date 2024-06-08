@@ -50,7 +50,7 @@ Moves:
 	move BODY_SLAM,    EFFECT_PARALYZE_HIT,       85, NORMAL,        PHYSICAL, 100, 15,  30
 	move WRAP,         EFFECT_TRAP_TARGET,        25, NORMAL,        PHYSICAL,  95, 25,   0
 	move WILD_CHARGE,  EFFECT_RECOIL_HIT,         90, ELECTRIC,      PHYSICAL, 100, 15,   0
-	move THRASH,       EFFECT_RAMPAGE,            90, DARK,          PHYSICAL, 100, 20,   0
+	move THRASH,       EFFECT_RAMPAGE,            90, DARK,          PHYSICAL, 100, 15,   0
 	move DOUBLE_EDGE,  EFFECT_RECOIL_HIT,        120, NORMAL,        PHYSICAL, 100, 15,   0
 	move TICKLE,       EFFECT_TICKLE,              0, FAIRY,         STATUS,   100, 20,   0
 	move POISON_STING, EFFECT_POISON_HIT,         25, POISON,        PHYSICAL, 100, 35,  30
@@ -83,47 +83,47 @@ Moves:
 	move LOW_KICK,     EFFECT_FLINCH_HIT,         50, FIGHTING,      PHYSICAL, 100, 20,  30
 	move MUD_BOMB,     EFFECT_ACCURACY_DOWN_HIT,  65, GROUND,        SPECIAL,   90, 10,  30
 	move SHADOW_CLAW,  EFFECT_NORMAL_HIT,         70, GHOST,         PHYSICAL, 100, 15,   0
-	move STRENGTH,     EFFECT_NORMAL_HIT,         80, NORMAL,        PHYSICAL, 100, 15,   0
+	move STRENGTH,     EFFECT_NORMAL_HIT,         80, ROCK,          PHYSICAL, 100, 15,   0
 	move ABSORB,       EFFECT_LEECH_HIT,          20, GRASS,         SPECIAL,  100, 20,   0
 	move MEGA_DRAIN,   EFFECT_LEECH_HIT,          40, GRASS,         SPECIAL,  100, 10,   0
 	move LEECH_SEED,   EFFECT_LEECH_SEED,          0, GRASS,         STATUS,    90, 10,   0
-	move GROWTH,       EFFECT_SP_ATK_UP,           0, NORMAL,        STATUS,   100, 40,   0
+	move GROWTH,       EFFECT_GROWTH,              0, NORMAL,        STATUS,   100, 20,   0
 	move RAZOR_LEAF,   EFFECT_NORMAL_HIT,         55, GRASS,         PHYSICAL,  95, 25,   0
-	move SOLARBEAM,    EFFECT_SOLARBEAM,         120, GRASS,         SPECIAL,  100, 10,   0
+	move SOLARBEAM,    EFFECT_SOLARBEAM,         160, GRASS,         SPECIAL,  100, 10,   0
 	move POISONPOWDER, EFFECT_POISON,              0, POISON,        STATUS,    75, 35,   0
 	move STUN_SPORE,   EFFECT_PARALYZE,            0, GRASS,         STATUS,    75, 30,   0
 	move SLEEP_POWDER, EFFECT_SLEEP,               0, GRASS,         STATUS,    75, 15,   0
-	move PETAL_DANCE,  EFFECT_RAMPAGE,            70, GRASS,         SPECIAL,  100, 20,   0
+	move PETAL_DANCE,  EFFECT_RAMPAGE,            90, GRASS,         SPECIAL,  100, 20,   0
 	move STRING_SHOT,  EFFECT_SPEED_DOWN,          0, BUG,           STATUS,    95, 40,   0
 	move DRAGON_RAGE,  EFFECT_STATIC_DAMAGE,      40, DRAGON,        SPECIAL,  100, 10,   0
-	move FIRE_SPIN,    EFFECT_TRAP_TARGET,        15, FIRE,          SPECIAL,   70, 15,   0
+	move FIRE_SPIN,    EFFECT_TRAP_TARGET,        35, FIRE,          SPECIAL,   95, 15,   0
 	move THUNDERSHOCK, EFFECT_PARALYZE_HIT,       40, ELECTRIC,      SPECIAL,  100, 30,  10
 	move THUNDERBOLT,  EFFECT_PARALYZE_HIT,       95, ELECTRIC,      SPECIAL,  100, 15,  10
 	move THUNDER_WAVE, EFFECT_PARALYZE,            0, ELECTRIC,      STATUS,   100, 20,   0
-	move THUNDER,      EFFECT_THUNDER,           120, ELECTRIC,      SPECIAL,   70, 10,  30
-	move ROCK_THROW,   EFFECT_NORMAL_HIT,         50, ROCK,          PHYSICAL,  90, 15,   0
+	move THUNDER,      EFFECT_THUNDER,           120, ELECTRIC,      SPECIAL,   85,  5,  30
+	move ROCK_THROW,   EFFECT_NORMAL_HIT,         50, ROCK,          PHYSICAL,  95, 15,   0
 	move EARTHQUAKE,   EFFECT_EARTHQUAKE,        100, GROUND,        PHYSICAL, 100, 10,   0
-	move FISSURE,      EFFECT_OHKO,                1, GROUND,        PHYSICAL,  30,  5,   0
-	move DIG,          EFFECT_FLY,                60, GROUND,        PHYSICAL, 100, 10,   0
-	move TOXIC,        EFFECT_TOXIC,               0, POISON,        STATUS,    85, 10,   0
+	move FISSURE,      EFFECT_EARTHQUAKE,        140, GROUND,        PHYSICAL,  85,  5,   0
+	move DIG,          EFFECT_FLY,                70, GROUND,        PHYSICAL, 100, 20,   0
+	move TOXIC,        EFFECT_TOXIC,               0, POISON,        STATUS,    90, 10,   0
 	move CONFUSION,    EFFECT_CONFUSE_HIT,        50, PSYCHIC_TYPE,  SPECIAL,  100, 25,  10
 	move PSYCHIC_M,    EFFECT_SP_DEF_DOWN_HIT,    90, PSYCHIC_TYPE,  SPECIAL,  100, 10,  10
 	move HYPNOSIS,     EFFECT_SLEEP,               0, PSYCHIC_TYPE,  STATUS,    60, 20,   0
-	move MEDITATE,     EFFECT_ATTACK_UP,           0, PSYCHIC_TYPE,  STATUS,   100, 40,   0
+	move HONE_CLAWS,   EFFECT_HONE_CLAWS,          0, DARK,          STATUS,   100, 15,   0
 	move AGILITY,      EFFECT_SPEED_UP_2,          0, PSYCHIC_TYPE,  STATUS,   100, 30,   0
 	move QUICK_ATTACK, EFFECT_PRIORITY_HIT,       40, NORMAL,        PHYSICAL, 100, 30,   0
-	move RAGE,         EFFECT_RAGE,               20, NORMAL,        PHYSICAL, 100, 20,   0
+	move RAGE,         EFFECT_RAGE,               20, DRAGON,        PHYSICAL, 100, 20,   0
 	move TELEPORT,     EFFECT_TELEPORT,            0, PSYCHIC_TYPE,  STATUS,   100, 20,   0
-	move NIGHT_SHADE,  EFFECT_LEVEL_DAMAGE,        1, GHOST,         SPECIAL,  100, 15,   0
+	move SHADOW_SNEAK, EFFECT_PRIORITY_HIT,       40, GHOST,         PHYSCIAL, 100, 30,   0
 	move MIMIC,        EFFECT_MIMIC,               0, NORMAL,        STATUS,   100, 10,   0
 	move SCREECH,      EFFECT_DEFENSE_DOWN_2,      0, NORMAL,        STATUS,    85, 40,   0
 	move DOUBLE_TEAM,  EFFECT_EVASION_UP,          0, NORMAL,        STATUS,   100, 15,   0
 	move RECOVER,      EFFECT_HEAL,                0, NORMAL,        STATUS,   100, 20,   0
-	move HARDEN,       EFFECT_DEFENSE_UP,          0, NORMAL,        STATUS,   100, 30,   0
+	move IRON_DEFENSE, EFFECT_DEFENSE_UP_2,        0, STEEL,         STATUS,   100, 15,   0
 	move MINIMIZE,     EFFECT_EVASION_UP,          0, NORMAL,        STATUS,   100, 20,   0
-	move SMOKESCREEN,  EFFECT_ACCURACY_DOWN,       0, NORMAL,        STATUS,   100, 20,   0
+	move SMOKESCREEN,  EFFECT_ACCURACY_DOWN,       0, DARK,          STATUS,   100, 20,   0
 	move CONFUSE_RAY,  EFFECT_CONFUSE,             0, GHOST,         STATUS,   100, 10,   0
-	move WITHDRAW,     EFFECT_DEFENSE_UP,          0, WATER,         STATUS,   100, 40,   0
+	move DRAGON_DANCE, EFFECT_DRAGON_DANCE,        0, DRAGON,        STATUS,   100, 20,   0
 	move DEFENSE_CURL, EFFECT_DEFENSE_CURL,        0, NORMAL,        STATUS,   100, 40,   0
 	move BARRIER,      EFFECT_DEFENSE_UP_2,        0, PSYCHIC_TYPE,  STATUS,   100, 30,   0
 	move LIGHT_SCREEN, EFFECT_LIGHT_SCREEN,        0, PSYCHIC_TYPE,  STATUS,   100, 30,   0

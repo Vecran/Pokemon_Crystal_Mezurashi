@@ -9,7 +9,7 @@ EncoreMoves:
 	db GROWTH
 	db POISONPOWDER
 	db STRING_SHOT
-	db MEDITATE
+	db HONE_CLAWS
 	db AGILITY
 	db TELEPORT
 	db SCREECH

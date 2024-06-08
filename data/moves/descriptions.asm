@@ -96,21 +96,21 @@ MoveDescriptions::
 	dw ConfusionDescription
 	dw PsychicMDescription
 	dw HypnosisDescription
-	dw MeditateDescription
+	dw HoneClawsDescription
 	dw AgilityDescription
 	dw QuickAttackDescription
 	dw RageDescription
 	dw TeleportDescription
-	dw NightShadeDescription
+	dw ShadowSneakDescription
 	dw MimicDescription
 	dw ScreechDescription
 	dw DoubleTeamDescription
 	dw RecoverDescription
-	dw HardenDescription
+	dw IronDefenseDescription
 	dw MinimizeDescription
 	dw SmokescreenDescription
 	dw ConfuseRayDescription
-	dw WithdrawDescription
+	dw DragonDanceDescription
 	dw DefenseCurlDescription
 	dw BarrierDescription
 	dw LightScreenDescription
@@ -544,8 +544,8 @@ ShadowClawDescription:
 	line "cal hit ratio.@"
 
 StrengthDescription:
-	db   "A powerful physi-"
-	line "cal attack.@"
+	db   "Throw a giant rock"
+	line "to show strength@"
 
 AbsorbDescription:
 	db   "Steals 1/2 of the"
@@ -560,8 +560,8 @@ LeechSeedDescription:
 	line "foe on every turn.@"
 
 GrowthDescription:
-	db   "Raises the SPCL."
-	line "ATK rating.@"
+	db   "Forces body growth"
+	line "Ups ATK & SP.ATK@"
 
 RazorLeafDescription:
 	db   "Has a high criti-"
@@ -624,8 +624,8 @@ EarthquakeDescription:
 	line "vs. flying foes.@"
 
 FissureDescription:
-	db   "A GROUND-type,"
-	line "one-hit KO attack.@"
+	db   "Open a devastating"
+	line "split in the earth@"
 
 DigDescription:
 	db   "1st turn: Burrow"
@@ -647,9 +647,9 @@ HypnosisDescription:
 	db   "May put the foe to"
 	line "sleep.@"
 
-MeditateDescription:
+HoneClawsDescription:
 	db   "Raises the user's"
-	line "ATTACK.@"
+	line "ATK and ACC.@"
 
 AgilityDescription:
 	db   "Sharply increases"
@@ -667,9 +667,9 @@ TeleportDescription:
 	db   "A move for fleeing"
 	line "from battle.@"
 
-NightShadeDescription:
-	db   "The user's level"
-	line "equals damage HP.@"
+ShadowSneakDescription:
+	db   "Lets the user get"
+	line "in the first hit.@"
 
 MimicDescription:
 	db   "Copies a move used"
@@ -687,9 +687,9 @@ RecoverDescription:
 	db   "Restores HP by 1/2"
 	line "the max HP.@"
 
-HardenDescription:
-	db   "Raises the user's"
-	line "DEFENSE.@"
+IronDefenseDescription:
+	db   "Sharply increases"
+	line "user's DEFENSE.@"
 
 MinimizeDescription:
 	db   "Heightens evasive-"
@@ -703,9 +703,9 @@ ConfuseRayDescription:
 	db   "A move that causes"
 	line "confusion.@"
 
-WithdrawDescription:
-	db   "Heightens the"
-	line "user's DEFENSE.@"
+DragonDanceDescription:
+	db   "A mystical dance"
+	line "raising ATK & SPD.@"
 
 DefenseCurlDescription:
 	db   "Heightens the"

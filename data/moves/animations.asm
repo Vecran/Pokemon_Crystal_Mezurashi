@@ -97,21 +97,21 @@ BattleAnimations::
 	dw BattleAnim_Confusion
 	dw BattleAnim_PsychicM
 	dw BattleAnim_Hypnosis
-	dw BattleAnim_Meditate
+	dw BattleAnim_HoneClaws
 	dw BattleAnim_Agility
 	dw BattleAnim_QuickAttack
 	dw BattleAnim_Rage
 	dw BattleAnim_Teleport
-	dw BattleAnim_NightShade
+	dw BattleAnim_ShadowSneak
 	dw BattleAnim_Mimic
 	dw BattleAnim_Screech
 	dw BattleAnim_DoubleTeam
 	dw BattleAnim_Recover
-	dw BattleAnim_Harden
+	dw BattleAnim_IronDefense
 	dw BattleAnim_Minimize
 	dw BattleAnim_Smokescreen
 	dw BattleAnim_ConfuseRay
-	dw BattleAnim_Withdraw
+	dw BattleAnim_DragonDance
 	dw BattleAnim_DefenseCurl
 	dw BattleAnim_Barrier
 	dw BattleAnim_LightScreen
@@ -2645,7 +2645,7 @@ BattleAnim_SkyAttack:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_NightShade:
+BattleAnim_ShadowSneak:
 	anim_1gfx ANIM_GFX_HIT
 	anim_bgp $1b
 	anim_obp1 $1b
@@ -2677,17 +2677,31 @@ BattleAnim_TriAttack:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_Withdraw:
-	anim_1gfx ANIM_GFX_REFLECT
+BattleAnim_DragonDance:
+	anim_1gfx ANIM_GFX_WIND
+	anim_obp0 $fc
+	anim_call BattleAnim_TargetObj_1Row
+	anim_bgeffect ANIM_BG_FADE_MON_TO_LIGHT_REPEATING, $0, BG_EFFECT_USER, $40
+	anim_obj ANIM_OBJ_AGILITY, 8, 24, $10
+	anim_obj ANIM_OBJ_AGILITY, 8, 48, $2
+	anim_obj ANIM_OBJ_AGILITY, 8, 88, $8
+	anim_wait 4
+	anim_obj ANIM_OBJ_AGILITY, 8, 32, $6
+	anim_obj ANIM_OBJ_AGILITY, 8, 56, $c
+	anim_obj ANIM_OBJ_AGILITY, 8, 80, $4
+	anim_obj ANIM_OBJ_AGILITY, 8, 104, $e
+.loop
+	anim_sound 0, 0, SFX_RAZOR_WIND
+	anim_wait 4
+	anim_loop 18, .loop
+	anim_incbgeffect ANIM_BG_FADE_MON_TO_LIGHT_REPEATING
 	anim_call BattleAnim_TargetObj_2Row
-	anim_bgeffect ANIM_BG_WITHDRAW, $0, BG_EFFECT_USER, $50
-	anim_wait 48
-	anim_sound 0, 0, SFX_SHINE
-	anim_obj ANIM_OBJ_WITHDRAW, 48, 88, $0
-	anim_wait 64
-	anim_incobj 2
-	anim_wait 1
-	anim_incbgeffect ANIM_BG_WITHDRAW
+	anim_sound 0, 0, SFX_PSYBEAM
+	anim_bgeffect ANIM_BG_DOUBLE_TEAM, $0, BG_EFFECT_USER, $0
+	anim_wait 96
+	anim_incbgeffect ANIM_BG_DOUBLE_TEAM
+	anim_wait 24
+	anim_incbgeffect ANIM_BG_DOUBLE_TEAM
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
@@ -2721,7 +2735,7 @@ BattleAnim_LeechLife:
 	anim_wait 48
 	anim_ret
 
-BattleAnim_Harden:
+BattleAnim_IronDefense:
 	anim_1gfx ANIM_GFX_REFLECT
 	anim_obp0 $0
 	anim_call BattleAnim_TargetObj_1Row
@@ -2862,14 +2876,30 @@ BattleAnim_QuickAttack:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_Meditate:
-	anim_1gfx ANIM_GFX_HIT
+BattleAnim_HoneClaws:
+	anim_2gfx ANIM_GFX_SHAPES, ANIM_GFX_CUT
+	anim_obp0 $e4
 	anim_call BattleAnim_TargetObj_1Row
-	anim_sound 0, 0, SFX_PSYBEAM
-	anim_bgeffect ANIM_BG_WAVE_DEFORM_MON, $0, BG_EFFECT_USER, $0
-	anim_wait 48
-	anim_incbgeffect ANIM_BG_WAVE_DEFORM_MON
-	anim_wait 48
+	anim_sound 0, 0, SFX_SHARPEN
+	anim_bgeffect ANIM_BG_FADE_MON_TO_LIGHT_REPEATING, $0, BG_EFFECT_USER, $40
+	anim_obj ANIM_OBJ_SHARPEN, 48, 88, $0
+	anim_1gfx ANIM_GFX_CUT
+	anim_if_param_equal $1, .alternate
+	anim_sound 0, 1, SFX_SCRATCH
+	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 52, 92, $0
+	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 48, 88, $0
+	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 44, 84, $0
+	anim_sound 0, 1, SFX_SCRATCH
+	anim_wait 32
+	anim_sound 0, 1, SFX_SCRATCH
+	anim_obj ANIM_OBJ_CUT_DOWN_RIGHT, 24, 84, $0
+	anim_obj ANIM_OBJ_CUT_DOWN_RIGHT, 28, 88, $0
+	anim_obj ANIM_OBJ_CUT_DOWN_RIGHT, 32, 92, $0
+	anim_sound 0, 1, SFX_SCRATCH
+	anim_wait 32
+	anim_ret
+	anim_incobj 2
+	anim_incbgeffect ANIM_BG_FADE_MON_TO_LIGHT_REPEATING
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
