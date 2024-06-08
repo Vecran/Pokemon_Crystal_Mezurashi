@@ -141,7 +141,7 @@ Moves:
 	move BONE_CLUB,    EFFECT_FLINCH_HIT,         65, GROUND,        PHYSICAL,  95, 20,  10
 	move FIRE_BLAST,   EFFECT_BURN_HIT,          120, FIRE,          SPECIAL,   85,  5,  10
 	move WATERFALL,    EFFECT_FLINCH_HIT,         80, WATER,         PHYSICAL, 100, 15,  20
-	move ICE_FANG,     EFFECT_ICE_FANG,           65, ICE,           PHYSICAL,  95, 15,  100
+	move ICE_FANG,     EFFECT_ICE_FANG,           65, ICE,           PHYSICAL,  95, 15,  10
 	move SWIFT,        EFFECT_ALWAYS_HIT,         60, NORMAL,        SPECIAL,  100, 20,   0
 	move SKULL_BASH,   EFFECT_SKULL_BASH,        130, STEEL,         PHYSICAL, 100, 10,   0
 	move SPIKE_CANNON, EFFECT_MULTI_HIT,          20, STEEL,         PHYSICAL, 100, 20,   0
