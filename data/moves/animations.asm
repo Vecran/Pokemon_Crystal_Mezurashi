@@ -2690,12 +2690,6 @@ BattleAnim_DragonDance:
 	anim_obj ANIM_OBJ_AGILITY, 8, 56, $c
 	anim_obj ANIM_OBJ_AGILITY, 8, 80, $4
 	anim_obj ANIM_OBJ_AGILITY, 8, 104, $e
-.loop
-	anim_sound 0, 0, SFX_RAZOR_WIND
-	anim_wait 4
-	anim_loop 18, .loop
-	anim_incbgeffect ANIM_BG_FADE_MON_TO_LIGHT_REPEATING
-	anim_call BattleAnim_TargetObj_2Row
 	anim_sound 0, 0, SFX_PSYBEAM
 	anim_bgeffect ANIM_BG_DOUBLE_TEAM, $0, BG_EFFECT_USER, $0
 	anim_wait 96
@@ -2877,30 +2871,21 @@ BattleAnim_QuickAttack:
 	anim_ret
 
 BattleAnim_HoneClaws:
-	anim_2gfx ANIM_GFX_SHAPES, ANIM_GFX_CUT
-	anim_obp0 $e4
-	anim_call BattleAnim_TargetObj_1Row
-	anim_sound 0, 0, SFX_SHARPEN
-	anim_bgeffect ANIM_BG_FADE_MON_TO_LIGHT_REPEATING, $0, BG_EFFECT_USER, $40
-	anim_obj ANIM_OBJ_SHARPEN, 48, 88, $0
 	anim_1gfx ANIM_GFX_CUT
 	anim_sound 0, 1, SFX_SCRATCH
-	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 52, 92, $0
-	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 48, 88, $0
-	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 44, 84, $0
+	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 62, 92, $0
+	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 58, 88, $0
+	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 54, 84, $0
 	anim_sound 0, 1, SFX_SCRATCH
 	anim_wait 32
 	anim_sound 0, 1, SFX_SCRATCH
-	anim_obj ANIM_OBJ_CUT_DOWN_RIGHT, 24, 84, $0
-	anim_obj ANIM_OBJ_CUT_DOWN_RIGHT, 28, 88, $0
-	anim_obj ANIM_OBJ_CUT_DOWN_RIGHT, 32, 92, $0
+	anim_obj ANIM_OBJ_CUT_DOWN_RIGHT, 50, 84, $0
+	anim_obj ANIM_OBJ_CUT_DOWN_RIGHT, 46, 88, $0
+	anim_obj ANIM_OBJ_CUT_DOWN_RIGHT, 42, 92, $0
 	anim_sound 0, 1, SFX_SCRATCH
 	anim_wait 32
 	anim_ret
-	anim_incobj 2
-	anim_incbgeffect ANIM_BG_FADE_MON_TO_LIGHT_REPEATING
-	anim_call BattleAnim_ShowMon_0
-	anim_ret
+
 
 BattleAnim_Sharpen:
 	anim_1gfx ANIM_GFX_SHAPES
