@@ -2259,7 +2259,7 @@ Coil:
 	defenseup
 	statupmessage
 	statupfailtext
-	accuracyupup
+	accuracyup
 	statupmessage
 	statupfailtext
 	endmove
