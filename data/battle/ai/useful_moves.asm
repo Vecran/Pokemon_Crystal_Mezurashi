@@ -19,5 +19,5 @@ UsefulMoves:
 	db RECOVER
 	db FIRE_BLAST
 	db SOFTBOILED
-	db SUPER_FANG
+	db DARK_PULSE
 	db -1 ; end

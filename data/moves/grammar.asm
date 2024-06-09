@@ -15,8 +15,6 @@ MoveGrammar:
 	db FLASH
 	db BONEMERANG
 	db REST
-	db SHARPEN
-	db SUBSTITUTE
 	db MIND_READER
 	db SNORE
 	db PROTECT
@@ -77,7 +75,6 @@ MoveGrammar:
 	db CONSTRICT
 	db BUBBLE
 	db SLASH
-	db SPIDER_WEB
 	db NIGHTMARE
 	db CURSE
 	db FORESIGHT

@@ -159,17 +159,17 @@ MoveDescriptions::
 	dw RestDescription
 	dw RockSlideDescription
 	dw PoisonFangDescription
-	dw SharpenDescription
-	dw ConversionDescription
+	dw HowlDescription
+	dw WorkUpDescription
 	dw TriAttackDescription
-	dw SuperFangDescription
+	dw CoilDescription
 	dw SlashDescription
 	dw SubstituteDescription
 	dw StruggleDescription
 	dw SketchDescription
 	dw TripleKickDescription
 	dw ThiefDescription
-	dw SpiderWebDescription
+	dw LeafBladeDescription
 	dw MindReaderDescription
 	dw NightmareDescription
 	dw FlameWheelDescription
@@ -899,21 +899,21 @@ PoisonFangDescription:
 	db   "An attack that may"
 	line "poison the foe.@"
 
-SharpenDescription:
-	db   "A move that raises"
+HowlDescription:
+	db   "A howl that raises"
 	line "the user's ATTACK.@"
 
-ConversionDescription:
-	db   "Change user's type"
-	line "to a move's type.@"
+WorkUpDescription:
+	db   "Rouses the user,"
+	line "Ups ATK & SP.ATK@"
 
 TriAttackDescription:
 	db   "Fires three kinds"
 	line "of beams at once.@"
 
-SuperFangDescription:
-	db   "Cuts the foe's HP"
-	line "by 1/2.@"
+CoilDescription:
+	db   "Raise ATK, DEF and"
+	line "ACC by one stage.@"
 
 SlashDescription:
 	db   "Has a high criti-"
@@ -939,9 +939,9 @@ ThiefDescription:
 	db   "An attack that may"
 	line "steal a held item.@"
 
-SpiderWebDescription:
-	db   "Prevents fleeing"
-	line "or switching.@"
+LeafBladeDescription:
+	db   "Has a high criti-"
+	line "cal hit ratio.@"
 
 MindReaderDescription:
 	db   "Ensures the line"

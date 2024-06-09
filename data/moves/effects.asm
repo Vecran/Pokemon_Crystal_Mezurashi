@@ -2245,3 +2245,21 @@ FlareBlitz:
 	burntarget
 	kingsrock
 	endmove
+
+Coil:
+	checkobedience
+	usedmovetext
+	doturn
+	attackup
+	lowersub
+	statupanim
+	raisesub
+	statupmessage
+	statupfailtext
+	defenseup
+	statupmessage
+	statupfailtext
+	accuracyupup
+	statupmessage
+	statupfailtext
+	endmove

@@ -166,4 +166,5 @@ MoveEffectsPointers:
 	dw IceFang
 	dw CosmicPower
 	dw FlareBlitz
+	dw Coil
 	assert_table_length NUM_MOVE_EFECTS

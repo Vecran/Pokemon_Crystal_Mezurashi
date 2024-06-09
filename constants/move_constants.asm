@@ -164,17 +164,17 @@
 	const REST         ; 9c
 	const ROCK_SLIDE   ; 9d
 	const POISON_FANG   ; 9e
-	const SHARPEN      ; 9f
-	const CONVERSION   ; a0
+	const HOWL           ; 9f
+	const WORK_UP        ; a0
 	const TRI_ATTACK   ; a1
-	const SUPER_FANG   ; a2
+	const COIL           ; a2
 	const SLASH        ; a3
 	const SUBSTITUTE   ; a4
 	const STRUGGLE     ; a5
 	const SKETCH       ; a6
 	const TRIPLE_KICK  ; a7
 	const THIEF        ; a8
-	const SPIDER_WEB   ; a9
+	const LEAF_BLADE   ; a9
 	const MIND_READER  ; aa
 	const NIGHTMARE    ; ab
 	const FLAME_WHEEL  ; ac

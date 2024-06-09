@@ -9,6 +9,7 @@ CriticalHitMoves:
 	db CROSS_POISON
 	db CRABHAMMER
 	db SLASH
+	db LEAF_BLADE
 	db AEROBLAST
 	db CROSS_CHOP
 	db -1

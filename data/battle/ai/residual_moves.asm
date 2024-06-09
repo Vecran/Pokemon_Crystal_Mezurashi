@@ -7,7 +7,6 @@ ResidualMoves:
 	db THUNDER_WAVE
 	db FOCUS_ENERGY
 	db TRANSFORM
-	db CONVERSION
 	db SUBSTITUTE
 	db SPIKES
 	db -1 ; end

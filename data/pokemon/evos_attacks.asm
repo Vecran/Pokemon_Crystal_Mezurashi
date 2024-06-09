@@ -284,7 +284,7 @@ RattataEvosAttacks:
 	db 13, BITE
 	db 20, PURSUIT
 	db 21, FOCUS_ENERGY
-	db 34, SUPER_FANG
+	db 34, CRUNCH
 	db 0 ; no more level-up moves
 
 RaticateEvosAttacks:
@@ -296,7 +296,6 @@ RaticateEvosAttacks:
 	db 13, BITE
 	db 20, SCARY_FACE
 	db 30, PURSUIT
-	db 40, SUPER_FANG
 	db 45, CRUNCH
 	db 0 ; no more level-up moves
 
@@ -342,7 +341,6 @@ ArbokEvosAttacks:
 	db 9, POISON_STING
 	db 15, BITE
 	db 18, ACID
-	db 22, SUBSTITUTE
 	db 25, GLARE
 	db 27, SLUDGE
 	db 30, SCREECH
@@ -1734,7 +1732,6 @@ MrMimeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CALM_MIND
 	db 6, CONFUSION
-	db 11, SUBSTITUTE
 	db 21, DOUBLESLAP
 	db 26, LIGHT_SCREEN
 	db 26, REFLECT
@@ -1935,13 +1932,11 @@ FlareonEvosAttacks:
 PorygonEvosAttacks:
 	db EVOLVE_ITEM, UP_GRADE, PORYGON2
 	db 0 ; no more evolutions
-	db 1, CONVERSION2
 	db 1, TACKLE
-	db 1, CONVERSION
 	db 9, AGILITY
 	db 12, PSYBEAM
 	db 20, RECOVER
-	db 24, SHARPEN
+	db 24, CALM_MIND
 	db 32, LOCK_ON
 	db 36, TRI_ATTACK
 	db 44, ZAP_CANNON
@@ -2213,10 +2208,10 @@ MeganiumEvosAttacks:
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, AQUA_TAIL
-	db 1, COSMIC_POWER
-	db 1, FLARE_BLITZ
-	db 1, POISON_FANG
+	db 1, HOWL
+	db 1, WORK_UP
+	db 1, COIL
+	db 1, LEAF_BLADE
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK
@@ -2406,7 +2401,7 @@ SpinarakEvosAttacks:
 	db 6, SCARY_FACE
 	db 9, LEECH_LIFE
 	db 17, SHADOW_SNEAK
-	db 33, SPIDER_WEB
+	db 33, MEAN_LOOK
 	db 38, GIGA_DRAIN
 	db 43, PSYCHIC_M
 	db 48, AGILITY
@@ -2423,7 +2418,7 @@ AriadosEvosAttacks:
 	db 17, SHADOW_SNEAK
 	db 21, TWINEEDLE
 	db 25, LEECH_LIFE
-	db 33, SPIDER_WEB
+	db 33, MEAN_LOOK
 	db 38, GIGA_DRAIN
 	db 43, PSYCHIC_M
 	db 47, MEGAHORN
@@ -3282,9 +3277,7 @@ DonphanEvosAttacks:
 
 Porygon2EvosAttacks:
 	db 0 ; no more evolutions
-	db 1, CONVERSION2
 	db 1, TACKLE
-	db 1, CONVERSION
 	db 9, AGILITY
 	db 12, PSYBEAM
 	db 20, RECOVER

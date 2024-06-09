@@ -26,8 +26,8 @@ StallMoves:
 	db NASTY_PLOT
 	db TRANSFORM
 	db COSMIC_POWER
-	db SHARPEN
-	db CONVERSION
+	db HOWL
+	db WORK_UP
 	db SUBSTITUTE
 	db FLAME_WHEEL
 	db -1 ; end
