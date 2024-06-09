@@ -2442,6 +2442,7 @@ BattleAnim_DrainKiss:
 	anim_sound 0, 1, SFX_SWEET_KISS_2
 	anim_obj ANIM_OBJ_HEART, 120, 40, $0
 	anim_wait 40
+	anim_clearobjs
 	anim_sound 6, 3, SFX_WATER_GUN
 	anim_call BattleAnimSub_Drain
 	anim_wait 128
@@ -2749,7 +2750,6 @@ BattleAnim_IronDefense:
 BattleAnim_PsychicFang:
 	anim_3gfx ANIM_GFX_PSYCHIC, ANIM_GFX_CUT, ANIM_GFX_HIT
 	anim_bgeffect ANIM_BG_PSYCHIC, $0, $0, $0
-.loop
 	anim_sound 6, 2, SFX_PSYCHIC
 	anim_obj ANIM_OBJ_WAVE, 64, 80, $2
 	anim_wait 8
@@ -2759,8 +2759,6 @@ BattleAnim_PsychicFang:
 	anim_sound 6, 2, SFX_PSYCHIC
 	anim_obj ANIM_OBJ_WAVE, 64, 96, $4
 	anim_wait 8
-	anim_loop 3, .loop
-	;anim_wait 32
 	anim_wait 8
 	anim_obj ANIM_OBJ_BITE, 136, 56, $98
 	anim_obj ANIM_OBJ_BITE, 136, 56, $18
@@ -2771,8 +2769,7 @@ BattleAnim_PsychicFang:
 	anim_sound 0, 1, SFX_BITE
 	anim_obj ANIM_OBJ_HIT_YFIX, 128, 64, $18
 	anim_wait 8
-	;anim_incbgeffect ANIM_BG_PSYCHIC
-	;anim_wait 4
+	anim_incbgeffect ANIM_BG_PSYCHIC
 	anim_ret
 
 BattleAnim_Glare:
