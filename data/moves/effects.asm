@@ -2212,7 +2212,7 @@ CosmicPower:
 	checkobedience
 	usedmovetext
 	doturn
-	defenseupup
+	defenseup
 	lowersub
 	statupanim
 	raisesub
