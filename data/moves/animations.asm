@@ -867,17 +867,15 @@ BattleAnim_PoisonFang:
 BattleAnim_Coil:
 	anim_1gfx ANIM_GFX_ROPE
 	anim_sound 0, 1, SFX_BIND
-	anim_obj ANIM_OBJ_BIND1, 64, 100, $0
+	anim_obj ANIM_OBJ_BIND1, 48, 108, $0
 	anim_wait 8
-	anim_obj ANIM_OBJ_BIND1, 64, 92, $0
+	anim_obj ANIM_OBJ_BIND1, 48, 100, $0
 	anim_wait 8
-	anim_obj ANIM_OBJ_BIND1, 64, 84, $0
+	anim_obj ANIM_OBJ_BIND1, 48, 92, $0
 	anim_wait 64
-	anim_sound 0, 1, SFX_BIND
-	anim_incobj 1
-	anim_incobj 2
-	anim_incobj 3
-	anim_wait 96
+	anim_clearobjs
+	anim_bgeffect ANIM_BG_FADE_MON_TO_BLACK_REPEATING, $0, BG_EFFECT_USER, $40
+	anim_wait 32
 	anim_ret
 
 BattleAnim_Ember:
@@ -1878,9 +1876,22 @@ BattleAnim_BugBuzz:
 	anim_wait 16
 	anim_loop 3, .loop
 	anim_wait 16
+	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
 BattleAnim_Howl:
+	anim_1gfx ANIM_GFX_NOISE
+	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+	anim_cry $1
+.loop
+	anim_call BattleAnimSub_Sound
+	anim_wait 16
+	anim_loop 3, .loop
+	anim_wait 16
+	anim_bgeffect ANIM_BG_FADE_MON_TO_BLACK_REPEATING, $0, BG_EFFECT_USER, $40
+	anim_wait 32
+	anim_ret
+
 BattleAnim_Snarl:
 BattleAnim_Roar:
 	anim_1gfx ANIM_GFX_NOISE
@@ -1891,6 +1902,7 @@ BattleAnim_Roar:
 	anim_wait 16
 	anim_loop 3, .loop
 	anim_wait 16
+	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
 BattleAnim_Supersonic:
@@ -3207,14 +3219,17 @@ BattleAnim_LeafBlade:
 	anim_sound 0, 1, SFX_CUT
 	anim_obj ANIM_OBJ_CUT_LONG_DOWN_LEFT, 148, 36, $0
 	anim_wait 32
+	anim_call BattleAnim_ShowMon_0
+	anim_wait 8
 	anim_sound 0, 0, SFX_VINE_WHIP
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 148, 40, $28
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 148, 40, $5c
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 148, 40, $10
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 148, 40, $e8
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 148, 40, $9c
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 148, 40, $d0
-	anim_wait 6
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $28
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $5c
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $10
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $e8
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $9c
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $d0
+	anim_wait 64
+	anim_ret
 
 
 BattleAnim_MindReader:
