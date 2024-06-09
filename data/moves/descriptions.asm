@@ -150,15 +150,15 @@ MoveDescriptions::
 	dw SporeDescription
 	dw FlashDescription
 	dw PsychicFangDescription
-	dw SplashDescription
-	dw AcidArmorDescription
+	dw AquaTailDescription
+	dw CosmicPowerDescription
 	dw CrabhammerDescription
-	dw ExplosionDescription
+	dw FlareBlitzDescription
 	dw FurySwipesDescription
 	dw BonemerangDescription
 	dw RestDescription
 	dw RockSlideDescription
-	dw HyperFangDescription
+	dw PoisonFangDescription
 	dw SharpenDescription
 	dw ConversionDescription
 	dw TriAttackDescription
@@ -863,21 +863,21 @@ PsychicFangDescription:
 	db   "An attack that may"
 	line "lower DEF.@"
 
-SplashDescription:
-	db   "Has no effect"
-	line "whatsoever.@"
+AquaTailDescription:
+	db   "An attack that may"
+	line "cause flinching.@"
 
-AcidArmorDescription:
-	db   "Sharply raises the"
-	line "user's DEFENSE.@"
+CosmicPowerDescription:
+	db   "Ups DEF and SP.DEF"
+	line "with mystic power@"
 
 CrabhammerDescription:
 	db   "Has a high criti-"
 	line "cal hit ratio.@"
 
-ExplosionDescription:
-	db   "Very powerful but"
-	line "makes user faint.@"
+FlareBlitzDescription:
+	db   "Also hurts user,"
+	line "may burn target.@"
 
 FurySwipesDescription:
 	db   "Quickly scratches"
@@ -895,9 +895,9 @@ RockSlideDescription:
 	db   "An attack that may"
 	line "cause flinching.@"
 
-HyperFangDescription:
+PoisonFangDescription:
 	db   "An attack that may"
-	line "cause flinching.@"
+	line "poison the foe.@"
 
 SharpenDescription:
 	db   "A move that raises"

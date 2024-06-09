@@ -155,15 +155,15 @@
 	const SPORE        ; 93
 	const FLASH        ; 94
 	const PSYCHIC_FANG      ; 95
-	const SPLASH       ; 96
-	const ACID_ARMOR   ; 97
+	const AQUA_TAIL       ; 96
+	const COSMIC_POWER   ; 97
 	const CRABHAMMER   ; 98
-	const EXPLOSION    ; 99
+	const FLARE_BLITZ   ; 99
 	const FURY_SWIPES  ; 9a
 	const BONEMERANG   ; 9b
 	const REST         ; 9c
 	const ROCK_SLIDE   ; 9d
-	const HYPER_FANG   ; 9e
+	const POISON_FANG   ; 9e
 	const SHARPEN      ; 9f
 	const CONVERSION   ; a0
 	const TRI_ATTACK   ; a1

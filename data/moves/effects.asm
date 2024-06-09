@@ -2207,3 +2207,41 @@ IceFang:
 	effectchance
 	flinchtarget
 	endmove
+
+CosmicPower:
+	checkobedience
+	usedmovetext
+	doturn
+	defenseupup
+	lowersub
+	statupanim
+	raisesub
+	statupmessage
+	statupfailtext
+	specialdefenseup
+	statupmessage
+	statupfailtext
+	endmove
+
+FlareBlitz:
+	checkobedience
+	usedmovetext
+	doturn
+	critical
+	damagestats
+	damagecalc
+	stab
+	damagevariation
+	checkhit
+	effectchance
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	recoil
+	checkfaint
+	buildopponentrage
+	burntarget
+	kingsrock
+	endmove

@@ -171,7 +171,7 @@ GrowlitheEggMoves:
 	db -1 ; end
 
 PoliwagEggMoves:
-	db SPLASH
+	db AQUA_TAIL
 	db BUBBLEBEAM
 	db AQUA_JET
 	db MIND_READER
@@ -346,7 +346,7 @@ HorseaEggMoves:
 	db FLAIL
 	db AURORA_BEAM
 	db OCTAZOOKA
-	db SPLASH
+	db AQUA_TAIL
 	db DRAGON_RAGE
 	db -1 ; end
 
@@ -488,7 +488,6 @@ CleffaEggMoves:
 	db PRESENT
 	db METRONOME
 	db BELLY_DRUM
-	db SPLASH
 	db MIMIC
 	db -1 ; end
 
@@ -651,7 +650,8 @@ TeddiursaEggMoves:
 	db -1 ; end
 
 SlugmaEggMoves:
-	db ACID_ARMOR
+	db IRON_DEFENSE
+	db ANCIENTPOWER
 	db -1 ; end
 
 SwinubEggMoves:
@@ -679,7 +679,6 @@ DelibirdEggMoves:
 	db AURORA_BEAM
 	db QUICK_ATTACK
 	db FUTURE_SIGHT
-	db SPLASH
 	db RAPID_SPIN
 	db -1 ; end
 

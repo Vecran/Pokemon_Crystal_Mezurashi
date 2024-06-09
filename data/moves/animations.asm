@@ -151,15 +151,15 @@ BattleAnimations::
 	dw BattleAnim_Spore
 	dw BattleAnim_Flash
 	dw BattleAnim_PsychicFang
-	dw BattleAnim_Splash
-	dw BattleAnim_AcidArmor
+	dw BattleAnim_AquaTail
+	dw BattleAnim_CosmicPower
 	dw BattleAnim_Crabhammer
-	dw BattleAnim_Explosion
+	dw BattleAnim_FlareBlitz
 	dw BattleAnim_FurySwipes
 	dw BattleAnim_Bonemerang
 	dw BattleAnim_Rest
 	dw BattleAnim_RockSlide
-	dw BattleAnim_HyperFang
+	dw BattleAnim_PoisonFang
 	dw BattleAnim_Sharpen
 	dw BattleAnim_Conversion
 	dw BattleAnim_TriAttack
@@ -838,14 +838,19 @@ BattleAnim_BlazeKick:
 	anim_ret
 
 
-BattleAnim_HyperFang:
-	anim_1gfx ANIM_GFX_HIT
-	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $20, $1, $0
+BattleAnim_PoisonFang:
+	anim_3gfx ANIM_GFX_HIT, ANIM_GFX_CUT, ANIM_GFX_POISON
+	anim_obj ANIM_OBJ_BITE, 136, 56, $98
+	anim_obj ANIM_OBJ_BITE, 136, 56, $18
+	anim_wait 8
 	anim_sound 0, 1, SFX_BITE
-	anim_obj ANIM_OBJ_FANG, 136, 56, $0
-	anim_wait 6
-	anim_obj ANIM_OBJ_HIT_YFIX, 136, 56, $0
+	anim_obj ANIM_OBJ_HIT_YFIX, 144, 48, $18
 	anim_wait 16
+	anim_sound 0, 1, SFX_BITE
+	anim_obj ANIM_OBJ_HIT_YFIX, 128, 64, $18
+	anim_wait 16
+	anim_call BattleAnimSub_Sludge
+	anim_wait 4
 	anim_ret
 
 BattleAnim_SuperFang:
@@ -1354,21 +1359,26 @@ BattleAnim_Gust:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_Explosion:
-	anim_1gfx ANIM_GFX_EXPLOSION
-	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $60, $4, $10
-	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $24
-	anim_if_param_equal $1, .loop
-	anim_call BattleAnimSub_Explosion2
-	anim_wait 16
-	anim_ret
-
+BattleAnim_FlareBlitz:
+	anim_1gfx ANIM_GFX_FIRE
 .loop
-	anim_call BattleAnimSub_Explosion1
-	anim_wait 5
-	anim_bgeffect ANIM_BG_HIDE_MON, $0, BG_EFFECT_USER, $0
-	anim_loop 2, .loop
-	anim_wait 16
+	anim_sound 0, 0, SFX_EMBER
+	anim_obj ANIM_OBJ_SACRED_FIRE, 48, 104, $0
+	anim_wait 8
+	anim_loop 8, .loop
+	anim_wait 96
+	anim_call BattleAnim_TargetObj_1Row
+	anim_bgeffect ANIM_BG_TACKLE, $0, BG_EFFECT_USER, $0
+	anim_wait 4
+	anim_sound 0, 1, SFX_EMBER
+	anim_obj ANIM_OBJ_FIRE_BLAST, 136, 48, $1
+	anim_obj ANIM_OBJ_FIRE_BLAST, 136, 48, $4
+	anim_obj ANIM_OBJ_FIRE_BLAST, 136, 48, $5
+	anim_wait 8
+	anim_bgeffect ANIM_BG_SHOW_MON, $0, BG_EFFECT_TARGET, $0
+	anim_wait 4
+	anim_incobj 9
+	anim_wait 8
 	anim_ret
 
 BattleAnim_Acid:
@@ -1997,24 +2007,48 @@ BattleAnim_Rest:
 	anim_wait 32
 	anim_ret
 
-BattleAnim_AcidArmor:
-	anim_1gfx ANIM_GFX_HIT
-	anim_call BattleAnim_TargetObj_2Row
-	anim_bgeffect ANIM_BG_ACID_ARMOR, $0, BG_EFFECT_USER, $8
-	anim_sound 0, 0, SFX_MEGA_PUNCH
-	anim_wait 64
-	anim_incbgeffect ANIM_BG_ACID_ARMOR
-	anim_call BattleAnim_ShowMon_0
+BattleAnim_CosmicPower:
+	anim_1gfx ANIM_GFX_OBJECTS
+	anim_bgeffect ANIM_BG_CYCLE_MID_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+	anim_obj ANIM_OBJ_PROTECT, 80, 80, $0
+	anim_obj ANIM_OBJ_PROTECT, 80, 80, $d
+	anim_obj ANIM_OBJ_PROTECT, 80, 80, $1a
+	anim_obj ANIM_OBJ_PROTECT, 80, 80, $27
+	anim_obj ANIM_OBJ_PROTECT, 80, 80, $34
+	anim_sound 0, 0, SFX_PROTECT
+	anim_wait 32
+	anim_incbgeffect ANIM_BG_CYCLE_MID_OBPALS_GRAY_AND_YELLOW
+	anim_clearobjs
+	anim_bgeffect ANIM_BG_WHITE_HUES, $0, $8, $0
+	anim_1gfx ANIM_GFX_CHARGE
+	anim_sound 0, 0, SFX_SWORDS_DANCE
+	anim_obj ANIM_OBJ_GROWTH, 48, 108, $0
+	anim_obj ANIM_OBJ_GROWTH, 48, 108, $8
+	anim_obj ANIM_OBJ_GROWTH, 48, 108, $10
+	anim_obj ANIM_OBJ_GROWTH, 48, 108, $18
+	anim_obj ANIM_OBJ_GROWTH, 48, 108, $20
+	anim_obj ANIM_OBJ_GROWTH, 48, 108, $28
+	anim_obj ANIM_OBJ_GROWTH, 48, 108, $30
+	anim_obj ANIM_OBJ_GROWTH, 48, 108, $38
+	anim_wait 48
 	anim_ret
 
-BattleAnim_Splash:
+BattleAnim_AquaTail:
 	anim_1gfx ANIM_GFX_HIT
-	anim_sound 0, 0, SFX_VICEGRIP
-	anim_call BattleAnim_TargetObj_2Row
-	anim_bgeffect ANIM_BG_BOUNCE_DOWN, $0, BG_EFFECT_USER, $0
-	anim_wait 96
-	anim_incbgeffect ANIM_BG_BOUNCE_DOWN
+	anim_bgeffect ANIM_BG_WHIRLPOOL, $0, $0, $0
+	anim_sound 0, 1, SFX_SURF
+	anim_wait 16
+	anim_obp0 $0
+	anim_sound 0, 0, SFX_RAGE
+	anim_bgeffect ANIM_BG_WOBBLE_MON, $0, BG_EFFECT_USER, $0
+	anim_wait 16
+	anim_sound 0, 1, SFX_MEGA_KICK
+	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 136, 48, $0
+	anim_wait 16
+	anim_incbgeffect ANIM_BG_WOBBLE_MON
 	anim_call BattleAnim_ShowMon_0
+	anim_incbgeffect ANIM_BG_WHIRLPOOL
+	anim_wait 1
 	anim_ret
 
 BattleAnim_Dig:
