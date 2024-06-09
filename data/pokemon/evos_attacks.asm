@@ -555,7 +555,7 @@ JigglypuffEvosAttacks:
 	db 9, CHARM
 	db 16, DOUBLESLAP
 	db 19, ROLLOUT
-	db 24, LOVELY_KISS
+	db 24, DRAIN_KISS
 	db 29, REST
 	db 34, BODY_SLAM
 	db 39, DOUBLE_EDGE
@@ -569,7 +569,7 @@ WigglytuffEvosAttacks:
 	db 9, CHARM
 	db 16, DOUBLESLAP
 	db 19, ROLLOUT
-	db 24, LOVELY_KISS
+	db 24, DRAIN_KISS
 	db 29, REST
 	db 34, BODY_SLAM
 	db 39, DOUBLE_EDGE
@@ -1773,13 +1773,13 @@ ScytherEvosAttacks:
 JynxEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CUTE_POUND
-	db 1, LOVELY_KISS
+	db 1, DRAIN_KISS
 	db 1, POWDER_SNOW
 	db 1, CONFUSION
 	db 13, POWDER_SNOW
 	db 21, DOUBLESLAP
 	db 25, ICE_PUNCH
-	db 34, LOVELY_KISS
+	db 34, DRAIN_KISS
 	db 36, MEAN_LOOK
 	db 39, PSYCHIC_M
 	db 41, BODY_SLAM
@@ -2223,10 +2223,10 @@ MeganiumEvosAttacks:
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, ICE_FANG
-	db 1, NASTY_PLOT
-	db 1, DARK_PULSE
-	db 1, SLUDGE_WAVE
+	db 1, BARRAGE
+	db 1, DRAIN_KISS
+	db 1, PSYCHIC_FANG
+	db 1, SKY_ATTACK
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK

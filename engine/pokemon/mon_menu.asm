@@ -1336,6 +1336,7 @@ ConvertPercentages:
 	sbc a
 	and 1
 	add a, h
+	add 1
 	ret
 
 ; UI elements

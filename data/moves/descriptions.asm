@@ -142,14 +142,14 @@ MoveDescriptions::
 	dw SludgeWaveDescription
 	dw BarrageDescription
 	dw LeechLifeDescription
-	dw LovelyKissDescription
+	dw DrainKissDescription
 	dw SkyAttackDescription
 	dw TransformDescription
 	dw BubbleDescription
 	dw DizzyPunchDescription
 	dw SporeDescription
 	dw FlashDescription
-	dw PsywaveDescription
+	dw PsychicFangDescription
 	dw SplashDescription
 	dw AcidArmorDescription
 	dw CrabhammerDescription
@@ -831,13 +831,13 @@ LeechLifeDescription:
 	db   "Steals 1/2 of the"
 	line "damage inflicted.@"
 
-LovelyKissDescription:
-	db   "May cause the foe"
-	line "to fall asleep.@"
+DrainKissDescription:
+	db   "Steals 1/2 of the"
+	line "damage inflicted.@"
 
 SkyAttackDescription:
-	db   "A powerful flying"
-	line "attack.@"
+	db   "An attack that al-"
+	line "so hurts the user.@"
 
 TransformDescription:
 	db   "The user assumes"
@@ -859,9 +859,9 @@ FlashDescription:
 	db   "Blinds the foe to"
 	line "reduce accuracy.@"
 
-PsywaveDescription:
-	db   "An attack with"
-	line "variable power.@"
+PsychicFangDescription:
+	db   "An attack that may"
+	line "lower DEF.@"
 
 SplashDescription:
 	db   "Has no effect"
@@ -1233,7 +1233,7 @@ SunnyDayDescription:
 
 CrunchDescription:
 	db   "An attack that may"
-	line "lower SPCL.DEF.@"
+	line "lower DEF.@"
 
 MirrorCoatDescription:
 	db   "Counters a SPCL."
