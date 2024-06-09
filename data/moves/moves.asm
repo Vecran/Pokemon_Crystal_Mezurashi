@@ -16,8 +16,8 @@ Moves:
 	table_width MOVE_LENGTH, Moves
 	move CUTE_POUND,   EFFECT_NORMAL_HIT,         40, FAIRY,         PHYSICAL, 100, 35,   0
 	move KARATE_CHOP,  EFFECT_NORMAL_HIT,         50, FIGHTING,      PHYSICAL, 100, 25,   0
-	move DOUBLESLAP,   EFFECT_MULTI_HIT,          20, NORMAL,        PHYSICAL,  95, 20,   0
-	move COMET_PUNCH,  EFFECT_MULTI_HIT,          20, FIGHTING,      PHYSICAL,  95, 20,   0
+	move DOUBLESLAP,   EFFECT_MULTI_HIT,          20, NORMAL,        PHYSICAL, 100, 20,   0
+	move COMET_PUNCH,  EFFECT_MULTI_HIT,          20, FIGHTING,      PHYSICAL, 100, 20,   0
 	move DRAIN_PUNCH,  EFFECT_LEECH_HIT,          75, FIGHTING,      PHYSICAL, 100, 15,   0
 	move PAY_DAY,      EFFECT_PAY_DAY,            80, NORMAL,        PHYSICAL, 100, 20,   0
 	move FIRE_PUNCH,   EFFECT_BURN_HIT,           75, FIRE,          PHYSICAL, 100, 15,  10
@@ -153,7 +153,7 @@ Moves:
 	move GLARE,        EFFECT_PARALYZE,            0, DARK,          STATUS,   100, 30,   0
 	move DREAM_EATER,  EFFECT_DREAM_EATER,       100, PSYCHIC_TYPE,  SPECIAL,  100, 15,   0
 	move SLUDGE_WAVE,  EFFECT_POISON_HIT,        120, POISON,        SPECIAL,   85,  5,  10
-	move BARRAGE,      EFFECT_MULTI_HIT,          15, NORMAL,        PHYSICAL,  85, 20,   0
+	move BARRAGE,      EFFECT_MULTI_HIT,          20, GHOST,         SPECIAL,  100, 20,   0
 	move LEECH_LIFE,   EFFECT_LEECH_HIT,          20, BUG,           PHYSICAL, 100, 15,   0
 	move LOVELY_KISS,  EFFECT_SLEEP,               0, NORMAL,        STATUS,    75, 10,   0
 	move SKY_ATTACK,   EFFECT_SKY_ATTACK,        140, FLYING,        PHYSICAL,  90,  5,   0

@@ -2255,14 +2255,12 @@ BattleAnim_CrossPoison:
 	anim_ret
 
 BattleAnim_SludgeWave:
-	anim_1gfx ANIM_GFX_BUBBLE
+	anim_2gfx ANIM_GFX_BUBBLE, ANIM_GFX_POISON
 	anim_bgeffect ANIM_BG_SURF, $0, $0, $0
-	anim_bgeffect ANIM_BG_BLACK_HUES, $0, $8, $0
-	anim_obj ANIM_OBJ_SURF, 88, 104, $8
-.loop
-	anim_sound 0, 1, SFX_SURF
-	anim_wait 32
-	anim_loop 4, .loop
+	anim_bgp $f8
+	anim_obj ANIM_OBJ_SLUDGE_WAVE, 88, 104, $8
+	anim_wait 24
+	anim_call BattleAnimSub_Sludge
 	anim_incobj 1
 	anim_wait 56
 	anim_ret
