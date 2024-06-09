@@ -849,7 +849,18 @@ BattleAnim_PoisonFang:
 	anim_sound 0, 1, SFX_BITE
 	anim_obj ANIM_OBJ_HIT_YFIX, 128, 64, $18
 	anim_wait 16
-	anim_call BattleAnimSub_Sludge
+	anim_clearobjs
+.loop
+	anim_sound 0, 1, SFX_TOXIC
+	anim_obj ANIM_OBJ_SLUDGE, 132, 72, $0
+	anim_wait 8
+	anim_sound 0, 1, SFX_TOXIC
+	anim_obj ANIM_OBJ_SLUDGE, 116, 72, $0
+	anim_wait 8
+	anim_sound 0, 1, SFX_TOXIC
+	anim_obj ANIM_OBJ_SLUDGE, 148, 72, $0
+	anim_wait 8
+	anim_loop 3, .loop
 	anim_wait 4
 	anim_ret
 
@@ -2010,11 +2021,11 @@ BattleAnim_Rest:
 BattleAnim_CosmicPower:
 	anim_1gfx ANIM_GFX_OBJECTS
 	anim_bgeffect ANIM_BG_CYCLE_MID_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
-	anim_obj ANIM_OBJ_PROTECT, 80, 80, $0
-	anim_obj ANIM_OBJ_PROTECT, 80, 80, $d
-	anim_obj ANIM_OBJ_PROTECT, 80, 80, $1a
-	anim_obj ANIM_OBJ_PROTECT, 80, 80, $27
-	anim_obj ANIM_OBJ_PROTECT, 80, 80, $34
+	anim_obj ANIM_OBJ_PROTECT, 60, 80, $0
+	anim_obj ANIM_OBJ_PROTECT, 60, 80, $d
+	anim_obj ANIM_OBJ_PROTECT, 60, 80, $1a
+	anim_obj ANIM_OBJ_PROTECT, 60, 80, $27
+	anim_obj ANIM_OBJ_PROTECT, 60, 80, $34
 	anim_sound 0, 0, SFX_PROTECT
 	anim_wait 32
 	anim_incbgeffect ANIM_BG_CYCLE_MID_OBPALS_GRAY_AND_YELLOW
@@ -2037,15 +2048,15 @@ BattleAnim_AquaTail:
 	anim_1gfx ANIM_GFX_HIT
 	anim_bgeffect ANIM_BG_WHIRLPOOL, $0, $0, $0
 	anim_sound 0, 1, SFX_SURF
-	anim_wait 16
+	anim_wait 32
 	anim_obp0 $0
 	anim_sound 0, 0, SFX_RAGE
-	anim_bgeffect ANIM_BG_WOBBLE_MON, $0, BG_EFFECT_USER, $0
+	anim_call BattleAnim_TargetObj_1Row
+	anim_bgeffect ANIM_BG_TACKLE, $0, BG_EFFECT_USER, $0
 	anim_wait 16
 	anim_sound 0, 1, SFX_MEGA_KICK
 	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 136, 48, $0
 	anim_wait 16
-	anim_incbgeffect ANIM_BG_WOBBLE_MON
 	anim_call BattleAnim_ShowMon_0
 	anim_incbgeffect ANIM_BG_WHIRLPOOL
 	anim_wait 1
