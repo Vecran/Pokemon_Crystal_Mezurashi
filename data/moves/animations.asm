@@ -2886,8 +2886,9 @@ BattleAnim_DragonTail:
 	anim_sound 0, 1, SFX_MEGA_PUNCH
 	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 152, 40, $0
 	anim_wait 4
-	anim_sound 0, 1, SFX_EMBER
-	anim_obj ANIM_OBJ_FIRE_BLAST, 136, 48, $0
+	anim_obj ANIM_OBJ_FIRE_BLAST, 136, 48, $1
+	anim_obj ANIM_OBJ_FIRE_BLAST, 136, 48, $4
+	anim_obj ANIM_OBJ_FIRE_BLAST, 136, 48, $5
 	anim_wait 8
 	anim_bgeffect ANIM_BG_SHOW_MON, $0, BG_EFFECT_TARGET, $0
 	anim_wait 4
@@ -3225,8 +3226,6 @@ BattleAnim_LeafBlade:
 	anim_sound 0, 1, SFX_CUT
 	anim_obj ANIM_OBJ_CUT_LONG_DOWN_LEFT, 148, 36, $0
 	anim_wait 32
-	anim_call BattleAnim_ShowMon_0
-	anim_wait 8
 	anim_sound 0, 0, SFX_VINE_WHIP
 	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $28
 	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $5c
@@ -3235,6 +3234,7 @@ BattleAnim_LeafBlade:
 	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $9c
 	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $d0
 	anim_wait 64
+	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
 
@@ -3256,15 +3256,15 @@ BattleAnim_DazzleGleam:
 	anim_sound 0, 0, SFX_METRONOME
 .loop
 	anim_obj ANIM_OBJ_GLIMMER, 132, 40, $0
-	anim_wait 5
-	anim_obj ANIM_OBJ_GLIMMER, 136, 44, $0
-	anim_wait 5
-	anim_obj ANIM_OBJ_GLIMMER, 128, 36, $0
-	anim_wait 5
-	anim_obj ANIM_OBJ_GLIMMER, 136, 36, $0
-	anim_wait 5
-	anim_obj ANIM_OBJ_GLIMMER, 128, 44, $0
-	anim_wait 5
+	anim_wait 8
+	anim_obj ANIM_OBJ_GLIMMER, 140, 48, $0
+	anim_wait 8
+	anim_obj ANIM_OBJ_GLIMMER, 124, 32, $0
+	anim_wait 8
+	anim_obj ANIM_OBJ_GLIMMER, 140, 32, $0
+	anim_wait 8
+	anim_obj ANIM_OBJ_GLIMMER, 124, 48, $0
+	anim_wait 8
 	anim_loop 2, .loop
 	anim_wait 16
 	anim_ret
@@ -3361,7 +3361,12 @@ BattleAnim_Curse:
 	anim_ret
 
 BattleAnim_FlashCannon:
-	anim_2gfx ANIM_GFX_BEAM, ANIM_GFX_SHINE
+	anim_3gfx ANIM_GFX_BEAM, ANIM_GFX_REFLECT, ANIM_GFX_SHINE
+	anim_obp0 $0
+	anim_call BattleAnim_TargetObj_1Row
+	anim_call BattleAnimSub_Metallic
+	anim_call BattleAnim_ShowMon_0
+	anim_resetobp0
 	anim_call BattleAnimSub_Glimmer
 	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
 	anim_call BattleAnimSub_Beam
