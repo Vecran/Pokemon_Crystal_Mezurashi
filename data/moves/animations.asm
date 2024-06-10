@@ -1746,6 +1746,7 @@ BattleAnim_Softboiled:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
+BattleAnim_Charge:
 BattleAnim_CalmMind:
 BattleAnim_FocusEnergy:
 	anim_1gfx ANIM_GFX_SPEED
@@ -3421,14 +3422,26 @@ BattleAnim_DracoMeteor:
 	anim_2gfx ANIM_GFX_SHINE, ANIM_GFX_HIT
 	anim_call BattleAnim_TargetObj_1Row
 	anim_bgeffect ANIM_BG_CYCLE_MON_LIGHT_DARK_REPEATING, $0, BG_EFFECT_USER, $20
-	anim_bgeffect ANIM_BG_CYCLE_BGPALS_INVERTED, $0, $0, $0
-	anim_sound 0, 0, SFX_MORNING_SUN
-.loop
-	anim_obj ANIM_OBJ_MORNING_SUN, 120, 16, $88
+	anim_sound 0, 0, SFX_OUTRAGE
+	anim_wait 72
+	anim_incbgeffect ANIM_BG_CYCLE_MON_LIGHT_DARK_REPEATING
+	anim_call BattleAnim_ShowMon_0
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $3
+	anim_sound 0, 0, SFX_BURN
+	anim_obj ANIM_OBJ_MORNING_SUN, 110, 16, $88
+	anim_wait 18
+	anim_sound 0, 0, SFX_BURN
+	anim_obj ANIM_OBJ_HIT, 134, 56, $0
 	anim_wait 6
-	anim_obj ANIM_OBJ_HIT, 120, 32, $0
-	anim_wait 12
-	anim_loop 5, .loop
+	anim_obj ANIM_OBJ_MORNING_SUN, 120, 16, $88
+	anim_wait 18
+	anim_sound 0, 0, SFX_BURN
+	anim_obj ANIM_OBJ_HIT, 144, 56, $0
+	anim_wait 6
+	anim_obj ANIM_OBJ_MORNING_SUN, 100, 16, $88
+	anim_wait 18
+	anim_sound 0, 0, SFX_BURN
+	anim_obj ANIM_OBJ_HIT, 124, 56, $0
 	anim_wait 32
 	anim_call BattleAnim_ShowMon_0
 	anim_wait 32
@@ -3447,14 +3460,16 @@ BattleAnim_ChargeBeam:
 	anim_obj ANIM_OBJ_BEAM, 96, 76, $0
 	anim_wait 4
 	anim_sound 0, 1, SFX_THUNDERSHOCK
-	anim_obj ANIM_OBJ_BEAM, 112, 68, $0
+	anim_obj ANIM_OBJ_BEAM, 112, 68, $0	
 	anim_obj ANIM_OBJ_BEAM_TIP, 126, 62, $0
 	anim_wait 48
-	anim_sound 0, 1, SFX_CHARGE
-	anim_obj ANIM_OBJ_THUNDER_WAVE, 48, 48, $0
-	anim_wait 20
-	anim_bgp $1b
-	anim_incobj 1
+	anim_sound 0, 0, SFX_CHARGE
+	anim_clearobjs
+	anim_obj ANIM_OBJ_THUNDER_WAVE, 48, 90, $0
+	anim_wait 40
+	anim_sound 0, 0, SFX_SPARK
+	anim_incbgeffect ANIM_BG_FADE_MON_TO_LIGHT
+	anim_call BattleAnim_ShowMon_1
 	anim_wait 48
 	anim_ret
 
@@ -3540,7 +3555,6 @@ BattleAnim_FaintAttack:
 BattleAnim_BoltStrike:
 	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_LIGHTNING
 	anim_call BattleAnim_TargetObj_1Row
-	;anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $10
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $6, $20
 	anim_bgeffect ANIM_BG_TACKLE, $0, BG_EFFECT_USER, $0
 	anim_wait 3
@@ -3558,27 +3572,9 @@ BattleAnim_BoltStrike:
 	anim_wait 16
 	anim_sound 0, 1, SFX_THUNDER
 	anim_obj ANIM_OBJ_THUNDER1, 136, 68, $0
-	anim_wait 48
+	anim_wait 16
 	anim_call BattleAnim_ShowMon_0
-	anim_wait 64
-	anim_ret
-
-BattleAnim_Charge:
-	anim_2gfx ANIM_GFX_CHARGE, ANIM_GFX_LIGHTNING
-	anim_sound 0, 0, SFX_CHARGE
-	anim_obj ANIM_OBJ_ABSORB_CENTER, 48, 84, $0
-	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $0
-	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $8
-	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $10
-	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $18
-	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $20
-	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $28
-	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $30
-	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $38
-	anim_wait 104
-	anim_sound 0, 1, SFX_CHARGE
-	anim_obj ANIM_OBJ_THUNDER_WAVE, 48, 48, $0
-	anim_wait 64
+	anim_wait 24
 	anim_ret
 
 BattleAnim_SludgeBomb:
