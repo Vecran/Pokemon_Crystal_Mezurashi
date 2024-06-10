@@ -858,7 +858,6 @@ PoliwagEvosAttacks:
 	db 20, BUBBLEBEAM
 	db 25, RAIN_DANCE
 	db 31, BODY_SLAM
-	db 37, BELLY_DRUM
 	db 43, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -874,7 +873,6 @@ PoliwhirlEvosAttacks:
 	db 19, DOUBLESLAP
 	db 27, RAIN_DANCE
 	db 35, BODY_SLAM
-	db 43, BELLY_DRUM
 	db 51, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -889,7 +887,6 @@ PoliwrathEvosAttacks:
 	db 27, RAIN_DANCE
 	db 35, BODY_SLAM
 	db 35, SUBMISSION
-	db 43, BELLY_DRUM
 	db 51, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -1307,7 +1304,6 @@ GastlyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
 	db 1, LICK
-	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
 	db 21, SHADOW_SNEAK
@@ -1321,8 +1317,6 @@ HaunterEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
 	db 1, LICK
-	db 1, SPITE
-	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
 	db 21, SHADOW_SNEAK
@@ -1335,8 +1329,6 @@ GengarEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
 	db 1, LICK
-	db 1, SPITE
-	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
 	db 21, SHADOW_SNEAK
@@ -1517,7 +1509,6 @@ HitmonleeEvosAttacks:
 	db 36, FORESIGHT
 	db 41, ENDURE
 	db 46, BLAZE_KICK
-	db 51, REVERSAL
 	db 0 ; no more level-up moves
 
 HitmonchanEvosAttacks:
@@ -1543,7 +1534,6 @@ LickitungEvosAttacks:
 	db 19, STOMP
 	db 23, ROLLOUT
 	db 32, BODY_SLAM
-	db 40, BELLY_DRUM
 	db 43, SCREECH
 	db 0 ; no more level-up moves
 
@@ -1632,7 +1622,6 @@ KangaskhanEvosAttacks:
 	db 37, ENDURE
 	db 40, BODY_SLAM
 	db 43, DIZZY_PUNCH
-	db 49, REVERSAL
 	db 0 ; no more level-up moves
 
 HorseaEvosAttacks:
@@ -2025,7 +2014,6 @@ SnorlaxEvosAttacks:
 	db 1, TACKLE
 	db 8, NASTY_PLOT
 	db 15, DEFENSE_CURL
-	db 22, BELLY_DRUM
 	db 29, HEADBUTT
 	db 36, SNORE
 	db 36, REST
@@ -2205,10 +2193,10 @@ MeganiumEvosAttacks:
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, DAZZLE_GLEAM
-	db 1, FLASH_CANNON
-	db 1, DRAGON_TAIL
-	db 1, WOOD_HAMMER
+	db 1, DRACO_METEOR
+	db 1, CHARGE_BEAM
+	db 1, BOLT_STRIKE
+	db 1, CHARGE
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK
@@ -2470,7 +2458,6 @@ PichuEvosAttacks:
 	db 1, CHARM
 	db 6, LEER
 	db 8, THUNDER_WAVE
-	db 11, SWEET_KISS
 	db 0 ; no more level-up moves
 
 CleffaEvosAttacks:
@@ -2480,7 +2467,6 @@ CleffaEvosAttacks:
 	db 1, CHARM
 	db 6, ENCORE
 	db 8, SING
-	db 13, SWEET_KISS
 	db 0 ; no more level-up moves
 
 IgglybuffEvosAttacks:
@@ -2490,7 +2476,6 @@ IgglybuffEvosAttacks:
 	db 1, CHARM
 	db 6, DEFENSE_CURL
 	db 9, CUTE_POUND
-	db 14, SWEET_KISS
 	db 0 ; no more level-up moves
 
 TogepiEvosAttacks:
@@ -2500,7 +2485,6 @@ TogepiEvosAttacks:
 	db 1, CHARM
 	db 5, METRONOME
 	db 11, RETURN
-	db 18, SWEET_KISS
 	db 25, ENCORE
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
@@ -2512,7 +2496,6 @@ TogeticEvosAttacks:
 	db 1, GROWL
 	db 1, CHARM
 	db 5, METRONOME
-	db 18, SWEET_KISS
 	db 25, ENCORE
 	db 27, WING_ATTACK
 	db 31, SAFEGUARD
@@ -2832,7 +2815,6 @@ MisdreavusEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, GROWL
 	db 1, SHADOW_SNEAK
-	db 6, SPITE
 	db 12, CONFUSE_RAY
 	db 19, MEAN_LOOK
 	db 24, SCREECH
@@ -2902,7 +2884,6 @@ DunsparceEvosAttacks:
 	db 5, DEFENSE_CURL
 	db 13, GLARE
 	db 15, DIG
-	db 18, SPITE
 	db 26, PURSUIT
 	db 30, SCREECH
 	db 33, BODY_SLAM
@@ -3019,7 +3000,6 @@ HeracrossEvosAttacks:
     db 5, PIN_MISSILE
     db 6, HORN_ATTACK
     db 12, ENDURE
-    db 44, REVERSAL
     db 45, MEGAHORN
     db 50, CROSS_CHOP
     db 0 ; no more level-up moves
@@ -3328,7 +3308,6 @@ SmoochumEvosAttacks:
 	db 1, POWDER_SNOW
 	db 1, LICK
 	db 1, CUTE_POUND
-	db 7, SWEET_KISS
 	db 17, ICY_WIND
 	db 21, CONFUSION
 	db 25, SING

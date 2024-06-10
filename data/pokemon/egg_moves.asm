@@ -22,7 +22,7 @@ BulbasaurEggMoves:
 	db -1 ; end
 
 CharmanderEggMoves:
-	db BELLY_DRUM
+	db DRAGON_DANCE
 	db ANCIENTPOWER
 	db ROCK_SLIDE
 	db BITE
@@ -49,7 +49,7 @@ RattataEggMoves:
 	db FLAME_WHEEL
 	db FURY_SWIPES
 	db BITE
-	db REVERSAL
+	db POISON_FANG
 	db -1 ; end
 
 SpearowEggMoves:
@@ -63,7 +63,6 @@ SpearowEggMoves:
 EkansEggMoves:
 	db PURSUIT
 	db DRAGON_RUSH
-	db SPITE
 	db BEAT_UP
 	db CRUNCH
 	db -1 ; end
@@ -93,7 +92,6 @@ VulpixEggMoves:
 	db FAINT_ATTACK
 	db HYPNOSIS
 	db SHADOW_SNEAK
-	db SPITE
 	db -1 ; end
 
 ZubatEggMoves:
@@ -136,7 +134,6 @@ DiglettEggMoves:
 	db -1 ; end
 
 MeowthEggMoves:
-	db SPITE
 	db CHARM
 	db HYPNOSIS
 	db NASTY_PLOT
@@ -158,7 +155,7 @@ MankeyEggMoves:
 	db FORESIGHT
 	db HONE_CLAWS
 	db THRASH
-	db REVERSAL
+	db SHADOW_SNEAK
 	db BEAT_UP
 	db -1 ; end
 
@@ -219,7 +216,7 @@ PonytaEggMoves:
 
 SlowpokeEggMoves:
 	db SAFEGUARD
-	db BELLY_DRUM
+	db RAIN_DANCE
 	db FUTURE_SIGHT
 	db STOMP
 	db -1 ; end
@@ -292,7 +289,6 @@ ExeggcuteEggMoves:
 CuboneEggMoves:
 	db ROCK_SLIDE
 	db ANCIENTPOWER
-	db BELLY_DRUM
 	db SCREECH
 	db SKULL_BASH
 	db PERISH_SONG
@@ -300,7 +296,6 @@ CuboneEggMoves:
 	db -1 ; end
 
 LickitungEggMoves:
-	db BELLY_DRUM
 	db MAGNITUDE
 	db BODY_SLAM
 	db -1 ; end
@@ -314,7 +309,7 @@ KoffingEggMoves:
 
 RhyhornEggMoves:
 	db CRUNCH
-	db REVERSAL
+	db DRAGONBREATH
 	db ROCK_SLIDE
 	db THRASH
 	db PURSUIT
@@ -366,7 +361,7 @@ ScytherEggMoves:
 	db SAFEGUARD
 	db BATON_PASS
 	db RAZOR_WIND
-	db REVERSAL
+	db CROSS_POISON
 	db LIGHT_SCREEN
 	db -1 ; end
 
@@ -426,7 +421,7 @@ ChikoritaEggMoves:
 CyndaquilEggMoves:
 	db FURY_SWIPES
 	db QUICK_ATTACK
-	db REVERSAL
+	db MUD_BOMB
 	db THRASH
 	db FORESIGHT
 	db SUBMISSION
@@ -446,7 +441,7 @@ SentretEggMoves:
 	db PURSUIT
 	db SLASH
 	db FOCUS_ENERGY
-	db REVERSAL
+	db MUD_BOMB
 	db -1 ; end
 
 HoothootEggMoves:
@@ -477,7 +472,6 @@ ChinchouEggMoves:
 	db -1 ; end
 
 PichuEggMoves:
-	db REVERSAL
 	db PRESENT
 	db ENCORE
 	db DOUBLESLAP
@@ -486,7 +480,6 @@ PichuEggMoves:
 CleffaEggMoves:
 	db PRESENT
 	db METRONOME
-	db BELLY_DRUM
 	db MIMIC
 	db -1 ; end
 
@@ -524,7 +517,6 @@ MarillEggMoves:
 	db LIGHT_SCREEN
 	db PRESENT
 	db FUTURE_SIGHT
-	db BELLY_DRUM
 	db PERISH_SONG
 	db SUPERSONIC
 	db FORESIGHT
@@ -547,14 +539,13 @@ AipomEggMoves:
 	db SCREECH
 	db PURSUIT
 	db AGILITY
-	db SPITE
 	db DOUBLESLAP
 	db BEAT_UP
 	db -1 ; end
 
 YanmaEggMoves:
 	db HURRICANE
-	db REVERSAL
+	db DRAGON_DANCE
 	db LEECH_LIFE
 	db -1 ; end
 
@@ -635,7 +626,6 @@ HeracrossEggMoves:
 
 SneaselEggMoves:
 	db ICICLE_SPEAR
-	db SPITE
 	db FORESIGHT
 	db REFLECT
 	db BITE
@@ -700,8 +690,6 @@ HoundourEggMoves:
 	db RAGE
 	db PURSUIT
 	db SNARL
-	db SPITE
-	db REVERSAL
 	db BEAT_UP
 	db -1 ; end
 
@@ -714,7 +702,6 @@ PhanpyEggMoves:
 
 StantlerEggMoves:
 	db REFLECT
-	db SPITE
 	db LIGHT_SCREEN
 	db BITE
 	db -1 ; end
@@ -744,7 +731,6 @@ MagbyEggMoves:
 
 MiltankEggMoves:
 	db PRESENT
-	db REVERSAL
 	db -1 ; end
 
 LarvitarEggMoves:

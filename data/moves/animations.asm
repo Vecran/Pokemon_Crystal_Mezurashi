@@ -180,15 +180,15 @@ BattleAnimations::
 	dw BattleAnim_DragonTail
 	dw BattleAnim_Aeroblast
 	dw BattleAnim_WoodHammer
-	dw BattleAnim_Reversal
-	dw BattleAnim_Spite
+	dw BattleAnim_DracoMeteor
+	dw BattleAnim_ChargeBeam
 	dw BattleAnim_PowderSnow
 	dw BattleAnim_Protect
 	dw BattleAnim_MachPunch
 	dw BattleAnim_ScaryFace
 	dw BattleAnim_FaintAttack
-	dw BattleAnim_SweetKiss
-	dw BattleAnim_BellyDrum
+	dw BattleAnim_BoltStrike
+	dw BattleAnim_Charge
 	dw BattleAnim_SludgeBomb
 	dw BattleAnim_MudSlap
 	dw BattleAnim_Octazooka
@@ -3417,34 +3417,45 @@ BattleAnim_WoodHammer:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
-BattleAnim_Reversal:
+BattleAnim_DracoMeteor:
 	anim_2gfx ANIM_GFX_SHINE, ANIM_GFX_HIT
-	anim_bgeffect ANIM_BG_CYCLE_MID_OBPALS_GRAY_AND_YELLOW, $0, $0, $0
-	anim_sound 0, 1, SFX_MEGA_PUNCH
-	anim_obj ANIM_OBJ_HIT, 112, 64, $0
-	anim_wait 2
-	anim_sound 0, 1, SFX_SHINE
-	anim_obj ANIM_OBJ_FORESIGHT, 120, 56, $0
-	anim_wait 2
-	anim_sound 0, 1, SFX_MEGA_PUNCH
-	anim_obj ANIM_OBJ_HIT, 128, 56, $0
-	anim_wait 2
-	anim_sound 0, 1, SFX_SHINE
-	anim_obj ANIM_OBJ_FORESIGHT, 136, 48, $0
-	anim_wait 2
-	anim_sound 0, 1, SFX_MEGA_PUNCH
-	anim_obj ANIM_OBJ_HIT, 144, 48, $0
-	anim_wait 2
-	anim_sound 0, 1, SFX_SHINE
-	anim_obj ANIM_OBJ_FORESIGHT, 152, 40, $0
-	anim_wait 24
+	anim_call BattleAnim_TargetObj_1Row
+	anim_bgeffect ANIM_BG_CYCLE_MON_LIGHT_DARK_REPEATING, $0, BG_EFFECT_USER, $20
+	anim_bgeffect ANIM_BG_CYCLE_BGPALS_INVERTED, $0, $0, $0
+	anim_sound 0, 0, SFX_MORNING_SUN
+.loop
+	anim_obj ANIM_OBJ_MORNING_SUN, 120, 16, $88
+	anim_wait 6
+	anim_obj ANIM_OBJ_HIT, 120, 32, $0
+	anim_wait 12
+	anim_loop 5, .loop
+	anim_wait 32
+	anim_call BattleAnim_ShowMon_0
+	anim_wait 32
 	anim_ret
 
-BattleAnim_Spite:
-	anim_1gfx ANIM_GFX_ANGELS
-	anim_obj ANIM_OBJ_SPITE, 132, 16, $0
-	anim_sound 0, 1, SFX_SPITE
-	anim_wait 96
+BattleAnim_ChargeBeam:
+	anim_2gfx ANIM_GFX_BEAM, ANIM_GFX_LIGHTNING
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $3
+	anim_sound 0, 0, SFX_THUNDERSHOCK
+	anim_obj ANIM_OBJ_BEAM, 64, 92, $0
+	anim_wait 4
+	anim_sound 0, 0, SFX_THUNDERSHOCK
+	anim_obj ANIM_OBJ_BEAM, 80, 84, $0
+	anim_wait 4
+	anim_sound 0, 1, SFX_THUNDERSHOCK
+	anim_obj ANIM_OBJ_BEAM, 96, 76, $0
+	anim_wait 4
+	anim_sound 0, 1, SFX_THUNDERSHOCK
+	anim_obj ANIM_OBJ_BEAM, 112, 68, $0
+	anim_obj ANIM_OBJ_BEAM_TIP, 126, 62, $0
+	anim_wait 48
+	anim_sound 0, 1, SFX_CHARGE
+	anim_obj ANIM_OBJ_THUNDER_WAVE, 48, 48, $0
+	anim_wait 20
+	anim_bgp $1b
+	anim_incobj 1
+	anim_wait 48
 	anim_ret
 
 BattleAnim_PowderSnow:
@@ -3526,55 +3537,48 @@ BattleAnim_FaintAttack:
 	anim_wait 4
 	anim_ret
 
-BattleAnim_SweetKiss:
-	anim_2gfx ANIM_GFX_OBJECTS, ANIM_GFX_ANGELS
-	anim_bgeffect ANIM_BG_CYCLE_MID_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
-	anim_obj ANIM_OBJ_SWEET_KISS, 96, 40, $0
-	anim_sound 0, 1, SFX_SWEET_KISS
-	anim_wait 32
-	anim_sound 0, 1, SFX_SWEET_KISS_2
-	anim_obj ANIM_OBJ_HEART, 120, 40, $0
-	anim_wait 40
+BattleAnim_BoltStrike:
+	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_LIGHTNING
+	anim_call BattleAnim_TargetObj_1Row
+	;anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $10
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $6, $20
+	anim_bgeffect ANIM_BG_TACKLE, $0, BG_EFFECT_USER, $0
+	anim_wait 3
+	anim_sound 0, 1, SFX_TACKLE
+	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 128, 48, $0
+	anim_wait 6
+	anim_sound 0, 1, SFX_TACKLE
+	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 144, 48, $0
+	anim_wait 3
+	anim_sound 0, 1, SFX_THUNDER
+	anim_obj ANIM_OBJ_THUNDER2, 120, 68, $0
+	anim_wait 16
+	anim_sound 0, 1, SFX_THUNDER
+	anim_obj ANIM_OBJ_THUNDER3, 152, 68, $0
+	anim_wait 16
+	anim_sound 0, 1, SFX_THUNDER
+	anim_obj ANIM_OBJ_THUNDER1, 136, 68, $0
+	anim_wait 48
+	anim_call BattleAnim_ShowMon_0
+	anim_wait 64
 	anim_ret
 
-BattleAnim_BellyDrum:
-	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_NOISE
-	anim_sound 0, 0, SFX_BELLY_DRUM
-	anim_obj ANIM_OBJ_BELLY_DRUM_HAND, 64, 104, $0
-	anim_obj ANIM_OBJ_BELLY_DRUM_NOTE, 64, 92, $f8
-	anim_wait 24
-	anim_sound 0, 0, SFX_BELLY_DRUM
-	anim_obj ANIM_OBJ_BELLY_DRUM_HAND, 64, 104, $0
-	anim_obj ANIM_OBJ_BELLY_DRUM_NOTE, 64, 92, $f8
-	anim_wait 24
-	anim_sound 0, 0, SFX_BELLY_DRUM
-	anim_obj ANIM_OBJ_BELLY_DRUM_HAND, 64, 104, $0
-	anim_obj ANIM_OBJ_BELLY_DRUM_NOTE, 64, 92, $f8
-	anim_wait 12
-	anim_sound 0, 0, SFX_BELLY_DRUM
-	anim_obj ANIM_OBJ_BELLY_DRUM_HAND, 64, 104, $0
-	anim_obj ANIM_OBJ_BELLY_DRUM_NOTE, 64, 92, $f8
-	anim_wait 12
-	anim_sound 0, 0, SFX_BELLY_DRUM
-	anim_obj ANIM_OBJ_BELLY_DRUM_HAND, 64, 104, $0
-	anim_obj ANIM_OBJ_BELLY_DRUM_NOTE, 64, 92, $f8
-	anim_wait 24
-	anim_sound 0, 0, SFX_BELLY_DRUM
-	anim_obj ANIM_OBJ_BELLY_DRUM_HAND, 64, 104, $0
-	anim_obj ANIM_OBJ_BELLY_DRUM_NOTE, 64, 92, $f8
-	anim_wait 12
-	anim_sound 0, 0, SFX_BELLY_DRUM
-	anim_obj ANIM_OBJ_BELLY_DRUM_HAND, 64, 104, $0
-	anim_obj ANIM_OBJ_BELLY_DRUM_NOTE, 64, 92, $f8
-	anim_wait 12
-	anim_sound 0, 0, SFX_BELLY_DRUM
-	anim_obj ANIM_OBJ_BELLY_DRUM_HAND, 64, 104, $0
-	anim_obj ANIM_OBJ_BELLY_DRUM_NOTE, 64, 92, $f8
-	anim_wait 12
-	anim_sound 0, 0, SFX_BELLY_DRUM
-	anim_obj ANIM_OBJ_BELLY_DRUM_HAND, 64, 104, $0
-	anim_obj ANIM_OBJ_BELLY_DRUM_NOTE, 64, 92, $f8
-	anim_wait 12
+BattleAnim_Charge:
+	anim_2gfx ANIM_GFX_CHARGE, ANIM_GFX_LIGHTNING
+	anim_sound 0, 0, SFX_CHARGE
+	anim_obj ANIM_OBJ_ABSORB_CENTER, 48, 84, $0
+	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $0
+	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $8
+	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $10
+	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $18
+	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $20
+	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $28
+	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $30
+	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE, 48, 84, $38
+	anim_wait 104
+	anim_sound 0, 1, SFX_CHARGE
+	anim_obj ANIM_OBJ_THUNDER_WAVE, 48, 48, $0
+	anim_wait 64
 	anim_ret
 
 BattleAnim_SludgeBomb:

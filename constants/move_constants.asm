@@ -184,15 +184,15 @@
 	const DRAGON_TAIL    ; b0
 	const AEROBLAST    ; b1
 	const WOOD_HAMMER   ; b2
-	const REVERSAL     ; b3
-	const SPITE        ; b4
+	const DRACO_METEOR    ; b3
+	const CHARGE_BEAM       ; b4
 	const POWDER_SNOW  ; b5
 	const PROTECT      ; b6
 	const MACH_PUNCH   ; b7
 	const SCARY_FACE   ; b8
 	const FAINT_ATTACK ; b9
-	const SWEET_KISS   ; ba
-	const BELLY_DRUM   ; bb
+	const BOLT_STRIKE     ; ba
+	const CHARGE         ; bb
 	const SLUDGE_BOMB  ; bc
 	const MUD_SLAP     ; bd
 	const OCTAZOOKA    ; be

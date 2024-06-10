@@ -179,15 +179,15 @@ MoveDescriptions::
 	dw DragonTailDescription
 	dw AeroblastDescription
 	dw WoodHammerDescription
-	dw ReversalDescription
-	dw SpiteDescription
+	dw DracoMeteorDescription
+	dw ChargeBeamDescription
 	dw PowderSnowDescription
 	dw ProtectDescription
 	dw MachPunchDescription
 	dw ScaryFaceDescription
 	dw FaintAttackDescription
-	dw SweetKissDescription
-	dw BellyDrumDescription
+	dw BoltStrikeDescription
+	dw ChargeDescription
 	dw SludgeBombDescription
 	dw MudSlapDescription
 	dw OctazookaDescription
@@ -979,13 +979,13 @@ WoodHammerDescription:
 	db   "An attack that al-"
 	line "so hurts the user.@"
 
-ReversalDescription:
-	db   "Stronger if the"
-	line "user's HP is low.@"
+DracoMeteorDescription:
+	db   "1st turn: Attack"
+	line "2nd turn: Rest@"
 
-SpiteDescription:
-	db   "Cuts the PP of the"
-	line "foe's last move.@"
+ChargeBeamDescription:
+	db   "May raise the"
+	line "user's SPC. ATK.@"
 
 PowderSnowDescription:
 	db   "An attack that may"
@@ -1007,13 +1007,13 @@ FaintAttackDescription:
 	db   "An attack that"
 	line "never misses.@"
 
-SweetKissDescription:
-	db   "A move that causes"
-	line "confusion.@"
+BoltStrikeDescription:
+	db   "An attack that may"
+	line "cause paralysis.@"
 
-BellyDrumDescription:
-	db   "Reduces own HP to"
-	line "maximize ATTACK.@"
+ChargeDescription:
+	db   "Charges power to"
+	line "up SP.ATK & SP.DEF@"
 
 SludgeBombDescription:
 	db   "An attack that may"
