@@ -35,7 +35,7 @@ SquirtleEggMoves:
 	db AQUA_JET
 	db CONFUSION
 	db FORESIGHT
-	db FLAIL
+	db FLASH_CANNON
 	db -1 ; end
 
 PidgeyEggMoves:
@@ -69,7 +69,7 @@ EkansEggMoves:
 	db -1 ; end
 
 SandshrewEggMoves:
-	db FLAIL
+	db IRON_TAIL
 	db SAFEGUARD
 	db MUD_BOMB
 	db RAPID_SPIN
@@ -92,7 +92,7 @@ NidoranMEggMoves:
 VulpixEggMoves:
 	db FAINT_ATTACK
 	db HYPNOSIS
-	db FLAIL
+	db SHADOW_SNEAK
 	db SPITE
 	db -1 ; end
 
@@ -107,7 +107,7 @@ ZubatEggMoves:
 OddishEggMoves:
 	db SWORDS_DANCE
 	db RAZOR_LEAF
-	db FLAIL
+	db DRAIN_KISS
 	db SYNTHESIS
 	db -1 ; end
 
@@ -116,7 +116,7 @@ ParasEggMoves:
 	db SCREECH
 	db X_SCISSOR
 	db PSYBEAM
-	db FLAIL
+	db CROSS_POISON
 	db LIGHT_SCREEN
 	db PURSUIT
 	db -1 ; end
@@ -174,7 +174,6 @@ PoliwagEggMoves:
 	db AQUA_TAIL
 	db BUBBLEBEAM
 	db AQUA_JET
-	db MIND_READER
 	db -1 ; end
 
 AbraEggMoves:
@@ -230,7 +229,7 @@ FarfetchDEggMoves:
 	db BULK_UP
 	db GUST
 	db QUICK_ATTACK
-	db FLAIL
+	db LEAF_BLADE
 	db -1 ; end
 
 DoduoEggMoves:
@@ -238,7 +237,7 @@ DoduoEggMoves:
 	db SUPERSONIC
 	db MAGNITUDE
 	db FAINT_ATTACK
-	db FLAIL
+	db TRI_ATTACK
 	db -1 ; end
 
 SeelEggMoves:
@@ -268,7 +267,7 @@ GastlyEggMoves:
 
 OnixEggMoves:
 	db ROCK_SLIDE
-	db FLAIL
+	db DRAGONBREATH
 	db -1 ; end
 
 DrowzeeEggMoves:
@@ -279,7 +278,7 @@ DrowzeeEggMoves:
 KrabbyEggMoves:
 	db DIG
 	db AQUA_JET
-	db FLAIL
+	db X_SCISSOR
 	db -1 ; end
 
 ExeggcuteEggMoves:
@@ -329,7 +328,7 @@ ChanseyEggMoves:
 	db -1 ; end
 
 TangelaEggMoves:
-	db FLAIL
+	db TICKLE
 	db CONFUSION
 	db MEGA_DRAIN
 	db REFLECT
@@ -343,7 +342,7 @@ KangaskhanEggMoves:
 	db -1 ; end
 
 HorseaEggMoves:
-	db FLAIL
+	db DRAGON_DANCE
 	db AURORA_BEAM
 	db OCTAZOOKA
 	db AQUA_TAIL
@@ -372,7 +371,7 @@ ScytherEggMoves:
 	db -1 ; end
 
 PinsirEggMoves:
-	db FLAIL
+	db MUD_BOMB
 	db -1 ; end
 
 LaprasEggMoves:
@@ -381,7 +380,7 @@ LaprasEggMoves:
 	db -1 ; end
 
 EeveeEggMoves:
-	db FLAIL
+	db DAZZLE_GLEAM
 	db CHARM
 	db -1 ; end
 
@@ -397,7 +396,7 @@ KabutoEggMoves:
 	db AURORA_BEAM
 	db RAPID_SPIN
 	db DIG
-	db FLAIL
+	db MUD_BOMB
 	db -1 ; end
 
 AerodactylEggMoves:
@@ -420,7 +419,7 @@ ChikoritaEggMoves:
 	db VINE_WHIP
 	db LEECH_SEED
 	db ANCIENTPOWER
-	db FLAIL
+	db DAZZLE_GLEAM
 	db SWORDS_DANCE
 	db -1 ; end
 
@@ -472,7 +471,7 @@ SpinarakEggMoves:
 	db -1 ; end
 
 ChinchouEggMoves:
-	db FLAIL
+	db DAZZLE_GLEAM
 	db SUPERSONIC
 	db SCREECH
 	db -1 ; end
@@ -589,7 +588,7 @@ GirafarigEggMoves:
 PinecoEggMoves:
 	db REFLECT
 	db PIN_MISSILE
-	db FLAIL
+	db SKULL_BASH
 	db SWIFT
 	db -1 ; end
 
@@ -619,7 +618,7 @@ SnubbullEggMoves:
 	db -1 ; end
 
 QwilfishEggMoves:
-	db FLAIL
+	db FLASH_CANNON
 	db AQUA_JET
 	db BUBBLEBEAM
 	db SUPERSONIC
@@ -631,7 +630,7 @@ ShuckleEggMoves:
 
 HeracrossEggMoves:
 	db BULK_UP
-	db FLAIL
+	db TWINEEDLE
 	db -1 ; end
 
 SneaselEggMoves:
@@ -724,7 +723,6 @@ TyrogueEggMoves:
 	db RAPID_SPIN
 	db HI_JUMP_KICK
 	db MACH_PUNCH
-	db MIND_READER
 	db -1 ; end
 
 SmoochumEggMoves:

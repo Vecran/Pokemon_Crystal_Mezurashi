@@ -891,7 +891,6 @@ PoliwrathEvosAttacks:
 	db 35, SUBMISSION
 	db 43, BELLY_DRUM
 	db 51, HYDRO_PUMP
-	db 51, MIND_READER
 	db 0 ; no more level-up moves
 
 AbraEvosAttacks:
@@ -1515,7 +1514,6 @@ HitmonleeEvosAttacks:
 	db 20, JUMP_KICK
 	db 21, FOCUS_ENERGY
 	db 26, HI_JUMP_KICK
-	db 31, MIND_READER
 	db 36, FORESIGHT
 	db 41, ENDURE
 	db 46, BLAZE_KICK
@@ -1673,7 +1671,7 @@ GoldeenEvosAttacks:
 	db 10, SUPERSONIC
 	db 12, HORN_ATTACK
 	db 15, WATERFALL
-	db 20, FLAIL
+	db 20, DAZZLE_GLEAM
 	db 35, MEGAHORN
 	db 43, HORN_DRILL
 	db 48, AGILITY
@@ -1687,7 +1685,7 @@ SeakingEvosAttacks:
 	db 10, SUPERSONIC
 	db 12, HORN_ATTACK
 	db 15, WATERFALL
-	db 20, FLAIL
+	db 20, DAZZLE_GLEAM
 	db 30, DRILL_PECK
 	db 35, MEGAHORN
 	db 43, HORN_DRILL
@@ -1833,7 +1831,7 @@ MagikarpEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BUBBLE
 	db 15, TACKLE
-	db 30, FLAIL
+	db 30, DRAGON_RUSH
 	db 0 ; no more level-up moves
 
 GyaradosEvosAttacks:
@@ -2041,7 +2039,6 @@ ArticunoEvosAttacks:
 	db 1, GUST
 	db 1, POWDER_SNOW
 	db 25, AGILITY
-	db 37, MIND_READER
 	db 49, ICE_BEAM
 	db 55, DRILL_PECK
 	db 61, REFLECT
@@ -2208,10 +2205,10 @@ MeganiumEvosAttacks:
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, HOWL
-	db 1, WORK_UP
-	db 1, COIL
-	db 1, LEAF_BLADE
+	db 1, DAZZLE_GLEAM
+	db 1, FLASH_CANNON
+	db 1, DRAGON_TAIL
+	db 1, WOOD_HAMMER
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK
@@ -2445,7 +2442,6 @@ ChinchouEvosAttacks:
 	db 1, BUBBLE
 	db 1, THUNDER_WAVE
 	db 5, SUPERSONIC
-	db 13, FLAIL
 	db 17, WATER_GUN
 	db 20, SPARK
 	db 29, CONFUSE_RAY
@@ -2458,7 +2454,6 @@ LanturnEvosAttacks:
 	db 1, THUNDER_WAVE
 	db 1, SUPERSONIC
 	db 5, SUPERSONIC
-	db 13, FLAIL
 	db 17, WATER_GUN
 	db 25, SPARK
 	db 33, CONFUSE_RAY
@@ -2561,7 +2556,6 @@ MareepEvosAttacks:
 	db 1, GROWL
 	db 7, THUNDERSHOCK
 	db 16, THUNDER_WAVE
-	db 23, COTTON_SPORE
 	db 30, LIGHT_SCREEN
 	db 37, THUNDER
 	db 0 ; no more level-up moves
@@ -2574,7 +2568,6 @@ FlaaffyEvosAttacks:
 	db 1, THUNDERSHOCK
 	db 9, THUNDERSHOCK
 	db 18, THUNDER_WAVE
-	db 27, COTTON_SPORE
 	db 36, LIGHT_SCREEN
 	db 45, THUNDER
 	db 0 ; no more level-up moves
@@ -2587,7 +2580,6 @@ AmpharosEvosAttacks:
 	db 1, THUNDER_WAVE
 	db 9, THUNDERSHOCK
 	db 18, THUNDER_WAVE
-	db 27, COTTON_SPORE
 	db 30, THUNDERPUNCH
 	db 42, LIGHT_SCREEN
 	db 47, THUNDERBOLT
@@ -2637,7 +2629,6 @@ SudowoodoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ROCK_THROW
 	db 1, MIMIC
-	db 10, FLAIL
 	db 19, LOW_KICK
 	db 28, ROCK_SLIDE
 	db 36, FAINT_ATTACK
@@ -2671,7 +2662,6 @@ HoppipEvosAttacks:
 	db 14, STUN_SPORE
 	db 17, SLEEP_POWDER
 	db 20, LEECH_SEED
-	db 25, COTTON_SPORE
 	db 30, MEGA_DRAIN
 	db 0 ; no more level-up moves
 
@@ -2690,7 +2680,6 @@ SkiploomEvosAttacks:
 	db 20, MEGA_DRAIN
 	db 22, LEECH_SEED
 	db 23, PROTECT
-	db 29, COTTON_SPORE
 	db 36, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
@@ -2708,7 +2697,6 @@ JumpluffEvosAttacks:
 	db 22, LEECH_SEED
 	db 25, GUST
 	db 27, MEGA_DRAIN
-	db 33, COTTON_SPORE
 	db 36, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
@@ -3256,7 +3244,6 @@ PhanpyEvosAttacks:
 	db 7, MUD_SLAP
 	db 9, DEFENSE_CURL
 	db 14, MAGNITUDE
-	db 17, FLAIL
 	db 33, ROLLOUT
 	db 41, ENDURE
 	db 49, DOUBLE_EDGE
@@ -3267,7 +3254,6 @@ DonphanEvosAttacks:
 	db 1, HORN_ATTACK
 	db 1, GROWL
 	db 9, DEFENSE_CURL
-	db 17, FLAIL
 	db 25, MAGNITUDE
 	db 28, HORN_ATTACK
 	db 33, ROLLOUT

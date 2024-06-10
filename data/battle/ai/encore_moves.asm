@@ -22,9 +22,7 @@ EncoreMoves:
 	db COIL
 	db TRIPLE_KICK
 	db MEAN_LOOK
-	db MIND_READER
 	db FLAME_WHEEL
 	db AEROBLAST
-	db COTTON_SPORE
 	db POWDER_SNOW
 	db -1 ; end

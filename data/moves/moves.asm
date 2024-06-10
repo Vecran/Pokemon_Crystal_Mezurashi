@@ -163,7 +163,7 @@ Moves:
 	move SPORE,        EFFECT_SLEEP,               0, GRASS,         STATUS,   100, 15,   0
 	move FLASH,        EFFECT_ACCURACY_DOWN_HIT,  20, ELECTRIC,      SPECIAL,  100, 15, 100
 	move PSYCHIC_FANG, EFFECT_DEFENSE_DOWN_HIT,   85, PSYCHIC_TYPE,  PHYSICAL, 100, 15,  20
-	move AQUA_TAIL,    EFFECT_FLINCH_HIT,         60, WATER,         PHYSICAL, 100, 25,  10
+	move AQUA_TAIL,    EFFECT_FLINCH_HIT,         60, WATER,         PHYSICAL, 100, 25,  20
 	move COSMIC_POWER, EFFECT_COSMIC_POWER,        0, PSYCHIC_TYPE,  STATUS,   100, 20,   0
 	move CRABHAMMER,   EFFECT_NORMAL_HIT,        100, WATER,         PHYSICAL,  90, 10,   0
 	move FLARE_BLITZ,  EFFECT_FLARE_BLITZ,       120, FIRE,          PHYSICAL, 100, 15,  10
@@ -183,15 +183,15 @@ Moves:
 	move TRIPLE_KICK,  EFFECT_TRIPLE_KICK,        20, FIGHTING,      PHYSICAL,  90, 10,   0
 	move THIEF,        EFFECT_THIEF,              60, DARK,          PHYSICAL, 100, 25, 100
 	move LEAF_BLADE,   EFFECT_NORMAL_HIT,         90, GRASS,         PHYSICAL, 100, 15,   0
-	move MIND_READER,  EFFECT_LOCK_ON,             0, NORMAL,        STATUS,   100,  5,   0
+	move DAZZLE_GLEAM, EFFECT_ACCURACY_DOWN_HIT,  70, FAIRY,         SPECIAL,  100, 20,  10
 	move NIGHTMARE,    EFFECT_NIGHTMARE,           0, GHOST,         STATUS,   100, 15,   0
 	move FLAME_WHEEL,  EFFECT_FLAME_WHEEL,        60, FIRE,          PHYSICAL, 100, 25,  10
-	move SNORE,        EFFECT_SNORE,              40, NORMAL,        SPECIAL,  100, 15,  30
+	move SNORE,        EFFECT_SNORE,              80, NORMAL,        SPECIAL,  100, 15,  30
 	move CURSE,        EFFECT_CURSE,               0, CURSE_TYPE,    STATUS,   100, 10,   0
-	move FLAIL,        EFFECT_REVERSAL,            1, NORMAL,        PHYSICAL, 100, 15,   0
-	move CONVERSION2,  EFFECT_CONVERSION2,         0, NORMAL,        STATUS,   100, 30,   0
-	move AEROBLAST,    EFFECT_NORMAL_HIT,        100, FLYING,        SPECIAL,   95,  5,   0
-	move COTTON_SPORE, EFFECT_SPEED_DOWN_2,        0, GRASS,         STATUS,    85, 40,   0
+	move FLASH_CANNON, EFFECT_SP_DEF_DOWN_HIT,    80, STEEL,         SPECIAL,  100, 10,  10
+	move DRAGON_TAIL,  EFFECT_DEFENSE_DOWN_HIT,   60, DRAGON,        PHYSICAL, 100, 25,  30
+	move AEROBLAST,    EFFECT_NORMAL_HIT,        120, FLYING,        SPECIAL,   95,  5,   0
+	move WOOD_HAMMER,  EFFECT_RECOIL_HIT,        120, GRASS,         PHYSICAL, 100, 15,   0
 	move REVERSAL,     EFFECT_REVERSAL,            1, FIGHTING,      PHYSICAL, 100, 15,   0
 	move SPITE,        EFFECT_SPITE,               0, GHOST,         STATUS,   100, 10,   0
 	move POWDER_SNOW,  EFFECT_FREEZE_HIT,         40, ICE,           SPECIAL,  100, 25,  10

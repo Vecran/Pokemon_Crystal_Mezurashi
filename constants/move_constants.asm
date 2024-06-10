@@ -174,16 +174,16 @@
 	const SKETCH       ; a6
 	const TRIPLE_KICK  ; a7
 	const THIEF        ; a8
-	const LEAF_BLADE   ; a9
-	const MIND_READER  ; aa
+	const LEAF_BLADE     ; a9
+	const DAZZLE_GLEAM   ; aa
 	const NIGHTMARE    ; ab
 	const FLAME_WHEEL  ; ac
 	const SNORE        ; ad
 	const CURSE        ; ae
-	const FLAIL        ; af
-	const CONVERSION2  ; b0
+	const FLASH_CANNON       ; af
+	const DRAGON_TAIL    ; b0
 	const AEROBLAST    ; b1
-	const COTTON_SPORE ; b2
+	const WOOD_HAMMER   ; b2
 	const REVERSAL     ; b3
 	const SPITE        ; b4
 	const POWDER_SNOW  ; b5

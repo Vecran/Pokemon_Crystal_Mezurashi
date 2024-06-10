@@ -170,15 +170,15 @@ MoveDescriptions::
 	dw TripleKickDescription
 	dw ThiefDescription
 	dw LeafBladeDescription
-	dw MindReaderDescription
+	dw DazzleGleamDescription
 	dw NightmareDescription
 	dw FlameWheelDescription
 	dw SnoreDescription
 	dw CurseDescription
-	dw FlailDescription
-	dw Conversion2Description
+	dw FlashCannonDescription
+	dw DragonTailDescription
 	dw AeroblastDescription
-	dw CottonSporeDescription
+	dw WoodHammerDescription
 	dw ReversalDescription
 	dw SpiteDescription
 	dw PowderSnowDescription
@@ -943,9 +943,9 @@ LeafBladeDescription:
 	db   "Has a high criti-"
 	line "cal hit ratio.@"
 
-MindReaderDescription:
-	db   "Ensures the line"
-	line "attack will hit.@"
+DazzleGleamDescription:
+	db   "An attack that may"
+	line "reduce accuracy.@"
 
 NightmareDescription:
 	db   "A sleeper loses"
@@ -963,21 +963,21 @@ CurseDescription:
 	db   "Works differently"
 	line "for GHOST-types.@"
 
-FlailDescription:
-	db   "Stronger if the"
-	line "user's HP is low.@"
+FlashCannonDescription:
+	db   "An attack that may"
+	line "lower SPCL.DEF.@"
 
-Conversion2Description:
-	db   "The user's type is"
-	line "made resistant.@"
+DragonTailDescription:
+	db   "An attack that may"
+	line "lower DEFENSE.@"
 
 AeroblastDescription:
 	db   "Has a high criti-"
 	line "cal hit ratio.@"
 
-CottonSporeDescription:
-	db   "Sharply reduces"
-	line "the foe's SPEED.@"
+WoodHammerDescription:
+	db   "An attack that al-"
+	line "so hurts the user.@"
 
 ReversalDescription:
 	db   "Stronger if the"

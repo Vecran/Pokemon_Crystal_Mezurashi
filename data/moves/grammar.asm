@@ -15,7 +15,6 @@ MoveGrammar:
 	db FLASH
 	db BONEMERANG
 	db REST
-	db MIND_READER
 	db SNORE
 	db PROTECT
 	db SPIKES
@@ -31,7 +30,6 @@ MoveGrammar:
 ; 1: originally "[mon]の¯[move]した!" ("[mon]¯did [move]!")
 	db RECOVER
 	db TELEPORT
-	db FLAIL
 	db 0 ; end set
 
 ; 2: originally "[mon]の¯[move]¯した!" ("[mon]¯did¯[move]!")

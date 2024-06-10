@@ -171,15 +171,15 @@ BattleAnimations::
 	dw BattleAnim_TripleKick
 	dw BattleAnim_Thief
 	dw BattleAnim_LeafBlade
-	dw BattleAnim_MindReader
+	dw BattleAnim_DazzleGleam
 	dw BattleAnim_Nightmare
 	dw BattleAnim_FlameWheel
 	dw BattleAnim_Snore
 	dw BattleAnim_Curse
-	dw BattleAnim_Flail
-	dw BattleAnim_Conversion2
+	dw BattleAnim_FlashCannon
+	dw BattleAnim_DragonTail
 	dw BattleAnim_Aeroblast
-	dw BattleAnim_CottonSpore
+	dw BattleAnim_WoodHammer
 	dw BattleAnim_Reversal
 	dw BattleAnim_Spite
 	dw BattleAnim_PowderSnow
@@ -2872,19 +2872,25 @@ BattleAnim_Growth:
 	anim_wait 64
 	anim_ret
 
-BattleAnim_Conversion2:
-	anim_1gfx ANIM_GFX_EXPLOSION
-	anim_sound 63, 3, SFX_SHARPEN
-	anim_obj ANIM_OBJ_CONVERSION2, 132, 44, $0
-	anim_obj ANIM_OBJ_CONVERSION2, 132, 44, $8
-	anim_obj ANIM_OBJ_CONVERSION2, 132, 44, $10
-	anim_obj ANIM_OBJ_CONVERSION2, 132, 44, $18
-	anim_obj ANIM_OBJ_CONVERSION2, 132, 44, $20
-	anim_obj ANIM_OBJ_CONVERSION2, 132, 44, $28
-	anim_obj ANIM_OBJ_CONVERSION2, 132, 44, $30
-	anim_obj ANIM_OBJ_CONVERSION2, 132, 44, $38
-	anim_wait 128
-	anim_wait 48
+BattleAnim_DragonTail:
+	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_FIRE
+	anim_call BattleAnim_TargetObj_1Row
+	anim_bgeffect ANIM_BG_CYCLE_MON_LIGHT_DARK_REPEATING, $0, BG_EFFECT_USER, $20
+	anim_sound 0, 0, SFX_OUTRAGE
+	anim_wait 72
+	anim_incbgeffect ANIM_BG_CYCLE_MON_LIGHT_DARK_REPEATING
+	anim_call BattleAnim_ShowMon_0
+	anim_sound 0, 1, SFX_COMET_PUNCH
+	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 136, 56, $0
+	anim_wait 6
+	anim_sound 0, 1, SFX_MEGA_PUNCH
+	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 152, 40, $0
+	anim_wait 4
+	anim_sound 0, 1, SFX_EMBER
+	anim_obj ANIM_OBJ_FIRE_BLAST, 136, 48, $0
+	anim_wait 8
+	anim_bgeffect ANIM_BG_SHOW_MON, $0, BG_EFFECT_TARGET, $0
+	anim_wait 4
 	anim_ret
 
 BattleAnim_Smokescreen:
@@ -3232,18 +3238,37 @@ BattleAnim_LeafBlade:
 	anim_ret
 
 
-BattleAnim_MindReader:
-	anim_1gfx ANIM_GFX_MISC
-	anim_sound 0, 1, SFX_MIND_READER
-.loop
-	anim_obj ANIM_OBJ_MIND_READER, 132, 48, $3
-	anim_obj ANIM_OBJ_MIND_READER, 132, 48, $12
-	anim_obj ANIM_OBJ_MIND_READER, 132, 48, $20
-	anim_obj ANIM_OBJ_MIND_READER, 132, 48, $31
-	anim_wait 16
-	anim_loop 2, .loop
+BattleAnim_DazzleGleam:
+	anim_1gfx ANIM_GFX_SHINE
+	anim_bgp $1b
+	anim_bgeffect ANIM_BG_CYCLE_MID_OBPALS_GRAY_AND_YELLOW, $0, $0, $0
+	anim_obj ANIM_OBJ_MOONLIGHT, 0, 40, $0
+	anim_obj ANIM_OBJ_MOONLIGHT, 16, 56, $0
+	anim_obj ANIM_OBJ_MOONLIGHT, 32, 72, $0
+	anim_obj ANIM_OBJ_MOONLIGHT, 48, 88, $0
+	anim_obj ANIM_OBJ_MOONLIGHT, 64, 104, $0
+	anim_wait 1
+	anim_sound 0, 0, SFX_MOONLIGHT
 	anim_wait 32
+	anim_sound 0, 1, SFX_FLASH
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $6, $20
+	anim_wait 4
+	anim_sound 0, 0, SFX_METRONOME
+.loop
+	anim_obj ANIM_OBJ_GLIMMER, 132, 40, $0
+	anim_wait 5
+	anim_obj ANIM_OBJ_GLIMMER, 136, 44, $0
+	anim_wait 5
+	anim_obj ANIM_OBJ_GLIMMER, 128, 36, $0
+	anim_wait 5
+	anim_obj ANIM_OBJ_GLIMMER, 136, 36, $0
+	anim_wait 5
+	anim_obj ANIM_OBJ_GLIMMER, 128, 44, $0
+	anim_wait 5
+	anim_loop 2, .loop
+	anim_wait 16
 	anim_ret
+
 
 BattleAnim_Nightmare:
 	anim_1gfx ANIM_GFX_ANGELS
@@ -3335,19 +3360,12 @@ BattleAnim_Curse:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
-BattleAnim_Flail:
-	anim_1gfx ANIM_GFX_HIT
-	anim_call BattleAnim_TargetObj_1Row
-	anim_sound 0, 0, SFX_SUBMISSION
-	anim_bgeffect ANIM_BG_FLAIL, $0, BG_EFFECT_USER, $0
-	anim_wait 8
-	anim_obj ANIM_OBJ_HIT_YFIX, 120, 48, $0
-	anim_wait 8
-	anim_obj ANIM_OBJ_HIT_YFIX, 152, 48, $0
-	anim_wait 8
-	anim_obj ANIM_OBJ_HIT_YFIX, 136, 48, $0
-	anim_wait 8
-	anim_incbgeffect ANIM_BG_FLAIL
+BattleAnim_FlashCannon:
+	anim_2gfx ANIM_GFX_BEAM, ANIM_GFX_SHINE
+	anim_call BattleAnimSub_Glimmer
+	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+	anim_call BattleAnimSub_Beam
+	anim_wait 48
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
@@ -3371,15 +3389,27 @@ BattleAnim_Aeroblast:
 	anim_wait 48
 	anim_ret
 
-BattleAnim_CottonSpore:
-	anim_obp0 $54
-	anim_1gfx ANIM_GFX_MISC
-	anim_sound 0, 1, SFX_POWDER
-.loop
-	anim_obj ANIM_OBJ_COTTON_SPORE, 132, 32, $0
-	anim_wait 8
-	anim_loop 5, .loop
-	anim_wait 96
+BattleAnim_WoodHammer:
+	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_PLANT
+	anim_call BattleAnim_TargetObj_1Row
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $10
+	anim_bgeffect ANIM_BG_TACKLE, $0, BG_EFFECT_USER, $0
+	anim_wait 3
+	anim_sound 0, 1, SFX_TACKLE
+	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 128, 48, $0
+	anim_wait 6
+	anim_sound 0, 1, SFX_TACKLE
+	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 144, 48, $0
+	anim_wait 3
+	anim_sound 0, 0, SFX_VINE_WHIP
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $28
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $5c
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $10
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $e8
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $9c
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $d0
+	anim_wait 64
+	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
 BattleAnim_Reversal:
