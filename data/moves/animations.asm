@@ -3647,7 +3647,7 @@ BattleAnim_Moonblast:
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $3
 	anim_bgp $1b
 	anim_obp0 $30
-	anim_sound 6, 2, SFX_METR
+	anim_sound 6, 2, SFX_METRONOME
 	anim_obj ANIM_OBJ_ZAP_CANNON, 64, 92, $2
 	anim_wait 40
 	anim_ret
