@@ -1529,6 +1529,7 @@ SpeedUpHit:
 	criticaltext
 	supereffectivetext
 	speedup
+	statupmessage
 	checkfaint
 	buildopponentrage
 	endmove
