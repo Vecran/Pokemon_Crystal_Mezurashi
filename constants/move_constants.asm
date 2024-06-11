@@ -220,12 +220,12 @@
 	const MEAN_LOOK    ; d4
 	const ATTRACT      ; d5
 	const SLEEP_TALK   ; d6
-	const HEAL_BELL    ; d7
+	const ICE_SHARD    ; d7
 	const RETURN       ; d8
 	const PRESENT      ; d9
 	const FRUSTRATION  ; da
-	const SAFEGUARD    ; db
-	const PAIN_SPLIT   ; dc
+	const MIRROR_SHOT     ; db
+	const ZEN_HEADBUTT    ; dc
 	const SACRED_FIRE  ; dd
 	const MAGNITUDE    ; de
 	const DYNAMICPUNCH ; df

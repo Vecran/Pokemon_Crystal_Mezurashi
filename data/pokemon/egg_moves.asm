@@ -16,7 +16,6 @@ INCLUDE "data/pokemon/egg_move_pointers.asm"
 BulbasaurEggMoves:
 	db LIGHT_SCREEN
 	db SKULL_BASH
-	db SAFEGUARD
 	db RAZOR_WIND
 	db PETAL_DANCE
 	db -1 ; end
@@ -67,7 +66,6 @@ EkansEggMoves:
 
 SandshrewEggMoves:
 	db IRON_TAIL
-	db SAFEGUARD
 	db MUD_BOMB
 	db RAPID_SPIN
 	db METAL_CLAW
@@ -157,7 +155,6 @@ MankeyEggMoves:
 
 GrowlitheEggMoves:
 	db BODY_SLAM
-	db SAFEGUARD
 	db CRUNCH
 	db THRASH
 	db FIRE_SPIN
@@ -194,7 +191,6 @@ TentacoolEggMoves:
 	db MIRROR_COAT
 	db RAPID_SPIN
 	db AQUA_JET
-	db SAFEGUARD
 	db -1 ; end
 
 GeodudeEggMoves:
@@ -211,7 +207,6 @@ PonytaEggMoves:
 	db -1 ; end
 
 SlowpokeEggMoves:
-	db SAFEGUARD
 	db RAIN_DANCE
 	db FUTURE_SIGHT
 	db STOMP
@@ -298,7 +293,6 @@ LickitungEggMoves:
 KoffingEggMoves:
 	db SCREECH
 	db PSYBEAM
-	db PAIN_SPLIT
 	db -1 ; end
 
 RhyhornEggMoves:
@@ -313,7 +307,6 @@ RhyhornEggMoves:
 ChanseyEggMoves:
 	db PRESENT
 	db METRONOME
-	db HEAL_BELL
 	db -1 ; end
 
 TangelaEggMoves:
@@ -326,7 +319,6 @@ TangelaEggMoves:
 KangaskhanEggMoves:
 	db STOMP
 	db FOCUS_ENERGY
-	db SAFEGUARD
 	db -1 ; end
 
 HorseaEggMoves:
@@ -351,7 +343,6 @@ MrMimeEggMoves:
 
 ScytherEggMoves:
 	db X_SCISSOR
-	db SAFEGUARD
 	db BATON_PASS
 	db RAZOR_WIND
 	db CROSS_POISON
@@ -497,7 +488,6 @@ NatuEggMoves:
 MareepEggMoves:
 	db THUNDERBOLT
 	db BODY_SLAM
-	db SAFEGUARD
 	db SCREECH
 	db REFLECT
 	db -1 ; end
@@ -540,7 +530,6 @@ YanmaEggMoves:
 WooperEggMoves:
 	db BODY_SLAM
 	db ANCIENTPOWER
-	db SAFEGUARD
 	db -1 ; end
 
 MurkrowEggMoves:
@@ -589,7 +578,6 @@ SnubbullEggMoves:
 	db REFLECT
 	db PRESENT
 	db CRUNCH
-	db HEAL_BELL
 	db LICK
 	db LEER
 	db -1 ; end
@@ -637,7 +625,6 @@ SwinubEggMoves:
 
 CorsolaEggMoves:
 	db ROCK_SLIDE
-	db SAFEGUARD
 	db SCREECH
 	db -1 ; end
 

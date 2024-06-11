@@ -219,24 +219,24 @@ Moves:
 	move EARTH_POWER,  EFFECT_SP_DEF_DOWN_HIT,    90, GROUND,        SPECIAL,  100, 10,  10
 	move CHARM,        EFFECT_ATTACK_DOWN_2,       0, NORMAL,        STATUS,   100, 20,   0
 	move ROLLOUT,      EFFECT_ROLLOUT,            30, ROCK,          PHYSICAL,  90, 20,   0
-	move FALSE_SWIPE,  EFFECT_FALSE_SWIPE,        40, NORMAL,        PHYSICAL, 100, 40,   0
+	move FALSE_SWIPE,  EFFECT_FALSE_SWIPE,        50, NORMAL,        PHYSICAL, 100, 40,   0
 	move SWAGGER,      EFFECT_SWAGGER,             0, NORMAL,        STATUS,    90, 15, 100
 	move MILK_DRINK,   EFFECT_HEAL,                0, NORMAL,        STATUS,   100, 10,   0
 	move SPARK,        EFFECT_PARALYZE_HIT,       65, ELECTRIC,      PHYSICAL, 100, 20,  30
-	move FURY_CUTTER,  EFFECT_FURY_CUTTER,        10, BUG,           PHYSICAL,  95, 20,   0
-	move STEEL_WING,   EFFECT_DEFENSE_UP_HIT,     70, STEEL,         PHYSICAL,  90, 25,  10
+	move FURY_CUTTER,  EFFECT_FURY_CUTTER,        40, BUG,           PHYSICAL,  95, 20,   0
+	move STEEL_WING,   EFFECT_DEFENSE_UP_HIT,     70, STEEL,         PHYSICAL, 100, 25,  10
 	move MEAN_LOOK,    EFFECT_MEAN_LOOK,           0, NORMAL,        STATUS,   100,  5,   0
 	move ATTRACT,      EFFECT_ATTRACT,             0, NORMAL,        STATUS,   100, 15,   0
 	move SLEEP_TALK,   EFFECT_SLEEP_TALK,          0, NORMAL,        STATUS,   100, 10,   0
-	move HEAL_BELL,    EFFECT_HEAL_BELL,           0, NORMAL,        STATUS,   100,  5,   0
-	move RETURN,       EFFECT_RETURN,              1, NORMAL,        PHYSICAL, 100, 20,   0
+	move ICE_SHARD,    EFFECT_PRIORITY_HIT,       40, ICE,           PHYSICAL, 100, 30,   0
+	move RETURN,       EFFECT_RETURN,              1, FAIRY,         PHYSICAL, 100, 20,   0
 	move PRESENT,      EFFECT_PRESENT,             1, NORMAL,        PHYSICAL,  90, 15,   0
-	move FRUSTRATION,  EFFECT_FRUSTRATION,         1, NORMAL,        PHYSICAL, 100, 20,   0
-	move SAFEGUARD,    EFFECT_SAFEGUARD,           0, NORMAL,        STATUS,   100, 25,   0
-	move PAIN_SPLIT,   EFFECT_PAIN_SPLIT,          0, NORMAL,        STATUS,   100, 20,   0
-	move SACRED_FIRE,  EFFECT_SACRED_FIRE,       100, FIRE,          PHYSICAL,  95,  5,  50
+	move FRUSTRATION,  EFFECT_FRUSTRATION,         1, DARK,          PHYSICAL, 100, 20,   0
+	move MIRROR_SHOT,  EFFECT_ACCURACY_DOWN_HIT,  65, STEEL,         SPECIAL,   90, 25,  30
+	move ZEN_HEADBUTT, EFFECT_FLINCH_HIT,         80, PSYCHIC_T,     PHYSICAL,  90, 15,  20
+	move SACRED_FIRE,  EFFECT_SACRED_FIRE,       120, FIRE,          PHYSICAL,  95,  5,  50
 	move MAGNITUDE,    EFFECT_MAGNITUDE,           1, GROUND,        PHYSICAL, 100, 30,   0
-	move DYNAMICPUNCH, EFFECT_CONFUSE_HIT,       100, FIGHTING,      PHYSICAL,  50,  5, 100
+	move DYNAMICPUNCH, EFFECT_CONFUSE_HIT,        75, FIGHTING,      PHYSICAL,  75,  5, 100
 	move MEGAHORN,     EFFECT_NORMAL_HIT,        120, BUG,           PHYSICAL,  85, 10,   0
 	move DRAGONBREATH, EFFECT_PARALYZE_HIT,       60, DRAGON,        SPECIAL,  100, 20,  30
 	move BATON_PASS,   EFFECT_BATON_PASS,          0, NORMAL,        STATUS,   100, 40,   0

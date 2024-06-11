@@ -215,12 +215,12 @@ MoveDescriptions::
 	dw MeanLookDescription
 	dw AttractDescription
 	dw SleepTalkDescription
-	dw HealBellDescription
+	dw IceShardDescription
 	dw ReturnDescription
 	dw PresentDescription
 	dw FrustrationDescription
-	dw SafeguardDescription
-	dw PainSplitDescription
+	dw MirrorShotDescription
+	dw ZenHeadbuttDescription
 	dw SacredFireDescription
 	dw MagnitudeDescription
 	dw DynamicpunchDescription
@@ -1123,9 +1123,9 @@ SleepTalkDescription:
 	db   "Randomly attacks"
 	line "while asleep.@"
 
-HealBellDescription:
-	db   "Eliminates all"
-	line "status problems.@"
+IceShardDescription:
+	db   "Lets the user get"
+	line "in the first hit.@"
 
 ReturnDescription:
 	db   "An attack that is"
@@ -1139,13 +1139,13 @@ FrustrationDescription:
 	db   "An attack based on"
 	line "lack of loyalty.@"
 
-SafeguardDescription:
-	db   "Prevents all"
-	line "status problems.@"
+MirrorShotDescription:
+	db   "An attack that may"
+	line "reduce accuracy.@"
 
-PainSplitDescription:
-	db   "Adds user & foe's"
-	line "HPs. Shares total.@"
+ZenHeadbuttDescription:
+	db   "An attack that may"
+	line "cause flinching.@"
 
 SacredFireDescription:
 	db   "An attack that may"

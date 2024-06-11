@@ -202,7 +202,6 @@ ButterfreeEvosAttacks:
 	db 23, HURRICANE
 	db 28, GUST
 	db 34, PSYBEAM
-	db 40, SAFEGUARD
 	db 0 ; no more level-up moves
 
 WeedleEvosAttacks:
@@ -521,7 +520,6 @@ VulpixEvosAttacks:
 	db 13, ROAR
 	db 16, CONFUSE_RAY
 	db 20, FLAME_WHEEL
-	db 25, SAFEGUARD
 	db 32, FLAMETHROWER
 	db 37, SHADOW_BALL
 	db 40, SUNNY_DAY
@@ -536,7 +534,6 @@ NinetalesEvosAttacks:
 	db 13, ROAR
 	db 19, CONFUSE_RAY
 	db 20, FLAME_WHEEL
-	db 25, SAFEGUARD
 	db 32, FLAMETHROWER
 	db 37, SHADOW_BALL
 	db 40, SUNNY_DAY
@@ -1219,7 +1216,6 @@ SeelEvosAttacks:
 	db 21, REST
 	db 25, BUBBLEBEAM
 	db 37, ICE_BEAM
-	db 48, SAFEGUARD
 	db 0 ; no more level-up moves
 
 DewgongEvosAttacks:
@@ -1233,7 +1229,6 @@ DewgongEvosAttacks:
 	db 21, REST
 	db 25, BUBBLEBEAM
 	db 40, ICE_BEAM
-	db 50, SAFEGUARD
 	db 60, BLIZZARD
 	db 0 ; no more level-up moves
 
@@ -1706,7 +1701,6 @@ MrMimeEvosAttacks:
 	db 31, ENCORE
 	db 36, PSYBEAM
 	db 41, BATON_PASS
-	db 46, SAFEGUARD
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:
@@ -1828,7 +1822,6 @@ LaprasEvosAttacks:
 	db 22, CONFUSE_RAY
 	db 36, ICE_BEAM
 	db 43, RAIN_DANCE
-	db 50, SAFEGUARD
 	db 57, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -2029,7 +2022,6 @@ MoltresEvosAttacks:
 	db 25, AGILITY
 	db 49, FLAMETHROWER
 	db 55, DRILL_PECK
-	db 61, SAFEGUARD
 	db 73, SKY_ATTACK
 	db 73, FIRE_BLAST
 	db 0 ; no more level-up moves
@@ -2045,7 +2037,6 @@ DratiniEvosAttacks:
 	db 22, DRAGON_RAGE
 	db 29, DRAGON_RUSH
 	db 36, AGILITY
-	db 43, SAFEGUARD
 	db 45, OUTRAGE
 	db 57, HYPER_BEAM
 	db 0 ; no more level-up moves
@@ -2062,7 +2053,6 @@ DragonairEvosAttacks:
 	db 26, DRAGON_RAGE
 	db 29, DRAGON_RUSH
 	db 38, AGILITY
-	db 47, SAFEGUARD
 	db 50, OUTRAGE
 	db 65, HYPER_BEAM
 	db 0 ; no more level-up moves
@@ -2078,7 +2068,6 @@ DragoniteEvosAttacks:
 	db 22, DRAGON_RAGE
 	db 29, DRAGON_RUSH
 	db 38, AGILITY
-	db 47, SAFEGUARD
 	db 55, WING_ATTACK
 	db 56, OUTRAGE
 	db 75, HYPER_BEAM
@@ -2094,7 +2083,6 @@ MewtwoEvosAttacks:
 	db 66, PSYCHIC_M
 	db 77, NASTY_PLOT
 	db 88, RECOVER
-	db 99, SAFEGUARD
 	db 0 ; no more level-up moves
 
 MewEvosAttacks:
@@ -2123,7 +2111,6 @@ ChikoritaEvosAttacks:
 	db 41, LIGHT_SCREEN
 	db 45, SOLARBEAM
 	db 46, SUNNY_DAY
-	db 51, SAFEGUARD
 	db 0 ; no more level-up moves
 
 BayleefEvosAttacks:
@@ -2143,7 +2130,6 @@ BayleefEvosAttacks:
 	db 41, LIGHT_SCREEN
 	db 45, SOLARBEAM
 	db 46, SUNNY_DAY
-	db 51, SAFEGUARD
 	db 0 ; no more level-up moves
 
 MeganiumEvosAttacks:
@@ -2161,15 +2147,14 @@ MeganiumEvosAttacks:
 	db 41, LIGHT_SCREEN
 	db 45, SOLARBEAM
 	db 46, SUNNY_DAY
-	db 50, SAFEGUARD
 	db 0 ; no more level-up moves
 
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, FLAME_CHARGE
-	db 1, FLAME_BURST
-	db 1, AIR_SLASH
+	db 1, ICE_SHARD
+	db 1, MIRROR_SHOT
+	db 1, ZEN_HEADBUTT
 	db 1, EARTH_POWER
 	db 6, SMOKESCREEN
 	db 7, EMBER
@@ -2326,7 +2311,6 @@ LedybaEvosAttacks:
 	db 15, COMET_PUNCH
 	db 22, LIGHT_SCREEN
 	db 22, REFLECT
-	db 22, SAFEGUARD
 	db 29, BATON_PASS
 	db 36, SWIFT
 	db 43, AGILITY
@@ -2341,7 +2325,6 @@ LedianEvosAttacks:
 	db 15, COMET_PUNCH
 	db 18, LIGHT_SCREEN
 	db 18, REFLECT
-	db 24, SAFEGUARD
 	db 26, BATON_PASS
 	db 31, AGILITY
 	db 36, GIGA_DRAIN
@@ -2457,7 +2440,6 @@ TogepiEvosAttacks:
 	db 5, METRONOME
 	db 11, RETURN
 	db 25, ENCORE
-	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
 	db 43, TRI_ATTACK
 	db 0 ; no more level-up moves
@@ -2469,7 +2451,6 @@ TogeticEvosAttacks:
 	db 5, METRONOME
 	db 25, ENCORE
 	db 27, WING_ATTACK
-	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
 	db 43, TRI_ATTACK
 	db 0 ; no more level-up moves
@@ -2789,7 +2770,6 @@ MisdreavusEvosAttacks:
 	db 24, SCREECH
 	db 27, SHADOW_BALL
 	db 32, PSYBEAM
-	db 36, PAIN_SPLIT
 	db 41, SING
 	db 0 ; no more level-up moves
 
@@ -2803,7 +2783,6 @@ WobbuffetEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
 	db 1, MIRROR_COAT
-	db 1, SAFEGUARD
 	db 0 ; no more level-up moves
 
 GirafarigEvosAttacks:
@@ -2954,7 +2933,6 @@ ShuckleEvosAttacks:
 	db 13, ENCORE
 	db 19, DEFENSE_CURL
 	db 21, ROLLOUT
-	db 23, SAFEGUARD
 	db 27, SANDSTORM
 	db 37, REST
 	db 40, PROTECT
@@ -3313,7 +3291,6 @@ MiltankEvosAttacks:
 	db 19, MILK_DRINK
 	db 34, ROLLOUT
 	db 43, BODY_SLAM
-	db 53, HEAL_BELL
 	db 58, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
@@ -3420,7 +3397,6 @@ TyranitarEvosAttacks:
 LugiaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, GUST
-	db 11, SAFEGUARD
 	db 22, RECOVER
 	db 33, AEROBLAST
 	db 44, ANCIENTPOWER
@@ -3434,7 +3410,6 @@ LugiaEvosAttacks:
 HoOhEvosAttacks:
 	db 0 ; no more evolutions
 	db 1,  GUST
-	db 11, SAFEGUARD
 	db 22, RECOVER
 	db 33, SACRED_FIRE
 	db 44, ANCIENTPOWER
@@ -3450,13 +3425,12 @@ CelebiEvosAttacks:
 	db 1, LEECH_SEED
 	db 1, CONFUSION
 	db 1, RECOVER
-	db 10, SAFEGUARD
 	db 20, MEGA_DRAIN
 	db 25, ANCIENTPOWER
 	db 30, PSYBEAM
 	db 35, GIGA_DRAIN
 	db 40, PSYCHIC_M
-	db 45, HEAL_BELL
+	db 45, DRAIN_KISS
 	db 50, BATON_PASS
 	db 55, FUTURE_SIGHT
 	db 60, MOONBLAST
