@@ -75,7 +75,6 @@ MoveGrammar:
 	db SLASH
 	db NIGHTMARE
 	db CURSE
-	db FORESIGHT
 	db CHARM
 	db ATTRACT
 	db ROCK_SMASH

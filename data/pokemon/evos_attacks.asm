@@ -682,7 +682,6 @@ VenonatEvosAttacks:
 	db EVOLVE_LEVEL, 31, VENOMOTH
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, FORESIGHT
 	db 9, SUPERSONIC
 	db 13, LEECH_LIFE
 	db 17, CONFUSION
@@ -696,7 +695,6 @@ VenonatEvosAttacks:
 VenomothEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, FORESIGHT
 	db 1, SUPERSONIC
 	db 9, SUPERSONIC
 	db 17, CONFUSION
@@ -928,7 +926,6 @@ MachopEvosAttacks:
 	db 1, LEER
 	db 7, FOCUS_ENERGY
 	db 13, KARATE_CHOP
-	db 25, FORESIGHT
 	db 31, VITAL_THROW
 	db 37, CROSS_CHOP
 	db 43, SCARY_FACE
@@ -943,7 +940,6 @@ MachokeEvosAttacks:
 	db 1, FOCUS_ENERGY
 	db 8, FOCUS_ENERGY
 	db 15, KARATE_CHOP
-	db 25, FORESIGHT
 	db 34, VITAL_THROW
 	db 43, CROSS_CHOP
 	db 50, SCARY_FACE
@@ -957,7 +953,6 @@ MachampEvosAttacks:
 	db 1, FOCUS_ENERGY
 	db 8, FOCUS_ENERGY
 	db 15, KARATE_CHOP
-	db 25, FORESIGHT
 	db 34, VITAL_THROW
 	db 43, CROSS_CHOP
 	db 50, SCARY_FACE
@@ -1307,7 +1302,6 @@ GastlyEvosAttacks:
 	db 21, SHADOW_SNEAK
 	db 28, CONFUSE_RAY
 	db 33, DREAM_EATER
-	db 36, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 HaunterEvosAttacks:
@@ -1320,7 +1314,6 @@ HaunterEvosAttacks:
 	db 21, SHADOW_SNEAK
 	db 31, CONFUSE_RAY
 	db 39, DREAM_EATER
-	db 48, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 GengarEvosAttacks:
@@ -1333,7 +1326,6 @@ GengarEvosAttacks:
 	db 31, CONFUSE_RAY
 	db 39, DREAM_EATER
 	db 42, SHADOW_BALL
-	db 48, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
@@ -1504,7 +1496,6 @@ HitmonleeEvosAttacks:
 	db 20, JUMP_KICK
 	db 21, FOCUS_ENERGY
 	db 26, HI_JUMP_KICK
-	db 36, FORESIGHT
 	db 41, ENDURE
 	db 46, BLAZE_KICK
 	db 0 ; no more level-up moves
@@ -1541,7 +1532,6 @@ KoffingEvosAttacks:
 	db 1, TACKLE
 	db 19, SLUDGE
 	db 25, SMOKESCREEN
-	db 45, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 WeezingEvosAttacks:
@@ -1551,7 +1541,6 @@ WeezingEvosAttacks:
 	db 25, SMOKESCREEN
 	db 35, SLUDGE_BOMB
 	db 35, NASTY_PLOT
-	db 51, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 RhyhornEvosAttacks:
@@ -1756,7 +1745,7 @@ JynxEvosAttacks:
 	db 36, MEAN_LOOK
 	db 39, PSYCHIC_M
 	db 41, BODY_SLAM
-	db 51, PERISH_SONG
+	db 51, SING
 	db 57, BLIZZARD
 	db 0 ; no more level-up moves
 
@@ -1843,7 +1832,6 @@ LaprasEvosAttacks:
 	db 15, BODY_SLAM
 	db 20, ICY_WIND
 	db 22, CONFUSE_RAY
-	db 29, PERISH_SONG
 	db 36, ICE_BEAM
 	db 43, RAIN_DANCE
 	db 50, SAFEGUARD
@@ -2192,8 +2180,8 @@ CyndaquilEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, FAIRY_WIND
 	db 1, CHARGE_BEAM
-	db 1, BOLT_STRIKE
-	db 1, CHARGE
+	db 1, PLAY_ROUGH
+	db 1, MOONBLAST
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK
@@ -2314,7 +2302,6 @@ HoothootEvosAttacks:
 	db 1, TACKLE
 	db 1, GROWL
 	db 6, PECK
-	db 10, FORESIGHT
 	db 14, HYPNOSIS
 	db 20, PSYBEAM
 	db 24, WING_ATTACK
@@ -2329,9 +2316,7 @@ NoctowlEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
-	db 1, FORESIGHT
 	db 1, PECK
-	db 6, FORESIGHT
 	db 11, PECK
 	db 14, HYPNOSIS
 	db 20, PSYBEAM
@@ -2620,10 +2605,10 @@ PolitoedEvosAttacks:
 	db 1, WATER_GUN
 	db 1, HYPNOSIS
 	db 1, DOUBLESLAP
-	db 1, PERISH_SONG
+	db 1, SING
 	db 30, RAIN_DANCE
 	db 32, BODY_SLAM
-	db 35, PERISH_SONG
+	db 35, SING
 	db 36, ICE_BEAM
 	db 40, LIGHT_SCREEN
 	db 45, HYDRO_PUMP
@@ -2719,7 +2704,6 @@ SunfloraEvosAttacks:
 YanmaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, FORESIGHT
 	db 7, QUICK_ATTACK
 	db 13, DOUBLE_TEAM
 	db 19, WING_ATTACK
@@ -2819,7 +2803,6 @@ MisdreavusEvosAttacks:
 	db 32, PSYBEAM
 	db 36, PAIN_SPLIT
 	db 41, SING
-	db 46, PERISH_SONG
 	db 0 ; no more level-up moves
 
 UnownEvosAttacks:
@@ -2833,7 +2816,6 @@ WobbuffetEvosAttacks:
 	db 1, HYPNOSIS
 	db 1, MIRROR_COAT
 	db 1, SAFEGUARD
-	db 1, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 GirafarigEvosAttacks:
@@ -3310,7 +3292,6 @@ SmoochumEvosAttacks:
 	db 30, ICE_PUNCH
 	db 33, MEAN_LOOK
 	db 37, PSYCHIC_M
-	db 45, PERISH_SONG
 	db 49, BLIZZARD
 	db 0 ; no more level-up moves
 
@@ -3498,5 +3479,5 @@ CelebiEvosAttacks:
 	db 45, HEAL_BELL
 	db 50, BATON_PASS
 	db 55, FUTURE_SIGHT
-	db 60, PERISH_SONG
+	db 60, MOONBLAST
 	db 0 ; no more level-up moves

@@ -197,10 +197,10 @@
 	const MUD_SLAP     ; bd
 	const OCTAZOOKA    ; be
 	const SPIKES       ; bf
-	const FAIRY_WIND   ; c0
-	const FORESIGHT    ; c1
+	const FAIRY_WIND      ; c0
+	const PLAY_ROUGH     ; c1
 	const DESTINY_BOND ; c2
-	const PERISH_SONG  ; c3
+	const MOONBLAST       ; c3
 	const ICY_WIND     ; c4
 	const DETECT       ; c5
 	const BONE_RUSH    ; c6

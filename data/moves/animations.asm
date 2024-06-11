@@ -194,9 +194,9 @@ BattleAnimations::
 	dw BattleAnim_Octazooka
 	dw BattleAnim_Spikes
 	dw BattleAnim_FairyWind
-	dw BattleAnim_Foresight
+	dw BattleAnim_PlayRough
 	dw BattleAnim_DestinyBond
-	dw BattleAnim_PerishSong
+	dw BattleAnim_Moonblast
 	dw BattleAnim_IcyWind
 	dw BattleAnim_Detect
 	dw BattleAnim_BoneRush
@@ -2840,6 +2840,7 @@ BattleAnim_Glare:
 	anim_wait 16
 	anim_ret
 
+BattleAnim_PlayRough:
 BattleAnim_Thrash:
 	anim_1gfx ANIM_GFX_HIT
 	anim_sound 0, 1, SFX_POUND
@@ -3614,20 +3615,6 @@ BattleAnim_Spikes:
 	anim_wait 64
 	anim_ret
 
-BattleAnim_Foresight:
-	anim_1gfx ANIM_GFX_SHINE
-	anim_call BattleAnim_UserObj_1Row
-	anim_bgeffect ANIM_BG_CYCLE_MID_OBPALS_GRAY_AND_YELLOW, $0, $0, $0
-	anim_sound 0, 1, SFX_FORESIGHT
-	anim_obj ANIM_OBJ_FORESIGHT, 132, 40, $0
-	anim_wait 24
-	anim_bgeffect ANIM_BG_FADE_MON_TO_BLACK_REPEATING, $0, BG_EFFECT_TARGET, $40
-	anim_wait 64
-	anim_incbgeffect ANIM_BG_FADE_MON_TO_BLACK_REPEATING
-	anim_call BattleAnim_ShowMon_1
-	anim_wait 8
-	anim_ret
-
 BattleAnim_DestinyBond:
 	anim_1gfx ANIM_GFX_ANGELS
 	anim_bgp $1b
@@ -3645,20 +3632,24 @@ BattleAnim_DestinyBond:
 	anim_wait 32
 	anim_ret
 
-BattleAnim_PerishSong:
-	anim_1gfx ANIM_GFX_NOISE
-	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
-	anim_bgeffect ANIM_BG_ALTERNATE_HUES, $0, $2, $0
-	anim_sound 0, 2, SFX_PERISH_SONG
-	anim_obj ANIM_OBJ_PERISH_SONG, 88, 0, $0
-	anim_obj ANIM_OBJ_PERISH_SONG, 88, 0, $8
-	anim_obj ANIM_OBJ_PERISH_SONG, 88, 0, $10
-	anim_obj ANIM_OBJ_PERISH_SONG, 88, 0, $18
-	anim_obj ANIM_OBJ_PERISH_SONG, 88, 0, $20
-	anim_obj ANIM_OBJ_PERISH_SONG, 88, 0, $28
-	anim_obj ANIM_OBJ_PERISH_SONG, 88, 0, $30
-	anim_obj ANIM_OBJ_PERISH_SONG, 88, 0, $38
-	anim_wait 112
+BattleAnim_Moonblast:
+anim_3gfx ANIM_GFX_SHINE, ANIM_GFX_EXPLOSION, ANIM_GFX_LIGHTNING
+	anim_bgp $1b
+	anim_bgeffect ANIM_BG_CYCLE_MID_OBPALS_GRAY_AND_YELLOW, $0, $0, $0
+	anim_obj ANIM_OBJ_MOONLIGHT, 0, 40, $0
+	anim_obj ANIM_OBJ_MOONLIGHT, 16, 56, $0
+	anim_obj ANIM_OBJ_MOONLIGHT, 32, 72, $0
+	anim_obj ANIM_OBJ_MOONLIGHT, 48, 88, $0
+	anim_obj ANIM_OBJ_MOONLIGHT, 64, 104, $0
+	anim_wait 1
+	anim_sound 0, 0, SFX_MOONLIGHT
+	anim_wait 63
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $3
+	anim_bgp $1b
+	anim_obp0 $30
+	anim_sound 6, 2, SFX_METR
+	anim_obj ANIM_OBJ_ZAP_CANNON, 64, 92, $2
+	anim_wait 40
 	anim_ret
 
 BattleAnim_IcyWind:

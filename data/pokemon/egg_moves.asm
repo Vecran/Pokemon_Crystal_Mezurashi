@@ -34,14 +34,12 @@ SquirtleEggMoves:
 	db MIRROR_COAT
 	db AQUA_JET
 	db CONFUSION
-	db FORESIGHT
 	db FLASH_CANNON
 	db -1 ; end
 
 PidgeyEggMoves:
 	db PURSUIT
 	db FAINT_ATTACK
-	db FORESIGHT
 	db -1 ; end
 
 RattataEggMoves:
@@ -143,7 +141,6 @@ PsyduckEggMoves:
 	db ICE_BEAM
 	db HYPNOSIS
 	db PSYBEAM
-	db FORESIGHT
 	db LIGHT_SCREEN
 	db FUTURE_SIGHT
 	db PSYCHIC_M
@@ -152,7 +149,6 @@ PsyduckEggMoves:
 
 MankeyEggMoves:
 	db ROCK_SLIDE
-	db FORESIGHT
 	db HONE_CLAWS
 	db THRASH
 	db SHADOW_SNEAK
@@ -222,7 +218,6 @@ SlowpokeEggMoves:
 	db -1 ; end
 
 FarfetchDEggMoves:
-	db FORESIGHT
 	db BULK_UP
 	db GUST
 	db QUICK_ATTACK
@@ -239,7 +234,7 @@ DoduoEggMoves:
 
 SeelEggMoves:
 	db LICK
-	db PERISH_SONG
+	db SING
 	db PECK
 	db ENCORE
 	db -1 ; end
@@ -258,7 +253,7 @@ ShellderEggMoves:
 	db -1 ; end
 
 GastlyEggMoves:
-	db PERISH_SONG
+	db SING
 	db SMOKESCREEN
 	db -1 ; end
 
@@ -291,7 +286,7 @@ CuboneEggMoves:
 	db ANCIENTPOWER
 	db SCREECH
 	db SKULL_BASH
-	db PERISH_SONG
+	db SING
 	db SWORDS_DANCE
 	db -1 ; end
 
@@ -303,7 +298,6 @@ LickitungEggMoves:
 KoffingEggMoves:
 	db SCREECH
 	db PSYBEAM
-	db DESTINY_BOND
 	db PAIN_SPLIT
 	db -1 ; end
 
@@ -331,7 +325,6 @@ TangelaEggMoves:
 
 KangaskhanEggMoves:
 	db STOMP
-	db FORESIGHT
 	db FOCUS_ENERGY
 	db SAFEGUARD
 	db -1 ; end
@@ -371,7 +364,6 @@ PinsirEggMoves:
 
 LaprasEggMoves:
 	db AURORA_BEAM
-	db FORESIGHT
 	db -1 ; end
 
 EeveeEggMoves:
@@ -397,7 +389,6 @@ KabutoEggMoves:
 AerodactylEggMoves:
 	db HURRICANE
 	db PURSUIT
-	db FORESIGHT
 	db -1 ; end
 
 SnorlaxEggMoves:
@@ -423,7 +414,6 @@ CyndaquilEggMoves:
 	db QUICK_ATTACK
 	db MUD_BOMB
 	db THRASH
-	db FORESIGHT
 	db SUBMISSION
 	db -1 ; end
 
@@ -484,7 +474,7 @@ CleffaEggMoves:
 	db -1 ; end
 
 IgglybuffEggMoves:
-	db PERISH_SONG
+	db SING
 	db PRESENT
 	db FAINT_ATTACK
 	db -1 ; end
@@ -493,7 +483,6 @@ TogepiEggMoves:
 	db PRESENT
 	db CUTE_POUND
 	db PECK
-	db FORESIGHT
 	db FUTURE_SIGHT
 	db -1 ; end
 
@@ -517,9 +506,8 @@ MarillEggMoves:
 	db LIGHT_SCREEN
 	db PRESENT
 	db FUTURE_SIGHT
-	db PERISH_SONG
+	db SING
 	db SUPERSONIC
-	db FORESIGHT
 	db -1 ; end
 
 SudowoodoEggMoves:
@@ -566,12 +554,10 @@ MurkrowEggMoves:
 
 MisdreavusEggMoves:
 	db SCREECH
-	db DESTINY_BOND
 	db -1 ; end
 
 GirafarigEggMoves:
 	db NASTY_PLOT
-	db FORESIGHT
 	db FUTURE_SIGHT
 	db BEAT_UP
 	db -1 ; end
@@ -626,7 +612,6 @@ HeracrossEggMoves:
 
 SneaselEggMoves:
 	db ICICLE_SPEAR
-	db FORESIGHT
 	db REFLECT
 	db BITE
 	db -1 ; end

@@ -193,9 +193,9 @@ MoveDescriptions::
 	dw OctazookaDescription
 	dw SpikesDescription
 	dw FairyWindDescription
-	dw ForesightDescription
+	dw PlayRoughDescription
 	dw DestinyBondDescription
-	dw PerishSongDescription
+	dw MoonblastDescription
 	dw IcyWindDescription
 	dw DetectDescription
 	dw BoneRushDescription
@@ -1035,17 +1035,17 @@ FairyWindDescription:
 	db   "Sends a FAIRY wind"
 	line "at the enemy.@"
 
-ForesightDescription:
-	db   "Negates accuracy"
-	line "reduction moves.@"
+PlayRoughDescription:
+	db   "An attack that may"
+	line "lower foe's ATK.@"
 
 DestinyBondDescription:
 	db   "The foe faints if"
 	line "the user does.@"
 
-PerishSongDescription:
-	db   "Both user and foe"
-	line "faint in 3 turns.@"
+MoonblastDescription:
+	db   "An attack that may"
+	line "drop foe's SP.ATK.@"
 
 IcyWindDescription:
 	db   "An icy attack that"
