@@ -231,7 +231,7 @@
 	const DYNAMICPUNCH ; df
 	const MEGAHORN     ; e0
 	const DRAGONBREATH ; e1
-	const BATON_PASS   ; e2
+	const ECHOED_VOICE   ; e2
 	const ENCORE       ; e3
 	const PURSUIT      ; e4
 	const RAPID_SPIN   ; e5
@@ -240,7 +240,7 @@
 	const METAL_CLAW   ; e8
 	const POISON_JAB  ; e9
 	const MORNING_SUN  ; ea
-	const SYNTHESIS    ; eb
+	const WILL_O_WISP     ; eb
 	const MOONLIGHT    ; ec
 	const HIDDEN_POWER ; ed
 	const CROSS_CHOP   ; ee
@@ -248,8 +248,8 @@
 	const RAIN_DANCE   ; f0
 	const SUNNY_DAY    ; f1
 	const CRUNCH       ; f2
-	const MIRROR_COAT  ; f3
-	const PSYCH_UP     ; f4
+	const HYPER_VOICE    ; f3
+	const POISON_TAIL    ; f4
 	const EXTREMESPEED ; f5
 	const ANCIENTPOWER ; f6
 	const SHADOW_BALL  ; f7

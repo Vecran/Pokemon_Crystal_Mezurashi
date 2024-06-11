@@ -226,7 +226,7 @@ MoveDescriptions::
 	dw DynamicpunchDescription
 	dw MegahornDescription
 	dw DragonbreathDescription
-	dw BatonPassDescription
+	dw EchoedVoiceDescription
 	dw EncoreDescription
 	dw PursuitDescription
 	dw RapidSpinDescription
@@ -235,7 +235,7 @@ MoveDescriptions::
 	dw MetalClawDescription
 	dw PoisonJabDescription
 	dw MorningSunDescription
-	dw SynthesisDescription
+	dw WillOWispDescription
 	dw MoonlightDescription
 	dw HiddenPowerDescription
 	dw CrossChopDescription
@@ -243,8 +243,8 @@ MoveDescriptions::
 	dw RainDanceDescription
 	dw SunnyDayDescription
 	dw CrunchDescription
-	dw MirrorCoatDescription
-	dw PsychUpDescription
+	dw HyperVoiceDescription
+	dw PoisonTailDescription
 	dw ExtremespeedDescription
 	dw AncientpowerDescription
 	dw ShadowBallDescription
@@ -1167,9 +1167,9 @@ DragonbreathDescription:
 	db   "A strong breath"
 	line "attack.@"
 
-BatonPassDescription:
-	db   "Switches while"
-	line "keeping effects.@"
+EchoedVoiceDescription:
+	db   "Successive hits"
+	line "raise power.@"
 
 EncoreDescription:
 	db   "Makes the foe re-"
@@ -1198,14 +1198,14 @@ MetalClawDescription:
 PoisonJabDescription:
 	db   "An attack that may"
 	line "poison the target.@"
-	
+
 MorningSunDescription:
 	db   "Restores HP"
 	line "(varies by time).@"
 
-SynthesisDescription:
-	db   "Restores HP"
-	line "(varies by time).@"
+WillOWispDescription:
+	db   "A move that may"
+	line "burn the foe.@"
 
 MoonlightDescription:
 	db   "Restores HP"
@@ -1235,13 +1235,13 @@ CrunchDescription:
 	db   "An attack that may"
 	line "lower DEF.@"
 
-MirrorCoatDescription:
-	db   "Counters a SPCL."
-	line "ATK move double.@"
+HyperVoiceDescription:
+	db   "A soundwave that"
+	line "may lower SP.DEF@"
 
-PsychUpDescription:
-	db   "Copies the foe's"
-	line "stat changes.@"
+PoisonTailDescription:
+	db   "An attack that may"
+	line "poison the foe.@"
 
 ExtremespeedDescription:
 	db   "A powerful first-"

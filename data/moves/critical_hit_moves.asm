@@ -12,4 +12,5 @@ CriticalHitMoves:
 	db LEAF_BLADE
 	db AEROBLAST
 	db CROSS_CHOP
+	db POISON_TAIL
 	db -1

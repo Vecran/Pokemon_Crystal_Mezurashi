@@ -6,7 +6,6 @@ MetronomeExcepts:
 	db STRUGGLE
 	db SKETCH
 	db MIMIC
-	db MIRROR_COAT
 	db PROTECT
 	db DESTINY_BOND
 	db SLEEP_TALK

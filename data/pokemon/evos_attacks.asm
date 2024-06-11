@@ -29,7 +29,6 @@ BulbasaurEvosAttacks:
 	db 20, RAZOR_LEAF
 	db 25, SWEET_SCENT
 	db 32, GROWTH
-	db 39, SYNTHESIS
 	db 46, SOLARBEAM
 	db 0 ; no more level-up moves
 
@@ -47,7 +46,6 @@ IvysaurEvosAttacks:
 	db 20, RAZOR_LEAF
 	db 25, SWEET_SCENT
 	db 32, GROWTH
-	db 39, SYNTHESIS
 	db 46, SOLARBEAM
 	db 0 ; no more level-up moves
 
@@ -65,7 +63,6 @@ VenusaurEvosAttacks:
 	db 20, RAZOR_LEAF
 	db 25, SWEET_SCENT
 	db 32, GROWTH
-	db 39, SYNTHESIS
 	db 45, BODY_SLAM
 	db 46, SOLARBEAM
 	db 50, ANCIENTPOWER
@@ -770,7 +767,6 @@ PsyduckEvosAttacks:
 	db 15, CONFUSION
 	db 17, BUBBLEBEAM
 	db 23, SCREECH
-	db 31, PSYCH_UP
 	db 40, FURY_SWIPES
 	db 50, HYDRO_PUMP
 	db 0 ; no more level-up moves
@@ -785,7 +781,6 @@ GolduckEvosAttacks:
 	db 15, CONFUSION
 	db 17, BUBBLEBEAM
 	db 23, SCREECH
-	db 31, PSYCH_UP
 	db 40, FURY_SWIPES
 	db 42, PSYCHIC_M
 	db 50, HYDRO_PUMP
@@ -1175,7 +1170,6 @@ FarfetchDEvosAttacks:
 	db 31, AGILITY
 	db 35, SLASH
 	db 40, FALSE_SWIPE
-	db 45, BATON_PASS
 	db 0 ; no more level-up moves
 
 DoduoEvosAttacks:
@@ -1340,7 +1334,6 @@ DrowzeeEvosAttacks:
 	db 18, CONFUSION
 	db 25, HEADBUTT
 	db 40, PSYCHIC_M
-	db 43, PSYCH_UP
 	db 45, FUTURE_SIGHT
 	db 0 ; no more level-up moves
 
@@ -1352,7 +1345,6 @@ HypnoEvosAttacks:
 	db 18, CONFUSION
 	db 25, HEADBUTT
 	db 42, PSYCHIC_M
-	db 55, PSYCH_UP
 	db 60, FUTURE_SIGHT
 	db 0 ; no more level-up moves
 
@@ -1394,7 +1386,6 @@ VoltorbEvosAttacks:
 	db 29, ROLLOUT
 	db 33, LIGHT_SCREEN
 	db 37, THUNDER
-	db 41, MIRROR_COAT
 	db 0 ; no more level-up moves
 
 ElectrodeEvosAttacks:
@@ -1406,7 +1397,6 @@ ElectrodeEvosAttacks:
 	db 29, ROLLOUT
 	db 34, LIGHT_SCREEN
 	db 40, THUNDER
-	db 48, MIRROR_COAT
 	db 0 ; no more level-up moves
 
 ExeggcuteEvosAttacks:
@@ -1697,7 +1687,6 @@ MrMimeEvosAttacks:
 	db 26, REFLECT
 	db 31, ENCORE
 	db 36, PSYBEAM
-	db 41, BATON_PASS
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:
@@ -1840,7 +1829,6 @@ EeveeEvosAttacks:
 	db 16, GROWL
 	db 20, BITE
 	db 23, QUICK_ATTACK
-	db 30, BATON_PASS
 	db 0 ; no more level-up moves
 
 VaporeonEvosAttacks:
@@ -2075,7 +2063,6 @@ MewtwoEvosAttacks:
 	db 1, CONFUSION
 	db 11, CALM_MIND
 	db 22, SWIFT
-	db 33, PSYCH_UP
 	db 44, FUTURE_SIGHT
 	db 66, PSYCHIC_M
 	db 77, NASTY_PLOT
@@ -2102,7 +2089,6 @@ ChikoritaEvosAttacks:
 	db 12, REFLECT
 	db 15, POISONPOWDER
 	db 21, MEGA_DRAIN
-	db 23, SYNTHESIS
 	db 31, BODY_SLAM
 	db 36, GIGA_DRAIN
 	db 41, LIGHT_SCREEN
@@ -2121,7 +2107,6 @@ BayleefEvosAttacks:
 	db 12, REFLECT
 	db 15, POISONPOWDER
 	db 21, MEGA_DRAIN
-	db 23, SYNTHESIS
 	db 31, BODY_SLAM
 	db 36, GIGA_DRAIN
 	db 41, LIGHT_SCREEN
@@ -2138,7 +2123,6 @@ MeganiumEvosAttacks:
 	db 8, RAZOR_LEAF
 	db 12, REFLECT
 	db 15, POISONPOWDER
-	db 23, SYNTHESIS
 	db 31, BODY_SLAM
 	db 36, GIGA_DRAIN
 	db 41, LIGHT_SCREEN
@@ -2149,10 +2133,10 @@ MeganiumEvosAttacks:
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, ICE_SHARD
-	db 1, MIRROR_SHOT
-	db 1, ZEN_HEADBUTT
-	db 1, POISON_JAB
+	db 1, ECHOED_VOICE
+	db 1, WILL_O_WISP
+	db 1, HYPER_VOICE
+	db 1, POISON_TAIL
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK
@@ -2277,7 +2261,6 @@ HoothootEvosAttacks:
 	db 20, PSYBEAM
 	db 24, WING_ATTACK
 	db 28, LIGHT_SCREEN
-	db 32, MIRROR_COAT
 	db 40, PSYCHIC_M
 	db 45, DREAM_EATER
 	db 50, FUTURE_SIGHT
@@ -2293,7 +2276,6 @@ NoctowlEvosAttacks:
 	db 20, PSYBEAM
 	db 24, WING_ATTACK
 	db 28, LIGHT_SCREEN
-	db 32, MIRROR_COAT
 	db 40, PSYCHIC_M
 	db 45, DREAM_EATER
 	db 50, FUTURE_SIGHT
@@ -2308,7 +2290,6 @@ LedybaEvosAttacks:
 	db 15, COMET_PUNCH
 	db 22, LIGHT_SCREEN
 	db 22, REFLECT
-	db 29, BATON_PASS
 	db 36, SWIFT
 	db 43, AGILITY
 	db 50, DOUBLE_EDGE
@@ -2322,7 +2303,6 @@ LedianEvosAttacks:
 	db 15, COMET_PUNCH
 	db 18, LIGHT_SCREEN
 	db 18, REFLECT
-	db 26, BATON_PASS
 	db 31, AGILITY
 	db 36, GIGA_DRAIN
 	db 42, SWIFT
@@ -2587,7 +2567,6 @@ HoppipEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, GUST
 	db 1, TACKLE
-	db 5, SYNTHESIS
 	db 5, LEER
 	db 7, ABSORB
 	db 10, POISONPOWDER
@@ -2600,10 +2579,8 @@ HoppipEvosAttacks:
 SkiploomEvosAttacks:
 	db EVOLVE_LEVEL, 27, JUMPLUFF
 	db 0 ; no more evolutions
-	db 1, SYNTHESIS
 	db 1, LEER
 	db 1, TACKLE
-	db 5, SYNTHESIS
 	db 5, LEER
 	db 10, TACKLE
 	db 13, POISONPOWDER
@@ -2617,10 +2594,8 @@ SkiploomEvosAttacks:
 
 JumpluffEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SYNTHESIS
 	db 1, LEER
 	db 1, TACKLE
-	db 5, SYNTHESIS
 	db 5, LEER
 	db 10, TACKLE
 	db 13, POISONPOWDER
@@ -2637,7 +2612,6 @@ AipomEvosAttacks:
 	db 1, SCRATCH
 	db 1, LEER
 	db 6, MUD_SLAP
-	db 12, BATON_PASS
 	db 19, LOW_KICK
 	db 27, SWIFT
 	db 36, SCREECH
@@ -2651,7 +2625,7 @@ SunkernEvosAttacks:
 	db 4, GROWTH
 	db 10, MEGA_DRAIN
 	db 19, SUNNY_DAY
-	db 31, SYNTHESIS
+	db 31, MORNING_SUN
 	db 46, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
@@ -2664,7 +2638,7 @@ SunfloraEvosAttacks:
 	db 19, SUNNY_DAY
 	db 31, PETAL_DANCE
 	db 36, SOLARBEAM
-	db 42, SYNTHESIS
+	db 42, MORNING_SUN
 	db 50, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
@@ -2715,7 +2689,6 @@ EspeonEvosAttacks:
 	db 26, SWIFT
 	db 30, PSYBEAM
 	db 36, PSYCHIC_M
-	db 42, PSYCH_UP
 	db 45, MORNING_SUN
 	db 0 ; no more level-up moves
 
@@ -2779,7 +2752,6 @@ UnownEvosAttacks:
 WobbuffetEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
-	db 1, MIRROR_COAT
 	db 0 ; no more level-up moves
 
 GirafarigEvosAttacks:
@@ -2792,7 +2764,6 @@ GirafarigEvosAttacks:
 	db 13, STOMP
 	db 20, AGILITY
 	db 21, PSYBEAM
-	db 30, BATON_PASS
 	db 41, PSYCHIC_M
 	db 46, CRUNCH
 	db 0 ; no more level-up moves
@@ -3053,7 +3024,6 @@ CorsolaEvosAttacks:
 	db 23, SPIKES
 	db 25, BUBBLEBEAM
 	db 31, SPIKE_CANNON
-	db 37, MIRROR_COAT
 	db 45, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -3096,7 +3066,6 @@ MantineEvosAttacks:
 	db 20, CONFUSE_RAY
 	db 25, WING_ATTACK
 	db 40, AGILITY
-	db 45, MIRROR_COAT
 	db 49, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -3340,7 +3309,6 @@ SuicuneEvosAttacks:
 	db 41, REFLECT
 	db 51, LIGHT_SCREEN
 	db 61, HYDRO_PUMP
-	db 71, MIRROR_COAT
 	db 0 ; no more level-up moves
 
 LarvitarEvosAttacks:
@@ -3428,7 +3396,6 @@ CelebiEvosAttacks:
 	db 35, GIGA_DRAIN
 	db 40, PSYCHIC_M
 	db 45, DRAIN_KISS
-	db 50, BATON_PASS
 	db 55, FUTURE_SIGHT
 	db 60, MOONBLAST
 	db 0 ; no more level-up moves

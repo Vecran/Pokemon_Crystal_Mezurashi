@@ -12,4 +12,5 @@ RainDanceMoves:
 	db CRABHAMMER
 	db OCTAZOOKA
 	db WHIRLPOOL
+	db AQUA_TAIL
 	db -1 ; end

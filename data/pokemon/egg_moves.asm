@@ -30,7 +30,6 @@ CharmanderEggMoves:
 	db -1 ; end
 
 SquirtleEggMoves:
-	db MIRROR_COAT
 	db AQUA_JET
 	db CONFUSION
 	db FLASH_CANNON
@@ -102,7 +101,6 @@ OddishEggMoves:
 	db SWORDS_DANCE
 	db RAZOR_LEAF
 	db DRAIN_KISS
-	db SYNTHESIS
 	db -1 ; end
 
 ParasEggMoves:
@@ -116,7 +114,6 @@ ParasEggMoves:
 	db -1 ; end
 
 VenonatEggMoves:
-	db BATON_PASS
 	db SCREECH
 	db GIGA_DRAIN
 	db -1 ; end
@@ -182,13 +179,11 @@ BellsproutEggMoves:
 	db SWORDS_DANCE
 	db ENCORE
 	db REFLECT
-	db SYNTHESIS
 	db LEECH_LIFE
 	db -1 ; end
 
 TentacoolEggMoves:
 	db AURORA_BEAM
-	db MIRROR_COAT
 	db RAPID_SPIN
 	db AQUA_JET
 	db -1 ; end
@@ -269,7 +264,6 @@ KrabbyEggMoves:
 	db -1 ; end
 
 ExeggcuteEggMoves:
-	db SYNTHESIS
 	db MOONLIGHT
 	db REFLECT
 	db MEGA_DRAIN
@@ -343,7 +337,6 @@ MrMimeEggMoves:
 
 ScytherEggMoves:
 	db X_SCISSOR
-	db BATON_PASS
 	db RAZOR_WIND
 	db CROSS_POISON
 	db LIGHT_SCREEN
@@ -442,7 +435,6 @@ LedybaEggMoves:
 
 SpinarakEggMoves:
 	db PSYBEAM
-	db BATON_PASS
 	db PURSUIT
 	db -1 ; end
 
