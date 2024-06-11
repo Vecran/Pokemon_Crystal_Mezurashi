@@ -1805,6 +1805,8 @@ RapidSpin:
 	supereffectivetext
 	clearhazards
 	checkfaint
+	speedup
+	statupmessage
 	buildopponentrage
 	kingsrock
 	endmove

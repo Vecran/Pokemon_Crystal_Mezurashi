@@ -849,7 +849,7 @@ GetMovePriority:
 	ld b, a
 
 	; Vital Throw goes last.
-	cp VITAL_THROW
+	;cp VITAL_THROW
 	ld a, 0
 	ret z
 

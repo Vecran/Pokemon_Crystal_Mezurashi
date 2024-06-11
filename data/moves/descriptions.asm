@@ -233,7 +233,7 @@ MoveDescriptions::
 	dw SweetScentDescription
 	dw IronTailDescription
 	dw MetalClawDescription
-	dw VitalThrowDescription
+	dw PoisonJabDescription
 	dw MorningSunDescription
 	dw SynthesisDescription
 	dw MoonlightDescription
@@ -1195,10 +1195,10 @@ MetalClawDescription:
 	db   "An attack that may"
 	line "up user's ATTACK.@"
 
-VitalThrowDescription:
-	db   "A 2nd-strike move"
-	line "that never misses.@"
-
+PoisonJabDescription:
+	db   "An attack that may"
+	line "poison the target.@"
+	
 MorningSunDescription:
 	db   "Restores HP"
 	line "(varies by time).@"

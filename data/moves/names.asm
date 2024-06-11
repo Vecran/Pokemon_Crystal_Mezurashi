@@ -232,7 +232,7 @@ MoveNames::
 	li "SWEET SCENT"
 	li "IRON TAIL"
 	li "METAL CLAW"
-	li "VITAL THROW"
+	li "POISON JAB"
 	li "MORNING SUN"
 	li "SYNTHESIS"
 	li "MOONLIGHT"

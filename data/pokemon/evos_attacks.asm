@@ -923,7 +923,6 @@ MachopEvosAttacks:
 	db 1, LEER
 	db 7, FOCUS_ENERGY
 	db 13, KARATE_CHOP
-	db 31, VITAL_THROW
 	db 37, CROSS_CHOP
 	db 43, SCARY_FACE
 	db 49, SUBMISSION
@@ -937,7 +936,6 @@ MachokeEvosAttacks:
 	db 1, FOCUS_ENERGY
 	db 8, FOCUS_ENERGY
 	db 15, KARATE_CHOP
-	db 34, VITAL_THROW
 	db 43, CROSS_CHOP
 	db 50, SCARY_FACE
 	db 55, SUBMISSION
@@ -950,7 +948,6 @@ MachampEvosAttacks:
 	db 1, FOCUS_ENERGY
 	db 8, FOCUS_ENERGY
 	db 15, KARATE_CHOP
-	db 34, VITAL_THROW
 	db 43, CROSS_CHOP
 	db 50, SCARY_FACE
 	db 55, SUBMISSION
@@ -2155,7 +2152,7 @@ CyndaquilEvosAttacks:
 	db 1, ICE_SHARD
 	db 1, MIRROR_SHOT
 	db 1, ZEN_HEADBUTT
-	db 1, EARTH_POWER
+	db 1, POISON_JAB
 	db 6, SMOKESCREEN
 	db 7, EMBER
 	db 19, QUICK_ATTACK

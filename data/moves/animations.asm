@@ -234,7 +234,7 @@ BattleAnimations::
 	dw BattleAnim_SweetScent
 	dw BattleAnim_IronTail
 	dw BattleAnim_MetalClaw
-	dw BattleAnim_VitalThrow
+	dw BattleAnim_PoisonJab
 	dw BattleAnim_MorningSun
 	dw BattleAnim_Synthesis
 	dw BattleAnim_Moonlight
@@ -4198,26 +4198,18 @@ BattleAnim_MetalClaw:
 	anim_wait 32
 	anim_ret
 
-BattleAnim_VitalThrow:
+BattleAnim_PoisonJab:
 	anim_1gfx ANIM_GFX_HIT
-	anim_call BattleAnim_TargetObj_1Row
-	anim_bgeffect ANIM_BG_VITAL_THROW, $0, BG_EFFECT_USER, $0
-	anim_wait 16
-	anim_sound 0, 0, SFX_MENU
-	anim_obj ANIM_OBJ_HIT, 64, 96, $0
-	anim_wait 8
-	anim_sound 0, 0, SFX_MENU
-	anim_obj ANIM_OBJ_HIT, 56, 88, $0
-	anim_wait 8
-	anim_sound 0, 0, SFX_MENU
-	anim_obj ANIM_OBJ_HIT, 68, 104, $0
-	anim_wait 8
-	anim_incbgeffect ANIM_BG_VITAL_THROW
-	anim_wait 16
-	anim_call BattleAnim_ShowMon_0
+	anim_call BattleAnim_TargetObj_2Row
+	anim_bgeffect ANIM_BG_TACKLE, $0, BG_EFFECT_USER, $0
+	anim_wait 4
 	anim_sound 0, 1, SFX_MEGA_PUNCH
-	anim_obj ANIM_OBJ_HIT_BIG, 132, 56, $0
-	anim_wait 16
+	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 136, 48, $0
+	anim_wait 8
+	anim_call BattleAnim_ShowMon_0
+	anim_1gfx ANIM_GFX_POISON
+	anim_call BattleAnimSub_Sludge
+	anim_wait 64
 	anim_ret
 
 BattleAnim_MorningSun:
