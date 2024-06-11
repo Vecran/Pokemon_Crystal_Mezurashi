@@ -1162,7 +1162,6 @@ MagnemiteEvosAttacks:
 	db 34, THUNDERBOLT
 	db 39, SCREECH
 	db 44, LOCK_ON
-	db 45, ZAP_CANNON
 	db 0 ; no more level-up moves
 
 MagnetonEvosAttacks:
@@ -1178,7 +1177,6 @@ MagnetonEvosAttacks:
 	db 37, THUNDERBOLT
 	db 40, LOCK_ON
 	db 43, SCREECH
-	db 53, ZAP_CANNON
 	db 0 ; no more level-up moves
 
 FarfetchDEvosAttacks:
@@ -1926,7 +1924,6 @@ PorygonEvosAttacks:
 	db 24, CALM_MIND
 	db 32, LOCK_ON
 	db 36, TRI_ATTACK
-	db 44, ZAP_CANNON
 	db 50, HYPER_BEAM
 	db 0 ; no more level-up moves
 
@@ -2193,7 +2190,7 @@ MeganiumEvosAttacks:
 CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
-	db 1, DRACO_METEOR
+	db 1, FAIRY_WIND
 	db 1, CHARGE_BEAM
 	db 1, BOLT_STRIKE
 	db 1, CHARGE
@@ -3250,7 +3247,6 @@ Porygon2EvosAttacks:
 	db 24, DEFENSE_CURL
 	db 32, LOCK_ON
 	db 36, TRI_ATTACK
-	db 44, ZAP_CANNON
 	db 50, HYPER_BEAM
 	db 0 ; no more level-up moves
 

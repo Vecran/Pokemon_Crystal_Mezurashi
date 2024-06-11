@@ -348,7 +348,7 @@ MartCeladon3F_2:
 	db TM_EARTHQUAKE ; OP
 	db TM_SOLARBEAM ; OP
 	db TM_PSYCHIC_M ; OP
-	db TM_ZAP_CANNON ; OP
+	db TM_CHARGE_BEAM ; OP
 	db -1 ; end
 
 MartCeladon4F:

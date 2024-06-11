@@ -193,7 +193,7 @@ BattleAnimations::
 	dw BattleAnim_MudSlap
 	dw BattleAnim_Octazooka
 	dw BattleAnim_Spikes
-	dw BattleAnim_ZapCannon
+	dw BattleAnim_FairyWind
 	dw BattleAnim_Foresight
 	dw BattleAnim_DestinyBond
 	dw BattleAnim_PerishSong
@@ -3448,21 +3448,13 @@ BattleAnim_DracoMeteor:
 	anim_ret
 
 BattleAnim_ChargeBeam:
-	anim_2gfx ANIM_GFX_BEAM, ANIM_GFX_LIGHTNING
+	anim_2gfx ANIM_GFX_EXPLOSION, ANIM_GFX_LIGHTNING
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $3
-	anim_sound 0, 0, SFX_THUNDERSHOCK
-	anim_obj ANIM_OBJ_BEAM, 64, 92, $0
-	anim_wait 4
-	anim_sound 0, 0, SFX_THUNDERSHOCK
-	anim_obj ANIM_OBJ_BEAM, 80, 84, $0
-	anim_wait 4
-	anim_sound 0, 1, SFX_THUNDERSHOCK
-	anim_obj ANIM_OBJ_BEAM, 96, 76, $0
-	anim_wait 4
-	anim_sound 0, 1, SFX_THUNDERSHOCK
-	anim_obj ANIM_OBJ_BEAM, 112, 68, $0	
-	anim_obj ANIM_OBJ_BEAM_TIP, 126, 62, $0
-	anim_wait 48
+	anim_bgp $1b
+	anim_obp0 $30
+	anim_sound 6, 2, SFX_ZAP_CANNON
+	anim_obj ANIM_OBJ_ZAP_CANNON, 64, 92, $2
+	anim_wait 40
 	anim_sound 0, 0, SFX_CHARGE
 	anim_clearobjs
 	anim_obj ANIM_OBJ_THUNDER_WAVE, 48, 90, $0
@@ -3620,20 +3612,6 @@ BattleAnim_Spikes:
 	anim_sound 6, 2, SFX_MENU
 	anim_obj ANIM_OBJ_SPIKES, 48, 88, $28
 	anim_wait 64
-	anim_ret
-
-BattleAnim_ZapCannon:
-	anim_2gfx ANIM_GFX_LIGHTNING, ANIM_GFX_EXPLOSION
-	anim_bgp $1b
-	anim_obp0 $30
-	anim_sound 6, 2, SFX_ZAP_CANNON
-	anim_obj ANIM_OBJ_ZAP_CANNON, 64, 92, $2
-	anim_wait 40
-	anim_sound 0, 1, SFX_THUNDERSHOCK
-	anim_obj ANIM_OBJ_THUNDERBOLT_BALL, 136, 56, $2
-	anim_wait 16
-	anim_obj ANIM_OBJ_SPARKS_CIRCLE_BIG, 136, 56, $0
-	anim_wait 128
 	anim_ret
 
 BattleAnim_Foresight:
@@ -4256,6 +4234,7 @@ BattleAnim_RapidSpin:
 	anim_wait 1
 	anim_ret
 
+BattleAnim_FairyWind:
 BattleAnim_SilverWind:
 BattleAnim_SweetScent:
 	anim_2gfx ANIM_GFX_FLOWER, ANIM_GFX_MISC

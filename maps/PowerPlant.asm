@@ -168,20 +168,20 @@ PowerPlantManager:
 	clearevent EVENT_CAUGHT_ZAPDOS
 	clearevent EVENT_GOLDENROD_TRAIN_STATION_GENTLEMAN
 .ReturnedMachinePart:
-	checkevent EVENT_GOT_TM07_ZAP_CANNON
-	iftrue .GotZapCannon
+	checkevent EVENT_GOT_TM07_CHARGE_BEAM
+	iftrue .GotChargeBeam
 	writetext PowerPlantManagerTakeThisTMText
 	promptbutton
-	verbosegiveitem TM_ZAP_CANNON
+	verbosegiveitem TM_CHARGE_BEAM
 	iffalse .NoRoom
-	setevent EVENT_GOT_TM07_ZAP_CANNON
-	writetext PowerPlantManagerTM07IsZapCannonText
+	setevent EVENT_GOT_TM07_CHARGE_BEAM
+	writetext PowerPlantManagerTM07IsChargeBeamText
 	waitbutton
 .NoRoom:
 	closetext
 	end
 
-.GotZapCannon:
+.GotChargeBeam:
 	writetext PowerPlantManagerMyBelovedGeneratorText
 	waitbutton
 	closetext
@@ -365,18 +365,18 @@ PowerPlantManagerTakeThisTMText:
 	line "as a reward!"
 	done
 
-PowerPlantManagerTM07IsZapCannonText:
+PowerPlantManagerTM07IsChargeBeamText:
 	text "MANAGER: TM07 is"
-	line "my ZAP CANNON."
+	line "my CHARGE BEAM."
 
-	para "It's a powerful"
+	para "It's a useful"
 	line "technique!"
 
 	para "It's not what any-"
 	line "one would consider"
 
-	para "accurate, but it"
-	line "packs a wallop!"
+	para "powerful, but it"
+	line "charges you up!"
 	done
 
 PowerPlantManagerMyBelovedGeneratorText:
