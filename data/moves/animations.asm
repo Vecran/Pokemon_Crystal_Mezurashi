@@ -3633,7 +3633,7 @@ BattleAnim_DestinyBond:
 	anim_ret
 
 BattleAnim_Moonblast:
-anim_3gfx ANIM_GFX_SHINE, ANIM_GFX_EXPLOSION, ANIM_GFX_LIGHTNING
+	anim_3gfx ANIM_GFX_SHINE, ANIM_GFX_EXPLOSION, ANIM_GFX_LIGHTNING
 	anim_bgp $1b
 	anim_bgeffect ANIM_BG_CYCLE_MID_OBPALS_GRAY_AND_YELLOW, $0, $0, $0
 	anim_obj ANIM_OBJ_MOONLIGHT, 0, 40, $0
