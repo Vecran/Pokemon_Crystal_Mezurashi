@@ -226,7 +226,7 @@ MartMahogany2:
 	db TM_SWIFT
 	db TM_NIGHTMARE
 	db TM_DEFENSE_CURL
-	db TM_DETECT
+	db TM_BULK_UP
 	db -1 ; end
 
 MartBlackthorn:
@@ -335,7 +335,7 @@ MartCeladon3F:
 	db TM_RAIN_DANCE
 	db TM_SANDSTORM
 	db TM_PROTECT
-	db TM_ENDURE
+	db TM_SHADOW_CLAW
 	db -1 ; end
 
 MartCeladon3F_2:
@@ -344,7 +344,7 @@ MartCeladon3F_2:
 	db TM_RAIN_DANCE
 	db TM_SANDSTORM
 	db TM_PROTECT
-	db TM_ENDURE
+	db TM_SHADOW_CLAW
 	db TM_EARTHQUAKE ; OP
 	db TM_SOLARBEAM ; OP
 	db TM_PSYCHIC_M ; OP

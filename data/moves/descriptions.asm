@@ -197,13 +197,13 @@ MoveDescriptions::
 	dw DestinyBondDescription
 	dw MoonblastDescription
 	dw IcyWindDescription
-	dw DetectDescription
-	dw BoneRushDescription
-	dw LockOnDescription
+	dw FlameChargeDescription
+	dw FlameBurstDescription
+	dw AirSlashDescription
 	dw OutrageDescription
 	dw SandstormDescription
 	dw GigaDrainDescription
-	dw EndureDescription
+	dw EarthPowerDescription
 	dw CharmDescription
 	dw RolloutDescription
 	dw FalseSwipeDescription
@@ -1051,17 +1051,17 @@ IcyWindDescription:
 	db   "An icy attack that"
 	line "lowers SPEED.@"
 
-DetectDescription:
-	db   "Evades attack that"
-	line "turn. It may fail.@"
+FlameChargeDescription:
+	db   "A attack that"
+	line "ups user's SPEED.@"
 
-BoneRushDescription:
-	db   "An attack that"
-	line "hits 2-5 times.@"
+FlameBurstDescription:
+	db   "An attack that may"
+	line "inflict a burn.@"
 
-LockOnDescription:
-	db   "Ensures the line"
-	line "attack will hit.@"
+AirSlashDescription:
+	db   "An attack that may"
+	line "cause flinching.@"
 
 OutrageDescription:
 	db   "Works 2-3 turns"
@@ -1075,9 +1075,9 @@ GigaDrainDescription:
 	db   "Steals 1/2 of the"
 	line "damage inflicted.@"
 
-EndureDescription:
-	db   "Always leaves at"
-	line "least 1HP.@"
+EarthPowerDescription:
+	db   "An attack that may"
+	line "lower SP.DEFENSE.@"
 
 CharmDescription:
 	db   "Sharply lowers the"

@@ -18,7 +18,6 @@ MoveGrammar:
 	db SNORE
 	db PROTECT
 	db SPIKES
-	db ENDURE
 	db ROLLOUT
 	db SWAGGER
 	db SLEEP_TALK

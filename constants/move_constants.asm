@@ -202,13 +202,13 @@
 	const DESTINY_BOND ; c2
 	const MOONBLAST       ; c3
 	const ICY_WIND     ; c4
-	const DETECT       ; c5
-	const BONE_RUSH    ; c6
-	const LOCK_ON      ; c7
+	const FLAME_CHARGE      ; c5
+	const FLAME_BURST    ; c6
+	const AIR_SLASH       ; c7
 	const OUTRAGE      ; c8
 	const SANDSTORM    ; c9
 	const GIGA_DRAIN   ; ca
-	const ENDURE       ; cb
+	const EARTH_POWER       ; cb
 	const CHARM        ; cc
 	const ROLLOUT      ; cd
 	const FALSE_SWIPE  ; ce
