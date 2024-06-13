@@ -79,7 +79,7 @@ Moves:
 	move HYPER_BEAM,   EFFECT_HYPER_BEAM,        150, NORMAL,        SPECIAL,   90,  5,   0
 	move PECK,         EFFECT_NORMAL_HIT,         35, FLYING,        PHYSICAL, 100, 35,   0
 	move DRILL_PECK,   EFFECT_NORMAL_HIT,         80, FLYING,        PHYSICAL, 100, 20,   0
-	move SUBMISSION,   EFFECT_RECOIL_HIT,         80, FIGHTING,      PHYSICAL, 100, 25,   0
+	move SUBMISSION,   EFFECT_RECOIL_HIT,         90, FIGHTING,      PHYSICAL, 100, 25,   0
 	move LOW_KICK,     EFFECT_FLINCH_HIT,         50, FIGHTING,      PHYSICAL, 100, 20,  30
 	move MUD_BOMB,     EFFECT_ACCURACY_DOWN_HIT,  65, GROUND,        SPECIAL,   90, 10,  30
 	move SHADOW_CLAW,  EFFECT_NORMAL_HIT,         70, GHOST,         PHYSICAL, 100, 15,   0
@@ -112,7 +112,7 @@ Moves:
 	move HONE_CLAWS,   EFFECT_HONE_CLAWS,          0, DARK,          STATUS,   100, 15,   0
 	move AGILITY,      EFFECT_SPEED_UP_2,          0, PSYCHIC_TYPE,  STATUS,   100, 30,   0
 	move QUICK_ATTACK, EFFECT_PRIORITY_HIT,       40, NORMAL,        PHYSICAL, 100, 30,   0
-	move RAGE,         EFFECT_RAGE,               20, DRAGON,        PHYSICAL, 100, 20,   0
+	move RAGE,         EFFECT_RAGE,               25, DRAGON,        PHYSICAL, 100, 20,   0
 	move TELEPORT,     EFFECT_TELEPORT,            0, PSYCHIC_TYPE,  STATUS,   100, 20,   0
 	move SHADOW_SNEAK, EFFECT_PRIORITY_HIT,       40, GHOST,         PHYSICAL, 100, 30,   0
 	move MIMIC,        EFFECT_MIMIC,               0, NORMAL,        STATUS,   100, 10,   0
@@ -199,7 +199,7 @@ Moves:
 	move MACH_PUNCH,   EFFECT_PRIORITY_HIT,       40, FIGHTING,      PHYSICAL, 100, 30,   0
 	move SCARY_FACE,   EFFECT_SPEED_DOWN_2,        0, DARK,          STATUS,    90, 10,   0
 	move FAINT_ATTACK, EFFECT_ALWAYS_HIT,         60, DARK,          PHYSICAL, 100, 20,   0
-	move BOLT_STRIKE,  EFFECT_PARALYZE_HIT,      130, ELECTRIC,      PHYSICAL,  85,  5,  20
+	move BOLT_STRIKE,  EFFECT_PARALYZE_HIT,      120, ELECTRIC,      PHYSICAL,  85,  5,  20
 	move CHARGE,       EFFECT_CALM_MIND,           0, ELECTRIC,      STATUS,   100, 20,   0
 	move SLUDGE_BOMB,  EFFECT_POISON_HIT,         90, POISON,        SPECIAL,  100, 10,  30
 	move MUD_SLAP,     EFFECT_ACCURACY_DOWN_HIT,  30, GROUND,        SPECIAL,  100, 15, 100
