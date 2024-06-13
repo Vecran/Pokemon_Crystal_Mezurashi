@@ -68,7 +68,7 @@ VenusaurEvosAttacks:
 	db 20, SEED_BOMB
 	db 25, BODY_SLAM
 	db 30, SWEET_SCENT
-	db 36, EARTH_POWER
+	db 32, EARTH_POWER
 	db 37, MORNING_SUN
 	db 44, GROWTH
 	db 51, POWER_WHIP
