@@ -3,7 +3,7 @@
 	db  50,  65,  90,  15,  35,  55
 	;   hp  atk  def  spd  sat  sdf
 
-	db BUG, GRASS ; type
+	db GRASS, GRASS ; type
 	db 190 ; catch rate
 	db 60 ; base exp
 	db NO_ITEM, NO_ITEM ; items
@@ -14,7 +14,7 @@
 	INCBIN "gfx/pokemon/pineco/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
 	db GROWTH_MEDIUM_FAST ; growth rate
-	dn EGG_BUG, EGG_BUG ; egg groups
+	dn EGG_MINERAL, EGG_PLANT ; egg groups
 
 	; tm/hm learnset
 	tmhm HEADBUTT, CURSE, ROLLOUT, TOXIC, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SWEET_SCENT, SNORE, PROTECT, GIGA_DRAIN,  FRUSTRATION, SOLARBEAM, RETURN, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, DEFENSE_CURL, REST, ATTRACT, STRENGTH

@@ -1,4 +1,4 @@
-	db "BAGWORM@" ; species name
+	db "PINECONE@" ; species name
 	dw 200, 160 ; height, weight
 
 	db   "It spits out a"

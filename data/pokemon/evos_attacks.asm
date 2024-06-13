@@ -4576,7 +4576,7 @@ LarvitarEvosAttacks:
 	db 9, BITE
 	db 12, SCARY_FACE
 	db 15, ROCK_SLIDE
-	db 18, FRUSTRATION
+	db 18, RAGE
 	db 21, SCREECH
 	db 24, ROAR
 	db 27, CRUNCH
@@ -4597,7 +4597,7 @@ PupitarEvosAttacks:
 	db 9, BITE
 	db 12, SCARY_FACE
 	db 15, ROCK_SLIDE
-	db 18, FRUSTRATION
+	db 18, RAGE
 	db 21, SCREECH
 	db 24, ROAR
 	db 27, CRUNCH
@@ -4619,7 +4619,7 @@ TyranitarEvosAttacks:
 	db 9, BITE
 	db 12, SCARY_FACE
 	db 15, ROCK_SLIDE
-	db 18, FRUSTRATION
+	db 18, RAGE
 	db 21, SCREECH
 	db 24, ROAR
 	db 27, CRUNCH
