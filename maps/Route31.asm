@@ -3,9 +3,11 @@
 	const ROUTE31_YOUNGSTER
 	const ROUTE31_BUG_CATCHER
 	const ROUTE31_COOLTRAINER_M
-	const ROUTE31_FRUIT_TREE
+	const ROUTE31_FRUIT_TREE1
 	const ROUTE31_POKE_BALL1
 	const ROUTE31_POKE_BALL2
+	const ROUTE31_FRUIT_TREE2
+
 
 Route31_MapScripts:
 	def_scene_scripts
@@ -276,8 +278,11 @@ DarkCaveSign:
 Route31CooltrainerMScript:
 	jumptextfaceplayer Route31CooltrainerMText
 
-Route31FruitTree:
-	fruittree FRUITTREE_ROUTE_31
+Route31FruitTree1:
+	fruittree FRUITTREE_ROUTE_31_1
+	
+Route31FruitTree2:
+	fruittree FRUITTREE_ROUTE_31_2
 
 Route31Potion:
 	itemball POTION
@@ -454,6 +459,8 @@ Route31_MapEvents:
 	object_event  9,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route31YoungsterScript, -1
 	object_event 21, 13, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 5, TrainerBugCatcherWade1, -1
 	object_event 33,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route31CooltrainerMScript, -1
-	object_event 16,  7, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route31FruitTree, -1
+	object_event 16,  7, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route31FruitTree1, -1
 	object_event 29,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route31Potion, EVENT_ROUTE_31_POTION
 	object_event 19, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route31PokeBall, EVENT_ROUTE_31_POKE_BALL
+	object_event 30,  7, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route31FruitTree2, -1
+

@@ -5,8 +5,9 @@
 	const ROUTE43_FISHER
 	const ROUTE43_LASS
 	const ROUTE43_YOUNGSTER
-	const ROUTE43_FRUIT_TREE
+	const ROUTE43_FRUIT_TREE1
 	const ROUTE43_POKE_BALL
+	const ROUTE43_FRUIT_TREE2
 
 Route43_MapScripts:
 	def_scene_scripts
@@ -348,8 +349,11 @@ Route43Sign2:
 Route43TrainerTips:
 	jumptext Route43TrainerTipsText
 
-Route43FruitTree:
-	fruittree FRUITTREE_ROUTE_43
+Route43FruitTree1:
+	fruittree FRUITTREE_ROUTE_43_1
+
+Route43FruitTree2:
+	fruittree FRUITTREE_ROUTE_43_2
 
 Route43MaxEther:
 	itemball MAX_ETHER
@@ -554,5 +558,6 @@ Route43_MapEvents:
 	object_event  4, 16, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerFisherMarvin, -1
 	object_event  9, 25, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerPicnickerTiffany, -1
 	object_event 13, 40, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerCamperSpencer, -1
-	object_event  1, 26, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route43FruitTree, -1
+	object_event  1, 26, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route43FruitTree1, -1
 	object_event 12, 32, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route43MaxEther, EVENT_ROUTE_43_MAX_ETHER
+	object_event  7, 41, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route43FruitTree2, -1

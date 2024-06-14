@@ -4,8 +4,10 @@
 	const ROUTE38_STANDING_YOUNGSTER2
 	const ROUTE38_BEAUTY1
 	const ROUTE38_SAILOR
-	const ROUTE38_FRUIT_TREE
+	const ROUTE38_FRUIT_TREE1
 	const ROUTE38_BEAUTY2
+	const ROUTE38_FRUIT_TREE2
+
 
 Route38_MapScripts:
 	def_scene_scripts
@@ -357,8 +359,11 @@ Route38Sign:
 Route38TrainerTips:
 	jumptext Route38TrainerTipsText
 
-Route38FruitTree:
-	fruittree FRUITTREE_ROUTE_38
+Route38FruitTree1:
+	fruittree FRUITTREE_ROUTE_38_1
+
+Route38FruitTree2:
+	fruittree FRUITTREE_ROUTE_38_2
 
 BirdKeeperTobySeenText:
 	text "Fly high into the"
@@ -529,5 +534,6 @@ Route38_MapEvents:
 	object_event 12, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBirdKeeperToby, -1
 	object_event 19,  9, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBeautyValerie, -1
 	object_event 24,  5, SPRITE_SAILOR, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSailorHarry, -1
-	object_event 12, 10, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route38FruitTree, -1
+	object_event 12, 10, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route38FruitTree1, -1
 	object_event  5,  8, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBeautyOlivia, -1
+	object_event 12, 11, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route38FruitTree2, -1
