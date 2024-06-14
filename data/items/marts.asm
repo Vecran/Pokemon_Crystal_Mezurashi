@@ -145,33 +145,37 @@ MartGoldenrod4F:
 	db -1 ; end
 
 MartGoldenrod5F1:
-	db 3 ; # items
+	db 4 ; # items
 	db TM_THUNDERPUNCH
 	db TM_FIRE_PUNCH
 	db TM_ICE_PUNCH
+	db TM_FALSE_SWIPE
 	db -1 ; end
 
 MartGoldenrod5F2:
-	db 4 ; # items
-	db TM_THUNDERPUNCH
-	db TM_FIRE_PUNCH
-	db TM_ICE_PUNCH
-	db TM_HEADBUTT
-	db -1 ; end
-
-MartGoldenrod5F3:
-	db 4 ; # items
-	db TM_THUNDERPUNCH
-	db TM_FIRE_PUNCH
-	db TM_ICE_PUNCH
-	db TM_ROCK_SMASH
-	db -1 ; end
-
-MartGoldenrod5F4:
 	db 5 ; # items
 	db TM_THUNDERPUNCH
 	db TM_FIRE_PUNCH
 	db TM_ICE_PUNCH
+	db TM_FALSE_SWIPE
+	db TM_HEADBUTT
+	db -1 ; end
+
+MartGoldenrod5F3:
+	db 5 ; # items
+	db TM_THUNDERPUNCH
+	db TM_FIRE_PUNCH
+	db TM_ICE_PUNCH
+	db TM_FALSE_SWIPE
+	db TM_ROCK_SMASH
+	db -1 ; end
+
+MartGoldenrod5F4:
+	db 6 ; # items
+	db TM_THUNDERPUNCH
+	db TM_FIRE_PUNCH
+	db TM_ICE_PUNCH
+	db TM_FALSE_SWIPE
 	db TM_HEADBUTT
 	db TM_ROCK_SMASH
 	db -1 ; end
@@ -392,7 +396,7 @@ MartCeladon5F2:
 	db TM_SWAGGER
 	db TM_SNORE
 	db TM_SLEEP_TALK
-	db TM_SWEET_SCENT
+	db TM_FALSE_SWIPE
 	db -1 ; end
 
 MartCeladon5F2_2:
@@ -401,7 +405,7 @@ MartCeladon5F2_2:
 	db TM_SWAGGER
 	db TM_SNORE
 	db TM_SLEEP_TALK
-	db TM_SWEET_SCENT
+	db TM_FALSE_SWIPE
 	db TM_RETURN ; OP
 	db TM_DREAM_EATER ; OP
 	db TM_CURSE ; OP

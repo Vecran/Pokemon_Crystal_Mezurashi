@@ -45,15 +45,15 @@ Route34IlexForestGateTeacherScript:
 	opentext
 	checkevent EVENT_FOREST_IS_RESTLESS
 	iftrue .ForestIsRestless
-	checkevent EVENT_GOT_TM12_SWEET_SCENT
-	iftrue .GotSweetScent
+	checkevent EVENT_GOT_TM12_FALSE_SWIPE
+	iftrue .GotFalseSwipe
 	writetext Route34IlexForestGateTeacherText
 	promptbutton
-	verbosegiveitem TM_SWEET_SCENT
+	verbosegiveitem TM_FALSE_SWIPE
 	iffalse .NoRoom
-	setevent EVENT_GOT_TM12_SWEET_SCENT
-.GotSweetScent:
-	writetext Route34IlexForestGateTeacher_GotSweetScent
+	setevent EVENT_GOT_TM12_FALSE_SWIPE
+.GotFalseSwipe:
+	writetext Route34IlexForestGateTeacher_GotFalseSwipe
 	waitbutton
 .NoRoom:
 	closetext
@@ -90,21 +90,20 @@ Route34IlexForestGateTeacherText:
 	text "Oh, honey. You're"
 	line "making a #DEX?"
 
-	para "It must be hard if"
-	line "#MON won't"
+	para "It must be hard to"
+	line "catch #MON"
 
-	para "appear. Try using"
-	line "this TM."
+	para "Try using this TM."
 	done
 
-Route34IlexForestGateTeacher_GotSweetScent:
-	text "It's SWEET SCENT."
+Route34IlexForestGateTeacher_GotFalseSwipe:
+	text "It's FALSE SWIPE."
 
-	para "Use it wherever"
-	line "#MON appear."
+	para "You can use it to"
+	line "weaken a wild #MON"
 
-	para "#MON will be"
-	line "enticed by it."
+	para "and make it easier"
+	line "to catch."
 	done
 
 Route34IlexForestGateTeacher_ForestIsRestless:
