@@ -663,7 +663,7 @@ YoungsterGroup:
 
 	; YOUNGSTER (2)
 	db "MIKEY@", TRAINERTYPE_NORMAL
-	db  2, HOOTHOOT
+	db  2, PIDGEY
 	db  4, SENTRET
 	db -1 ; end
 
