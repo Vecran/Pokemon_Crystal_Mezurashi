@@ -4209,7 +4209,7 @@ BattleAnim_IronTail:
 
 BattleAnim_PoisonTail:
 	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_POISON
-	anim_resetobp0
+	anim_call BattleAnim_TargetObj_1Row
 	anim_bgeffect ANIM_BG_WOBBLE_MON, $0, BG_EFFECT_USER, $0
 	anim_wait 16
 	anim_sound 0, 1, SFX_MEGA_KICK
@@ -4271,13 +4271,13 @@ BattleAnim_MorningSun:
 
 BattleAnim_WillOWisp:
 	anim_1gfx ANIM_GFX_FIRE
-	anim_sound 6, 2, SFX_EMBER
+	anim_sound 6, 2, SFX_CURSE
 	anim_obj ANIM_OBJ_EMBER, 64, 96, $12
 	anim_wait 4
-	anim_sound 6, 2, SFX_EMBER
+	anim_sound 6, 2, SFX_CURSE
 	anim_obj ANIM_OBJ_EMBER, 64, 100, $14
 	anim_wait 4
-	anim_sound 6, 2, SFX_EMBER
+	anim_sound 6, 2, SFX_CURSE
 	anim_obj ANIM_OBJ_EMBER, 64, 84, $13
 	anim_wait 16
 	anim_incobj 1
@@ -4442,6 +4442,7 @@ BattleAnim_HyperVoice:
 	anim_1gfx ANIM_GFX_PSYCHIC
 	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $8, $1, $20
 	anim_sound 6, 2, SFX_HYPER_BEAM
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $40
 .loop
 	anim_obj ANIM_OBJ_WAVE, 64, 88, $2
 	anim_wait 2

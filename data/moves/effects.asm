@@ -37,6 +37,8 @@ DoBurn:
 	doturn
 	checkhit
 	checksafeguard
+	moveanim
+	failuretext
 	burntarget
 	endmove
 
