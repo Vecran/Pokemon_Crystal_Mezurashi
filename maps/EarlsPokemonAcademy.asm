@@ -262,23 +262,23 @@ EarlsPokemonAcademyYoungster1Text:
 	done
 
 EarlsPokemonAcademyGameboyKid1Text:
-	text "The newly dis-"
-	line "covered DARK"
+	text "There are 3 kinds"
+	line "of moves:"
 
-	para "type deals"
-	line "physical damage."
+	para "physical, special"
+	line "and status effect."
 	
-	para "GHOST-type,"
-	line "deals special"
-	cont "damage."
+	para "We used to think"
+	line "this was based on"
+	cont "type, but now we"
 	
-	para "The move SPIKE"
-	line "CANNON, once"
-	cont "thought to be a"
+	para "know it doesn't"
+	line "work like that."
+	cont "We've discovered"
 	
-	para "NORMAL-type"
-	line "move, is a"
-	cont "STEEL-type move."
+	para "lots of new moves"
+	line "as well, and a"
+	cont "new type - FAIRY!"
 	done
 
 EarlsPokemonAcademyGameboyKid2Text:
@@ -332,11 +332,11 @@ EarlsPokemonAcademyYoungster2Text:
 	line "5-20 base points."
 
 	para "Also worth noting,"
-	line "ARIADOS seem to"
-	cont "have become much"
+	line "many #MON"
+	cont "have different"
 
-	para "faster, with a "
-	line "base stat of 80."
+	para "types than we"
+	line "previously thought"
 	
 	para "Many #MON have"
 	line "also started to"
@@ -346,7 +346,7 @@ EarlsPokemonAcademyYoungster2Text:
 	line "#MON learn"
 	cont "multiple"
 
-	para "moves of it's type,"
+	para "moves of its type,"
 	line "via LVL up."
 	
 	para "Many also seem"

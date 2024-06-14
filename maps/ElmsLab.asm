@@ -95,14 +95,14 @@ ProfElmScript:
 	iftrue ElmGiveTicketScript
 ElmCheckMasterBall:
 	checkevent EVENT_GOT_MASTER_BALL_FROM_ELM
-	iftrue ElmCheckEverstone
+	iftrue ElmCheckScopeLens
 	checkflag ENGINE_RISINGBADGE
 	iftrue ElmGiveMasterBallScript
-ElmCheckEverstone:
-	checkevent EVENT_GOT_EVERSTONE_FROM_ELM
+ElmCheckScopeLens:
+	checkevent EVENT_GOT_SCOPE_LENS_FROM_ELM
 	iftrue ElmScript_CallYou
 	checkevent EVENT_SHOWED_TOGEPI_TO_ELM
-	iftrue ElmGiveEverstoneScript
+	iftrue ElmGiveScopeLensScript
 	checkevent EVENT_TOLD_ELM_ABOUT_TOGEPI_OVER_THE_PHONE
 	iffalse ElmCheckTogepiEgg
 	setval TOGEPI
@@ -377,21 +377,21 @@ ShowElmTogepiScript:
 	promptbutton
 	writetext ShowElmTogepiText3
 	promptbutton
-ElmGiveEverstoneScript:
-	writetext ElmGiveEverstoneText1
+ElmGiveScopeLensScript:
+	writetext ElmGiveScopeLensText1
 	promptbutton
-	verbosegiveitem EVERSTONE
-	iffalse ElmScript_NoRoomForEverstone
-	writetext ElmGiveEverstoneText2
+	verbosegiveitem SCOPE_LENS
+	iffalse ElmScript_NoRoomForScopeLens
+	writetext ElmGiveScopeLensText2
 	waitbutton
 	closetext
-	setevent EVENT_GOT_EVERSTONE_FROM_ELM
+	setevent EVENT_GOT_SCOPE_LENS_FROM_ELM
 	end
 
 ElmScript_CallYou:
 	writetext ElmText_CallYou
 	waitbutton
-ElmScript_NoRoomForEverstone:
+ElmScript_NoRoomForScopeLens:
 	closetext
 	end
 
@@ -1074,7 +1074,7 @@ ShowElmTogepiText3:
 	cont "to be done."
 	done
 
-ElmGiveEverstoneText1:
+ElmGiveScopeLensText1:
 	text "Thanks, <PLAY_G>!"
 	line "You're helping"
 
@@ -1086,23 +1086,13 @@ ElmGiveEverstoneText1:
 	cont "our appreciation."
 	done
 
-ElmGiveEverstoneText2:
-	text "That's an"
-	line "EVERSTONE."
-
-	para "Some species of"
-	line "#MON evolve"
-
-	para "when they grow to"
-	line "certain levels."
-
-	para "A #MON holding"
-	line "the EVERSTONE"
-	cont "won't evolve."
+ElmGiveScopeLensText2:
+	text "That's a"
+	line "SCOPE LENS."
 
 	para "Give it to a #-"
-	line "MON you don't want"
-	cont "to evolve."
+	line "MON to boost its"
+	cont "crit rate."
 	done
 
 ElmText_CallYou:

@@ -1,7 +1,7 @@
 FruitTreeItems:
 ; entries correspond to FRUITTREE_* constants
 	table_width 1, FruitTreeItems
-	db BERRY        ; ROUTE_29
+	db BERRY        ; ROUTE_29_1
 	db BERRY        ; ROUTE_30_1
 	db BERRY        ; ROUTE_38
 	db BERRY        ; ROUTE_46_1
@@ -31,4 +31,5 @@ FruitTreeItems:
 	db ICE_BERRY    ; PEWTER_CITY_1
 	db MINT_BERRY   ; PEWTER_CITY_2
 	db BURNT_BERRY  ; FUCHSIA_CITY
+	db GRN_APRICORN ; ROUTE_29_2
 	assert_table_length NUM_FRUIT_TREES
