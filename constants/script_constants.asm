@@ -233,6 +233,9 @@ EMOTE_LENGTH EQU 6
 	const FRUITTREE_PEWTER_CITY_2 ; 1d
 	const FRUITTREE_FUCHSIA_CITY  ; 1e
 	const FRUITTREE_ROUTE_29_2    ; 1f
+	const FRUITTREE_ROUTE_30_3   ; 20
+	const FRUITTREE_ROUTE_30_4   ; 21
+
 NUM_FRUIT_TREES EQU const_value - 1
 
 ; describedecoration arguments
