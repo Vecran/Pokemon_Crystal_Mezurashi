@@ -24,6 +24,7 @@ CharmanderEggMoves:
 	db DRAGON_DANCE
 	db ANCIENTPOWER
 	db BITE
+	db CRUNCH
 	db OUTRAGE
 	db IRON_TAIL
 	db METAL_CLAW
@@ -250,6 +251,7 @@ TentacoolEggMoves:
 	db AQUA_JET
 	db POISON_TAIL
 	db AQUA_TAIL
+	db POWER_WHIP
 	db -1 ; end
 
 GeodudeEggMoves:

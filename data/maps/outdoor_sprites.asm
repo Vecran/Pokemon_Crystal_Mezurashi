@@ -292,6 +292,7 @@ DungeonsGroupSprites:
 	db SPRITE_GAMEBOY_KID
 	db SPRITE_PERSIAN
 	db SPRITE_POKE_BALL
+	db SPRITE_ROCK
 	db 0 ; end
 
 FastShipGroupSprites:
