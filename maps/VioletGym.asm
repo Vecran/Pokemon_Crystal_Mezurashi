@@ -309,7 +309,7 @@ VioletGymGuideText:
 	line "Then listen."
 	
 	para "FALKNER's ace"
-	line "is a bulky owl"
+	line "is a ghostly owl"
 	
 	para "that loves to"
 	line "eat berries."
@@ -317,8 +317,8 @@ VioletGymGuideText:
 	para "While it's not"
 	line "the strongest,"
 	
-	para "it can take a"
-	line "lot of hits."
+	para "it can be hard"
+	line "to score a hit."
 	
 	para "Rock and electric"
 	line "moves will hurt it"
