@@ -253,9 +253,9 @@ BattleAnimations::
 	dw BattleAnim_RockSmash
 	dw BattleAnim_Whirlpool
 	dw BattleAnim_BeatUp
+	dw BattleAnim_FireFang
+	dw BattleAnim_ThunderFang
 	assert_table_length NUM_ATTACKS + 1
-	dw BattleAnim_252
-	dw BattleAnim_253
 	dw BattleAnim_254
 	dw BattleAnim_SweetScent2
 	assert_table_length $100
@@ -285,8 +285,6 @@ BattleAnimations::
 	assert_table_length NUM_BATTLE_ANIMS + 1
 
 BattleAnim_0:
-BattleAnim_252:
-BattleAnim_253:
 BattleAnim_254:
 	anim_ret
 
@@ -4605,6 +4603,36 @@ BattleAnim_BeatUp:
 	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 136, 48, $0
 	anim_wait 8
 	anim_call BattleAnim_ShowMon_0
+	anim_ret
+
+BattleAnim_FireFang:
+	anim_3gfx ANIM_GFX_CUT, ANIM_GFX_HIT, ANIM_GFX_FIRE
+	anim_obj ANIM_OBJ_BITE, 136, 56, $98
+	anim_obj ANIM_OBJ_BITE, 136, 56, $18
+	anim_wait 8
+	anim_sound 0, 1, SFX_BITE
+	anim_obj ANIM_OBJ_HIT_YFIX, 144, 48, $18
+	anim_wait 16
+	anim_sound 0, 1, SFX_BITE
+	anim_obj ANIM_OBJ_HIT_YFIX, 128, 64, $18
+	anim_call BattleAnimSub_Fire
+	anim_wait 32
+	anim_ret
+
+BattleAnim_ThunderFang:
+	anim_3gfx ANIM_GFX_CUT, ANIM_GFX_HIT, ANIM_GFX_LIGHTNING
+	anim_obj ANIM_OBJ_BITE, 136, 56, $98
+	anim_obj ANIM_OBJ_BITE, 136, 56, $18
+	anim_wait 8
+	anim_sound 0, 1, SFX_BITE
+	anim_obj ANIM_OBJ_HIT_YFIX, 144, 48, $18
+	anim_wait 16
+	anim_sound 0, 1, SFX_BITE
+	anim_obj ANIM_OBJ_HIT_YFIX, 128, 64, $18
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $2
+	anim_sound 0, 1, SFX_THUNDER
+	anim_obj ANIM_OBJ_THUNDER3, 152, 68, $0
+	anim_wait 64
 	anim_ret
 
 BattleAnimSub_Drain:

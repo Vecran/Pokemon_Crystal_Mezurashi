@@ -132,7 +132,7 @@ MoveEffectsPointers:
 	dw Pursuit
 	dw RapidSpin
 	dw DoBurn
-	dw NormalHit
+	dw FireFang
 	dw MorningSun
 	dw Synthesis
 	dw Moonlight
@@ -167,4 +167,5 @@ MoveEffectsPointers:
 	dw CosmicPower
 	dw FlareBlitz
 	dw Coil
+	dw ThunderFang
 	assert_table_length NUM_MOVE_EFECTS

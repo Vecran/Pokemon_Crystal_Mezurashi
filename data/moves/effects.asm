@@ -2265,6 +2265,52 @@ IceFang:
 	flinchtarget
 	endmove
 
+FireFang:
+	checkobedience
+	usedmovetext
+	doturn
+	critical
+	damagestats
+	damagecalc
+	stab
+	damagevariation
+	checkhit
+	effectchance
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	checkfaint
+	buildopponentrage
+	burntarget
+	effectchance
+	flinchtarget
+	endmove
+
+ThunderFang:
+	checkobedience
+	usedmovetext
+	doturn
+	critical
+	damagestats
+	damagecalc
+	stab
+	damagevariation
+	checkhit
+	effectchance
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	checkfaint
+	buildopponentrage
+	paralyzetarget
+	effectchance
+	flinchtarget
+	endmove
+
 CosmicPower:
 	checkobedience
 	usedmovetext

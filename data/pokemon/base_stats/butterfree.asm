@@ -1,6 +1,6 @@
 	db BUTTERFREE ; 012
 
-	db  60,  45,  50,  70,  80,  80
+	db  70,  45,  65,  75,  90,  90
 	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, FAIRY ; type

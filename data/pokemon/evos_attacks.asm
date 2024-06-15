@@ -212,13 +212,13 @@ CaterpieEvosAttacks:
 MetapodEvosAttacks:
 	db EVOLVE_LEVEL, 10, BUTTERFREE
 	db 0 ; no more evolutions
-	db 1, IRON_DEFENSE
-	db 7, IRON_DEFENSE
+	db 1, DEFENSE_CURL
+	db 7, DEFENSE_CURL
 	db 0 ; no more level-up moves
 
 ButterfreeEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, IRON_DEFENSE
+	db 1, DEFENSE_CURL
 	db 1, TACKLE
 	db 1, STRING_SHOT
 	db 1, LEECH_LIFE
@@ -248,13 +248,13 @@ WeedleEvosAttacks:
 KakunaEvosAttacks:
 	db EVOLVE_LEVEL, 10, BEEDRILL
 	db 0 ; no more evolutions
-	db 1, IRON_DEFENSE
-	db 7, IRON_DEFENSE
+	db 1, DEFENSE_CURL
+	db 7, DEFENSE_CURL
 	db 0 ; no more level-up moves
 
 BeedrillEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, IRON_DEFENSE
+	db 1, DEFENSE_CURL
 	db 1, POISON_STING
 	db 1, STRING_SHOT
 	db 1, LEECH_LIFE
@@ -279,56 +279,56 @@ PidgeyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 5, MUD_SLAP
-	db 9, GUST
-	db 13, QUICK_ATTACK
-	db 17, TWISTER
-	db 21, RAZOR_WIND
-	db 25, SWIFT
-	db 29, AGILITY
-	db 33, WING_ATTACK
-	db 37, STEEL_WING
-	db 41, AIR_SLASH
-	db 45, SWAGGER
-	db 49, EXTREMESPEED
-	db 53, HURRICANE
+	db 8, GUST
+	db 11, QUICK_ATTACK
+	db 14, TWISTER
+	db 17, RAZOR_WIND
+	db 20, SWIFT
+	db 23, AGILITY
+	db 26, WING_ATTACK
+	db 29, STEEL_WING
+	db 32, AIR_SLASH
+	db 35, SWAGGER
+	db 38, EXTREMESPEED
+	db 41, HURRICANE
 	db 0 ; no more level-up moves
 
 PidgeottoEvosAttacks:
 	db EVOLVE_LEVEL, 36, PIDGEOT
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, MUD_SLAP
-	db 1, GUST
-	db 13, QUICK_ATTACK
-	db 17, TWISTER
-	db 22, RAZOR_WIND
-	db 27, SWIFT
-	db 32, AGILITY
-	db 37, WING_ATTACK
-	db 42, STEEL_WING
-	db 47, AIR_SLASH
-	db 52, SWAGGER
-	db 57, EXTREMESPEED
-	db 62, HURRICANE
+	db 5, MUD_SLAP
+	db 8, GUST
+	db 11, QUICK_ATTACK
+	db 14, TWISTER
+	db 17, RAZOR_WIND
+	db 20, SWIFT
+	db 24, AGILITY
+	db 28, WING_ATTACK
+	db 32, STEEL_WING
+	db 36, AIR_SLASH
+	db 40, SWAGGER
+	db 44, EXTREMESPEED
+	db 48, HURRICANE
 	db 0 ; no more level-up moves
 
 PidgeotEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, MUD_SLAP
-	db 1, GUST
-	db 13, QUICK_ATTACK
-	db 17, TWISTER
-	db 22, RAZOR_WIND
-	db 27, SWIFT
-	db 32, AGILITY
-	db 37, WING_ATTACK
-	db 42, STEEL_WING
-	db 47, AIR_SLASH
-	db 52, SWAGGER
-	db 57, EXTREMESPEED
-	db 62, HURRICANE
-	db 67, SKY_ATTACK
+	db 5, MUD_SLAP
+	db 8, GUST
+	db 11, QUICK_ATTACK
+	db 14, TWISTER
+	db 17, RAZOR_WIND
+	db 20, SWIFT
+	db 24, AGILITY
+	db 28, WING_ATTACK
+	db 32, STEEL_WING
+	db 36, AIR_SLASH
+	db 41, SWAGGER
+	db 46, EXTREMESPEED
+	db 51, HURRICANE
+	db 56, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 RattataEvosAttacks:
@@ -341,7 +341,7 @@ RattataEvosAttacks:
 	db 10, BITE
 	db 13, DIG
 	db 16, SHADOW_SNEAK
-	db 19, PURSUIT
+	db 19, THIEF
 	db 22, CRUNCH
 	db 25, FURY_SWIPES
 	db 28, WORK_UP
@@ -360,7 +360,7 @@ RaticateEvosAttacks:
 	db 10, BITE
 	db 13, DIG
 	db 16, SHADOW_SNEAK
-	db 19, PURSUIT
+	db 19, THIEF
 	db 20, SCARY_FACE
 	db 24, CRUNCH
 	db 29, FURY_SWIPES
@@ -2917,6 +2917,8 @@ CyndaquilEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
+	db 1, FIRE_FANG
+	db 1, THUNDER_FANG
 	db 6, EMBER
 	db 9, MUD_SLAP
 	db 12, FLAME_CHARGE

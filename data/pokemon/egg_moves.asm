@@ -56,19 +56,20 @@ SquirtleEggMoves:
 
 PidgeyEggMoves:
 	db PURSUIT
-	db RAZOR_WIND
-	db AIR_SLASH
-	db SKY_ATTACK
 	db HYPER_VOICE
+	db SUPERSONIC
+	db SCREECH
+	db PECK
+	db ECHOED_VOICE
+	db ICY_WIND
 	db -1 ; end
 
 RattataEggMoves:
 	db SCREECH
 	db FLAME_WHEEL
-	db FURY_SWIPES
-	db BITE
 	db POISON_FANG
 	db HYPER_VOICE
+	db BEAT_UP
 	db -1 ; end
 
 SpearowEggMoves:
