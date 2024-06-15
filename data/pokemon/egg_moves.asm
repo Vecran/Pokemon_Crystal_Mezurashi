@@ -14,31 +14,44 @@ SECTION "Egg Moves", ROMX
 INCLUDE "data/pokemon/egg_move_pointers.asm"
 
 BulbasaurEggMoves:
-	db PETAL_DANCE
-	db CURSE
-	db TOXIC
+	db SWORDS_DANCE
 	db ANCIENTPOWER
+	db GROWTH
+	db DOUBLE_KICK
+	db TICKLE
+	db ACID
+	db SPORE
+	db SPIKES
+	db SWEET_SCENT
+	db WRAP
+	db SEED_BOMB
 	db -1 ; end
 
 CharmanderEggMoves:
 	db DRAGON_DANCE
 	db ANCIENTPOWER
-	db BITE
 	db CRUNCH
 	db OUTRAGE
 	db IRON_TAIL
-	db METAL_CLAW
+	db DRACO_METEOR
 	db DRAGON_RUSH
-	db DRAGON_TAIL
+	db SWORDS_DANCE
+	db SNARL
+	db FIRE_SPIN
+	db FLAME_CHARGE
 	db -1 ; end
 
 SquirtleEggMoves:
 	db AQUA_JET
 	db CONFUSION
-	db FLASH_CANNON
 	db MIRROR_SHOT
-	db ROLLOUT
 	db ICE_BEAM
+	db TICKLE
+	db LOW_KICK
+	db HEAD_SMASH
+	db DARK_PULSE
+	db NASTY_PLOT
+	db AQUA_TAIL
 	db -1 ; end
 
 PidgeyEggMoves:
@@ -587,6 +600,7 @@ PichuEggMoves:
 	db DOUBLESLAP
 	db FLASH
 	db BOLT_STRIKE
+	db METRONOME
 	db -1 ; end
 
 CleffaEggMoves:
@@ -660,6 +674,7 @@ AipomEggMoves:
 	db AGILITY
 	db DOUBLESLAP
 	db BEAT_UP
+	db METRONOME
 	db -1 ; end
 
 YanmaEggMoves:

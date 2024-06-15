@@ -1,6 +1,6 @@
 	db BLASTOISE ; 009
 
-	db  79,  83, 100,  78,  85, 105
+	db  79,  80, 100,  78,  88, 105
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, STEEL ; type

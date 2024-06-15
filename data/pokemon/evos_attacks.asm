@@ -22,18 +22,19 @@ BulbasaurEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
-	db 6, VINE_WHIP
-	db 9, LEECH_SEED
-	db 12, RAZOR_LEAF
-	db 15, POISONPOWDER
-	db 15, SLEEP_POWDER
-	db 18, SEED_BOMB
-	db 21, BODY_SLAM
-	db 24, SWEET_SCENT
-	db 27, MORNING_SUN
-	db 30, GROWTH
-	db 33, POWER_WHIP
-	db 36, SOLARBEAM
+	db 6, LEECH_SEED
+	db 9, VINE_WHIP
+	db 12, MUD_SLAP
+	db 15, RAZOR_LEAF
+	db 18, SLEEP_POWDER
+	db 21, MEGA_DRAIN
+	db 24, BODY_SLAM
+	db 27, MUD_BOMB
+	db 30, PETAL_DANCE
+	db 33, GIGA_DRAIN
+	db 36, MORNING_SUN
+	db 39, SUNNY_DAY
+	db 42, SOLARBEAM
 	db 0 ; no more level-up moves
 
 IvysaurEvosAttacks:
@@ -41,38 +42,40 @@ IvysaurEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
-	db 1, VINE_WHIP
-	db 9, LEECH_SEED
-	db 12, RAZOR_LEAF
-	db 15, POISONPOWDER
-	db 15, SLEEP_POWDER
-	db 20, SEED_BOMB
-	db 25, BODY_SLAM
-	db 30, SWEET_SCENT
-	db 35, MORNING_SUN
-	db 40, GROWTH
-	db 45, POWER_WHIP
+	db 6, LEECH_SEED
+	db 9, VINE_WHIP
+	db 12, MUD_SLAP
+	db 15, RAZOR_LEAF
+	db 18, SLEEP_POWDER
+	db 22, MEGA_DRAIN
+	db 26, BODY_SLAM
+	db 30, MUD_BOMB
+	db 34, PETAL_DANCE
+	db 38, GIGA_DRAIN
+	db 42, MORNING_SUN
+	db 46, SUNNY_DAY
 	db 50, SOLARBEAM
 	db 0 ; no more level-up moves
 
 VenusaurEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, POWER_WHIP
 	db 1, TACKLE
 	db 1, GROWL
-	db 1, VINE_WHIP
-	db 1, ANCIENTPOWER
-	db 9, LEECH_SEED
-	db 12, RAZOR_LEAF
-	db 15, POISONPOWDER
-	db 15, SLEEP_POWDER
-	db 20, SEED_BOMB
-	db 25, BODY_SLAM
-	db 30, SWEET_SCENT
+	db 6, LEECH_SEED
+	db 9, VINE_WHIP
+	db 12, MUD_SLAP
+	db 15, RAZOR_LEAF
+	db 18, SLEEP_POWDER
+	db 22, MEGA_DRAIN
+	db 26, BODY_SLAM
+	db 30, MUD_BOMB
 	db 32, EARTH_POWER
-	db 37, MORNING_SUN
-	db 44, GROWTH
-	db 51, POWER_WHIP
-	db 58, SOLARBEAM
+	db 37, PETAL_DANCE
+	db 42, GIGA_DRAIN
+	db 47, MORNING_SUN
+	db 52, SUNNY_DAY
+	db 57, SOLARBEAM
 	db 0 ; no more level-up moves
 
 CharmanderEvosAttacks:
@@ -81,15 +84,18 @@ CharmanderEvosAttacks:
 	db 1, SCRATCH
 	db 1, GROWL
 	db 6, EMBER
-	db 8, SMOKESCREEN
-	db 12, RAGE
-	db 17, FLAME_BURST
-	db 20, SLASH
-	db 24, FLAMETHROWER
-	db 28, ROAR
-	db 32, FIRE_SPIN
-	db 36, DRAGONBREATH
-	db 40, FLARE_BLITZ
+	db 9, SMOKESCREEN
+	db 12, METAL_CLAW
+	db 15, RAGE
+	db 18, FLAME_BURST
+	db 21, BITE
+	db 24, HONE_CLAWS
+	db 27, ROAR
+	db 30, DRAGON_TAIL
+	db 33, FLAMETHROWER
+	db 36, SLASH
+	db 39, DRAGONBREATH
+	db 42, FIRE_BLAST
 	db 0 ; no more level-up moves
 
 CharmeleonEvosAttacks:
@@ -97,91 +103,102 @@ CharmeleonEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, GROWL
-	db 1, EMBER
-	db 1, SMOKESCREEN
-	db 12, RAGE
-	db 19, FLAME_BURST
-	db 24, SLASH
-	db 29, FLAMETHROWER
-	db 34, ROAR
-	db 39, FIRE_SPIN
-	db 44, DRAGONBREATH
-	db 49, FLARE_BLITZ
+	db 6, EMBER
+	db 9, SMOKESCREEN
+	db 12, METAL_CLAW
+	db 15, RAGE
+	db 18, FLAME_BURST
+	db 22, BITE
+	db 26, HONE_CLAWS
+	db 30, ROAR
+	db 34, DRAGON_TAIL
+	db 38, FLAMETHROWER
+	db 42, SLASH
+	db 46, DRAGONBREATH
+	db 50, FIRE_BLAST
 	db 0 ; no more level-up moves
 
 CharizardEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, AIR_SLASH
+	db 1, DRAGON_DANCE
 	db 1, SCRATCH
 	db 1, GROWL
-	db 1, EMBER
-	db 1, SMOKESCREEN
-	db 12, RAGE
-	db 19, FLAME_BURST
-	db 24, SLASH
-	db 29, FLAMETHROWER
-	db 36, AIR_SLASH
-	db 39, ROAR
-	db 45, FIRE_SPIN
+	db 6, EMBER
+	db 9, SMOKESCREEN
+	db 12, METAL_CLAW
+	db 15, RAGE
+	db 18, FLAME_BURST
+	db 22, BITE
+	db 26, HONE_CLAWS
+	db 30, ROAR
+	db 34, DRAGON_TAIL
+	db 36, DRAGON_DANCE
+	db 41, FLAMETHROWER
+	db 46, SLASH
 	db 51, DRAGONBREATH
-	db 58, FIRE_BLAST
-	db 64, FLARE_BLITZ
+	db 56, FIRE_BLAST
 	db 0 ; no more level-up moves
 
 SquirtleEvosAttacks:
 	db EVOLVE_LEVEL, 16, WARTORTLE
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, LEER
-	db 6, BUBBLE
+	db 1, GROWL
+	db 6, WATER_GUN
 	db 9, DEFENSE_CURL
-	db 12, WATER_GUN
+	db 12, ROLLOUT
 	db 15, RAPID_SPIN
-	db 18, BITE
-	db 21, RAIN_DANCE
-	db 24, AQUA_TAIL
-	db 27, WORK_UP
-	db 30, IRON_DEFENSE
-	db 33, HYDRO_PUMP
-	db 36, SKULL_BASH
-	db 39, ICE_FANG
+	db 18, BUBBLEBEAM
+	db 21, BITE
+	db 24, ICE_FANG
+	db 27, WHIRLPOOL
+	db 30, BODY_SLAM
+	db 33, RAIN_DANCE
+	db 36, IRON_DEFENSE
+	db 39, SKULL_BASH
+	db 42, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 WartortleEvosAttacks:
 	db EVOLVE_LEVEL, 36, BLASTOISE
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, LEER
-	db 1, BUBBLE
+	db 1, GROWL
+	db 6, WATER_GUN
 	db 9, DEFENSE_CURL
-	db 12, WATER_GUN
+	db 12, ROLLOUT
 	db 15, RAPID_SPIN
-	db 20, BITE
-	db 25, RAIN_DANCE
-	db 30, AQUA_TAIL
-	db 35, WORK_UP
-	db 40, IRON_DEFENSE
-	db 45, HYDRO_PUMP
-	db 50, SKULL_BASH
-	db 55, ICE_FANG
+	db 18, BUBBLEBEAM
+	db 22, BITE
+	db 26, ICE_FANG
+	db 30, WHIRLPOOL
+	db 34, BODY_SLAM
+	db 38, RAIN_DANCE
+	db 42, IRON_DEFENSE
+	db 46, SKULL_BASH
+	db 50, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 BlastoiseEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, ICE_BEAM
 	db 1, TACKLE
-	db 1, LEER
-	db 1, BUBBLE
-	db 1, DEFENSE_CURL
-	db 12, WATER_GUN
+	db 1, GROWL
+	db 6, WATER_GUN
+	db 9, DEFENSE_CURL
+	db 12, ROLLOUT
 	db 15, RAPID_SPIN
-	db 20, BITE
-	db 25, RAIN_DANCE
-	db 30, AQUA_TAIL
-	db 35, WORK_UP
+	db 18, BUBBLEBEAM
+	db 22, BITE
+	db 26, ICE_FANG
+	db 30, WHIRLPOOL
+	db 34, BODY_SLAM
 	db 36, FLASH_CANNON
-	db 42, IRON_DEFENSE
-	db 48, HYDRO_PUMP
-	db 54, SKULL_BASH
-	db 60, ICE_FANG
+	db 41, RAIN_DANCE
+	db 46, IRON_DEFENSE
+	db 51, SKULL_BASH
+	db 56, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 CaterpieEvosAttacks:
