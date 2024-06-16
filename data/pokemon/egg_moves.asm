@@ -837,6 +837,7 @@ RemoraidEggMoves:
 
 DelibirdEggMoves:
 	db AURORA_BEAM
+	db AQUA_JET
 	db QUICK_ATTACK
 	db FUTURE_SIGHT
 	db RAPID_SPIN
