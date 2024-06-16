@@ -1,6 +1,6 @@
 	db JYNX ; 124
 
-	db  85,  60,  45,  95, 115,  100
+	db  85,  70,  45,  90, 110,  100
 	;   hp  atk  def  spd  sat  sdf
 
 	db ICE, FAIRY ; type

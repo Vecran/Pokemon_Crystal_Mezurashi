@@ -2129,6 +2129,9 @@ RhyhornEvosAttacks:
 
 RhydonEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, FIRE_FANG
+	db 1, THUNDER_FANG
+	db 1, ICE_FANG
 	db 1, DRAGON_TAIL
 	db 1, DRAGON_RUSH
 	db 1, TACKLE
@@ -2331,7 +2334,7 @@ MrMimeEvosAttacks:
 	db 32, DAZZLE_GLEAM
 	db 36, LIGHT_SCREEN
 	db 38, REFLECT
-	db 40, FAINT_ATTACK
+	db 40, SUBSTITUTE
 	db 44, MOONBLAST
 	db 48, PSYCHIC_M
 	db 52, CONFUSE_RAY
@@ -2350,8 +2353,8 @@ ScytherEvosAttacks:
 	db 20, CUT
     db 24, SLASH
 	db 28, FOCUS_ENERGY
-	db 32, AGILITY
-	db 36, X_SCISSOR
+	db 32, X_SCISSOR
+	db 36, AGILITY
     db 40, CROSS_CHOP
     db 44, SWORDS_DANCE
     db 0 ; no more level-up moves
@@ -2387,10 +2390,10 @@ ElectabuzzEvosAttacks:
 	db 28, THUNDERPUNCH
 	db 34, LOW_KICK
 	db 40, WILD_CHARGE
-	db 46, THUNDERBOLT
-	db 52, LIGHT_SCREEN
+	db 46, LIGHT_SCREEN
+	db 52, THUNDERBOLT
 	db 58, CROSS_CHOP
-	db 64, WILD_CHARGE
+	db 64, BOLT_STRIKE
 	db 0 ; no more level-up moves
 
 MagmarEvosAttacks:
@@ -2448,6 +2451,7 @@ TaurosEvosAttacks:
 	db 55, SKULL_BASH
 	db 60, OUTRAGE
 	db 65, TRIPLE_KICK
+	db 70, HORN_DRILL
 	db 0 ; no more level-up moves
 
 MagikarpEvosAttacks:
@@ -2595,7 +2599,7 @@ PorygonEvosAttacks:
 	db 35, RECOVER
 	db 40, THUNDERBOLT
 	db 45, TRI_ATTACK
-	db 50, DOUBLE_EDGE
+	db 50, HYPER_VOICE
 	db 55, THUNDER
 	db 60, HYPER_BEAM
 	db 0 ; no more level-up moves
@@ -3049,6 +3053,7 @@ SentretEvosAttacks:
 	db 4, DEFENSE_CURL
 	db 7, QUICK_ATTACK
 	db 9, THIEF
+	db 12, FURY_SWIPES
 	db 16, MUD_BOMB
 	db 20, DIG
 	db 25, BODY_SLAM
@@ -3063,6 +3068,7 @@ FurretEvosAttacks:
 	db 4, DEFENSE_CURL
 	db 7, QUICK_ATTACK
 	db 9, THIEF
+	db 12, FURY_SWIPES
 	db 16, MUD_BOMB
 	db 20, DIG
 	db 25, BODY_SLAM
@@ -3119,10 +3125,10 @@ LedybaEvosAttacks:
 	db 5, LEECH_LIFE
 	db 8, SWIFT
 	db 12, MACH_PUNCH
-	db 15, ROCK_SMASH
+	db 15, SILVER_WIND
 	db 19, RECOVER
 	db 22, COMET_PUNCH
-	db 26, SILVER_WIND
+	db 26, ROCK_SMASH
 	db 29, DRAIN_PUNCH
 	db 33, BUG_BUZZ
 	db 36, QUIVER_DANCE
@@ -3138,11 +3144,11 @@ LedianEvosAttacks:
 	db 5, LEECH_LIFE
 	db 8, SWIFT
 	db 12, MACH_PUNCH
-	db 15, ROCK_SMASH
+	db 15, SILVER_WIND
 	db 18, BULK_UP
 	db 20, RECOVER
 	db 24, COMET_PUNCH
-	db 29, SILVER_WIND
+	db 29, ROCK_SMASH
 	db 33, DRAIN_PUNCH
 	db 38, BUG_BUZZ
 	db 42, QUIVER_DANCE
@@ -3302,6 +3308,7 @@ TogepiEvosAttacks:
 
 TogeticEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, RAZOR_WIND
 	db 1, AIR_SLASH
 	db 1, GROWL
 	db 1, CUTE_POUND
@@ -3316,7 +3323,7 @@ TogeticEvosAttacks:
 	db 36, MOONLIGHT
 	db 40, TICKLE
 	db 44, PLAY_ROUGH
-	db 48, PROTECT
+	db 48, AIR_SLASH
 	db 52, MOONBLAST
 	db 0 ; no more level-up moves
 
@@ -3574,7 +3581,7 @@ AipomEvosAttacks:
 	db 1, LEER
 	db 4, MUD_SLAP
 	db 8, SHADOW_SNEAK
-	db 11, MEAN_LOOK
+	db 11, PURSUIT
 	db 15, TICKLE
 	db 18, FURY_SWIPES
 	db 22, SWIFT
@@ -3584,6 +3591,7 @@ AipomEvosAttacks:
 	db 36, SHADOW_CLAW
 	db 39, NASTY_PLOT
 	db 43, BEAT_UP
+	db 47, DIZZY_PUNCH
 	db 0 ; no more level-up moves
 
 SunkernEvosAttacks:
@@ -3758,7 +3766,7 @@ MisdreavusEvosAttacks:
 	db 1, CONFUSION
 	db 10, SHADOW_SNEAK
 	db 14, CONFUSE_RAY
-	db 19, MEAN_LOOK
+	db 19, BARRAGE
 	db 23, DAZZLE_GLEAM
 	db 28, PSYBEAM
 	db 32, DESTINY_BOND
@@ -3766,6 +3774,7 @@ MisdreavusEvosAttacks:
 	db 41, SHADOW_BALL
 	db 46, SING
 	db 50, MOONBLAST
+	db 54, MEAN_LOOK
 	db 0 ; no more level-up moves
 
 UnownEvosAttacks:
@@ -3814,6 +3823,7 @@ PinecoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, PROTECT
+	db 1, DEFENSE_CURL
 	db 6, LEECH_SEED
 	db 9, ABSORB
 	db 12, ROLLOUT
@@ -3832,13 +3842,14 @@ ForretressEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, PROTECT
+	db 1, DEFENSE_CURL
 	db 6, LEECH_SEED
 	db 9, ABSORB
 	db 12, ROLLOUT
 	db 17, RAPID_SPIN
 	db 20, MEGA_DRAIN
 	db 23, CURSE
-	db 25, MIRROR_SHOT
+	db 25, SPIKE_CANNON
 	db 28, SPIKES
 	db 32, SEED_BOMB
 	db 36, SKULL_BASH
@@ -3886,6 +3897,9 @@ GligarEvosAttacks:
 
 SteelixEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, FIRE_FANG
+	db 1, ICE_FANG
+	db 1, THUNDER_FANG
 	db 1, TACKLE
 	db 1, WRAP
 	db 1, DEFENSE_CURL
@@ -3925,6 +3939,8 @@ SnubbullEvosAttacks:
 
 GranbullEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, FIRE_FANG
+	db 1, THUNDER_FANG
 	db 1, TACKLE
 	db 1, LEER
 	db 1, GROWL
@@ -3963,7 +3979,7 @@ QwilfishEvosAttacks:
 
 ScizorEvosAttacks:
     db 0 ; no more evolutions
-    db 1, IRON_DEFENSE
+    db 1, SKULL_BASH
     db 1, QUICK_ATTACK
     db 1, LEER
 	db 4, FURY_CUTTER
@@ -3973,8 +3989,8 @@ ScizorEvosAttacks:
 	db 20, CUT
     db 24, SLASH
 	db 28, FOCUS_ENERGY
-	db 32, SKULL_BASH
-	db 36, X_SCISSOR
+	db 32, X_SCISSOR
+	db 36, IRON_DEFENSE
     db 40, CROSS_CHOP
     db 44, SWORDS_DANCE
     db 0 ; no more level-up moves
@@ -4023,16 +4039,17 @@ SneaselEvosAttacks:
 	db 1, LEER
 	db 1, PURSUIT
 	db 6, SCARY_FACE
-	db 12, QUICK_ATTACK
-	db 18, METAL_CLAW
-	db 24, ICE_SHARD
-	db 30, BEAT_UP
-	db 36, HONE_CLAWS
-	db 42, FURY_SWIPES
-	db 48, AGILITY
-	db 54, SCREECH
-	db 60, SLASH
-	db 65, SWORDS_DANCE
+	db 10, QUICK_ATTACK
+	db 15, METAL_CLAW
+	db 19, ICE_SHARD
+	db 24, BEAT_UP
+	db 29, HONE_CLAWS
+	db 33, THIEF
+	db 38, ICE_FANG
+	db 42, SCREECH
+	db 47, SLASH
+	db 52, SWORDS_DANCE
+	db 57, GUILLOTINE
 	db 0 ; no more level-up moves
 
 TeddiursaEvosAttacks:
@@ -4261,7 +4278,7 @@ SkarmoryEvosAttacks:
 	db 52, SKY_ATTACK
 	db 0 ; no more level-up moves
 
-	HoundourEvosAttacks:
+HoundourEvosAttacks:
     db EVOLVE_LEVEL, 24, HOUNDOOM
     db 0 ; no more evolutions
     db 1, LEER
@@ -4272,7 +4289,7 @@ SkarmoryEvosAttacks:
 	db 16, BITE
 	db 20, FLAME_BURST
 	db 25, SNARL
-	db 28, FLAME_CHARGE
+	db 28, FIRE_FANG
 	db 32, HONE_CLAWS
 	db 37, CRUNCH
 	db 40, BEAT_UP
@@ -4292,7 +4309,7 @@ HoundoomEvosAttacks:
 	db 16, BITE
 	db 20, FLAME_BURST
 	db 28, SNARL
-	db 32, FLAME_CHARGE
+	db 32, FIRE_FANG
 	db 37, HONE_CLAWS
 	db 40, CRUNCH
 	db 44, BEAT_UP
@@ -4342,6 +4359,8 @@ PhanpyEvosAttacks:
 
 DonphanEvosAttacks:
 	db 0 ; no more evolutionsFras
+	db 1, THUNDER_FANG
+	db 1, FIRE_FANG
 	db 1, TACKLE
 	db 1, GROWL
 	db 1, DEFENSE_CURL
@@ -4417,6 +4436,7 @@ TyrogueEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, FOCUS_ENERGY
+	db 1, LEER
 	db 0 ; no more level-up moves
 
 HitmontopEvosAttacks:
@@ -4472,10 +4492,10 @@ ElekidEvosAttacks:
 	db 28, THUNDERPUNCH
 	db 32, LOW_KICK
 	db 36, WILD_CHARGE
-	db 40, THUNDERBOLT
-	db 44, LIGHT_SCREEN
+	db 40, LIGHT_SCREEN
+	db 44, THUNDERBOLT
 	db 48, CROSS_CHOP
-	db 52, WILD_CHARGE
+	db 52, BOLT_STRIKE
 	db 0 ; no more level-up moves
 
 MagbyEvosAttacks:
@@ -4545,7 +4565,7 @@ RaikouEvosAttacks:
 	db 30, WILD_CHARGE
 	db 36, HOWL
 	db 42, CRUNCH
-	db 48, PSYCHIC_FANG
+	db 48, THUNDER_FANG
 	db 54, THUNDERBOLT
 	db 60, REFLECT
 	db 66, RAIN_DANCE
@@ -4561,7 +4581,7 @@ EnteiEvosAttacks:
 	db 1, SMOKESCREEN
 	db 6, FLAME_WHEEL
 	db 12, MAGNITUDE
-	db 18, CALM_MIND
+	db 18, FIRE_FANG
 	db 24, ROAR
 	db 30, BLAZE_KICK
 	db 36, SCARY_FACE
@@ -4640,6 +4660,9 @@ PupitarEvosAttacks:
 
 TyranitarEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, FIRE_FANG
+	db 1, THUNDER_FANG
+	db 1, ICE_FANG
 	db 1, DRAGON_RUSH
 	db 1, TACKLE
 	db 1, LEER

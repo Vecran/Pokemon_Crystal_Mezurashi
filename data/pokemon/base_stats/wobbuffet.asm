@@ -1,9 +1,9 @@
 	db WOBBUFFET ; 202
 
-	db 190,  33,  58,  33,  33,  58
+	db 100,  80,  80,  80,  80,  80
 	;   hp  atk  def  spd  sat  sdf
 
-	db FIGHTING, GHOST ; type
+	db GHOST, FIGHTING ; type
 	db 45 ; catch rate
 	db 177 ; base exp
 	db NO_ITEM, NO_ITEM ; items
@@ -17,5 +17,5 @@
 	dn EGG_INDETERMINATE, EGG_INDETERMINATE ; egg groups
 
 	; tm/hm learnset
-	tmhm
+	tmhm DRAIN_PUNCH, HEADBUTT, CURSE, TOXIC, ROCK_SMASH, BODY_SLAM, HIDDEN_POWER, PROTECT, SHADOW_CLAW, RETURN, SHADOW_BALL, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, DREAM_EATER, BULK_UP, REST, NIGHTMARE    
 	; end

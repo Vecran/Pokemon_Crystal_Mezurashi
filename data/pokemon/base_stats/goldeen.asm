@@ -14,7 +14,7 @@
 	INCBIN "gfx/pokemon/goldeen/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
 	db GROWTH_MEDIUM_FAST ; growth rate
-	dn EGG_WATER_2, EGG_WATER_2 ; egg groups
+	dn EGG_WATER_2, EGG_FAIRY ; egg groups
 
 	; tm/hm learnset
 	tmhm CURSE, TOXIC, HIDDEN_POWER, SNORE, BLIZZARD, ICY_WIND, PROTECT, RAIN_DANCE,  FRUSTRATION, RETURN, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, REST, ATTRACT, SURF, WATERFALL, ICE_BEAM

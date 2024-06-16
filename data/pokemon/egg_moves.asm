@@ -447,6 +447,7 @@ GoldeenEggMoves:
 	db HYDRO_PUMP
 	db RAIN_DANCE
 	db RAZOR_WIND
+	db PLAY_ROUGH
 	db -1 ; end
 
 MrMimeEggMoves:
@@ -455,22 +456,26 @@ MrMimeEggMoves:
 	db MIMIC
 	db FAIRY_WIND
 	db SCARY_FACE
+	db RECOVER
+	db METRONOME
+	db PRESENT
 	db -1 ; end
 
 ScytherEggMoves:
-	db X_SCISSOR
 	db RAZOR_WIND
 	db CROSS_POISON
 	db LIGHT_SCREEN
 	db TWINEEDLE
+	db STEEL_WING
+	db EXTREMESPEED
 	db -1 ; end
 
 PinsirEggMoves:
 	db MUD_BOMB
-	db CRUNCH
 	db CROSS_CHOP
-	db MEGAHORN
 	db GIGA_DRAIN
+	db PURSUIT
+	db SILVER_WIND
 	db -1 ; end
 
 LaprasEggMoves:
@@ -483,10 +488,12 @@ LaprasEggMoves:
 
 EeveeEggMoves:
 	db DAZZLE_GLEAM
-	db CHARM
 	db IRON_TAIL
 	db HEADBUTT
 	db WORK_UP
+	db ICE_FANG
+	db THUNDER_FANG
+	db FIRE_FANG
 	db -1 ; end
 
 OmanyteEggMoves:
@@ -531,22 +538,24 @@ DratiniEggMoves:
 
 ChikoritaEggMoves:
 	db VINE_WHIP
-	db LEECH_SEED
+	db DRACO_METEOR
 	db ANCIENTPOWER
 	db DAZZLE_GLEAM
 	db SWORDS_DANCE
+	db POWER_WHIP
 	db -1 ; end
 
 CyndaquilEggMoves:
 	db FURY_SWIPES
 	db QUICK_ATTACK
+	db FIRE_FANG
 	db MUD_BOMB
 	db THRASH
 	db SUBMISSION
 	db -1 ; end
 
 TotodileEggMoves:
-	db CRUNCH
+	db SUBMISSION
 	db THRASH
 	db HYDRO_PUMP
 	db ANCIENTPOWER
@@ -559,7 +568,7 @@ SentretEggMoves:
 	db PURSUIT
 	db SLASH
 	db FOCUS_ENERGY
-	db MUD_BOMB
+	db POWER_WHIP
 	db -1 ; end
 
 HoothootEggMoves:
@@ -593,6 +602,7 @@ ChinchouEggMoves:
 	db SCREECH
 	db MIRROR_SHOT
 	db FLASH_CANNON
+	db AQUA_TAIL
 	db -1 ; end
 
 PichuEggMoves:
@@ -671,8 +681,8 @@ HoppipEggMoves:
 
 AipomEggMoves:
 	db SCREECH
-	db PURSUIT
-	db AGILITY
+	db CRUNCH
+	db BITE
 	db DOUBLESLAP
 	db BEAT_UP
 	db METRONOME
@@ -724,14 +734,14 @@ PinecoEggMoves:
 	db PIN_MISSILE
 	db SKULL_BASH
 	db SWIFT
-	db SPIKE_CANNON
+	db MIRROR_SHOT
 	db -1 ; end
 
 DunsparceEggMoves:
 	db ANCIENTPOWER
 	db ROCK_SLIDE
-	db BITE
-	db RAGE
+	db BITTER_BERRY
+	db FAIRY_WIND
 	db DRAGON_RUSH
 	db -1 ; end
 
@@ -854,7 +864,7 @@ HoundourEggMoves:
 	db RAGE
 	db PURSUIT
 	db SNARL
-	db BEAT_UP
+	db THUNDER_FANG
 	db -1 ; end
 
 PhanpyEggMoves:
@@ -891,10 +901,11 @@ SmoochumEggMoves:
 
 ElekidEggMoves:
 	db KARATE_CHOP
-	db LIGHT_SCREEN
+	db REFLECT
+	db COMET_PUNCH
+	db SUBMISSION
+	db MACH_PUNCH
 	db BULK_UP
-	db CROSS_CHOP
-	db LOW_KICK
 	db -1 ; end
 
 MagbyEggMoves:
@@ -908,7 +919,7 @@ MagbyEggMoves:
 MiltankEggMoves:
 	db PRESENT
 	db IRON_TAIL
-	db GLARE
+	db MILK_DRINK
 	db MUD_BOMB
 	db RECOVER
 	db -1 ; end
@@ -919,6 +930,9 @@ LarvitarEggMoves:
 	db OUTRAGE
 	db FOCUS_ENERGY
 	db ANCIENTPOWER
+	db FIRE_FANG
+	db ICE_FANG
+	db THUNDER_FANG
 	db -1 ; end
 
 NoEggMoves:
