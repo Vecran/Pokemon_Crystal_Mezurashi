@@ -10,10 +10,7 @@ Marts:
 	dw MartGoldenrod2F2
 	dw MartGoldenrod3F
 	dw MartGoldenrod4F
-	dw MartGoldenrod5F1
-	dw MartGoldenrod5F2
-	dw MartGoldenrod5F3
-	dw MartGoldenrod5F4
+	dw MartGoldenrod5F
 	dw MartOlivine
 	dw MartEcruteak
 	dw MartMahogany1
@@ -27,7 +24,6 @@ Marts:
 	dw MartCeladon2F1
 	dw MartCeladon2F2
 	dw MartCeladon3F
-	dw MartCeladon3F_2
 	dw MartCeladon4F
 	dw MartCeladon5F1
 	dw MartCeladon5F1_2
@@ -144,40 +140,11 @@ MartGoldenrod4F:
 	db HP_UP
 	db -1 ; end
 
-MartGoldenrod5F1:
-	db 4 ; # items
+MartGoldenrod5F:
+	db 3 ; # items
 	db TM_THUNDERPUNCH
 	db TM_FIRE_PUNCH
 	db TM_ICE_PUNCH
-	db TM_FALSE_SWIPE
-	db -1 ; end
-
-MartGoldenrod5F2:
-	db 5 ; # items
-	db TM_THUNDERPUNCH
-	db TM_FIRE_PUNCH
-	db TM_ICE_PUNCH
-	db TM_FALSE_SWIPE
-	db TM_HEADBUTT
-	db -1 ; end
-
-MartGoldenrod5F3:
-	db 5 ; # items
-	db TM_THUNDERPUNCH
-	db TM_FIRE_PUNCH
-	db TM_ICE_PUNCH
-	db TM_FALSE_SWIPE
-	db TM_ROCK_SMASH
-	db -1 ; end
-
-MartGoldenrod5F4:
-	db 6 ; # items
-	db TM_THUNDERPUNCH
-	db TM_FIRE_PUNCH
-	db TM_ICE_PUNCH
-	db TM_FALSE_SWIPE
-	db TM_HEADBUTT
-	db TM_ROCK_SMASH
 	db -1 ; end
 
 MartOlivine:
@@ -334,25 +301,11 @@ MartCeladon2F2:
 	db -1 ; end
 
 MartCeladon3F:
-	db 5 ; # items
-	db TM_SUNNY_DAY
-	db TM_RAIN_DANCE
-	db TM_SANDSTORM
+	db 4 ; # items
 	db TM_PROTECT
-	db TM_SHADOW_CLAW
-	db -1 ; end
-
-MartCeladon3F_2:
-	db 9 ; # items
-	db TM_SUNNY_DAY
-	db TM_RAIN_DANCE
-	db TM_SANDSTORM
-	db TM_PROTECT
-	db TM_SHADOW_CLAW
-	db TM_EARTHQUAKE ; OP
-	db TM_SOLARBEAM ; OP
-	db TM_PSYCHIC_M ; OP
-	db TM_CHARGE_BEAM ; OP
+	db TM_BLIZZARD
+	db TM_THUNDER
+	db TM_FIRE_BLAST
 	db -1 ; end
 
 MartCeladon4F:
@@ -365,29 +318,10 @@ MartCeladon4F:
 	db -1 ; end
 
 MartCeladon5F1:
-	db 8 ; # items
-	db TM_MUD_SLAP
-	db TM_FURY_CUTTER
-	db TM_ATTRACT
-	db TM_SHADOW_BALL
-	db TM_DRAIN_PUNCH
-	db TM_ICY_WIND
-	db TM_IRON_TAIL
-	db TM_DRAGONBREATH
-	db -1 ; end
-
-MartCeladon5F1_2:
-	db 10 ; # items
-	db TM_MUD_SLAP
-	db TM_FURY_CUTTER
-	db TM_ATTRACT
-	db TM_SHADOW_BALL
-	db TM_DRAIN_PUNCH
-	db TM_ICY_WIND
-	db TM_IRON_TAIL
-	db TM_DRAGONBREATH
-	db TM_TOXIC ; OP
-	db TM_GIGA_DRAIN ; OP
+	db 3 ; # items
+	db TM_THUNDERPUNCH
+	db TM_FIRE_PUNCH
+	db TM_ICE_PUNCH
 	db -1 ; end
 
 MartCeladon5F2:
@@ -397,19 +331,6 @@ MartCeladon5F2:
 	db TM_SNORE
 	db TM_SLEEP_TALK
 	db TM_FALSE_SWIPE
-	db -1 ; end
-
-MartCeladon5F2_2:
-	db 9 ; # items
-	db TM_HIDDEN_POWER
-	db TM_SWAGGER
-	db TM_SNORE
-	db TM_SLEEP_TALK
-	db TM_FALSE_SWIPE
-	db TM_RETURN ; OP
-	db TM_DREAM_EATER ; OP
-	db TM_CURSE ; OP
-	db TM_REST ; OP
 	db -1 ; end
 
 MartFuchsia:

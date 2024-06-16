@@ -13,30 +13,14 @@ CeladonDeptStore5F_MapScripts:
 CeladonDeptStore5FClerk1Script:
 	faceplayer
 	opentext
-	readvar VAR_BADGES
-	if_less_than 16, .NotSixteenBadges
-	sjump .SixteenBadges
-.NotSixteenBadges
 	pokemart MARTTYPE_STANDARD, MART_CELADON_5F_1
-	sjump .end
-.SixteenBadges
-	pokemart MARTTYPE_STANDARD, MART_CELADON_5F_1_2
-.end
 	closetext
 	end
 
 CeladonDeptStore5FClerk2Script:
 	faceplayer
 	opentext
-	readvar VAR_BADGES
-	if_less_than 16, .NotSixteenBadges
-	sjump .SixteenBadges
-.NotSixteenBadges
 	pokemart MARTTYPE_STANDARD, MART_CELADON_5F_2
-	sjump .end
-.SixteenBadges
-	pokemart MARTTYPE_STANDARD, MART_CELADON_5F_2_2
-.end
 	closetext
 	end
 

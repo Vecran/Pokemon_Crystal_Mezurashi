@@ -13,14 +13,8 @@ CeladonDeptStore3F_MapScripts:
 CeladonDeptStore3FClerkScript:
 	faceplayer
 	opentext
-	readvar VAR_BADGES
-	if_less_than 16, .NotSixteenBadges
-	sjump .SixteenBadges
-.NotSixteenBadges
 	pokemart MARTTYPE_STANDARD, MART_CELADON_3F
 	sjump .end
-.SixteenBadges
-	pokemart MARTTYPE_STANDARD, MART_CELADON_3F_2
 .end
 	closetext
 	end
@@ -61,6 +55,9 @@ CeladonDeptStore3FYoungsterText:
 
 	para "should use this TM"
 	line "on…"
+
+	para "Lucky for me,"
+	line "it's reusable!"
 	done
 
 CeladonDeptStore3FGameboyKid1Text:
