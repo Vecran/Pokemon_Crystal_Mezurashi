@@ -26,9 +26,7 @@ Marts:
 	dw MartCeladon3F
 	dw MartCeladon4F
 	dw MartCeladon5F1
-	dw MartCeladon5F1_2
 	dw MartCeladon5F2
-	dw MartCeladon5F2_2
 	dw MartFuchsia
 	dw MartSaffron
 	dw MartMtMoon
