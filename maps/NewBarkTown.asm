@@ -70,6 +70,14 @@ NewBarkTown_TeacherStopsYouScene2:
 	special RestartMapMusic
 	end
 
+NewBarkTownTestScript:
+	faceplayer
+	opentext
+	cry NIDOQUEEN
+	writetext NewBarkTownTestText
+	waitbutton
+	closetext
+
 NewBarkTownTeacherScript:
 	faceplayer
 	opentext
@@ -124,13 +132,6 @@ NewBarkTownSilverScript:
 	playsound SFX_TACKLE
 	applymovement PLAYER, NewBarkTown_SilverShovesYouOutMovement
 	applymovement NEWBARKTOWN_SILVER, NewBarkTown_SilverReturnsToTheShadowsMovement
-	end
-
-NewBarkTownTestScript:
-	opentext
-	writetext NewBarkTownTestText
-	waitbutton
-	closetext
 	end
 
 NewBarkTownSign:
@@ -288,9 +289,9 @@ NewBarkTownElmsHouseSignText:
 	done
 
 NewBarkTownTestText:
-	text "SLOW...?"
+	text "GAWOO!"
 	done
-
+	
 NewBarkTown_MapEvents:
 	db 0, 0 ; filler
 
@@ -314,4 +315,4 @@ NewBarkTown_MapEvents:
 	object_event  6,  8, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTeacherScript, -1
 	object_event 12,  9, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownFisherScript, -1
 	object_event  3,  2, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownSilverScript, EVENT_RIVAL_NEW_BARK_TOWN
-	object_event 3, 5, SPRITE_SLOWBRO, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, NewBarkTownTestScript, -1
+	object_event  3,  5, SPRITE_NIDOQUEEN_MOVE, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NewBarkTownTestScript, -1

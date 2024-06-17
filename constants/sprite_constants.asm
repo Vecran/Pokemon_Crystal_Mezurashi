@@ -114,6 +114,8 @@
 	const SPRITE_PIDGEY_MOVE ; 6f
 	const SPRITE_FARFETCH_D_MOVE ; 70
 	const SPRITE_SLOWPOKE_NOTAIL ; 71
+	const SPRITE_CLEFAIRY_MOVE  ; 72
+	const SPRITE_NIDOQUEEN_MOVE ; 73
 NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

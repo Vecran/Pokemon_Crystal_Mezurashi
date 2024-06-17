@@ -75,7 +75,7 @@ SaffronGroupSprites:
 	; max 9 of 9 walking sprites
 	db SPRITE_ZAPDOS_OVERWORLD
 	db SPRITE_POKE_BALL
-	db SPRITE_SLOWPOKE
+	db SPRITE_SLOWBRO
 	db SPRITE_MEW
 	db 0 ; end
 
@@ -149,7 +149,6 @@ CherrygroveGroupSprites:
 	db SPRITE_FRUIT_TREE
 	db SPRITE_PIDGEY
 	db SPRITE_RATTATA_UP
-	db SPRITE_SLOWBRO
 	db 0 ; end
 
 ; Route37 and EcruteakCity are connected

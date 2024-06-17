@@ -636,8 +636,8 @@ KurtsGranddaughterSlowpokeBackText:
 	text "The SLOWPOKE my"
 	line "dad gave me came"
 
-	para "back! Its TAIL is"
-	line "growing back too!"
+	para "back! Its TAIL has"
+	line "grown back too!"
 	done
 
 KurtsGranddaughterDadText:
