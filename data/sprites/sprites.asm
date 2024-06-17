@@ -117,4 +117,6 @@ OverworldSprites:
 	overworld_sprite KrisRunSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite RattataUpSpriteGFX, 12, STILL_SPRITE, PAL_OW_PINK
 	overworld_sprite PidgeyMoveSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite FarfetchdMoveSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite SlowpokeNoTailSpriteGFX, 4, STILL_SPRITE, PAL_OW_PINK
 	assert_table_length NUM_OVERWORLD_SPRITES
