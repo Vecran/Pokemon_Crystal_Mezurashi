@@ -116,6 +116,7 @@
 	const SPRITE_SLOWPOKE_NOTAIL ; 71
 	const SPRITE_CLEFAIRY_MOVE  ; 72
 	const SPRITE_NIDOQUEEN_MOVE ; 73
+	const SPRITE_DRAGONITE_MOVE ; 74
 NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

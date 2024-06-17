@@ -121,4 +121,6 @@ OverworldSprites:
 	overworld_sprite SlowpokeNoTailSpriteGFX, 4, STILL_SPRITE, PAL_OW_PINK
 	overworld_sprite ClefairyMoveSpriteGFX, 12, WALKING_SPRITE, PAL_OW_PINK
 	overworld_sprite NidoqueenMoveSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite DragoniteMoveSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+
 	assert_table_length NUM_OVERWORLD_SPRITES
