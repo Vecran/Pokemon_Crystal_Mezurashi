@@ -661,8 +661,9 @@ ErikaGroup:
 
 YoungsterGroup:
 	; YOUNGSTER (1)
-	db "JOEY@", TRAINERTYPE_NORMAL
+	db "JOEY@", TRAINERTYPE_DVS
 	db  4, RATTATA
+			db $de, $ee ; atk|def, spd|spc
 	db -1 ; end
 
 	; YOUNGSTER (2)
@@ -696,13 +697,15 @@ YoungsterGroup:
 	db -1 ; end
 
 	; YOUNGSTER (7)
-	db "JOEY@", TRAINERTYPE_ITEM_MOVES
+	db "JOEY@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM_MOVES
 	db 27, RATTATA,  PINK_BOW,   QUICK_ATTACK, POISON_FANG, PURSUIT, MUD_SLAP
+			db $de, $ee ; atk|def, spd|spc
 	db -1 ; end
 
 	; YOUNGSTER (8)
-	db "JOEY@", TRAINERTYPE_ITEM_MOVES
+	db "JOEY@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM_MOVES
 	db 30, RATTATA,  PINK_BOW,   CRUNCH, POISON_FANG, PURSUIT, IRON_TAIL
+			db $de, $ee ; atk|def, spd|spc
 	db -1 ; end
 
 	; YOUNGSTER (9)
@@ -733,13 +736,15 @@ YoungsterGroup:
 	db -1 ; end
 
 	; YOUNGSTER (13)
-	db "JOEY@", TRAINERTYPE_ITEM_MOVES
-	db 40, RATTATA,  PINK_BOW,   BODY_SLAM, THUNDERBOLT, PURSUIT, IRON_TAIL
+	db "JOEY@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM_MOVES
+	db 40, RATTATA,  PINK_BOW,   BODY_SLAM, THUNDER_FANG, PURSUIT, IRON_TAIL
+			db $de, $ee ; atk|def, spd|spc
 	db -1 ; end
 
 	; YOUNGSTER (14)
-	db "JOEY@", TRAINERTYPE_ITEM_MOVES
-	db 65, RATTATA,  PINK_BOW,   BODY_SLAM, THUNDERBOLT, PURSUIT, IRON_TAIL
+	db "JOEY@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM_MOVES
+	db 65, RATTATA,  PINK_BOW,   BODY_SLAM, THUNDER_FANG, POISON_FANG, IRON_TAIL
+			db $de, $ee ; atk|def, spd|spc
 	db -1 ; end
 
 SchoolboyGroup:
