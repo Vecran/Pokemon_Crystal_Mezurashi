@@ -318,18 +318,14 @@ EarlsPokemonAcademyGameboyKid2Text:
 EarlsPokemonAcademyYoungster2Text:
 	text "As #MON"
 	line "continue to grow,"
-	cont "as do their stats."
+	cont "so do their stats."
 	
-	para "While still rec-"
-	line "ognizable, some"
-	cont "which were once"
-	
-	para "thought to be"
-	line "non viable, have"
-	cont "seen small stat"
-	
-	para "growths between"
-	line "5-20 base points."
+	para "Some #MON you"
+	line "maybe wouldn't"
+	cont "consider using"
+
+	para "before now seem"
+	line "to be more viable"
 
 	para "Also worth noting,"
 	line "many #MON"

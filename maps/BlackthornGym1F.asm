@@ -420,7 +420,10 @@ BlackthornGymGuideText:
 	line "your own if you"
 	cont "want to win."
 	
-	para "You got this!"
+	para "Or, there's the"
+	line "newly deiscovered"
+	cont "FAIRY type!"
+	cont "You got this!"
 	done
 
 BlackthornGymGuideWinText:

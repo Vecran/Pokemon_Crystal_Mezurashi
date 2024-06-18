@@ -218,8 +218,8 @@ VioletCityLassText:
 	para "seem to bypass"
 	line "the defenses of"
 	
-	para "tough #MON like"
-	line "ONIX and GEODUDE."
+	para "STEEL #MON like"
+	line "VOLTORB."
 	done
 
 VioletCitySuperNerdText:

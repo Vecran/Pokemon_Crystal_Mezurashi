@@ -235,43 +235,22 @@ OlivineGymGuideText:
 	line "newly discovered"
 	cont "STEEL-type."
 
-	para "She's known for"
-	line "having not one,"
-	cont "but two aces."
-	
-	para "The first is a"
-	line "metal bug that"
-	
-	para "knows a technique"
-	line "to increase"
-	cont "its attack."
-	
-	para "While fire will"
-	line "hurt it, sometimes"
-	
-	para "it manages to"
-	line "endure very"
-	cont "powerful blows."
-	
-	para "The second is a"
-	line "giant iron snake"
-	
-	para "with lots of"
-	line "powerful moves."
-	
-	para "Approach it with"
-	line "caution."
-	
-	para "While it may"
-	line "look slow,"
-	
-	para "I've seen it"
-	line "occasionally"
-	cont "strike enemies"
-	
-	para "first with a"
-	line "shocking display"
-	cont "of speed."
+	para "They have a lot of"
+	line "strengths, but"
+	cont "also weaknesses"
+
+	para "You can melt STEEL"
+	line "with FIRE, or rust"
+	cont "it with WATER!"
+
+	para "Remember! - "
+	line "STEEL is very"
+	cont "conductive!"
+
+	para "Make sure you make"
+	line "use of type-"
+	cont "effectiveness or"
+	cont "you'll regret it!"
 	done
 
 OlivineGymGuideWinText:

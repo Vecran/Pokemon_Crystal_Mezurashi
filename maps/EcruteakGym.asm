@@ -401,18 +401,16 @@ EcruteakGymGuideText:
 	cont "way there!"
 	
 	para "The trainers here"
-	line "have GHOST and"
-	cont "DARK-type #MON."
+	line "have GHOST-type"
+	cont "#MON."
 
-	para "While MORTY is"
-	line "a GHOST-type"
-	cont "expert, be wary"
+	para "MORTY is a GHOST-"
+	line "type expert, so be"
+	cont "wary of his mystic"
 	
-	para "of his mystic"
-	line "deer that is said"
-	
-	para "to cause odd"
-	line "nightmares."
+	para "#MON's powers"
+	line "to cause odd"
+	cont "nightmares."
 	done
 
 EcruteakGymGuideWinText:

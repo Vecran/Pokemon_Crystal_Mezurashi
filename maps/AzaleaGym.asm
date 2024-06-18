@@ -400,12 +400,12 @@ AzaleaGymGuideText:
 	cont "advice."
 
 	para "Let's see… BUGSY"
-	line "has a bagworm"
+	line "has a crab"
 	cont "#MON which-"
 	
 	para "has been trained"
 	line "to cover his"
-	cont "ROCK weakness."
+	cont "FIRE weakness."
 
 	para "He's also devel-"
 	line "oped a new"
