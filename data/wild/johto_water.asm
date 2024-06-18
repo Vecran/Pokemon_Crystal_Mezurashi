@@ -32,23 +32,23 @@ JohtoWaterWildMons:
 
 	def_water_wildmons SLOWPOKE_WELL_B1F
 	db 2 percent ; encounter rate
-	db 15, SLOWPOKE
-	db 20, SLOWPOKE
-	db 10, SLOWPOKE
+	db 15, GOLDEEN
+	db 20, SEAKING
+	db 10, MAGIKARP
 	end_water_wildmons
 
 	def_water_wildmons SLOWPOKE_WELL_B2F
 	db 2 percent ; encounter rate
-	db 15, SLOWPOKE
-	db 20, SLOWPOKE
-	db 20, SLOWBRO
+	db 15, GOLDEEN
+	db 20, SEAKING
+	db 20, POLIWHIRL
 	end_water_wildmons
 
 	def_water_wildmons ILEX_FOREST
 	db 2 percent ; encounter rate
-	db 15, PSYDUCK
-	db 10, PSYDUCK
-	db 15, GOLDUCK
+	db 20, PSYDUCK
+	db 25, PSYDUCK
+	db 25, GOLDUCK
 	end_water_wildmons
 
 	def_water_wildmons MOUNT_MORTAR_1F_OUTSIDE
@@ -116,14 +116,14 @@ JohtoWaterWildMons:
 
 	def_water_wildmons DRAGONS_DEN_B1F
 	db 4 percent ; encounter rate
-	db 15, MAGIKARP
-	db 10, MAGIKARP
-	db 10, DRATINI
+	db 20, DRATINI
+	db 20, HORSEA
+	db 30, DRAGONAIR
 	end_water_wildmons
 
 	def_water_wildmons OLIVINE_PORT
 	db 2 percent ; encounter rate
-	db 20, TENTACOOL
+	db 20, CORSOLA
 	db 15, TENTACOOL
 	db 20, TENTACRUEL
 	end_water_wildmons
@@ -214,9 +214,9 @@ JohtoWaterWildMons:
 
 	def_water_wildmons CHERRYGROVE_CITY
 	db 6 percent ; encounter rate
+	db 25, TENTACOOL
 	db 20, TENTACOOL
-	db 15, TENTACOOL
-	db 20, TENTACRUEL
+	db 30, TENTACRUEL
 	end_water_wildmons
 
 	def_water_wildmons VIOLET_CITY
