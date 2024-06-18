@@ -115,13 +115,13 @@ BikerGlennAfterBattleText:
 	done
 
 BikerCharlesSeenText:
-	text "We're fearless"
-	line "highway stars!"
+	text "Watch out! I'm"
+	line "a heartbreaker!"
 	done
 
 BikerCharlesBeatenText:
-	text "Arrrgh! Crash and"
-	line "burn!"
+	text "Arrrgh! Heart"
+	line "broken!"
 	done
 
 BikerCharlesAfterBattleText:

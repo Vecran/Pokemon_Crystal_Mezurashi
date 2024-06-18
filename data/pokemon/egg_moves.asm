@@ -285,6 +285,7 @@ PonytaEggMoves:
 SlowpokeEggMoves:
 	db RAIN_DANCE
 	db FUTURE_SIGHT
+	db ANCIENTPOWER
 	db STOMP
 	db BUBBLEBEAM
 	db PSYCHIC_FANG
@@ -615,6 +616,7 @@ PichuEggMoves:
 	db -1 ; end
 
 CleffaEggMoves:
+	db MINIMIZE
 	db PRESENT
 	db METRONOME
 	db MIMIC
@@ -623,6 +625,7 @@ CleffaEggMoves:
 	db -1 ; end
 
 IgglybuffEggMoves:
+	db MINIMIZE
 	db SING
 	db PRESENT
 	db FAINT_ATTACK
@@ -765,6 +768,7 @@ SnubbullEggMoves:
 
 QwilfishEggMoves:
 	db FLASH_CANNON
+	db AQUA_TAIL
 	db AQUA_JET
 	db BUBBLEBEAM
 	db SUPERSONIC

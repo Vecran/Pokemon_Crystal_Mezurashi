@@ -2438,6 +2438,7 @@ TaurosEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, STOMP
 	db 1, LEER
+	db 1, RAGE
 	db 5, WORK_UP
 	db 10, DOUBLE_KICK
 	db 15, HORN_ATTACK
@@ -2577,8 +2578,8 @@ FlareonEvosAttacks:
 	db 15, CHARM
 	db 20, FLAME_CHARGE
 	db 25, BITE
-	db 30, BLAZE_KICK
-	db 35, BODY_SLAM
+	db 30, FIRE_FANG
+	db 35, BLAZE_KICK
 	db 40, FIRE_SPIN
 	db 45, SCARY_FACE
 	db 50, FLARE_BLITZ

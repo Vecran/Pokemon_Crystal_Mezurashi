@@ -78,36 +78,36 @@ Route13HiddenCalcium:
 	hiddenitem CALCIUM, EVENT_ROUTE_13_HIDDEN_CALCIUM
 
 PokefanmAlexSeenText:
-	text "Bow down before my"
-	line "regal #MON!"
+	text "Kaijuu fight!"
 	done
 
 PokefanmAlexBeatenText:
-	text "How… How dare you"
-	line "mock royalty!"
+	text "How… How did you"
+	line "defeat me?"
 	done
 
 PokefanmAlexAfterBattleText:
-	text "Doesn't everyone"
-	line "wish to someday be"
-	cont "a king?"
+	text "Big, monstrous,"
+	line "#MON are my abso-"
+	cont "lute faves."
 	done
 
 PokefanmJoshuaSeenText:
-	text "Nihihi! Would you"
-	line "like to battle my"
-	cont "PIKACHU gang?"
+	text "Would you like to"
+	line "battle my awesome"
+	cont "STEEL-TYPE gang?"
 	done
 
 PokefanmJoshuaBeatenText:
-	text "PI-PIKACHU!"
+	text "You showed more"
+	line "mettle than me!"
 	done
 
 PokefanmJoshuaAfterBattleText:
 	text "You look like you"
 	line "have many #MON,"
 
-	para "but PIKACHU is"
+	para "but STEEL is"
 	line "still the best."
 	done
 
