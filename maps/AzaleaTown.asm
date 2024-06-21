@@ -324,7 +324,7 @@ AzaleaTownRocket1Text:
 	cont "standing guard."
 
 	para "Aren't I a good"
-	line "Samaritan?"
+	line "citizen?"
 	done
 
 AzaleaTownRocket2Text:

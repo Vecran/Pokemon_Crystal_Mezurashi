@@ -25,10 +25,10 @@ MonMenuIconPals:
     icon_pals BROWN,  RED  ; PIDGEOT
     icon_pals PURPLE, GRAY  ; RATTATA
     icon_pals BROWN,  PINK  ; RATICATE
-    icon_pals RED,  TEAL  ; SPEAROW
+    icon_pals RED,  BROWN  ; SPEAROW
     icon_pals BROWN,  GRAY  ; FEAROW
-    icon_pals PURPLE, GRAY  ; EKANS
-    icon_pals PURPLE, GRAY  ; ARBOK
+    icon_pals PURPLE, GREEN  ; EKANS
+    icon_pals PURPLE, GREEN  ; ARBOK
     icon_pals BROWN,  RED  ; PIKACHU
     icon_pals BROWN,  GRAY  ; RAICHU
     icon_pals BROWN,   GRAY  ; SANDSHREW
@@ -103,7 +103,7 @@ MonMenuIconPals:
     icon_pals BROWN,   PINK  ; DROWZEE
     icon_pals BROWN,   PINK  ; HYPNO
     icon_pals RED,   BROWN  ; KRABBY
-    icon_pals RED,   GRAY  ; KINGLER
+    icon_pals RED,   TEAL  ; KINGLER
     icon_pals RED,   BLUE  ; VOLTORB
     icon_pals RED,   BLUE  ; ELECTRODE
     icon_pals PINK,   GREEN  ; EXEGGCUTE
@@ -116,7 +116,7 @@ MonMenuIconPals:
     icon_pals PURPLE,   BLUE  ; KOFFING
     icon_pals PURPLE,   BLUE  ; WEEZING
     icon_pals GRAY,   BROWN  ; RHYHORN
-    icon_pals GRAY,   BROWN  ; RHYDON
+    icon_pals GRAY,   BLUE  ; RHYDON
     icon_pals PINK,   TEAL  ; CHANSEY
     icon_pals BLUE,   GREEN  ; TANGELA
     icon_pals BROWN,   GRAY  ; KANGASKHAN
@@ -143,7 +143,7 @@ MonMenuIconPals:
     icon_pals RED,   BROWN  ; FLAREON
     icon_pals BLUE,   TEAL  ; PORYGON
     icon_pals BLUE,   GRAY  ; OMANYTE
-    icon_pals BLUE,   GREEN  ; OMASTAR
+    icon_pals BLUE,   GRAY  ; OMASTAR
     icon_pals BROWN,   GRAY  ; KABUTO
     icon_pals BROWN,   TEAL  ; KABUTOPS
     icon_pals GRAY,   PURPLE  ; AERODACTYL
@@ -196,7 +196,7 @@ MonMenuIconPals:
     icon_pals GREEN,   PURPLE  ; SKIPLOOM
     icon_pals BLUE,   PINK  ; JUMPLUFF
     icon_pals PURPLE,   PINK  ; AIPOM
-    icon_pals GREEN,   GREEN  ; SUNKERN
+    icon_pals GREEN,   BROWN  ; SUNKERN
     icon_pals GREEN,   BROWN  ; SUNFLORA
     icon_pals RED,   BLUE  ; YANMA
     icon_pals BLUE,   PINK  ; WOOPER
@@ -227,22 +227,22 @@ MonMenuIconPals:
     icon_pals RED,   BLUE  ; MAGCARGO
     icon_pals BROWN,   BLUE  ; SWINUB
     icon_pals BROWN,   GREEN  ; PILOSWINE
-    icon_pals PINK,   TEAL  ; CORSOLA
+    icon_pals PINK,   BLUE  ; CORSOLA
     icon_pals BLUE,   GRAY  ; REMORAID
     icon_pals RED,   BROWN  ; OCTILLERY
     icon_pals RED,   PINK  ; DELIBIRD
     icon_pals BLUE,   TEAL  ; MANTINE
-    icon_pals RED,   GREEN  ; SKARMORY
+    icon_pals GRAY,   GREEN  ; SKARMORY
     icon_pals RED,   BLUE  ; HOUNDOUR
     icon_pals RED,   BLUE  ; HOUNDOOM
     icon_pals BLUE,   PURPLE  ; KINGDRA
-    icon_pals BLUE,   TEAL  ; PHANPY
+    icon_pals BLUE,   GRAY  ; PHANPY
     icon_pals GRAY,   BROWN  ; DONPHAN
-    icon_pals BLUE,   TEAL  ; PORYGON2
+    icon_pals RED,   BLUE  ; PORYGON2
     icon_pals BROWN,   GREEN  ; STANTLER
     icon_pals BROWN,   GREEN  ; SMEARGLE
     icon_pals BROWN,   BLUE  ; TYROGUE
-    icon_pals BROWN,   PURPLE  ; HITMONTOP
+    icon_pals BROWN,   GRAY  ; HITMONTOP
     icon_pals PURPLE,   PINK  ; SMOOCHUM
     icon_pals BROWN,   RED  ; ELEKID
     icon_pals RED,   BROWN  ; MAGBY
@@ -252,9 +252,9 @@ MonMenuIconPals:
     icon_pals RED,   BROWN  ; ENTEI
     icon_pals BLUE,   GRAY  ; SUICUNE
 	icon_pals GREEN,  TEAL   ; LARVITAR
-	icon_pals BLUE,   PURPLE ; PUPITAR
+	icon_pals GRAY,   PURPLE ; PUPITAR
 	icon_pals GREEN,  BROWN  ; TYRANITAR
-	icon_pals BLUE,   TEAL   ; LUGIA
+	icon_pals BLUE,   PINK   ; LUGIA
 	icon_pals RED,    BROWN  ; HO_OH
 	icon_pals GREEN,  PINK   ; CELEBI
 	assert_table_length NUM_POKEMON

@@ -121,24 +121,18 @@ Route36FloriaScript:
 	closetext
 	end
 
-Route36RockSmashGuyScript:
+Route36RockSmashGuyScript: ; Now gives you rock smash without clearing sudowoodo, like HGSS
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_TM08_ROCK_SMASH
 	iftrue .AlreadyGotRockSmash
-	checkevent EVENT_FOUGHT_SUDOWOODO
-	iftrue .ClearedSudowoodo
 	writetext RockSmashGuyText1
 	waitbutton
-	closetext
-	end
-
-.ClearedSudowoodo:
-	writetext RockSmashGuyText2
 	promptbutton
 	verbosegiveitem TM_ROCK_SMASH
 	iffalse .NoRoomForTM
 	setevent EVENT_GOT_TM08_ROCK_SMASH
+	end
 .AlreadyGotRockSmash:
 	writetext RockSmashGuyText3
 	waitbutton
@@ -499,15 +493,10 @@ RockSmashGuyText1:
 
 	para "But I couldn't!"
 	line "I'm a failure!"
-	done
 
-RockSmashGuyText2:
-	text "Did you clear that"
-	line "wretched tree?"
-
-	para "I'm impressed!"
-	line "I want you to"
-	cont "have this."
+	para "I don't need this"
+	line "anymore, you might"
+	cont "as well have it."
 	done
 
 Text_ReceivedTM08: ; unreferenced

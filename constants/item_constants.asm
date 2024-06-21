@@ -270,7 +270,8 @@ TM01 EQU const_value
 	add_tm FURY_CUTTER  ; f1
 	add_tm NIGHTMARE    ; f2
 	add_tm DARK_PULSE   ; f3
-	add_tm ROCK_SLIDE
+	add_tm ROCK_SLIDE   ; f4
+	add_tm SNARL         ;f5
 NUM_TMS EQU __tmhm_value__ - 1
 
 add_hm: MACRO
