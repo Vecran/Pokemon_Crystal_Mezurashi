@@ -2076,7 +2076,7 @@ BugCatcherGroup:
 	; BUG_CATCHER (19)
 	db "WAYNE@", TRAINERTYPE_NORMAL
 	db 15, PARAS
-	db 15, ODDISH
+	db 15, SPINARAK
 	db -1 ; end
 
 FisherGroup:

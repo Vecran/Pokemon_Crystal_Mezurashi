@@ -64,4 +64,5 @@ SpriteMons:
 	db MEW
 	db KANGASKHAN
 	db SLOWBRO
+	db MACHOKE
 	assert_table_length NUM_POKEMON_SPRITES

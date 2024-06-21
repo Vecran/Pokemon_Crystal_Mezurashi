@@ -320,7 +320,7 @@ VioletGymGuideText:
 	para "it can be hard"
 	line "to score a hit."
 	
-	para "Rock and electric"
+	para "ROCK and ELECTRIC"
 	line "moves will hurt it"
 	
 	para "but watch out for"

@@ -5,12 +5,12 @@ ENDM
 MonMenuIconPals:
 	table_width 1, MonMenuIconPals
 	;         normal, shiny
-	icon_pals TEAL,   GREEN  ; BULBASAUR
-	icon_pals TEAL,   GREEN  ; IVYSAUR
-	icon_pals TEAL,   GREEN  ; VENUSAUR
+	icon_pals GREEN,   BROWN  ; BULBASAUR
+	icon_pals GREEN,   BROWN  ; IVYSAUR
+	icon_pals GREEN,   BROWN  ; VENUSAUR
 	icon_pals RED,    BROWN  ; CHARMANDER
 	icon_pals RED,    BROWN  ; CHARMELEON
-	icon_pals RED,    PURPLE ; CHARIZARD
+	icon_pals RED,    GRAY ; CHARIZARD
 	icon_pals BLUE,   TEAL   ; SQUIRTLE
 	icon_pals BLUE,   TEAL   ; WARTORTLE
 	icon_pals BLUE,   TEAL   ; BLASTOISE
@@ -24,7 +24,7 @@ MonMenuIconPals:
     icon_pals BROWN,  GREEN  ; PIDGEOTTO
     icon_pals BROWN,  RED  ; PIDGEOT
     icon_pals PURPLE, GRAY  ; RATTATA
-    icon_pals BROWN,  RED  ; RATICATE
+    icon_pals BROWN,  PINK  ; RATICATE
     icon_pals RED,  TEAL  ; SPEAROW
     icon_pals BROWN,  GRAY  ; FEAROW
     icon_pals PURPLE, GRAY  ; EKANS
@@ -118,7 +118,7 @@ MonMenuIconPals:
     icon_pals GRAY,   BROWN  ; RHYHORN
     icon_pals GRAY,   BROWN  ; RHYDON
     icon_pals PINK,   TEAL  ; CHANSEY
-    icon_pals TEAL,   GREEN  ; TANGELA
+    icon_pals BLUE,   GREEN  ; TANGELA
     icon_pals BROWN,   GRAY  ; KANGASKHAN
     icon_pals BLUE,   PINK  ; HORSEA
     icon_pals BLUE,   PURPLE  ; SEADRA
@@ -184,9 +184,9 @@ MonMenuIconPals:
     icon_pals RED,   BLUE  ; TOGETIC
     icon_pals GREEN,   TEAL  ; NATU
     icon_pals GREEN,   TEAL  ; XATU
-    icon_pals BROWN,   PINK  ; MAREEP
+    icon_pals BLUE,   PINK  ; MAREEP
     icon_pals PINK,   PURPLE  ; FLAAFFY
-    icon_pals BROWN,   BLUE  ; AMPHAROS
+    icon_pals RED,   BLUE  ; AMPHAROS
     icon_pals GREEN,   RED  ; BELLOSSOM
     icon_pals BLUE,   GREEN  ; MARILL
     icon_pals BLUE,   BROWN  ; AZUMARILL

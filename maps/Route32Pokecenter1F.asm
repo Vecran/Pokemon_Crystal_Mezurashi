@@ -2,6 +2,7 @@
 	const ROUTE32POKECENTER1F_NURSE
 	const ROUTE32POKECENTER1F_FISHING_GURU
 	const ROUTE32POKECENTER1F_COOLTRAINER_F
+	const ROUTE32POKECENTER1F_FISHER
 
 Route32Pokecenter1F_MapScripts:
 	def_scene_scripts
@@ -36,6 +37,26 @@ Route32Pokecenter1FFishingGuruScript:
 
 .GotOldRod:
 	writetext Route32Pokecenter1FFishingGuruText_After
+	waitbutton
+	closetext
+	end
+
+Route32Pokecenter1FFisherScript:
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_LURE_BALLS
+	iftrue .GotLureBalls
+	writetext Route32Pokecenter1FFisherHaveTheseText
+	promptbutton
+	giveitem LURE_BALL, 5
+	writetext Route32Pokecenter1FFisherExplainLureBalls
+	waitbutton
+	closetext
+	setevent EVENT_GOT_LURE_BALLS
+	end
+
+.GotLureBalls:
+	writetext Route32Pokecenter1FFisherExplainLureBalls
 	waitbutton
 	closetext
 	end
@@ -83,6 +104,23 @@ Route32Pokecenter1FFishingGuruText_After:
 	line "they biting?"
 	done
 
+Route32Pokecenter1FFisherHaveTheseText:
+	text "How are you?"
+	line "Are you picking"
+
+	para "APRICORNS?"
+	line "You can make them"
+	cont "into BALLS!"
+	done 
+
+Route32Pokecenter1FFisherExplainLureBalls:
+	text "Those LURE BALLS"
+	line "come from BLU"
+
+	para "APRICORNS. They're"
+	line "great for fishing!"
+	done
+
 Route32Pokecenter1FCooltrainerFText:
 	text "What should I make"
 	line "my #MON hold?"
@@ -108,3 +146,4 @@ Route32Pokecenter1F_MapEvents:
 	object_event  3,  1, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route32Pokecenter1FNurseScript, -1
 	object_event  1,  4, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route32Pokecenter1FFishingGuruScript, -1
 	object_event  6,  2, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route32Pokecenter1FCooltrainerFScript, -1
+	object_event  7,  6, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route32Pokecenter1FFisherScript, -1

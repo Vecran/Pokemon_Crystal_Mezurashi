@@ -1,6 +1,6 @@
 	db YANMA ; 193
 
-	db  75, 105,  65,  105,  75,  65
+	db  75, 75,  65,  105,  105,  65
 	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, DRAGON ; type
