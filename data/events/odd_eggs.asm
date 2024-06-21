@@ -1,4 +1,4 @@
-NUM_ODD_EGGS EQU 14
+NUM_ODD_EGGS EQU 7
 
 prob: MACRO
 prob_total += \1
