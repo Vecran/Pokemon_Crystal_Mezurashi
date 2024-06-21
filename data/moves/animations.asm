@@ -2993,15 +2993,15 @@ BattleAnim_QuickAttack:
 BattleAnim_HoneClaws:
 	anim_1gfx ANIM_GFX_CUT
 	anim_sound 0, 1, SFX_SCRATCH
-	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 62, 92, $0
-	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 58, 88, $0
-	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 54, 84, $0
+	anim_obj ANIM_OBJ_HONE_CLAWS_DOWN_LEFT, 62, 92, $0
+	anim_obj ANIM_OBJ_HONE_CLAWS_DOWN_LEFT, 58, 88, $0
+	anim_obj ANIM_OBJ_HONE_CLAWS_DOWN_LEFT, 54, 84, $0
 	anim_sound 0, 1, SFX_SCRATCH
 	anim_wait 32
 	anim_sound 0, 1, SFX_SCRATCH
-	anim_obj ANIM_OBJ_CUT_DOWN_RIGHT, 50, 84, $0
-	anim_obj ANIM_OBJ_CUT_DOWN_RIGHT, 46, 88, $0
-	anim_obj ANIM_OBJ_CUT_DOWN_RIGHT, 42, 92, $0
+	anim_obj ANIM_OBJ_HONE_CLAWS_DOWN_RIGHT, 50, 84, $0
+	anim_obj ANIM_OBJ_HONE_CLAWS_DOWN_RIGHT, 46, 88, $0
+	anim_obj ANIM_OBJ_HONE_CLAWS_DOWN_RIGHT, 42, 92, $0
 	anim_sound 0, 1, SFX_SCRATCH
 	anim_wait 32
 	anim_ret

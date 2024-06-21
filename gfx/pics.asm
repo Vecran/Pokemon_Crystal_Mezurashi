@@ -23,7 +23,6 @@ INCLUDE "data/trainers/pic_pointers.asm"
 SECTION "Pics 1", ROMX
 
 HoOhFrontpic:        INCBIN "gfx/pokemon/ho_oh/front.animated.2bpp.lz"
-MachampFrontpic:     INCBIN "gfx/pokemon/machamp/front.animated.2bpp.lz"
 NinetalesFrontpic:   INCBIN "gfx/pokemon/ninetales/front.animated.2bpp.lz"
 FeraligatrFrontpic:  INCBIN "gfx/pokemon/feraligatr/front.animated.2bpp.lz"
 NidokingFrontpic:    INCBIN "gfx/pokemon/nidoking/front.animated.2bpp.lz"
@@ -84,7 +83,6 @@ SlowkingFrontpic:    INCBIN "gfx/pokemon/slowking/front.animated.2bpp.lz"
 HitmontopFrontpic:   INCBIN "gfx/pokemon/hitmontop/front.animated.2bpp.lz"
 OnixFrontpic:        INCBIN "gfx/pokemon/onix/front.animated.2bpp.lz"
 BlisseyFrontpic:     INCBIN "gfx/pokemon/blissey/front.animated.2bpp.lz"
-MachokeFrontpic:     INCBIN "gfx/pokemon/machoke/front.animated.2bpp.lz"
 DragoniteFrontpic:   INCBIN "gfx/pokemon/dragonite/front.animated.2bpp.lz"
 PoliwrathFrontpic:   INCBIN "gfx/pokemon/poliwrath/front.animated.2bpp.lz"
 ScytherFrontpic:     INCBIN "gfx/pokemon/scyther/front.animated.2bpp.lz"
@@ -717,6 +715,9 @@ OmastarBackpic:      INCBIN "gfx/pokemon/omastar/back.2bpp.lz"
 PrimeapeFrontpic:    INCBIN "gfx/pokemon/primeape/front.animated.2bpp.lz"
 ArcherPic:      	 INCBIN "gfx/trainers/archer.2bpp.lz"
 PkmnTrainerFPic:     INCBIN "gfx/trainers/pkmntrainerf.2bpp.lz"
+MachokeFrontpic:     INCBIN "gfx/pokemon/machoke/front.animated.2bpp.lz"
+MachampFrontpic:     INCBIN "gfx/pokemon/machamp/front.animated.2bpp.lz"
+
 
 
 ; Sections "Pics 20" to "Pics 24" are not used for any graphics,
