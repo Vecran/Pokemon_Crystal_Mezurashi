@@ -112,7 +112,7 @@ MonMenuIconPals:
     icon_pals BROWN,   TEAL  ; MAROWAK
     icon_pals BROWN,   GREEN  ; HITMONLEE
     icon_pals BROWN,   BLUE  ; HITMONCHAN
-    icon_pals PINK,   TEAL  ; LICKITUNG
+    icon_pals PINK,   BROWN  ; LICKITUNG
     icon_pals PURPLE,   BLUE  ; KOFFING
     icon_pals PURPLE,   BLUE  ; WEEZING
     icon_pals GRAY,   BROWN  ; RHYHORN
@@ -151,7 +151,7 @@ MonMenuIconPals:
     icon_pals BLUE,   GRAY  ; ARTICUNO
     icon_pals BROWN,   RED  ; ZAPDOS
     icon_pals RED,   RED  ; MOLTRES
-    icon_pals BLUE,   GRAY  ; DRATINI
+    icon_pals BLUE,   PINK  ; DRATINI
     icon_pals BLUE,   PINK  ; DRAGONAIR
     icon_pals BROWN,   TEAL  ; DRAGONITE
     icon_pals PURPLE,   TEAL  ; MEWTWO
@@ -219,7 +219,7 @@ MonMenuIconPals:
     icon_pals PURPLE,   RED  ; QWILFISH
     icon_pals RED,   GREEN  ; SCIZOR
     icon_pals RED,   PURPLE  ; SHUCKLE
-    icon_pals BLUE,   PURPLE  ; HERACROSS
+    icon_pals BLUE,   PINK  ; HERACROSS
     icon_pals RED,   PINK  ; SNEASEL
     icon_pals BROWN,   GREEN  ; TEDDIURSA
     icon_pals BROWN,   GREEN  ; URSARING
