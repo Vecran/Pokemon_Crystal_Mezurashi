@@ -341,7 +341,7 @@ RattataEvosAttacks:
 	db 10, BITE
 	db 13, DIG
 	db 16, SHADOW_SNEAK
-	db 19, THIEF
+	db 19, HONE_CLAWS
 	db 22, CRUNCH
 	db 25, FURY_SWIPES
 	db 28, WORK_UP
@@ -360,7 +360,7 @@ RaticateEvosAttacks:
 	db 10, BITE
 	db 13, DIG
 	db 16, SHADOW_SNEAK
-	db 19, THIEF
+	db 19, HONE_CLAWS
 	db 20, SCARY_FACE
 	db 24, CRUNCH
 	db 29, FURY_SWIPES
@@ -378,8 +378,8 @@ SpearowEvosAttacks:
 	db 8, PURSUIT
 	db 11, RAGE
 	db 15, WING_ATTACK
-	db 18, THIEF
-	db 22, BEAT_UP
+	db 18, BEAT_UP
+	db 22, THIEF
 	db 25, AGILITY
 	db 29, FOCUS_ENERGY
 	db 32, DRILL_PECK
@@ -394,8 +394,8 @@ FearowEvosAttacks:
 	db 8, PURSUIT
 	db 11, RAGE
 	db 15, WING_ATTACK
-	db 18, THIEF
-	db 23, BEAT_UP
+	db 18, BEAT_UP
+	db 23, THIEF
 	db 27, AGILITY
 	db 32, FOCUS_ENERGY
 	db 36, DRILL_PECK
@@ -729,9 +729,9 @@ JigglypuffEvosAttacks:
 	db 1, CUTE_POUND
 	db 1, DEFENSE_CURL
 	db 4, ECHOED_VOICE
-	db 8, THIEF
+	db 8, DOUBLESLAP
 	db 12, ROLLOUT
-	db 16, DOUBLESLAP
+	db 16, THIEF
 	db 20, REST
 	db 24, BODY_SLAM
 	db 28, DRAIN_KISS
@@ -747,9 +747,9 @@ WigglytuffEvosAttacks:
 	db 1, CUTE_POUND
 	db 1, DEFENSE_CURL
 	db 4, ECHOED_VOICE
-	db 8, THIEF
+	db 8, DOUBLESLAP
 	db 12, ROLLOUT
-	db 16, DOUBLESLAP
+	db 16, THIEF
 	db 20, REST
 	db 26, BODY_SLAM
 	db 30, DRAIN_KISS
@@ -968,11 +968,11 @@ MeowthEvosAttacks:
 	db 1, SCRATCH
 	db 1, GROWL
 	db 4, HONE_CLAWS
-	db 8, THIEF
-	db 12, FURY_SWIPES
-	db 16, BITE
-	db 20, METAL_CLAW
-	db 24, CRUNCH
+	db 8, FURY_SWIPES
+	db 12, BITE
+	db 16, METAL_CLAW
+	db 20, CRUNCH
+	db 24, THIEF
 	db 29, PAY_DAY
 	db 32, SCREECH
 	db 36, SLASH
@@ -985,11 +985,11 @@ PersianEvosAttacks:
 	db 1, SCRATCH
 	db 1, GROWL
 	db 4, HONE_CLAWS
-	db 8, THIEF
-	db 12, FURY_SWIPES
-	db 16, BITE
-	db 20, METAL_CLAW
-	db 24, CRUNCH
+	db 8, FURY_SWIPES
+	db 12, BITE
+	db 16, METAL_CLAW
+	db 20, CRUNCH
+	db 24, THIEF
 	db 28, BEAT_UP
 	db 31, PAY_DAY
 	db 36, SCREECH
@@ -1044,12 +1044,12 @@ MankeyEvosAttacks:
 	db 1, SCRATCH
 	db 1, LEER
 	db 1, FOCUS_ENERGY
-	db 1, THIEF
 	db 5, FURY_SWIPES
 	db 8, LOW_KICK
 	db 12, KARATE_CHOP
 	db 17, SWAGGER
 	db 22, HONE_CLAWS
+	db 24, THIEF
 	db 26, BEAT_UP
 	db 29, RAGE
 	db 33, SUBMISSION
@@ -1065,12 +1065,12 @@ PrimeapeEvosAttacks:
 	db 1, SCRATCH
 	db 1, LEER
 	db 1, FOCUS_ENERGY
-	db 1, THIEF
 	db 5, FURY_SWIPES
 	db 8, LOW_KICK
 	db 12, KARATE_CHOP
 	db 17, SWAGGER
 	db 22, HONE_CLAWS
+	db 24, THIEF
 	db 26, BEAT_UP
 	db 28, COMET_PUNCH
 	db 30, RAGE
@@ -3053,13 +3053,14 @@ SentretEvosAttacks:
 	db 1, SCRATCH
 	db 4, DEFENSE_CURL
 	db 7, QUICK_ATTACK
-	db 9, THIEF
-	db 12, FURY_SWIPES
-	db 16, MUD_BOMB
-	db 20, DIG
-	db 25, BODY_SLAM
+	db 9, FURY_SWIPES
+	db 12, MUD_BOMB
+	db 16, DIG
+	db 20, BODY_SLAM
+	db 25, THIEF
 	db 30, EXTREMESPEED
 	db 35, REST
+	db 38, SNORE
 	db 40, NASTY_PLOT
 	db 0 ; no more level-up moves
 
@@ -3068,13 +3069,14 @@ FurretEvosAttacks:
 	db 1, SCRATCH
 	db 4, DEFENSE_CURL
 	db 7, QUICK_ATTACK
-	db 9, THIEF
-	db 12, FURY_SWIPES
-	db 16, MUD_BOMB
-	db 20, DIG
-	db 25, BODY_SLAM
+	db 9, FURY_SWIPES
+	db 12, MUD_BOMB
+	db 16, DIG
+	db 20, BODY_SLAM
+	db 25, THIEF
 	db 30, EXTREMESPEED
 	db 35, REST
+	db 38, SNORE
 	db 40, NASTY_PLOT
 	db 45, EARTH_POWER
 	db 0 ; no more level-up moves
@@ -3934,8 +3936,8 @@ SnubbullEvosAttacks:
 	db 25, ROAR
 	db 31, DRAIN_KISS
 	db 37, PLAY_ROUGH
-	db 43, THIEF
-	db 49, CRUNCH
+	db 43, CRUNCH
+	db 49, THIEF
 	db 0 ; no more level-up moves
 
 GranbullEvosAttacks:
@@ -3953,9 +3955,9 @@ GranbullEvosAttacks:
 	db 27, ROAR
 	db 35, DRAIN_KISS
 	db 43, PLAY_ROUGH
-	db 51, THIEF
-	db 56, CRUNCH
-	db 61, THRASH
+	db 51, CRUNCH
+	db 56, THRASH
+	db 61, THIEF
 	db 65, OUTRAGE
 	db 0 ; no more level-up moves
 
@@ -4045,8 +4047,8 @@ SneaselEvosAttacks:
 	db 19, ICE_SHARD
 	db 24, BEAT_UP
 	db 29, HONE_CLAWS
-	db 33, THIEF
-	db 38, ICE_FANG
+	db 33, ICE_FANG
+	db 38, THIEF
 	db 42, SCREECH
 	db 47, SLASH
 	db 52, SWORDS_DANCE
@@ -4058,7 +4060,6 @@ TeddiursaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LICK
-	db 1, THIEF
 	db 1, CHARM
 	db 8, FURY_SWIPES
 	db 13, ROCK_SMASH
@@ -4066,6 +4067,7 @@ TeddiursaEvosAttacks:
 	db 22, SLASH
 	db 25, BULK_UP
 	db 29, PLAY_ROUGH
+	db 32, THIEF
 	db 33, CHARM
 	db 37, REST
 	db 37, SNORE
@@ -4074,9 +4076,9 @@ TeddiursaEvosAttacks:
 
 UrsaringEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, THIEF
 	db 1, SCRATCH
 	db 1, LICK
-	db 1, THIEF
 	db 1, CHARM
 	db 8, FURY_SWIPES
 	db 13, ROCK_SMASH
@@ -4230,12 +4232,12 @@ DelibirdEvosAttacks:
 	db 1, PRESENT
 	db 1, PECK
 	db 5, POWDER_SNOW
-	db 10, THIEF
-	db 15, WING_ATTACK
-	db 20, ICY_WIND
-	db 25, SWIFT
-	db 30, ICE_SHARD
-	db 35, DRILL_PECK
+	db 10, WING_ATTACK
+	db 15, ICY_WIND
+	db 20, SWIFT
+	db 25, ICE_SHARD
+	db 32, DRILL_PECK
+	db 38, THIEF
 	db 40, SING
 	db 45, ICE_BEAM
 	db 50, SKY_ATTACK

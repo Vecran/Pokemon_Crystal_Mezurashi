@@ -894,6 +894,7 @@ TyrogueEggMoves:
 	db MACH_PUNCH
 	db COMET_PUNCH
 	db SLEEP_TALK
+	db FAINT_ATTACK
 	db -1 ; end
 
 SmoochumEggMoves:
