@@ -168,7 +168,7 @@ Kurt1:
 	writetext KurtsHouseKurtGetStartedText
 	waitbutton
 	closetext
-	special FadeOutToBlack
+	special FadeBlackQuickly
 	special ReloadSpritesNoPalettes
 	playsound SFX_WARP_TO
 	waitsfx
