@@ -133,8 +133,8 @@ TreeMonSet_Forest:
 ; can have as many entries as you want as long as the % adds up to 100
 ; feel free to add new rock smash sets
 TreeMonSet_Rock:
-	db 30, KRABBY,     15
-	db 30, GEODUDE,	   15
-	db 30, SHELLDER,   15
-	db 10, SHUCKLE,    15
+	db 30, KRABBY,     10
+	db 30, GEODUDE,	   10
+	db 30, SHELLDER,   10
+	db 10, SHUCKLE,    10
 	db -1

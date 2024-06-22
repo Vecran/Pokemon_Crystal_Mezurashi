@@ -911,9 +911,9 @@ MoveScreenLoop:
 .moving_move
 	ld a, " "
 	hlcoord 1, 11
-	ld bc, 8
+	ld bc, 7
 	call ByteFill
-	hlcoord 1, 11
+	hlcoord 1, 12
 	lb bc, 5, 7
 	call ClearBox
 	hlcoord 1, 12

@@ -48,7 +48,7 @@ Route32Pokecenter1FFisherScript:
 	iftrue .GotLureBalls
 	writetext Route32Pokecenter1FFisherHaveTheseText
 	promptbutton
-	giveitem LURE_BALL, 5
+	verbosegiveitem LURE_BALL, 5
 	writetext Route32Pokecenter1FFisherExplainLureBalls
 	waitbutton
 	closetext
@@ -107,18 +107,22 @@ Route32Pokecenter1FFishingGuruText_After:
 Route32Pokecenter1FFisherHaveTheseText:
 	text "How are you?"
 	line "Are you picking"
+	cont "APRICORNS?"
+	
+	para "You can make them"
+	line "into BALLS!"
 
-	para "APRICORNS?"
-	line "You can make them"
-	cont "into BALLS!"
+	para "Here, have some"
+	line "LURE BALLS"
 	done 
 
 Route32Pokecenter1FFisherExplainLureBalls:
 	text "Those LURE BALLS"
-	line "come from BLU"
-
-	para "APRICORNS. They're"
-	line "great for fishing!"
+	line "come from BLU-"
+	cont "APRICORNS."
+	
+	para "They're great for"
+	line "fishing!"
 	done
 
 Route32Pokecenter1FCooltrainerFText:

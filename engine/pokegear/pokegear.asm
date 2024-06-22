@@ -568,7 +568,7 @@ Pokegear_UpdateClock:
 	farcall GetMapGroupNum_Name
 	; return string ptr in de
 	ld a, BANK(MapGroupNum_Names)
-	hlcoord 2, 8
+	hlcoord 1, 8 ; shifted 1 left because of overrun issues in route 32-ruin gate
 	call PlaceFarString
 	; Fishing group
 	; d ; map num
