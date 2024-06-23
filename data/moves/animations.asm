@@ -1903,7 +1903,8 @@ BattleAnim_Roar:
 	anim_wait 16
 	anim_loop 3, .loop
 	anim_wait 16
-	anim_call BattleAnim_ShowMon_0
+	anim_bgeffect ANIM_BG_FADE_MON_TO_BLACK_REPEATING, $0, BG_EFFECT_TARGET, $40
+	anim_wait 32
 	anim_ret
 
 BattleAnim_Supersonic:
@@ -3264,12 +3265,12 @@ BattleAnim_LeafBlade:
 	anim_obj ANIM_OBJ_CUT_LONG_DOWN_LEFT, 148, 36, $0
 	anim_wait 32
 	anim_sound 0, 0, SFX_VINE_WHIP
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $28
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $5c
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $10
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $e8
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $9c
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $d0
+	anim_obj ANIM_OBJ_LEAF_SPLASH, 136, 56, $28
+	anim_obj ANIM_OBJ_LEAF_SPLASH, 136, 56, $5c
+	anim_obj ANIM_OBJ_LEAF_SPLASH, 136, 56, $10
+	anim_obj ANIM_OBJ_LEAF_SPLASH, 136, 56, $e8
+	anim_obj ANIM_OBJ_LEAF_SPLASH, 136, 56, $9c
+	anim_obj ANIM_OBJ_LEAF_SPLASH, 136, 56, $d0
 	anim_wait 64
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
@@ -3445,12 +3446,12 @@ BattleAnim_WoodHammer:
 	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 144, 48, $0
 	anim_wait 3
 	anim_sound 0, 0, SFX_VINE_WHIP
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $28
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $5c
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $10
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $e8
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $9c
-	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 56, $d0
+	anim_obj ANIM_OBJ_LEAF_SPLASH, 136, 56, $28
+	anim_obj ANIM_OBJ_LEAF_SPLASH, 136, 56, $5c
+	anim_obj ANIM_OBJ_LEAF_SPLASH, 136, 56, $10
+	anim_obj ANIM_OBJ_LEAF_SPLASH, 136, 56, $e8
+	anim_obj ANIM_OBJ_LEAF_SPLASH, 136, 56, $9c
+	anim_obj ANIM_OBJ_LEAF_SPLASH, 136, 56, $d0
 	anim_wait 64
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
@@ -3494,12 +3495,28 @@ BattleAnim_ChargeBeam:
 	anim_wait 40
 	anim_sound 0, 0, SFX_CHARGE
 	anim_clearobjs
-	anim_obj ANIM_OBJ_THUNDER_WAVE, 48, 90, $0
-	anim_wait 40
-	anim_sound 0, 0, SFX_SPARK
+	anim_1gfx ANIM_GFX_SPEED
+	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+.loop
+	anim_sound 0, 0, SFX_SWORDS_DANCE
+	anim_obj ANIM_OBJ_FOCUS, 44, 108, $6
+	anim_wait 2
+	anim_obj ANIM_OBJ_FOCUS, 36, 108, $6
+	anim_wait 2
+	anim_obj ANIM_OBJ_FOCUS, 52, 108, $8
+	anim_wait 2
+	anim_obj ANIM_OBJ_FOCUS, 28, 108, $8
+	anim_wait 2
+	anim_obj ANIM_OBJ_FOCUS, 60, 108, $6
+	anim_wait 2
+	anim_obj ANIM_OBJ_FOCUS, 20, 108, $8
+	anim_wait 2
+	anim_obj ANIM_OBJ_FOCUS, 68, 108, $8
+	anim_wait 2
+	anim_loop 3, .loop
+	anim_wait 8
 	anim_incbgeffect ANIM_BG_FADE_MON_TO_LIGHT
-	anim_call BattleAnim_ShowMon_1
-	anim_wait 48
+	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
 BattleAnim_PowderSnow:
