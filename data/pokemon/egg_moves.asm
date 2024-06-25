@@ -380,7 +380,7 @@ CuboneEggMoves:
 	db ROCK_SLIDE
 	db ANCIENTPOWER
 	db SCREECH
-	db SHADOW_CLAW
+	db FLAME_CHARGE
 	db SING
 	db SWORDS_DANCE
 	db -1 ; end

@@ -155,7 +155,7 @@ Moves:
 	move SLUDGE_WAVE,  EFFECT_POISON_HIT,        120, POISON,        SPECIAL,   85,  5,  10
 	move BARRAGE,      EFFECT_MULTI_HIT,          20, GHOST,         SPECIAL,  100, 20,   0
 	move LEECH_LIFE,   EFFECT_LEECH_HIT,          35, BUG,           PHYSICAL, 100, 25,   0
-	move DRAIN_KISS,   EFFECT_LEECH_HIT,          60, FAIRY,         PHYSICAL, 100, 10,   0
+	move DRAIN_KISS,   EFFECT_LEECH_HIT,          70, FAIRY,         PHYSICAL, 100, 10,   0
 	move SKY_ATTACK,   EFFECT_RECOIL_HIT,        120, FLYING,        PHYSICAL, 100, 15,   0
 	move TRANSFORM,    EFFECT_TRANSFORM,           0, NORMAL,        STATUS,   100, 10,   0
 	move BUBBLE,       EFFECT_SPEED_DOWN_HIT,     20, WATER,         SPECIAL,  100, 30,  10
