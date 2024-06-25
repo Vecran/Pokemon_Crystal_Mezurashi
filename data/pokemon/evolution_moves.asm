@@ -218,7 +218,7 @@ EvolutionMoves::
         db NO_MOVE      ;SNEASEL
         db NO_MOVE      ;TEDDIURSA
         db CROSS_CHOP   ;URSARING
-        db NO_MOVE      ;SLUGMA
+        db NO_MOVE      ;SLUGAM
         db ROCK_SMASH   ;MAGCARGO
         db NO_MOVE      ;SWINUB
         db ICE_FANG     ;PILOSWINE
