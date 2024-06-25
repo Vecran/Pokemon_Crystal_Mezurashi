@@ -103,9 +103,6 @@ EvolutionMoves::
         db NO_MOVE      ;ELECTRODE
         db NO_MOVE      ;EXEGGCUTE
         db STOMP        ;EXEGGUTOR
-        db NO_MOVE      ;GRIMER
-        db NO_MOVE      ;MUK
-        db NO_MOVE      ;SHELLDER
         db NO_MOVE      ;CUBONE
         db BONEMERANG   ;MAROWAK
         db DOUBLE_KICK  ;HITMONLEE
@@ -221,7 +218,7 @@ EvolutionMoves::
         db NO_MOVE      ;SNEASEL
         db NO_MOVE      ;TEDDIURSA
         db CROSS_CHOP   ;URSARING
-        db NO_MOVE      ;SLUGAM
+        db NO_MOVE      ;SLUGMA
         db ROCK_SMASH   ;MAGCARGO
         db NO_MOVE      ;SWINUB
         db ICE_FANG     ;PILOSWINE
