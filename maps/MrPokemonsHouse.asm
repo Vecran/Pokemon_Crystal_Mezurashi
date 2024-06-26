@@ -250,6 +250,10 @@ MrPokemonText_AlwaysNewDiscoveries:
 
 	para "discoveries to be"
 	line "made!"
+
+	para "Do come see me if"
+	line "you find anything"
+	cont "special or rare."
 	done
 
 MrPokemonsHouse_OakText1:

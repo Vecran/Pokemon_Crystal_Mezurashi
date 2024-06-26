@@ -1577,8 +1577,9 @@ _MomLeavingText1::
 	para "I know! I'll save"
 	line "money for you."
 
-	para "On a long journey,"
-	line "money's important."
+	para "I can use it to"
+	line "buy decorations"
+	cont "for your room."
 
 	para "Do you want me to"
 	line "save your money?"
