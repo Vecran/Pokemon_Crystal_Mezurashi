@@ -493,18 +493,17 @@ SandshrewEvosAttacks:
 	db 3, POISON_STING
 	db 6, MUD_SLAP
 	db 9, ROLLOUT
-	db 12, FURY_CUTTER
+	db 12, FURY_SWIPES
 	db 15, RAPID_SPIN
 	db 18, MAGNITUDE
 	db 20, HONE_CLAWS
-	db 24, FURY_SWIPES
-	db 27, DIG
-	db 30, SLASH
-	db 33, BODY_SLAM
-	db 36, SKULL_BASH
-	db 39, SWORDS_DANCE
-	db 42, SANDSTORM
-	db 45, EARTHQUAKE
+	db 24, DIG
+	db 27, SLASH
+	db 30, BODY_SLAM
+	db 33, SKULL_BASH
+	db 36, SWORDS_DANCE
+	db 39, SANDSTORM
+	db 42, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 SandslashEvosAttacks:
@@ -515,19 +514,18 @@ SandslashEvosAttacks:
 	db 3, POISON_STING
 	db 6, MUD_SLAP
 	db 9, ROLLOUT
-	db 12, FURY_CUTTER
+	db 12, FURY_SWIPES
 	db 15, RAPID_SPIN
 	db 18, MAGNITUDE
 	db 20, HONE_CLAWS
 	db 21, METAL_CLAW
-	db 26, FURY_SWIPES
-	db 31, DIG
-	db 36, SLASH
-	db 41, SPIKE_CANNON
-	db 46, SKULL_BASH
-	db 51, SWORDS_DANCE
-	db 56, SANDSTORM
-	db 61, EARTHQUAKE
+	db 26, DIG
+	db 31, SLASH
+	db 36, SPIKE_CANNON
+	db 41, SKULL_BASH
+	db 46, SWORDS_DANCE
+	db 51, SANDSTORM
+	db 56, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 NidoranFEvosAttacks:
@@ -2106,13 +2104,12 @@ RhyhornEvosAttacks:
 	db 15, HORN_ATTACK
 	db 20, SCARY_FACE
 	db 25, STOMP
-	db 30, STRENGTH
-	db 35, ROCK_SLIDE
-	db 40, BODY_SLAM
-	db 45, EARTHQUAKE
-	db 50, HEAD_SMASH
-	db 55, MEGAHORN
-	db 60, HORN_DRILL
+	db 30, ROCK_SLIDE
+	db 35, BODY_SLAM
+	db 40, EARTHQUAKE
+	db 45, HEAD_SMASH
+	db 50, MEGAHORN
+	db 55, HORN_DRILL
 	db 0 ; no more level-up moves
 
 RhydonEvosAttacks:
@@ -2128,9 +2125,8 @@ RhydonEvosAttacks:
 	db 15, HORN_ATTACK
 	db 20, SCARY_FACE
 	db 25, STOMP
-	db 30, STRENGTH
-	db 35, ROCK_SLIDE
-	db 40, BODY_SLAM
+	db 30, ROCK_SLIDE
+	db 35, BODY_SLAM
 	db 41, DRAGON_RUSH
 	db 47, EARTHQUAKE
 	db 54, OUTRAGE

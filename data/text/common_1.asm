@@ -7,7 +7,7 @@ _HeyItsFruitText::
 	text "Hey! Found"
 	line "@"
 	text_ram wStringBuffer3
-	text "S!"
+	text "!"
 	done
 
 _ObtainedFruitText::
@@ -17,30 +17,16 @@ _ObtainedFruitText::
 	text "!"
 	done
 _ObtainedTwoFruitText::
-	text "Obtained two"
+	text "Obtained 2x"
 	line "@"
 	text_ram wStringBuffer3
-	text "S!"
+	text "!"
 	done
 _ObtainedThreeFruitText::
-	text "Obtained three"
+	text "Obtained 3x"
 	line "@"
 	text_ram wStringBuffer3
-	text "S!"
-	done
-
-_ObtainedFourFruitText::
-	text "Obtained four"
-	line "@"
-	text_ram wStringBuffer3
-	text "S!"
-	done
-
-_ObtainedFiveFruitText::
-	text "Obtained five"
-	line "@"
-	text_ram wStringBuffer3
-	text "S!"
+	text "!"
 	done
 
 _FruitPackIsFullText::
@@ -396,14 +382,14 @@ _MomItsInPCText::
 	done
 
 _MomFoundADollText::
-	text "While shopping"
-	line "today, I saw this"
-	cont "adorable doll, so"
+	text "I found something"
+	line "that I knew you'd"
+	cont "love, so"
 	prompt
 
 _MomItsInYourRoomText::
 	text "It's in your room."
-	line "You'll love it!"
+	line "I'm so excited!"
 	done
 
 _MonWasSentToText::

@@ -45,4 +45,5 @@ RockMonMaps::
 	treemon_map ROUTE_40,                  TREEMON_SET_ROCK
 	treemon_map DARK_CAVE_VIOLET_ENTRANCE, TREEMON_SET_ROCK
 	treemon_map SLOWPOKE_WELL_B1F,         TREEMON_SET_ROCK
+	treemon_map RUINS_OF_ALPH_OUTSIDE,	   TREEMON_SET_ROCK
 	db -1

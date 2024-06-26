@@ -3,8 +3,8 @@ FruitTreeItems:
 	table_width 1, FruitTreeItems
 	db BERRY        ; ROUTE_29_1
 	db BERRY        ; ROUTE_30_1
-	db BERRY        ; ROUTE_38_1
-	db BERRY        ; ROUTE_46_1
+	db GOLD_BERRY   ; ROUTE_38_1
+	db GOLD_BERRY   ; ROUTE_46_1
 	db PSNCUREBERRY ; ROUTE_30_2
 	db PSNCUREBERRY ; ROUTE_33_1
 	db BITTER_BERRY ; ROUTE_31_1
@@ -24,7 +24,7 @@ FruitTreeItems:
 	db PNK_APRICORN ; ROUTE_42_1
 	db GRN_APRICORN ; ROUTE_42_2
 	db YLW_APRICORN ; ROUTE_42_3
-	db BERRY        ; ROUTE_11
+	db GOLD_BERRY   ; ROUTE_11
 	db PSNCUREBERRY ; ROUTE_2
 	db BITTER_BERRY ; ROUTE_1
 	db PRZCUREBERRY ; ROUTE_8
