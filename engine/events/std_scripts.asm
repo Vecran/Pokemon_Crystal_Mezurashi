@@ -146,9 +146,9 @@ PokecenterNurseScript:
 .donetext
 	opentext
 	farwritetext NurseReturnPokemonShortText
-	pause 40
+	pause 10
 	farwritetext NurseGoodbyeText
-	pause 40
+	pause 10
 	closetext
 .done
 	turnobject LAST_TALKED, UP

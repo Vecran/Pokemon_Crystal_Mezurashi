@@ -127,7 +127,7 @@ Route36RockSmashGuyScript: ; Now gives you rock smash without clearing sudowoodo
 	checkevent EVENT_GOT_TM08_ROCK_SMASH
 	iftrue .AlreadyGotRockSmash
 	writetext RockSmashGuyText1
-	promptbutton
+	waitbutton
 	verbosegiveitem TM_ROCK_SMASH
 	iffalse .NoRoomForTM
 	setevent EVENT_GOT_TM08_ROCK_SMASH

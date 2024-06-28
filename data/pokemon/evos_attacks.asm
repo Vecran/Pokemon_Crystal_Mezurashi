@@ -217,6 +217,7 @@ CaterpieEvosAttacks:
 MetapodEvosAttacks:
 	db EVOLVE_LEVEL, 10, BUTTERFREE
 	db 0 ; no more evolutions
+	db 1, TACKLE
 	db 1, DEFENSE_CURL
 	db 0 ; no more level-up moves
 
@@ -253,6 +254,7 @@ WeedleEvosAttacks:
 KakunaEvosAttacks:
 	db EVOLVE_LEVEL, 10, BEEDRILL
 	db 0 ; no more evolutions
+	db 1, POISON_STING
 	db 1, DEFENSE_CURL
 	db 0 ; no more level-up moves
 
@@ -1228,7 +1230,7 @@ MachopEvosAttacks:
 	db 16, FAINT_ATTACK
 	db 20, SCARY_FACE
 	db 24, COMET_PUNCH
-	db 28, STRENGTH
+	db 28, BEAT_UP
 	db 32, DIZZY_PUNCH
 	db 36, BULK_UP
 	db 40, BODY_SLAM
@@ -1248,7 +1250,7 @@ MachokeEvosAttacks:
 	db 16, FAINT_ATTACK
 	db 20, SCARY_FACE
 	db 24, COMET_PUNCH
-	db 28, STRENGTH
+	db 28, BEAT_UP
 	db 33, DIZZY_PUNCH
 	db 38, BULK_UP
 	db 43, BODY_SLAM
@@ -1267,7 +1269,7 @@ MachampEvosAttacks:
 	db 16, FAINT_ATTACK
 	db 20, SCARY_FACE
 	db 24, COMET_PUNCH
-	db 31, STRENGTH
+	db 31, BEAT_UP
 	db 36, DIZZY_PUNCH
 	db 38, BULK_UP
 	db 44, BODY_SLAM
@@ -1382,7 +1384,7 @@ GeodudeEvosAttacks:
 	db 18, SANDSTORM
 	db 24, COMET_PUNCH
 	db 28, IRON_DEFENSE
-	db 30, STRENGTH
+	db 30, BODY_SLAM
 	db 34, EARTHQUAKE
 	db 36, ROCK_SLIDE
 	db 40, FISSURE
@@ -1401,7 +1403,7 @@ GravelerEvosAttacks:
 	db 18, SANDSTORM
 	db 24, COMET_PUNCH
 	db 30, IRON_DEFENSE
-	db 34, STRENGTH
+	db 34, BODY_SLAM
 	db 40, EARTHQUAKE
 	db 44, ROCK_SLIDE
 	db 50, FISSURE
@@ -1419,7 +1421,7 @@ GolemEvosAttacks:
 	db 18, SANDSTORM
 	db 24, COMET_PUNCH
 	db 30, IRON_DEFENSE
-	db 34, STRENGTH
+	db 34, BODY_SLAM
 	db 37, SKULL_BASH
 	db 42, EARTHQUAKE
 	db 47, ROCK_SLIDE

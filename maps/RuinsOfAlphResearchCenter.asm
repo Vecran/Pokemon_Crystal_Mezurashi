@@ -220,12 +220,6 @@ FossilScientist:
 	getmonname STRING_BUFFER_3, AERODACTYL
 	writetext FossilScientistMonText
 	promptbutton
-	readvar VAR_BADGES
-	if_greater_than 6, .GotSevenBadges
-	writetext MightTakeAWhileText
-	yesorno
-	iffalse .No
-.GotSevenBadges:
 	setevent EVENT_GAVE_SCIENTIST_OLD_AMBER
 	takeitem OLD_AMBER
 	writetext FossilScientistGiveText
@@ -273,8 +267,6 @@ FossilScientist:
 	sjump FossilScientist
 
 .GiveAerodactyl:
-	readvar VAR_BADGES
-	if_less_than 7, .NotEnoughBadges
 	readvar VAR_PARTYCOUNT
 	ifequal PARTY_LENGTH, .NoRoom
 	clearevent EVENT_GAVE_SCIENTIST_OLD_AMBER
@@ -285,13 +277,11 @@ FossilScientist:
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	waitbutton
-	givepoke AERODACTYL, 25
+	givepoke AERODACTYL, 5
 	closetext
 	end
 
 .GiveKabuto:
-	readvar VAR_BADGES
-	if_less_than 3, .NotEnoughBadges
 	readvar VAR_PARTYCOUNT
 	ifequal PARTY_LENGTH, .NoRoom
 	clearevent EVENT_GAVE_SCIENTIST_DOME_FOSSIL
@@ -302,13 +292,11 @@ FossilScientist:
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	waitbutton
-	givepoke KABUTO, 15
+	givepoke KABUTO, 5
 	closetext
 	end
 
 .GiveOmanyte:
-	readvar VAR_BADGES
-	if_less_than 4, .NotEnoughBadges
 	readvar VAR_PARTYCOUNT
 	ifequal PARTY_LENGTH, .NoRoom
 	clearevent EVENT_GAVE_SCIENTIST_HELIX_FOSSIL
@@ -319,13 +307,7 @@ FossilScientist:
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	waitbutton
-	givepoke OMANYTE, 20
-	closetext
-	end
-	
-.NotEnoughBadges
-	writetext FossilScientistTimeText
-	waitbutton
+	givepoke OMANYTE, 5
 	closetext
 	end
 
@@ -368,17 +350,6 @@ FossilScientistIntroText:
 	line "fossil for me?"
 	done
 
-MightTakeAWhileText:
-	text "But this one"
-	line "could take a"
-	cont "long time."
-
-	para "Are you sure"
-	line "you don't want"
-	cont "any other fossils"
-	cont "revived first?"
-	done
-
 FossilScientistNoText:
 	text "No! Is too bad!"
 
@@ -390,17 +361,6 @@ FossilScientistPartyFullText:
 
 	para "Your party is"
 	line "already full!"
-	done
-
-FossilScientistTimeText:
-	text "Wow this one is"
-	line "quite complex..."
-
-	para "I take a little"
-	line "time!"
-
-	para "You go for walk a"
-	line "little while!"
 	done
 
 FossilScientistDoneText:
