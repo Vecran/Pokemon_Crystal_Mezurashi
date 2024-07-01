@@ -2311,7 +2311,6 @@ BattleAnim_AquaJet:
 	anim_obj ANIM_OBJ_HYDRO_PUMP, 124, 72, $0
 	anim_bgeffect ANIM_BG_WATER, $1c, $0, $0
 	anim_wait 8
-	anim_sound 0, 1, SFX_HYDRO_PUMP
 	anim_obj ANIM_OBJ_HYDRO_PUMP, 132, 72, $0
 	anim_bgeffect ANIM_BG_WATER, $8, $0, $0
 	anim_wait 8
@@ -4133,7 +4132,7 @@ BattleAnim_FlameBurst:
 	anim_incobj 9
 	anim_wait 8
 	anim_ret
-	
+
 BattleAnim_Dragonbreath:
 	anim_1gfx ANIM_GFX_FIRE
 	anim_sound 6, 2, SFX_EMBER
