@@ -219,7 +219,7 @@ VioletCityLassText:
 	line "the defenses of"
 	
 	para "STEEL #MON like"
-	line "VOLTORB."
+	line "HINOTAMA."
 	done
 
 VioletCitySuperNerdText:

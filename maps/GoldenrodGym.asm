@@ -214,9 +214,12 @@ WhitneyBeforeText:
 	line "#MON, so I got"
 	cont "into it too!"
 
-	para "#MON are"
-	line "super-cute!"
-
+	para "I love super cute"
+	line "#MON!"
+	
+	para "Especially FAIRY"
+	line "and NORMAL-TYPE."
+	
 	para "You want to bat-"
 	line "tle? I'm warning"
 	cont "you--I'm good!"
@@ -318,8 +321,9 @@ LassCarrieBeatenText:
 	done
 
 LassCarrieAfterBattleText:
-	text "Do my #MON"
-	line "think I'm cute?"
+	text "Which do you like"
+	line "best, FAIRY, or"
+	cont "NORMAL #MON?
 	done
 
 LassBridgetSeenText:
@@ -389,37 +393,41 @@ BeautySamanthaBeatenText:
 	done
 
 BeautySamanthaAfterBattleText:
-	text "I taught MEOWTH"
-	line "moves for taking"
-	cont "on any type…"
+	text "I just love MEOWTH"
+	line "so much..."
 	done
 
 GoldenrodGymGuideText:
 	text "Yo! CHAMP in"
 	line "making!"
 
-	para "This GYM is home"
-	line "to a NORMAL-type"
-	cont "#MON leader."
+	para "This GYM is full"
+	line "of trainers that"
 
-	para "Be cautious of"
-	line "her cute team."
+	para "specialize in cute"
+	line "#MON."
+
+	para "You'll see lots of"
+	line "FAIRY and NORMAL-"
+	cont "TYPE #MON"
 	
-	para "Her teddy bear"
-	line "might look nice,"
+	para "Remember, FAIRIES"
+	line "don't fare well"
 	
-	para "but I've seen it"
-	line "shatter rocks."
+	para "against POISON and"
+	line "STEEL #MON."
 	
-	para "Head to ROUTE 34"
-	line "if you need a"
-	cont "FIGHTING-type."
+	para "Luckily, this is a"
+	line "big city, so you"
+	
+	para "can easily find"
+	line "those types around."
 	done
 
 GoldenrodGymGuideWinText:
 	text "You won? Great! I"
-	line "was busy admiring"
-	cont "the ladies here."
+	line "was worried about"
+	cont "the FAIRIES."
 	done
 
 GoldenrodGym_MapEvents:

@@ -2153,6 +2153,7 @@ Tickle:
 	usedmovetext
 	doturn
 	checkhit
+	failuretext
 	attackdown
 	lowersub
 	statdownanim

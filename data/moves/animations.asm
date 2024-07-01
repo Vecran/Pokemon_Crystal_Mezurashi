@@ -4115,6 +4115,25 @@ BattleAnim_Megahorn:
 	anim_ret
 
 BattleAnim_FlameBurst:
+	anim_1gfx ANIM_GFX_FIRE
+	anim_sound 6, 2, SFX_EMBER
+.loop
+	anim_obj ANIM_OBJ_DRAGONBREATH, 64, 92, $4
+	anim_wait 4
+	anim_loop 5, .loop
+	anim_wait 48
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $3
+	anim_sound 0, 1, SFX_EMBER
+	anim_obj ANIM_OBJ_FIRE_BLAST, 136, 48, $1
+	anim_obj ANIM_OBJ_FIRE_BLAST, 136, 48, $4
+	anim_obj ANIM_OBJ_FIRE_BLAST, 136, 48, $5
+	anim_wait 8
+	anim_bgeffect ANIM_BG_SHOW_MON, $0, BG_EFFECT_TARGET, $0
+	anim_wait 4
+	anim_incobj 9
+	anim_wait 8
+	anim_ret
+	
 BattleAnim_Dragonbreath:
 	anim_1gfx ANIM_GFX_FIRE
 	anim_sound 6, 2, SFX_EMBER

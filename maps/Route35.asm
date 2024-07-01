@@ -381,8 +381,8 @@ BirdKeeperBryanBeatenText:
 	done
 
 BirdKeeperBryanAfterBattleText:
-	text "Some #MON flee"
-	line "right away."
+	text "Some #MON are"
+	line "really fast."
 
 	para "Try catching them"
 	line "with KURT's FAST"

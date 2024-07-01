@@ -1795,7 +1795,6 @@ OnixEvosAttacks:
 	db 1, WRAP
 	db 1, DEFENSE_CURL
 	db 1, ROCK_THROW
-	db 4, MUD_SLAP
 	db 8, RAGE
 	db 12, DRAGON_RAGE
 	db 16, CURSE
@@ -2178,8 +2177,8 @@ KangaskhanEvosAttacks:
 	db 1, LEER
 	db 4, GROWL
 	db 8, COMET_PUNCH
-	db 12, MUD_SLAP
-	db 16, STOMP
+	db 12, STOMP
+	db 16, MAGNITUDE
 	db 20, FOCUS_ENERGY
 	db 24, DIZZY_PUNCH
 	db 28, DRAIN_PUNCH
@@ -3902,7 +3901,6 @@ SteelixEvosAttacks:
 	db 1, WRAP
 	db 1, DEFENSE_CURL
 	db 1, ROCK_THROW
-	db 4, MUD_SLAP
 	db 8, RAGE
 	db 12, DRAGON_RAGE
 	db 16, CURSE
@@ -4400,19 +4398,20 @@ Porygon2EvosAttacks:
 StantlerEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 3, LEER
+	db 1, LEER
 	db 7, CONFUSION
 	db 10, HYPNOSIS
 	db 13, STOMP
-	db 16, MUD_SLAP
+	db 16, CONFUSE_RAY
 	db 21, HORN_ATTACK
-	db 23, CONFUSE_RAY
-	db 27, CALM_MIND
+	db 24, CALM_MIND
+	db 27, ZEN_HEADBUTT
 	db 32, DOUBLE_KICK
-	db 37, ZEN_HEADBUTT
-	db 49, PSYCHIC_FANG
-	db 55, DOUBLE_EDGE
-	db 61, MEGAHORN
+	db 37, REFLECT
+	db 42, LIGHT_SCREEN
+	db 47, PSYCHIC_FANG
+	db 53, DOUBLE_EDGE
+	db 59, MEGAHORN
 	db 0 ; no more level-up moves
 
 SmeargleEvosAttacks:
