@@ -323,7 +323,7 @@ LassCarrieBeatenText:
 LassCarrieAfterBattleText:
 	text "Which do you like"
 	line "best, FAIRY, or"
-	cont "NORMAL #MON?
+	cont "NORMAL #MON?"
 	done
 
 LassBridgetSeenText:
@@ -364,7 +364,7 @@ BridgetWhitneyCriesText:
 
 BeautyVictoriaSeenText:
 	text "Oh, you are a cute"
-	line "little trainer! "
+	line "little trainer!"
 
 	para "I like you, but I"
 	line "won't hold back!"
@@ -409,7 +409,7 @@ GoldenrodGymGuideText:
 
 	para "You'll see lots of"
 	line "FAIRY and NORMAL-"
-	cont "TYPE #MON"
+	cont "TYPE #MON."
 	
 	para "Remember, FAIRIES"
 	line "don't fare well"
