@@ -2676,9 +2676,9 @@ SuperNerdGroup:
 
 	; SUPER_NERD (10)
 	db "TERU@", TRAINERTYPE_NORMAL
-	db 14, VOLTORB
 	db 14, MAGNEMITE
-	db 12, MAGNEMITE
+	db 12, ELEKID
+	db 14, MAGNEMITE
 	db 14, PORYGON
 	db -1 ; end
 

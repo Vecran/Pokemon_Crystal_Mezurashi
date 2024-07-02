@@ -1,5 +1,5 @@
 JackTriviaScript:
-	random 11
+	random 14
 	ifequal  0, .Thunder
 	ifequal  1, .Rollout
 	ifequal  2, .Solarbeam
@@ -11,6 +11,10 @@ JackTriviaScript:
 	ifequal  8, .Sandstorm
 	ifequal  9, .SunnyDay
 	ifequal 10, .RainDance
+	ifequal 11, .DragonRush
+	ifequal 12, .Hurricane
+	ifequal 13, .SandstormSPDef
+
 
 .Thunder:
 	farwritetext JackThunderTriviaText
@@ -64,5 +68,20 @@ JackTriviaScript:
 
 .RainDance:
 	farwritetext JackRainDanceTriviaText
+	promptbutton
+	sjump PhoneScript_HangUpText_Male
+
+.DragonRush:
+	farwritetext JackDragonRushTriviaText
+	promptbutton
+	sjump PhoneScript_HangUpText_Male
+
+.Hurricane:
+	farwritetext JackHurricaneTriviaText
+	promptbutton
+	sjump PhoneScript_HangUpText_Male
+
+.SandstormSPDef:
+	farwritetext JackSandstormSPDefTriviaText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male

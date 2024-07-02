@@ -95,6 +95,16 @@ JackStompTriviaText:
 	line "more powerful."
 	done
 
+JackDragonRushTriviaText:
+	text "Did you know…?"
+
+	para "If the opponent"
+	line "uses MINIMIZE,"
+
+	para "your DRAGON RUSH"
+	line "is more powerful."
+	done
+
 JackGustTriviaText:
 	text "Did you know…?"
 
@@ -112,6 +122,16 @@ JackTwisterTriviaText:
 	line "is FLYing, your"
 
 	para "TWISTER becomes"
+	line "more powerful."
+	done
+
+JackHurricaneTriviaText:
+	text "Did you know…?"
+
+	para "If your opponent"
+	line "is FLYing, your"
+
+	para "HURRICANE becomes"
 	line "more powerful."
 	done
 
@@ -145,6 +165,16 @@ JackSandstormTriviaText:
 	line "SANDSTORM."
 	done
 
+JackSandstormSPDefTriviaText:
+	text "Did you know…?"
+
+	para "The ROCK type gets" 
+	line "a boost to its"
+
+	para "SPECIAL DEF. in"
+	line "a SANDSTORM."
+	done
+	
 JackSunnyDayTriviaText:
 	text "Did you know…?"
 
