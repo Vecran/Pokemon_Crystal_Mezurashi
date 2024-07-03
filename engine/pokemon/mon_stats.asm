@@ -182,14 +182,14 @@ GetGender:
 	and $10
 	swap a
 	add a
-	ld b, a   ; ~(Atk DV & 1) << 1
+	ld b, a   ; NOT(is Atk DV odd) << 1
 ; Defense DV
 	ld a, [hli]
 	and $1
 	add a
 	add a
 	or b
-	ld b, a   ; ~(Atk DV & 1) << 1 | (Def DV & 1) << 2
+	ld b, a   ; NOT(is Atk DV odd) << 1 | (is Def DV odd) << 2
 ; Special DV
 	ld a, [hl]
 	cpl
@@ -199,7 +199,7 @@ GetGender:
 	add a
 	or b
 	swap a
-	ld b, a   ; ~(Atk DV & 1) << 1 | (Def DV & 1) << 2 | ~(Spc DV & 1) << 3
+	ld b, a   ; NOT(is Atk DV odd) << 1 | (is Def DV odd) << 2 | NOT(is Spc DV odd) << 3
 
 ; Close SRAM if we were dealing with a sBoxMon.
 	ld a, [wMonType]
@@ -229,7 +229,7 @@ GetGender:
 	cp GENDER_F100
 	jr z, .Female
 
-; Values below the ratio are male, and vice versa.
+; Values <= the ratio are female, > are male.
 	cp b
 	jr c, .Male
 
