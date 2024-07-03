@@ -1,4 +1,4 @@
 	
-	RGB 28, 09, 00
-	RGB 17, 24, 00
+	RGB 28, 09, 00 ;Body
+	RGB 24, 24, 03 ; connectors
 
