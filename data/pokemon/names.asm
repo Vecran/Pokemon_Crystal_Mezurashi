@@ -99,7 +99,7 @@ PokemonNames::
 	db "HYPNO@@@@@"
 	db "KRABBY@@@@"
 	db "KINGLER@@@"
-	db "HINOTAMA@@"
+	db "IGNITORB@@"
 	db "MARUMINE@@"
 	db "EXEGGCUTE@"
 	db "EXEGGUTOR@"
